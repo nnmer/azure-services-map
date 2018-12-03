@@ -1,0 +1,18 @@
+{
+  "name": "azure-services-map",
+  "version": "0.0.1",
+  "description": "A visual representation of Azure services",
+  "main": "index.js",
+  "scripts": {
+    "get-data": "node ./js/parse.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

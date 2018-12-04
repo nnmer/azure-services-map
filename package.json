@@ -4,6 +4,7 @@
   "description": "A visual representation of Azure services",
   "main": "index.js",
   "scripts": {
+    "dev": "./node_modules/.bin/live-server",
     "get-data": "node ./js/parse.js"
   },
   "author": "",

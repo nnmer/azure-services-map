@@ -48,6 +48,6 @@ getHtml()
             }            
         })
 
-        fs.writeFileSync(serviceDataFile, " var data = "+JSON.stringify(servicesMap))
+        fs.writeFileSync(serviceDataFile, JSON.stringify(servicesMap))
     })
 

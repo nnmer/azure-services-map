@@ -2,33 +2,107 @@
 <html>
 <meta charset="utf-8">
 <base href="">
-<style>
-@import url("css/style.css");
-</style>
+ <link rel="stylesheet" href="css/style.css"/>
+ <link rel="stylesheet" href="css/drawer.css"/>
 <script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="js/data/azure-services.js"></script>
-<script src="js/servicesVsGroups.js">
-</script>
+<script src="https://d3js.org/d3-queue.v3.min.js"></script>
+<script src="js//micro-templating.js"></script>
+<script src="js/servicesVsGroups.js"></script>
+
 <body>
+    <script type="text/html" id="service_linking_drawer">
+      <div class="section">
+        <div class="section-title">
+          <h3>Service input/output flow</h3>
+        </div>
+
+        <ul>
+            <% for (var i =0; i < input.length; i++) { %>
+              <li class="input"><span><%=input[i]%></span></li>
+            <% } %>        
+            <% if (input.length >0 ) { %>
+              <li class="arrow-down"><img src="img/arrow-down.png" class="img-arrow-down"/></li>
+              <li class="input title"><span>Input</span></li>
+            <% } %>
+    
+            <li class="main-service">
+              <span><%=name%></span>
+            </li>
+    
+            <% if (output.length >0 ) { %>
+              <li class="output title"><span>Output</span></li>
+              <li class="arrow-down"><img src="img/arrow-down.png" class="img-arrow-down"/></li>
+            <% } %>
+            <% for (var i =0; i < output.length; i++) { %>
+              <li class="output"><span><%=output[i]%></span></li>
+            <% } %>
+        </ul>  
+      </div>
+    </script>
     <div>
-        <div class="pull-left">
-            <h3>Azure services vs Service Groups </h3>
-            <p style="font-size: 0.8em">
+        <div class="text-center">
+          <div class="github-link">
+              <h3>
+                  <a href="https://github.com/nnmer/azure-services-map">
+                      <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="40px">
+                  </a>
+              </h3>
+          </div>
+          <div class="page-caption">
+            <h2>Azure services</h2>
+            <span>
                 Doubleclick on a node to focus. Drag to better location.
-            </p>
+            </span>
+          </div>          
         </div>
-        <div class="pull-right">
-            <h3>
-                <a href="https://github.com/nnmer/azure-services-map">
-                    <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="40px">
-                </a>
-            </h3>
-        </div>
+        
+        <div class="clearfix"></div>
     </div>
     <div>
+        <input type="checkbox" id="drawer-toggle">
+        <label for="drawer-toggle" id="drawer-toggle-label"></label>
+
+        <nav id="drawer"></nav>
+
+        <div id="service-vs-group-map">
         <script>
-            servicesVsGroups()
+
+            d3.queue()
+              .defer(d3.json, "/js/data/azure-services.json")
+              .defer(d3.json, "/js/data/azure-services-linking.json")
+              .await(start);
+
+            function start(error, serviceVsGroup, serviceLinking) {
+
+              serviceVsGroup.map(function(item) {
+                if (undefined !== serviceLinking[item.name]) {
+                  item = Object.assign(item, serviceLinking[item.name]);
+                }
+              });
+
+              if(error) {
+                alert('Cannot get data')
+                return false 
+              }
+              servicesVsGroups(serviceVsGroup)
+            }      
+            
+            function showServiceLinking(selectedService) {
+              let drawer = document.getElementById("drawer");
+              let toggle = document.getElementById("drawer-toggle")
+              if (false === selectedService) { 
+                toggle.removeAttribute('checked')                
+                return;
+              }
+              
+              if (selectedService.input || selectedService.output ) {
+                toggle.setAttribute('checked','checked')
+                drawer.innerHTML = tmpl("service_linking_drawer", selectedService);
+              }
+            }
+            
         </script>
+        </div>
     </div>
 </body>
 </html>

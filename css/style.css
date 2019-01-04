@@ -10,6 +10,17 @@
     float: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.page-caption{
+  margin: auto 80px;
+}
+
+.github-link {
+  float: right;
+}
 
 .link {
     stroke: #000;
@@ -21,11 +32,11 @@
     stroke-width: 1.5px;
 }
 circle {
-  r: 7;
+  r: 10;
 }
 
 .label {
-    font-size: 0.6em
+    font-size: 0.7em
 }
 .label-category {
     fill: #F25022;
@@ -34,11 +45,19 @@ circle {
 
 .node-category {
     fill: #F25022;
-    r: 10;
+    r: 13;
+}
+
+.has-linking-services {
+  fill: rgb(2, 2, 121)
 }
 
 text {
-  font: 10px sans-serif;
+  font: 15px sans-serif;
   pointer-events: none;
   text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+#service-vs-group-map {
+  text-align: center;
 }

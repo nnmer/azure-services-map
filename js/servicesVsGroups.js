@@ -1,5 +1,5 @@
-function servicesVsGroups() {
-    var width=1100,
+function servicesVsGroups(data) {
+    var width=1000,
         height=850,
         centerX = width/2,
         centerY = height/2,
@@ -32,7 +32,7 @@ function servicesVsGroups() {
         }
     });
 
-    var svg = d3.select("body")
+    var svg = d3.select("#service-vs-group-map")
         .append("svg")
             .attr("width", width)
             .attr("height", height)
@@ -76,7 +76,7 @@ function servicesVsGroups() {
         .enter()            
             .append("text")
                 .attr('class',function(d){return 'label '+(d.isCategory?'label-category':'')})
-                .attr("dx", 10)
+                .attr("dx", "1.4em")
                 .attr("dy", ".35em")
                 .attr('font-size','15px')
                 .text(function(d){return d.name})
@@ -144,6 +144,8 @@ function servicesVsGroups() {
             toggle = 0;
         }
 
+        let serviceItem = data.find(function(item){return item.name == d.name})
+        showServiceLinking(toggle && false === d.isCategory ? serviceItem :false)
     }
 
     function forceTick() {

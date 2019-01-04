@@ -1,0 +1,118 @@
+{
+  "Data Factory": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/data-factory/concepts-datasets-linked-services",
+    "input": [
+      "Azure Blob Storage",
+      "Azure Cosmos DB (SQL API)",
+      "Azure Cosmos DB (MongoDB API)",
+      "Azure Data Lake Storage",
+      "Azure Database for MariaDB",
+      "Azure Database for PostgreSQL",
+      "Azure Database for MySQl",
+      "Azure File Storage",
+      "Azure SQL Database",
+      "Azure SQL Data Warehouse",
+      "Azure Table Storage"
+    ],
+    "output": [
+      "Azure Blob Storage",
+      "Azure Cosmos DB (SQL API)",
+      "Azure Cosmos DB (MongoDB API)",
+      "Azure Data Lake Storage",
+      "Azure File Storage",
+      "Azure SQL Database",
+      "Azure SQL Database Managed Instance",
+      "Azure Search Index",
+      "Azure SQL Data Warehouse",
+      "Azure Table Storage"
+    ]
+  },
+  "Functions": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings",
+    "input": [
+      "Blob Storage",
+      "Cosmos DB",
+      "External File2",
+      "External Table2",
+      "Microsoft Graph Excel tables",
+      "Microsoft Graph OneDrive files",
+      "Microsoft Graph Events",
+      "Microsoft Graph Auth tokens",
+      "Table storage",
+      "Mobile Apps"
+    ],
+    "output": [
+      "Blob Storage",
+      "Cosmos DB",
+      "Event Hubs",
+      "External Table2",
+      "External File2",
+      "HTTP",
+      "Microsoft Graph OneDrive files",
+      "Microsoft Graph Excel tables",
+      "Microsoft Graph Outlook email",
+      "Microsoft Graph Events",
+      "Mobile Apps",
+      "Notification Hubs",
+      "Queue storage",
+      "SendGrid",
+      "Service Bus",
+      "Table storage",
+      "Twilio",
+      "Webhooks"
+    ]
+  },
+  "Event Grid": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/event-grid/overview",
+    "input": [
+      "Blob Storage",
+      "Media Services",
+      "Azure Subscriptions",
+      "Resource groups",
+      "Event Hubs",
+      "IoT Hub",
+      "Service Bus",
+      "Azure Container Registry",
+      "Custom Topics"
+    ],
+    "output": [
+      "Azure Functions",
+      "Logic Apps",
+      "Azure Automation",
+      "HTTP Webhooks",
+      "Queue Storage",
+      "Hybrid Connections",
+      "Event Hubs"
+    ]
+  },
+  "IoT Hub": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints",
+    "input": [],
+    "output": [
+      "Azure Storage containers",
+      "Event Hubs",
+      "Service Bus Queues",
+      "Service Bus Topics",
+      "Stream Analytics"
+    ]
+  },
+  "Stream Analytics": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-add-inputs",
+    "input": [
+      "Event Hubs",
+      "IoT Hub",
+      "Blob Storage"
+    ],
+    "output": [
+      "Azure Data Lake Storage",
+      "Azure SQL Database",
+      "Blob Storage",
+      "Event Hubs",
+      "Power BI",
+      "Service Bus Queues",
+      "Service Bus Topics",
+      "Cosmos DB",
+      "Azure Functions"
+    ]
+  }
+}

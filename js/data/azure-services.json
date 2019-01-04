@@ -45,11 +45,6 @@
     "description": "Search for news and get comprehensive results"
   },
   {
-    "name": "Bing Speech",
-    "category": "AI + Machine Learning",
-    "description": "Convert speech to text and back again to understand user intent"
-  },
-  {
     "name": "Bing Spell Check",
     "category": "AI + Machine Learning",
     "description": "Detect and correct spelling mistakes in your app"
@@ -110,7 +105,7 @@
     "description": "Detect, identify, analyze, organize, and tag faces in photos"
   },
   {
-    "name": "Machine Learning service",
+    "name": "Azure Machine Learning service",
     "category": "AI + Machine Learning",
     "description": "Bring AI to everyone with an end-to-end, scalable, trusted platform with experimentation and model management"
   },
@@ -123,6 +118,11 @@
     "name": "Microsoft Genomics",
     "category": "AI + Machine Learning",
     "description": "Power genome sequencing &amp; research insights"
+  },
+  {
+    "name": "Translator Speech",
+    "category": "AI + Machine Learning",
+    "description": "Easily conduct real-time speech translation with a simple REST API call"
   },
   {
     "name": "Language Understanding",
@@ -255,36 +255,6 @@
     "description": "Provision Windows and Linux virtual machines in seconds"
   },
   {
-    "name": "App Service",
-    "category": "Compute",
-    "description": "Quickly create powerful cloud apps for web and mobile"
-  },
-  {
-    "name": "Functions",
-    "category": "Compute",
-    "description": "Process events with serverless code"
-  },
-  {
-    "name": "Batch",
-    "category": "Compute",
-    "description": "Cloud-scale job scheduling and compute management"
-  },
-  {
-    "name": "Container Instances",
-    "category": "Compute",
-    "description": "Easily run containers on Azure without managing servers"
-  },
-  {
-    "name": "Azure Batch AI",
-    "category": "Compute",
-    "description": "Easily experiment and train your deep learning and AI models in parallel at scale"
-  },
-  {
-    "name": "Service Fabric",
-    "category": "Compute",
-    "description": "Develop microservices and orchestrate containers on Windows or Linux"
-  },
-  {
     "name": "Virtual Machine Scale Sets",
     "category": "Compute",
     "description": "Manage and scale up to thousands of Linux and Windows virtual machines"
@@ -295,9 +265,49 @@
     "description": "Simplify the deployment, management, and operations of Kubernetes"
   },
   {
+    "name": "Functions",
+    "category": "Compute",
+    "description": "Process events with serverless code"
+  },
+  {
+    "name": "Service Fabric",
+    "category": "Compute",
+    "description": "Develop microservices and orchestrate containers on Windows or Linux"
+  },
+  {
+    "name": "App Service",
+    "category": "Compute",
+    "description": "Quickly create powerful cloud apps for web and mobile"
+  },
+  {
+    "name": "Container Instances",
+    "category": "Compute",
+    "description": "Easily run containers on Azure without managing servers"
+  },
+  {
+    "name": "Batch",
+    "category": "Compute",
+    "description": "Cloud-scale job scheduling and compute management"
+  },
+  {
+    "name": "Azure Batch AI",
+    "category": "Compute",
+    "description": "Easily experiment and train your deep learning and AI models in parallel at scale"
+  },
+  {
+    "name": "SQL Server on Virtual Machines",
+    "category": "Compute",
+    "description": "Host enterprise SQL Server apps in the cloud"
+  },
+  {
     "name": "Cloud Services",
     "category": "Compute",
     "description": "Create highly-available, infinitely-scalable cloud applications and APIs"
+  },
+  {
+    "name": "SAP HANA on Azure Large Instances",
+    "category": "Compute",
+    "description": "Run the largest SAP HANA workloads of any hyperscale cloud provider"
   },
   {
     "name": "Web Apps",
@@ -320,24 +330,29 @@
     "description": "Provision virtual machines for Ubuntu, Red Hat, and more"
   },
   {
-    "name": "SQL Server on Virtual Machines",
-    "category": "Compute",
-    "description": "Host enterprise SQL Server apps in the cloud"
-  },
-  {
-    "name": "SAP HANA on Azure Large Instances",
-    "category": "Compute",
-    "description": "Run the largest SAP HANA workloads of any hyperscale cloud provider"
-  },
-  {
     "name": "Azure CycleCloud",
     "category": "Compute",
     "description": "Create, manage, operate, and optimize HPC and big compute clusters of any scale"
   },
   {
+    "name": "Azure Kubernetes Service (AKS)",
+    "category": "Containers",
+    "description": "Simplify the deployment, management, and operations of Kubernetes"
+  },
+  {
+    "name": "Service Fabric",
+    "category": "Containers",
+    "description": "Develop microservices and orchestrate containers on Windows or Linux"
+  },
+  {
     "name": "App Service",
     "category": "Containers",
     "description": "Quickly create powerful cloud apps for web and mobile"
+  },
+  {
+    "name": "Container Instances",
+    "category": "Containers",
+    "description": "Easily run containers on Azure without managing servers"
   },
   {
     "name": "Batch",
@@ -348,21 +363,6 @@
     "name": "Container Registry",
     "category": "Containers",
     "description": "Store and manage container images across all types of Azure deployments"
-  },
-  {
-    "name": "Container Instances",
-    "category": "Containers",
-    "description": "Easily run containers on Azure without managing servers"
-  },
-  {
-    "name": "Service Fabric",
-    "category": "Containers",
-    "description": "Develop microservices and orchestrate containers on Windows or Linux"
-  },
-  {
-    "name": "Azure Kubernetes Service (AKS)",
-    "category": "Containers",
-    "description": "Simplify the deployment, management, and operations of Kubernetes"
   },
   {
     "name": "Web Apps",
@@ -383,6 +383,11 @@
     "name": "Web App for Containers",
     "category": "Containers",
     "description": "Easily deploy and run containerized web apps that scale with your business"
+  },
+  {
+    "name": "SQL Server on Virtual Machines",
+    "category": "Databases",
+    "description": "Host enterprise SQL Server apps in the cloud"
   },
   {
     "name": "Azure SQL Database",
@@ -413,11 +418,6 @@
     "name": "SQL Server Stretch Database",
     "category": "Databases",
     "description": "Dynamically stretch on-premises SQL Server databases to Azure"
-  },
-  {
-    "name": "SQL Server on Virtual Machines",
-    "category": "Databases",
-    "description": "Host enterprise SQL Server apps in the cloud"
   },
   {
     "name": "Table Storage",
@@ -570,6 +570,11 @@
     "description": "Connect across private and public cloud environments"
   },
   {
+    "name": "Functions",
+    "category": "Internet of Things",
+    "description": "Process events with serverless code"
+  },
+  {
     "name": "IoT Hub",
     "category": "Internet of Things",
     "description": "Connect, monitor and manage billions of IoT assets"
@@ -605,11 +610,6 @@
     "description": "Simple and secure location APIs provide geospatial context to data"
   },
   {
-    "name": "Functions",
-    "category": "Internet of Things",
-    "description": "Process events with serverless code"
-  },
-  {
     "name": "Event Grid",
     "category": "Internet of Things",
     "description": "Get reliable event delivery at massive scale"
@@ -620,7 +620,7 @@
     "description": "Long-term OS support and services to manage device updates and assess device health"
   },
   {
-    "name": "Machine Learning service",
+    "name": "Azure Machine Learning service",
     "category": "Internet of Things",
     "description": "Bring AI to everyone with an end-to-end, scalable, trusted platform with experimentation and model management"
   },
@@ -968,11 +968,6 @@
     "name": "Azure DDoS Protection",
     "category": "Security",
     "description": "Protect your applications from Distributed Denial of Service (DDoS) attacks"
-  },
-  {
-    "name": "Azure Advanced Threat Protection",
-    "category": "Security",
-    "description": "Detect and investigate advanced attacks on-premises and in the cloud"
   },
   {
     "name": "Azure Backup",

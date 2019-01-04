@@ -3,7 +3,7 @@ const fs = require('fs')
 const cheerio = require('cheerio')
 
 const htmlDataFile = __dirname+"/data/azure-services.html"
-const serviceDataFile = __dirname+"/data/azure-services.js"
+const serviceDataFile = __dirname+"/data/azure-services.json"
 var htmlData = "";
 
 function getHtml() {

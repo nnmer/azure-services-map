@@ -6,7 +6,7 @@
  <link rel="stylesheet" href="css/drawer.css"/>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://d3js.org/d3-queue.v3.min.js"></script>
-<script src="js//micro-templating.js"></script>
+<script src="js/micro-templating.js"></script>
 <script src="js/servicesVsGroups.js"></script>
 
 <body>
@@ -81,8 +81,8 @@
         <script>
 
             d3.queue()
-              .defer(d3.json, "/js/data/azure-services.json")
-              .defer(d3.json, "/js/data/azure-services-linking.json")
+              .defer(d3.json, "js/data/azure-services.json")
+              .defer(d3.json, "js/data/azure-services-linking.json")
               .await(start);
 
             function start(error, serviceVsGroup, serviceLinking) {

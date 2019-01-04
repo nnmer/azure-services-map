@@ -8,12 +8,13 @@ function servicesVsGroups(data) {
         categories = {}
     ;
 
-    links.forEach(function(item) {    
-    item.source = nodes[item.name] || (nodes[item.name] = {name: item.name,isCategory: (item.category=='Azure'?true:false)});
-    item.target = nodes[item.category] || (nodes[item.category] = {name: item.category, isCategory: true});
-    if (!categories[item.category]){
-        categories[item.category] = item.category
-    }
+    links.forEach(function(item) {            
+      item.source = nodes[item.name] || (nodes[item.name] = {name: item.name,isCategory: (item.category=='Azure'?true:false)});
+      item.target = nodes[item.category] || (nodes[item.category] = {name: item.category, isCategory: true});
+      if (!categories[item.category]){
+          categories[item.category] = item.category
+      }
+      nodes[item.name]['hasLinkingServices'] = (item.input || item.output) ? true : false;
     });
 
 
@@ -67,7 +68,7 @@ function servicesVsGroups(data) {
         .data(force.nodes())
         .enter()
             .append("circle")
-                .attr('class',function(d){return 'node '+(d.isCategory?'node-category':'')})
+                .attr('class',function(d){return 'node '+(d.isCategory?' node-category ':'')+(d.hasLinkingServices ?' has-linking-services ':'')})
                 .call(drag)
                 .on('dblclick', connectedNodes)          
         

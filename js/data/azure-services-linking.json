@@ -12,7 +12,73 @@
       "Azure File Storage",
       "Azure SQL Database",
       "Azure SQL Data Warehouse",
-      "Azure Table Storage"
+      "Azure Table Storage",
+
+      "Amazon Redshift",
+      "DB2",
+      "Drill (Preview)",
+      "Google BigQuery",
+      "Greenplum",
+      "HBase",
+      "Hive",
+      "Apache Impala (Preview)",
+      "Informix",
+      "MariaDB",
+      "Microsoft Access",
+      "MySQL",
+      "Netezza",
+      "Oracle      ",
+      "Phoenix",
+      "PostgreSQL",
+      "Presto (Preview)",
+      "SAP Business Warehouse",
+      "SAP HANA",
+      "Spark",
+      "SQL Server",
+      "Sybase",
+      "Teradata",
+      "Vertica",
+      "Cassandra",
+      "Couchbase (Preview)",
+      "MongoDB",
+      "Amazon S3",
+      "File System",
+      "FTP",
+      "Google Cloud Storage",
+      "HDFS",
+      "SFTP",
+      "Generic HTTP",
+      "Generic OData",
+      "Generic ODBC",
+      "Generic REST",
+      "Amazon Marketplace Web Service (Preview)",
+      "Common Data Service for Apps",
+      "Concur (Preview)",
+      "Dynamics 365",
+      "Dynamics AX (Preview)",
+      "Dynamics CRM",
+      "Google AdWords (Preview)",
+      "HubSpot (Preview)",
+      "Jira (Preview)",
+      "Magento (Preview)",
+      "Marketo (Preview)",
+      "Office 365 (Preview)",
+      "Oracle Eloqua (Preview)",
+      "Oracle Responsys (Preview)",
+      "Oracle Service Cloud (Preview)",
+      "Paypal (Preview)",
+      "QuickBooks (Preview)",
+      "Salesforce",
+      "Salesforce Service Cloud",
+      "Salesforce Marketing Cloud (Preview)",
+      "SAP Cloud for Customer (C4C)",
+      "SAP ECC",
+      "ServiceNow",
+      "Shopify (Preview)",
+      "Square (Preview)",
+      "Web Table (HTML table)",
+      "Xero (Preview)",
+      "Zoho (Preview)"
     ],
     "output": [
       "Azure Blob Storage",
@@ -24,7 +90,19 @@
       "Azure SQL Database Managed Instance",
       "Azure Search Index",
       "Azure SQL Data Warehouse",
-      "Azure Table Storage"
+      "Azure Table Storage",
+
+      "Oracle",
+      "SAP HANA",
+      "SQL Server",
+      "File System",
+      "Generic ODBC",
+      "Common Data Service for Apps",
+      "Dynamics 365",
+      "Dynamics CRM",
+      "Salesforce",
+      "Salesforce Service Cloud",
+      "SAP Cloud for Customer (C4C)"
     ]
   },
   "Functions": {
@@ -113,6 +191,123 @@
       "Service Bus Topics",
       "Cosmos DB",
       "Azure Functions"
+    ]
+  },  
+  "Azure Databricks": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/azure-databricks/databricks-connect-to-data-sources",
+      "https://docs.azuredatabricks.net/spark/latest/data-sources/index.html#"
+    ],
+    "input": [
+      "Azure Data Factory",
+      "Azure SQL database",
+      "Azure Data Lake Store",
+      "Azure Blob Storage",
+      "Azure Cosmos DB",
+      "Azure Event Hubs",
+      "Azure SQL Data Warehouse",
+    
+      "Cassandra",
+      "Couchbase",
+      "ElasticSearch",
+      "Images",
+      "Import Hive Tables",
+      "MongoDB",
+      "Neo4j",
+      "Avro Files",
+      "CSV Files",
+      "JSON Files",
+      "LZO Compressed Files",
+      "Parquet Files",
+      "Redis",
+      "Riak Time Series",
+      "Snowflake",
+      "Zip Files"
+    ],
+    "output": [
+      "Azure SQL Data Warehouse",
+      "Event Hubs",
+      "Apache Kafka",
+      "3rd party via connectors"
+    ]
+  },
+  "Azure Search": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/search/search-indexer-overview#supported-data-sources",
+    "input": [
+      "Azure SQL",
+      "Azure Cosmos DB",
+      "Azure Blob Storage",
+      "Azure Table Storage"
+    ],
+    "output": []
+  },
+  "SQL Data Warehouse": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-overview-integrate",
+    "input": [
+      "Azure Data Factory",
+      "Azure Machine Learning",
+      "Azure Stream Analytics"
+    ],
+    "output": [
+      "Power BI",
+      "Azure Machine Learning"
+    ]
+  },
+  "HDInsight": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-use-blob-storage",
+      "https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-streaming-at-scale-overview"],
+    "input": [
+      "Azure storage",
+      "Data Lake Storage"
+    ],
+    "output": [
+      "Excel",
+      "Power BI"
+    ]
+  },
+  "Azure Analysis Services": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-datasource",
+    "input": [
+      "Azure SQL Database",
+      "Azure SQL Data Warehouse",
+      "Azure Blob Storage",
+      "Azure Table Storage",
+      "Azure Cosmos DB*",
+      "Azure Data Lake Store",
+      "Azure HDInsight HDFS",
+      "Azure HDInsight Spark",
+      "On premis: SQL Server SQL",
+      "On premis: SQL Server Data Warehouse",
+      "On premis: Oracle",
+      "On premis: Teradata"
+    ] 
+  },
+  "Azure Data Explorer": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/data-explorer/data-explorer-overview"
+    ],
+    "input": [
+      "Event Hubs",
+      "Kafka",
+      "SDKs"
+    ],
+    "output": [
+      "Power BI",
+      "Grafana",
+      "Azure Databricks"
+    ]
+  },
+  "Logic Apps": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/connectors/apis-list",
+      "https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-as2"
+    ],
+    "input": [
+      "See Connectors for Azure and <br/> 3rd party services <a href='https://docs.microsoft.com/en-us/azure/connectors/apis-list' target='_blank'>Link</a>"
+    ],
+    "output": [
+      "See Connectors for Azure and <br/> 3rd party services <a href='https://docs.microsoft.com/en-us/azure/connectors/apis-list' target='_blank'>Link</a>"
     ]
   }
 }

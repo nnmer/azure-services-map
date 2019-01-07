@@ -78,6 +78,9 @@
   text-decoration: none;
   text-align: center;
 }
+#drawer li span a {
+  text-decoration: underline;
+}
 
 #drawer li {
   margin: 0;

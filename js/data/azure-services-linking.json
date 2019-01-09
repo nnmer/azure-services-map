@@ -273,7 +273,7 @@
       "Azure SQL Data Warehouse",
       "Azure Blob Storage",
       "Azure Table Storage",
-      "Azure Cosmos DB*",
+      "Azure Cosmos DB",
       "Azure Data Lake Store",
       "Azure HDInsight HDFS",
       "Azure HDInsight Spark",
@@ -308,6 +308,49 @@
     ],
     "output": [
       "See Connectors for Azure and <br/> 3rd party services <a href='https://docs.microsoft.com/en-us/azure/connectors/apis-list' target='_blank'>Link</a>"
+    ]
+  },
+  "Time Series Insights": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/time-series-insights/time-series-insights-update-storage-ingress"
+    ],
+    "input": [
+      "Azure IoT Hub",
+      "Azure Event Hubs"
+    ],
+    "output": [
+      "Azure Blob storage"
+    ]
+  },
+  "Azure Digital Twins": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/digital-twins/tutorial-facilities-events",
+      "https://docs.microsoft.com/en-us/azure/digital-twins/tutorial-facilities-analyze"
+    ],
+    "input": [
+      "Event Grid",
+      "Logic Apps"
+    ],
+    "output": [
+      "Event Hubs"
+    ]
+  },
+  "Azure Data Lake Storage": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-data-scenarios",
+    "input": [
+      "Azure Data Factory",
+      "AzCopy tool",
+      "Apache DistCp",
+      "Azure HDInsight Storm",
+      "Azure Data Factory"
+    ],
+    "output": [
+      "Azure HDInsight",
+      "Azure Databricks",
+      "Azure Data Factory",
+      "Apache DistCp",
+      "Power Bi",
+      "Azure SQL Data Warehouse"
     ]
   }
 }

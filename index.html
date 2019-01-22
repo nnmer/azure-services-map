@@ -17,10 +17,11 @@
         </div>
 
         <ul>
-            <% for (var i =0; i < input.length; i++) { %>
-              <li class="input"><span><%=input[i]%></span></li>
-            <% } %>        
-            <% if (input.length >0 ) { %>
+            <% if (servicesIO.input && servicesIO.input.length >0 ) { %>
+              <% for (var i =0; i < servicesIO.input.length; i++) { %>
+                <li class="input"><span><%=servicesIO.input[i]%></span></li>
+              <% } %>        
+              
               <li class="arrow-down"><img src="img/arrow-down.png" class="img-arrow-down"/></li>
               <li class="input title"><span>Input</span></li>
             <% } %>
@@ -29,12 +30,13 @@
               <span><%=name%></span>
             </li>
     
-            <% if (output.length >0 ) { %>
+            <% if (servicesIO.output && servicesIO.output.length >0 ) { %>
               <li class="output title"><span>Output</span></li>
               <li class="arrow-down"><img src="img/arrow-down.png" class="img-arrow-down"/></li>
-            <% } %>
-            <% for (var i =0; i < output.length; i++) { %>
-              <li class="output"><span><%=output[i]%></span></li>
+            
+              <% for (var i =0; i < servicesIO.output.length; i++) { %>
+                <li class="output"><span><%=servicesIO.output[i]%></span></li>
+              <% } %>
             <% } %>
         </ul>  
       </div>
@@ -107,7 +109,7 @@
 
               serviceVsGroup.map(function(item) {
                 if (undefined !== serviceLinking[item.name]) {
-                  item = Object.assign(item, serviceLinking[item.name]);
+                  item = Object.assign(item, {servicesIO: serviceLinking[item.name]});
                 }
               });
 
@@ -126,7 +128,7 @@
                 return;
               }
               
-              if (selectedService.input || selectedService.output ) {
+              if (selectedService.servicesIO.input || selectedService.servicesIO.output ) {
                 toggle.setAttribute('checked','checked')
                 drawer.innerHTML = tmpl("service_linking_drawer", selectedService);
               }

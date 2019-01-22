@@ -14,7 +14,7 @@ function servicesVsGroups(data) {
       if (!categories[item.category]){
           categories[item.category] = item.category
       }
-      nodes[item.name]['hasLinkingServices'] = (item.input || item.output) ? true : false;
+      nodes[item.name]['hasLinkingServices'] = (item.servicesIO && (item.servicesIO.input || item.servicesIO.output)) ? true : false;
     });
 
 

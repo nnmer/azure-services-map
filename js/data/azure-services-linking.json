@@ -105,7 +105,7 @@
       "SAP Cloud for Customer (C4C)"
     ]
   },
-  "Functions": {
+  "Azure Functions": {
     "linking_source_url": "https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings",
     "input": [
       "Blob Storage",
@@ -163,7 +163,7 @@
       "Event Hubs"
     ]
   },
-  "IoT Hub": {
+  "Azure IoT Hub": {
     "linking_source_url": "https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints",
     "input": [],
     "output": [
@@ -174,7 +174,7 @@
       "Stream Analytics"
     ]
   },
-  "Stream Analytics": {
+  "Azure Stream Analytics": {
     "linking_source_url": "https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-add-inputs",
     "input": [
       "Event Hubs",
@@ -310,7 +310,7 @@
       "See Connectors for Azure and <br/> 3rd party services <a href='https://docs.microsoft.com/en-us/azure/connectors/apis-list' target='_blank'>Link</a>"
     ]
   },
-  "Time Series Insights": {
+  "Azure Time Series Insights": {
     "linking_source_url": [
       "https://docs.microsoft.com/en-us/azure/time-series-insights/time-series-insights-update-storage-ingress"
     ],

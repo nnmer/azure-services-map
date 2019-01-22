@@ -180,7 +180,7 @@
     "description": "Fast, easy, and collaborative Apache Spark-based analytics platform"
   },
   {
-    "name": "Stream Analytics",
+    "name": "Azure Stream Analytics",
     "category": "Analytics",
     "description": "Real-time data stream processing from millions of IoT devices"
   },
@@ -220,16 +220,6 @@
     "description": "Enterprise-grade analytics engine as a service"
   },
   {
-    "name": "Apache Spark for Azure HDInsight",
-    "category": "Analytics",
-    "description": "Apache Spark in the cloud for mission critical deployments"
-  },
-  {
-    "name": "Apache Storm for HDInsight",
-    "category": "Analytics",
-    "description": "Real-time stream processing made easy for big data"
-  },
-  {
     "name": "R Server for HDInsight",
     "category": "Analytics",
     "description": "Predictive analytics, machine learning, and statistical modeling for big data"
@@ -265,7 +255,7 @@
     "description": "Simplify the deployment, management, and operations of Kubernetes"
   },
   {
-    "name": "Functions",
+    "name": "Azure Functions",
     "category": "Compute",
     "description": "Process events with serverless code"
   },
@@ -353,11 +343,6 @@
     "name": "Container Instances",
     "category": "Containers",
     "description": "Easily run containers on Azure without managing servers"
-  },
-  {
-    "name": "Batch",
-    "category": "Containers",
-    "description": "Cloud-scale job scheduling and compute management"
   },
   {
     "name": "Container Registry",
@@ -570,27 +555,27 @@
     "description": "Connect across private and public cloud environments"
   },
   {
-    "name": "Functions",
+    "name": "Azure Functions",
     "category": "Internet of Things",
     "description": "Process events with serverless code"
   },
   {
-    "name": "IoT Hub",
+    "name": "Azure IoT Hub",
     "category": "Internet of Things",
     "description": "Connect, monitor and manage billions of IoT assets"
   },
   {
-    "name": "IoT Edge",
+    "name": "Azure IoT Edge",
     "category": "Internet of Things",
     "description": "Extend cloud intelligence and analytics to edge devices"
   },
   {
-    "name": "IoT Central",
+    "name": "Azure IoT Central",
     "category": "Internet of Things",
     "description": "Experience the simplicity of SaaS for IoT, with no cloud expertise required"
   },
   {
-    "name": "IoT solution accelerators",
+    "name": "Azure IoT solution accelerators",
     "category": "Internet of Things",
     "description": "Create fully customizable solutions with templates for common IoT scenarios"
   },
@@ -600,7 +585,7 @@
     "description": "Securely connect MCU-powered devices from the silicon to the cloud"
   },
   {
-    "name": "Time Series Insights",
+    "name": "Azure Time Series Insights",
     "category": "Internet of Things",
     "description": "Explore and analyze time-series data from IoT devices"
   },
@@ -630,7 +615,7 @@
     "description": "Easily build, deploy, and manage predictive analytics solutions"
   },
   {
-    "name": "Stream Analytics",
+    "name": "Azure Stream Analytics",
     "category": "Internet of Things",
     "description": "Real-time data stream processing from millions of IoT devices"
   },
@@ -748,6 +733,11 @@
     "name": "Azure Blueprints",
     "category": "Management and Governance",
     "description": "Enabling quick, repeatable creation of governed environments"
+  },
+  {
+    "name": "Content Delivery Network",
+    "category": "Media",
+    "description": "Ensure secure, reliable content delivery with broad global reach"
   },
   {
     "name": "Media Services",

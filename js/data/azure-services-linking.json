@@ -352,5 +352,17 @@
       "Power Bi",
       "Azure SQL Data Warehouse"
     ]
+  },
+  "Event Hubs": {
+    "linking_source_url": ["https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview#what-you-can-do-with-diagnostic-logs"],
+    "input": ["Diagnostic Logs"]
+  },
+  "Blob Storage": {
+    "linking_source_url": ["https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview#what-you-can-do-with-diagnostic-logs"],
+    "input": ["Diagnostic Logs"]
+  },
+  "Log Analytics": {
+    "linking_source_url": ["https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview#what-you-can-do-with-diagnostic-logs"],
+    "input": ["Diagnostic Logs"]
   }
 }

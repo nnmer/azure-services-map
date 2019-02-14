@@ -19,6 +19,18 @@ function getHtml() {
     
 }
 
+function name2Key(name) {
+
+  let key = String(name)
+    .toLowerCase()
+    .replace('azure','')
+    .trim()
+    .replace(' ','-')
+    ;
+
+    return key;
+}
+
 getHtml()
     .then(function(){
 
@@ -27,7 +39,7 @@ getHtml()
         const $ = cheerio.load(htmlData);
 
         var curCategory = null;
-        var servicesMap = [];
+        var servicesMap = {};
 
         const divArr = $('#products-list').children();
         divArr.each(function (idx,val){
@@ -44,12 +56,23 @@ getHtml()
                     let href = $(v).attr('href')
                     let description =$(v).next().html()
                     if (name != curCategory) {
-                        servicesMap.push({
-                          name, 
-                          category: curCategory, 
-                          description,
-                          url: urlPrefix+href
-                        })
+                        id = name2Key(name)
+                        if (servicesMap.hasOwnProperty(id)){
+                          let c = servicesMap[id].category
+                          if (typeof c === 'string') {
+                            c = [c,curCategory]
+                          } else {
+                            c.push(curCategory)
+                          }
+                          servicesMap[id].category = c
+                        } else {
+                          servicesMap[id] = {
+                            name, 
+                            category: curCategory, 
+                            description,
+                            url: urlPrefix+href
+                          }
+                        }                        
                     }
                 })                            
             }            

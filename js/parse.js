@@ -23,9 +23,9 @@ function name2Key(name) {
 
   let key = String(name)
     .toLowerCase()
-    .replace('azure','')
+    .replace(new RegExp('^azure'),'')
     .trim()
-    .replace(' ','-')
+    .replace(new RegExp(' ', 'g'),'-')
     ;
 
     return key;
@@ -58,17 +58,11 @@ getHtml()
                     if (name != curCategory) {
                         id = name2Key(name)
                         if (servicesMap.hasOwnProperty(id)){
-                          let c = servicesMap[id].category
-                          if (typeof c === 'string') {
-                            c = [c,curCategory]
-                          } else {
-                            c.push(curCategory)
-                          }
-                          servicesMap[id].category = c
+                          servicesMap[id].category.push(curCategory)
                         } else {
                           servicesMap[id] = {
                             name, 
-                            category: curCategory, 
+                            category: [curCategory], 
                             description,
                             url: urlPrefix+href
                           }

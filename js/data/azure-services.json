@@ -10,7 +10,9 @@
   },
   "bot-service": {
     "name": "Azure Bot Service",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Intelligent, serverless bot service that scales on demand",
     "url": "https://azure.microsoft.com/en-us/services/bot-service/"
   },
@@ -34,107 +36,141 @@
   },
   "bing-autosuggest": {
     "name": "Bing Autosuggest",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Give your app intelligent autosuggest options for searches",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/autosuggest/"
   },
-  "bing-custom search": {
+  "bing-custom-search": {
     "name": "Bing Custom Search",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "An easy-to-use, ad-free, commercial-grade search tool that lets you deliver the results you want",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-custom-search/"
   },
-  "bing-entity search": {
+  "bing-entity-search": {
     "name": "Bing Entity Search",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Enrich your experiences by identifying and augmenting entity information from the web",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-entity-search-api/"
   },
-  "bing-image search": {
+  "bing-image-search": {
     "name": "Bing Image Search",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Search for images and get comprehensive results",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/"
   },
-  "bing-news search": {
+  "bing-news-search": {
     "name": "Bing News Search",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Search for news and get comprehensive results",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-news-search-api/"
   },
-  "bing-spell check": {
+  "bing-spell-check": {
     "name": "Bing Spell Check",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Detect and correct spelling mistakes in your app",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/spell-check/"
   },
-  "bing-video search": {
+  "bing-video-search": {
     "name": "Bing Video Search",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Search for videos and get comprehensive results",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-video-search-api/"
   },
-  "bing-visual search": {
+  "bing-visual-search": {
     "name": "Bing Visual Search",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Get rich insights to help build compelling image applications on the device of your choice.",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-visual-search/"
   },
-  "bing-web search": {
+  "bing-web-search": {
     "name": "Bing Web Search",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Get enhanced search details from billions of web documents",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/"
   },
   "cognitive-services": {
     "name": "Cognitive Services",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Add smart API capabilities to enable contextual interactions",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/"
   },
   "computer-vision": {
     "name": "Computer Vision",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Distill actionable information from images",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/"
   },
   "content-moderator": {
     "name": "Content Moderator",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Automated image, text, and video moderation",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/content-moderator/"
   },
   "custom-speech": {
     "name": "Custom Speech",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Overcome speech recognition barriers like speaking style, background noise, and vocabulary",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/custom-speech-service/"
   },
   "custom-vision": {
     "name": "Custom Vision",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Easily customize your own state-of-the-art computer vision models for your unique use case",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/"
   },
-  "data-science virtual machines": {
+  "data-science-virtual-machines": {
     "name": "Data Science Virtual Machines",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Rich pre-configured environment for AI development",
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/data-science-virtual-machines/"
   },
   "emotion": {
     "name": "Emotion",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Personalize user experiences with emotion recognition",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/emotion/"
   },
   "face": {
     "name": "Face",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Detect, identify, analyze, organize, and tag faces in photos",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/face/"
   },
-  "machine-learning service": {
+  "machine-learning-service": {
     "name": "Azure Machine Learning service",
     "category": [
       "AI + Machine Learning",
@@ -143,7 +179,7 @@
     "description": "Bring AI to everyone with an end-to-end, scalable, trusted platform with experimentation and model management",
     "url": "https://azure.microsoft.com/en-us/services/machine-learning-service/"
   },
-  "machine-learning studio": {
+  "machine-learning-studio": {
     "name": "Machine Learning Studio",
     "category": [
       "AI + Machine Learning",
@@ -154,67 +190,89 @@
   },
   "microsoft-genomics": {
     "name": "Microsoft Genomics",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Power genome sequencing &amp; research insights",
     "url": "https://azure.microsoft.com/en-us/services/genomics/"
   },
   "translator-speech": {
     "name": "Translator Speech",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Easily conduct real-time speech translation with a simple REST API call",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/translator-speech-api/"
   },
   "language-understanding": {
     "name": "Language Understanding",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Teach your apps to understand commands from your users",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/"
   },
   "linguistic-analysis": {
     "name": "Linguistic Analysis",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Simplify complex language concepts and parse text with the Linguistic Analysis API",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/linguistic-analysis-api/"
   },
   "qna-maker": {
     "name": "QnA Maker",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Distill information into conversational, easy-to-navigate answers",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/qna-maker/"
   },
   "speaker-recognition": {
     "name": "Speaker Recognition",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Use speech to identify and verify individual speakers",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/speaker-recognition/"
   },
   "speech-translation": {
     "name": "Speech Translation",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Easily integrate real-time speech translation to your app",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/speech-translation/"
   },
-  "speech-to text": {
+  "speech-to-text": {
     "name": "Speech to Text",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "The Speech to Text API is part of Azure Cognitive Services Speech Services",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/"
   },
   "text-analytics": {
     "name": "Text Analytics",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Easily evaluate sentiment and topics to understand what users want",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/"
   },
-  "text-to speech": {
+  "text-to-speech": {
     "name": "Text to Speech",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Convert text to speech to create more natural, accessible interfaces",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/"
   },
   "translator-text": {
     "name": "Translator Text",
-    "category": "AI + Machine Learning",
+    "category": [
+      "AI + Machine Learning"
+    ],
     "description": "Easily conduct machine translation with a simple REST API call",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/"
   },
@@ -236,7 +294,7 @@
     "description": "Real-time data stream processing from millions of IoT devices",
     "url": "https://azure.microsoft.com/en-us/services/stream-analytics/"
   },
-  "sql-data warehouse": {
+  "sql-data-warehouse": {
     "name": "SQL Data Warehouse",
     "category": [
       "Analytics",
@@ -247,7 +305,9 @@
   },
   "hdinsight": {
     "name": "HDInsight",
-    "category": "Analytics",
+    "category": [
+      "Analytics"
+    ],
     "description": "Provision cloud Hadoop, Spark, R Server, HBase, and Storm clusters",
     "url": "https://azure.microsoft.com/en-us/services/hdinsight/"
   },
@@ -260,43 +320,55 @@
     "description": "Hybrid data integration at enterprise scale, made easy",
     "url": "https://azure.microsoft.com/en-us/services/data-factory/"
   },
-  "data-lake analytics": {
+  "data-lake-analytics": {
     "name": "Data Lake Analytics",
-    "category": "Analytics",
+    "category": [
+      "Analytics"
+    ],
     "description": "Distributed analytics service that makes big data easy",
     "url": "https://azure.microsoft.com/en-us/services/data-lake-analytics/"
   },
   "event-hubs": {
     "name": "Event Hubs",
-    "category": "Analytics",
+    "category": [
+      "Analytics"
+    ],
     "description": "Receive telemetry from millions of devices",
     "url": "https://azure.microsoft.com/en-us/services/event-hubs/"
   },
-  "power-bi embedded": {
+  "power-bi-embedded": {
     "name": "Power BI Embedded",
-    "category": "Analytics",
+    "category": [
+      "Analytics"
+    ],
     "description": "Embed fully interactive, stunning data visualizations in your applications",
     "url": "https://azure.microsoft.com/en-us/services/power-bi-embedded/"
   },
   "analysis-services": {
     "name": "Azure Analysis Services",
-    "category": "Analytics",
+    "category": [
+      "Analytics"
+    ],
     "description": "Enterprise-grade analytics engine as a service",
     "url": "https://azure.microsoft.com/en-us/services/analysis-services/"
   },
-  "r-server for hdinsight": {
+  "r-server-for-hdinsight": {
     "name": "R Server for HDInsight",
-    "category": "Analytics",
+    "category": [
+      "Analytics"
+    ],
     "description": "Predictive analytics, machine learning, and statistical modeling for big data",
     "url": "https://azure.microsoft.com/en-us/services/hdinsight/r-server/"
   },
   "data-catalog": {
     "name": "Data Catalog",
-    "category": "Analytics",
+    "category": [
+      "Analytics"
+    ],
     "description": "Get more value from your enterprise data assets",
     "url": "https://azure.microsoft.com/en-us/services/data-catalog/"
   },
-  "data-lake storage": {
+  "data-lake-storage": {
     "name": "Azure Data Lake Storage",
     "category": [
       "Analytics",
@@ -307,23 +379,29 @@
   },
   "data-explorer": {
     "name": "Azure Data Explorer",
-    "category": "Analytics",
+    "category": [
+      "Analytics"
+    ],
     "description": "Fast and highly scalable data exploration service",
     "url": "https://azure.microsoft.com/en-us/services/data-explorer/"
   },
   "virtual-machines": {
     "name": "Virtual Machines",
-    "category": "Compute",
+    "category": [
+      "Compute"
+    ],
     "description": "Provision Windows and Linux virtual machines in seconds",
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/"
   },
-  "virtual-machine scale sets": {
+  "virtual-machine-scale-sets": {
     "name": "Virtual Machine Scale Sets",
-    "category": "Compute",
+    "category": [
+      "Compute"
+    ],
     "description": "Manage and scale up to thousands of Linux and Windows virtual machines",
     "url": "https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/"
   },
-  "kubernetes-service (aks)": {
+  "kubernetes-service-(aks)": {
     "name": "Azure Kubernetes Service (AKS)",
     "category": [
       "Compute",
@@ -373,11 +451,13 @@
   },
   "batch": {
     "name": "Batch",
-    "category": "Compute",
+    "category": [
+      "Compute"
+    ],
     "description": "Cloud-scale job scheduling and compute management",
     "url": "https://azure.microsoft.com/en-us/services/batch/"
   },
-  "sql-server on virtual machines": {
+  "sql-server-on-virtual-machines": {
     "name": "SQL Server on Virtual Machines",
     "category": [
       "Compute",
@@ -388,13 +468,17 @@
   },
   "cloud-services": {
     "name": "Cloud Services",
-    "category": "Compute",
+    "category": [
+      "Compute"
+    ],
     "description": "Create highly-available, infinitely-scalable cloud applications and APIs",
     "url": "https://azure.microsoft.com/en-us/services/cloud-services/"
   },
-  "sap-hana on  large instances": {
+  "sap-hana-on-azure-large-instances": {
     "name": "SAP HANA on Azure Large Instances",
-    "category": "Compute",
+    "category": [
+      "Compute"
+    ],
     "description": "Run the largest SAP HANA workloads of any hyperscale cloud provider",
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/sap-hana/"
   },
@@ -431,25 +515,31 @@
     "description": "Easily build and consume Cloud APIs",
     "url": "https://azure.microsoft.com/en-us/services/app-service/api/"
   },
-  "linux-virtual machines": {
+  "linux-virtual-machines": {
     "name": "Linux Virtual Machines",
-    "category": "Compute",
+    "category": [
+      "Compute"
+    ],
     "description": "Provision virtual machines for Ubuntu, Red Hat, and more",
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/linux-and-open/"
   },
   "cyclecloud": {
     "name": "Azure CycleCloud",
-    "category": "Compute",
+    "category": [
+      "Compute"
+    ],
     "description": "Create, manage, operate, and optimize HPC and big compute clusters of any scale",
     "url": "https://azure.microsoft.com/en-us/features/azure-cyclecloud/"
   },
   "container-registry": {
     "name": "Container Registry",
-    "category": "Containers",
+    "category": [
+      "Containers"
+    ],
     "description": "Store and manage container images across all types of Azure deployments",
     "url": "https://azure.microsoft.com/en-us/services/container-registry/"
   },
-  "web-app for containers": {
+  "web-app-for-containers": {
     "name": "Web App for Containers",
     "category": [
       "Containers",
@@ -461,7 +551,9 @@
   },
   "sql-database": {
     "name": "Azure SQL Database",
-    "category": "Databases",
+    "category": [
+      "Databases"
+    ],
     "description": "Managed relational SQL Database as a service",
     "url": "https://azure.microsoft.com/en-us/services/sql-database/"
   },
@@ -474,43 +566,55 @@
     "description": "Globally distributed, multi-model database for any scale",
     "url": "https://azure.microsoft.com/en-us/services/cosmos-db/"
   },
-  "cache-for redis": {
+  "cache-for-redis": {
     "name": "Azure Cache for Redis",
-    "category": "Databases",
+    "category": [
+      "Databases"
+    ],
     "description": "Power applications with high-throughput, low-latency data access",
     "url": "https://azure.microsoft.com/en-us/services/cache/"
   },
-  "sql-server stretch database": {
+  "sql-server-stretch-database": {
     "name": "SQL Server Stretch Database",
-    "category": "Databases",
+    "category": [
+      "Databases"
+    ],
     "description": "Dynamically stretch on-premises SQL Server databases to Azure",
     "url": "https://azure.microsoft.com/en-us/services/sql-server-stretch-database/"
   },
   "table-storage": {
     "name": "Table Storage",
-    "category": "Databases",
+    "category": [
+      "Databases"
+    ],
     "description": "NoSQL key-value store using semi-structured datasets",
     "url": "https://azure.microsoft.com/en-us/services/storage/tables/"
   },
-  "database-for postgresql": {
+  "database-for-postgresql": {
     "name": "Azure Database for PostgreSQL",
-    "category": "Databases",
+    "category": [
+      "Databases"
+    ],
     "description": "Managed PostgreSQL database service for app developers",
     "url": "https://azure.microsoft.com/en-us/services/postgresql/"
   },
-  "database-for mariadb": {
+  "database-for-mariadb": {
     "name": "Azure Database for MariaDB",
-    "category": "Databases",
+    "category": [
+      "Databases"
+    ],
     "description": "Managed MariaDB database service for app developers",
     "url": "https://azure.microsoft.com/en-us/services/mariadb/"
   },
-  "database-for mysql": {
+  "database-for-mysql": {
     "name": "Azure Database for MySQL",
-    "category": "Databases",
+    "category": [
+      "Databases"
+    ],
     "description": "Managed MySQL database service for app developers",
     "url": "https://azure.microsoft.com/en-us/services/mysql/"
   },
-  "database-migration service": {
+  "database-migration-service": {
     "name": "Azure Database Migration Service",
     "category": [
       "Databases",
@@ -521,19 +625,25 @@
   },
   "visual-studio": {
     "name": "Visual Studio",
-    "category": "Developer Tools",
+    "category": [
+      "Developer Tools"
+    ],
     "description": "The powerful and flexible environment for developing applications in the cloud",
     "url": "https://azure.microsoft.com/en-us/products/visual-studio/"
   },
-  "visual-studio code": {
+  "visual-studio-code": {
     "name": "Visual Studio Code",
-    "category": "Developer Tools",
+    "category": [
+      "Developer Tools"
+    ],
     "description": "A powerful, lightweight code editor for cloud development",
     "url": "https://azure.microsoft.com/en-us/products/visual-studio-code/"
   },
   "sdks": {
     "name": "SDKs",
-    "category": "Developer Tools",
+    "category": [
+      "Developer Tools"
+    ],
     "description": "Get the SDKs and command-line tools you need",
     "url": "https://azure.microsoft.com/en-us/downloads/"
   },
@@ -548,7 +658,9 @@
   },
   "clis": {
     "name": "CLIs",
-    "category": "Developer Tools",
+    "category": [
+      "Developer Tools"
+    ],
     "description": "Build, deploy, diagnose, and manage multi-platform, scalable apps and services",
     "url": "https://azure.microsoft.com/en-us/tools/"
   },
@@ -563,7 +675,9 @@
   },
   "lab-services": {
     "name": "Azure Lab Services",
-    "category": "Developer Tools",
+    "category": [
+      "Developer Tools"
+    ],
     "description": "Set up labs for classrooms, trials, development and testing, and other scenarios",
     "url": "https://azure.microsoft.com/en-us/services/lab-services/"
   },
@@ -576,39 +690,51 @@
     "description": "Quickly create environments using reusable templates and artifacts",
     "url": "https://azure.microsoft.com/en-us/services/devtest-lab/"
   },
-  "developer-tool integrations": {
+  "developer-tool-integrations": {
     "name": "Developer tool integrations",
-    "category": "Developer Tools",
+    "category": [
+      "Developer Tools"
+    ],
     "description": "Use the development tools you know&#x2014;including Eclipse, IntelliJ, and Maven&#x2014;with Azure",
     "url": "https://azure.microsoft.com/en-us/products/developer-tool-integrations/"
   },
   "boards": {
     "name": "Azure Boards",
-    "category": "DevOps",
+    "category": [
+      "DevOps"
+    ],
     "description": "Plan, track, and discuss work across your teams",
     "url": "https://azure.microsoft.com/en-us/services/devops/boards/"
   },
   "repos": {
     "name": "Azure Repos",
-    "category": "DevOps",
+    "category": [
+      "DevOps"
+    ],
     "description": "Get unlimited, cloud-hosted private Git repos for your project",
     "url": "https://azure.microsoft.com/en-us/services/devops/repos/"
   },
   "artifacts": {
     "name": "Azure Artifacts",
-    "category": "DevOps",
+    "category": [
+      "DevOps"
+    ],
     "description": "Create, host, and share packages with your team",
     "url": "https://azure.microsoft.com/en-us/services/devops/artifacts/"
   },
   "test-plans": {
     "name": "Azure Test Plans",
-    "category": "DevOps",
+    "category": [
+      "DevOps"
+    ],
     "description": "Test and ship with confidence with a manual and exploratory testing toolkit",
     "url": "https://azure.microsoft.com/en-us/services/devops/test-plans/"
   },
-  "devops-tool integrations": {
+  "devops-tool-integrations": {
     "name": "DevOps tool integrations",
-    "category": "DevOps",
+    "category": [
+      "DevOps"
+    ],
     "description": "Use your favorite DevOps tools with Azure",
     "url": "https://azure.microsoft.com/en-us/products/devops-tool-integrations/"
   },
@@ -630,7 +756,7 @@
     "description": "Better protect your sensitive information&#x2014;anytime, anywhere",
     "url": "https://azure.microsoft.com/en-us/services/information-protection/"
   },
-  "active-directory domain services": {
+  "active-directory-domain-services": {
     "name": "Azure Active Directory Domain Services",
     "category": [
       "Identity",
@@ -639,9 +765,11 @@
     "description": "Join Azure virtual machines to a domain without domain controllers",
     "url": "https://azure.microsoft.com/en-us/services/active-directory-ds/"
   },
-  "active-directory b2c": {
+  "active-directory-b2c": {
     "name": "Azure Active Directory B2C",
-    "category": "Identity",
+    "category": [
+      "Identity"
+    ],
     "description": "Consumer identity and access management in the cloud",
     "url": "https://azure.microsoft.com/en-us/services/active-directory-b2c/"
   },
@@ -675,43 +803,57 @@
   },
   "service-bus": {
     "name": "Service Bus",
-    "category": "Integration",
+    "category": [
+      "Integration"
+    ],
     "description": "Connect across private and public cloud environments",
     "url": "https://azure.microsoft.com/en-us/services/service-bus/"
   },
   "iot-hub": {
     "name": "Azure IoT Hub",
-    "category": "Internet of Things",
+    "category": [
+      "Internet of Things"
+    ],
     "description": "Connect, monitor and manage billions of IoT assets",
     "url": "https://azure.microsoft.com/en-us/services/iot-hub/"
   },
   "iot-edge": {
     "name": "Azure IoT Edge",
-    "category": "Internet of Things",
+    "category": [
+      "Internet of Things"
+    ],
     "description": "Extend cloud intelligence and analytics to edge devices",
     "url": "https://azure.microsoft.com/en-us/services/iot-edge/"
   },
   "iot-central": {
     "name": "Azure IoT Central",
-    "category": "Internet of Things",
+    "category": [
+      "Internet of Things"
+    ],
     "description": "Experience the simplicity of SaaS for IoT, with no cloud expertise required",
     "url": "https://azure.microsoft.com/en-us/services/iot-central/"
   },
-  "iot-solution accelerators": {
+  "iot-solution-accelerators": {
     "name": "Azure IoT solution accelerators",
-    "category": "Internet of Things",
+    "category": [
+      "Internet of Things"
+    ],
     "description": "Create fully customizable solutions with templates for common IoT scenarios",
     "url": "https://azure.microsoft.com/en-us/features/iot-accelerators/"
   },
   "sphere": {
     "name": "Azure Sphere",
-    "category": "Internet of Things",
+    "category": [
+      "Internet of Things"
+    ],
     "description": "Securely connect MCU-powered devices from the silicon to the cloud",
     "url": "https://azure.microsoft.com/en-us/services/azure-sphere/"
   },
-  "time-series insights": {
+  "time-series-insights": {
     "name": "Azure Time Series Insights",
-    "category": "Internet of Things",
+    "category": [
+      "Internet of Things"
+    ],
     "description": "Explore and analyze time-series data from IoT devices",
     "url": "https://azure.microsoft.com/en-us/services/time-series-insights/"
   },
@@ -724,9 +866,11 @@
     "description": "Simple and secure location APIs provide geospatial context to data",
     "url": "https://azure.microsoft.com/en-us/services/azure-maps/"
   },
-  "windows-10 iot core services": {
+  "windows-10-iot-core-services": {
     "name": "Windows 10 IoT Core Services",
-    "category": "Internet of Things",
+    "category": [
+      "Internet of Things"
+    ],
     "description": "Long-term OS support and services to manage device updates and assess device health",
     "url": "https://azure.microsoft.com/en-us/services/windows-10-iot-core/"
   },
@@ -742,7 +886,9 @@
   },
   "digital-twins": {
     "name": "Azure Digital Twins",
-    "category": "Internet of Things",
+    "category": [
+      "Internet of Things"
+    ],
     "description": "Build next-generation IoT spatial intelligence solutions",
     "url": "https://azure.microsoft.com/en-us/services/digital-twins/"
   },
@@ -766,19 +912,25 @@
   },
   "advisor": {
     "name": "Azure Advisor",
-    "category": "Management and Governance",
+    "category": [
+      "Management and Governance"
+    ],
     "description": "Your personalized Azure best practices recommendation engine",
     "url": "https://azure.microsoft.com/en-us/services/advisor/"
   },
   "scheduler": {
     "name": "Scheduler",
-    "category": "Management and Governance",
+    "category": [
+      "Management and Governance"
+    ],
     "description": "Run your jobs on simple or complex recurring schedules",
     "url": "https://azure.microsoft.com/en-us/services/scheduler/"
   },
   "automation": {
     "name": "Automation",
-    "category": "Management and Governance",
+    "category": [
+      "Management and Governance"
+    ],
     "description": "Simplify cloud management with process automation",
     "url": "https://azure.microsoft.com/en-us/services/automation/"
   },
@@ -793,7 +945,9 @@
   },
   "monitor": {
     "name": "Azure Monitor",
-    "category": "Management and Governance",
+    "category": [
+      "Management and Governance"
+    ],
     "description": "Full observability into your applications, infrastructure, and network",
     "url": "https://azure.microsoft.com/en-us/services/monitor/"
   },
@@ -808,25 +962,33 @@
   },
   "service-health": {
     "name": "Azure Service Health",
-    "category": "Management and Governance",
+    "category": [
+      "Management and Governance"
+    ],
     "description": "Personalized guidance and support for when issues in Azure services affect you",
     "url": "https://azure.microsoft.com/en-us/features/service-health/"
   },
-  "microsoft- portal": {
+  "microsoft-azure-portal": {
     "name": "Microsoft Azure portal",
-    "category": "Management and Governance",
+    "category": [
+      "Management and Governance"
+    ],
     "description": "Build, manage, and monitor all Azure products in a single, unified console",
     "url": "https://azure.microsoft.com/en-us/features/azure-portal/"
   },
   "resource-manager": {
     "name": "Azure Resource Manager",
-    "category": "Management and Governance",
+    "category": [
+      "Management and Governance"
+    ],
     "description": "Simplify how you manage your app resources",
     "url": "https://azure.microsoft.com/en-us/features/resource-manager/"
   },
   "cloud-shell": {
     "name": "Cloud Shell",
-    "category": "Management and Governance",
+    "category": [
+      "Management and Governance"
+    ],
     "description": "Streamline Azure administration with a browser-based shell",
     "url": "https://azure.microsoft.com/en-us/features/cloud-shell/"
   },
@@ -841,7 +1003,9 @@
   },
   "policy": {
     "name": "Azure Policy",
-    "category": "Management and Governance",
+    "category": [
+      "Management and Governance"
+    ],
     "description": "Implement corporate governance and standards at scale for Azure resources",
     "url": "https://azure.microsoft.com/en-us/services/azure-policy/"
   },
@@ -856,7 +1020,9 @@
   },
   "managed-applications": {
     "name": "Azure Managed Applications",
-    "category": "Management and Governance",
+    "category": [
+      "Management and Governance"
+    ],
     "description": "Simplify management of cloud offerings",
     "url": "https://azure.microsoft.com/en-us/services/managed-applications/"
   },
@@ -871,11 +1037,13 @@
   },
   "blueprints": {
     "name": "Azure Blueprints",
-    "category": "Management and Governance",
+    "category": [
+      "Management and Governance"
+    ],
     "description": "Enabling quick, repeatable creation of governed environments",
     "url": "https://azure.microsoft.com/en-us/services/blueprints/"
   },
-  "content-delivery network": {
+  "content-delivery-network": {
     "name": "Content Delivery Network",
     "category": [
       "Media",
@@ -887,37 +1055,49 @@
   },
   "media-services": {
     "name": "Media Services",
-    "category": "Media",
+    "category": [
+      "Media"
+    ],
     "description": "Encode, store, and stream video and audio at scale",
     "url": "https://azure.microsoft.com/en-us/services/media-services/"
   },
   "encoding": {
     "name": "Encoding",
-    "category": "Media",
+    "category": [
+      "Media"
+    ],
     "description": "Studio grade encoding at cloud scale",
     "url": "https://azure.microsoft.com/en-us/services/media-services/encoding/"
   },
-  "live-and on-demand streaming": {
+  "live-and-on-demand-streaming": {
     "name": "Live and On-Demand Streaming",
-    "category": "Media",
+    "category": [
+      "Media"
+    ],
     "description": "Deliver content to virtually all devices with scale to meet business needs",
     "url": "https://azure.microsoft.com/en-us/services/media-services/live-on-demand/"
   },
   "media-player": {
     "name": "Azure Media Player",
-    "category": "Media",
+    "category": [
+      "Media"
+    ],
     "description": "A single layer for all your playback needs",
     "url": "https://azure.microsoft.com/en-us/services/media-services/media-player/"
   },
   "content-protection": {
     "name": "Content Protection",
-    "category": "Media",
+    "category": [
+      "Media"
+    ],
     "description": "Securely deliver content using AES, PlayReady, Widevine, and Fairplay",
     "url": "https://azure.microsoft.com/en-us/services/media-services/content-protection/"
   },
   "media-analytics": {
     "name": "Media Analytics",
-    "category": "Media",
+    "category": [
+      "Media"
+    ],
     "description": "Uncover insights from video files with speech and vision services",
     "url": "https://azure.microsoft.com/en-us/services/media-services/media-analytics/"
   },
@@ -930,39 +1110,51 @@
     "description": "Secure, ruggedized appliance for Azure data transfer",
     "url": "https://azure.microsoft.com/en-us/services/storage/databox/"
   },
-  "visual-studio app center": {
+  "visual-studio-app-center": {
     "name": "Visual Studio App Center",
-    "category": "Mobile",
+    "category": [
+      "Mobile"
+    ],
     "description": "Continuously build, test, release, and monitor your apps",
     "url": "https://azure.microsoft.com/en-us/services/app-center/"
   },
   "xamarin": {
     "name": "Xamarin",
-    "category": "Mobile",
+    "category": [
+      "Mobile"
+    ],
     "description": "Create cloud-powered mobile apps faster",
     "url": "https://azure.microsoft.com/en-us/features/xamarin/"
   },
   "expressroute": {
     "name": "ExpressRoute",
-    "category": "Networking",
+    "category": [
+      "Networking"
+    ],
     "description": "Dedicated private network fiber connections to Azure",
     "url": "https://azure.microsoft.com/en-us/services/expressroute/"
   },
   "dns": {
     "name": "Azure DNS",
-    "category": "Networking",
+    "category": [
+      "Networking"
+    ],
     "description": "Host your DNS domain in Azure",
     "url": "https://azure.microsoft.com/en-us/services/dns/"
   },
   "virtual-network": {
     "name": "Virtual Network",
-    "category": "Networking",
+    "category": [
+      "Networking"
+    ],
     "description": "Provision private networks, optionally connect to on-premises datacenters",
     "url": "https://azure.microsoft.com/en-us/services/virtual-network/"
   },
   "load-balancer": {
     "name": "Load Balancer",
-    "category": "Networking",
+    "category": [
+      "Networking"
+    ],
     "description": "Deliver high availability and network performance to your applications",
     "url": "https://azure.microsoft.com/en-us/services/load-balancer/"
   },
@@ -995,103 +1187,137 @@
   },
   "firewall": {
     "name": "Azure Firewall",
-    "category": "Networking",
+    "category": [
+      "Networking"
+    ],
     "description": "Native firewalling capabilities with built-in high availability, unrestricted cloud scalability, and zero maintenance",
     "url": "https://azure.microsoft.com/en-us/services/azure-firewall/"
   },
   "virtual-wan": {
     "name": "Virtual WAN",
-    "category": "Networking",
+    "category": [
+      "Networking"
+    ],
     "description": "Optimize and automate branch to branch connectivity through Azure",
     "url": "https://azure.microsoft.com/en-us/services/virtual-wan/"
   },
-  "front-door service": {
+  "front-door-service": {
     "name": "Azure Front Door Service",
-    "category": "Networking",
+    "category": [
+      "Networking"
+    ],
     "description": "Scalable, security-enhanced delivery point for global, microservice-based web applications",
     "url": "https://azure.microsoft.com/en-us/services/frontdoor/"
   },
   "key-vault": {
     "name": "Key Vault",
-    "category": "Security",
+    "category": [
+      "Security"
+    ],
     "description": "Safeguard and maintain control of keys and other secrets",
     "url": "https://azure.microsoft.com/en-us/services/key-vault/"
   },
   "security-center": {
     "name": "Security Center",
-    "category": "Security",
+    "category": [
+      "Security"
+    ],
     "description": "Unify security management and enable advanced threat protection across hybrid cloud workloads",
     "url": "https://azure.microsoft.com/en-us/services/security-center/"
   },
   "dedicated-hsm": {
     "name": "Azure Dedicated HSM",
-    "category": "Security",
+    "category": [
+      "Security"
+    ],
     "description": "Manage hardware security modules that you use in the cloud",
     "url": "https://azure.microsoft.com/en-us/services/azure-dedicated-hsm/"
   },
   "storsimple": {
     "name": "StorSimple",
-    "category": "Storage",
+    "category": [
+      "Storage"
+    ],
     "description": "Lower costs with an enterprise hybrid cloud storage solution",
     "url": "https://azure.microsoft.com/en-us/services/storsimple/"
   },
   "blob-storage": {
     "name": "Blob Storage",
-    "category": "Storage",
+    "category": [
+      "Storage"
+    ],
     "description": "REST-based object storage for unstructured data",
     "url": "https://azure.microsoft.com/en-us/services/storage/blobs/"
   },
   "disk-storage": {
     "name": "Disk Storage",
-    "category": "Storage",
+    "category": [
+      "Storage"
+    ],
     "description": "Persistent, secured disk options supporting virtual machines",
     "url": "https://azure.microsoft.com/en-us/services/storage/disks/"
   },
   "managed-disks": {
     "name": "Managed Disks",
-    "category": "Storage",
+    "category": [
+      "Storage"
+    ],
     "description": "Persistent, secured disk storage for Azure virtual machines",
     "url": "https://azure.microsoft.com/en-us/services/managed-disks/"
   },
   "queue-storage": {
     "name": "Queue Storage",
-    "category": "Storage",
+    "category": [
+      "Storage"
+    ],
     "description": "Effectively scale apps according to traffic",
     "url": "https://azure.microsoft.com/en-us/services/storage/queues/"
   },
   "file-storage": {
     "name": "File Storage",
-    "category": "Storage",
+    "category": [
+      "Storage"
+    ],
     "description": "File shares that use the standard SMB 3.0 protocol",
     "url": "https://azure.microsoft.com/en-us/services/storage/files/"
   },
-  "avere-vfxt for": {
+  "avere-vfxt-for-azure": {
     "name": "Avere vFXT for Azure",
-    "category": "Storage",
+    "category": [
+      "Storage"
+    ],
     "description": "Run high-performance, file-based workloads in the cloud",
     "url": "https://azure.microsoft.com/en-us/services/storage/avere-vfxt/"
   },
   "storage-explorer": {
     "name": "Storage Explorer",
-    "category": "Storage",
+    "category": [
+      "Storage"
+    ],
     "description": "View and interact with Azure Storage resources",
     "url": "https://azure.microsoft.com/en-us/features/storage-explorer/"
   },
   "archive-storage": {
     "name": "Archive Storage",
-    "category": "Storage",
+    "category": [
+      "Storage"
+    ],
     "description": "Industry leading price point for storing rarely accessed data",
     "url": "https://azure.microsoft.com/en-us/services/storage/archive/"
   },
   "netapp-files": {
     "name": "Azure NetApp Files",
-    "category": "Storage",
+    "category": [
+      "Storage"
+    ],
     "description": "Powerful, hybrid network file system (NFS) file shares",
     "url": "https://azure.microsoft.com/en-us/services/storage/netapp/"
   },
   "signalr-service": {
     "name": "Azure SignalR Service",
-    "category": "Web",
+    "category": [
+      "Web"
+    ],
     "description": "Add real-time web functionalities easily",
     "url": "https://azure.microsoft.com/en-us/services/signalr-service/"
   }

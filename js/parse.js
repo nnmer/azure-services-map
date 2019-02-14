@@ -5,6 +5,7 @@ const cheerio = require('cheerio')
 const htmlDataFile = __dirname+"/data/azure-services.html"
 const serviceDataFile = __dirname+"/data/azure-services.json"
 var htmlData = "";
+var urlPrefix = "https://azure.microsoft.com"
 
 function getHtml() {
     
@@ -40,9 +41,15 @@ getHtml()
                 services = $('a[data-event-property]',val)
                 services.each(function(i,v){
                     let name = $('h2',v).html()
+                    let href = $(v).attr('href')
                     let description =$(v).next().html()
                     if (name != curCategory) {
-                        servicesMap.push({name, category: curCategory, description})
+                        servicesMap.push({
+                          name, 
+                          category: curCategory, 
+                          description,
+                          url: urlPrefix+href
+                        })
                     }
                 })                            
             }            

@@ -232,7 +232,7 @@
   {
     "name": "Azure Data Lake Storage",
     "category": "Analytics",
-    "description": "Massively scalable data lake storage"
+    "description": "Massively scalable, secure data lake functionality built on Azure Blob Storage"
   },
   {
     "name": "Azure Data Explorer",
@@ -328,6 +328,11 @@
     "name": "Azure Kubernetes Service (AKS)",
     "category": "Containers",
     "description": "Simplify the deployment, management, and operations of Kubernetes"
+  },
+  {
+    "name": "Azure Functions",
+    "category": "Containers",
+    "description": "Process events with serverless code"
   },
   {
     "name": "Service Fabric",
@@ -972,7 +977,7 @@
   {
     "name": "Azure Data Lake Storage",
     "category": "Storage",
-    "description": "Massively scalable data lake storage"
+    "description": "Massively scalable, secure data lake functionality built on Azure Blob Storage"
   },
   {
     "name": "Blob Storage",

@@ -107,6 +107,8 @@
 
             function start(error, serviceVsGroup, serviceLinking) {
 
+              serviceVsGroup = services2ServiceCategoryLink(serviceVsGroup)
+
               serviceVsGroup.map(function(item) {
                 if (undefined !== serviceLinking[item.name]) {
                   item = Object.assign(item, {servicesIO: serviceLinking[item.name]});

@@ -1,3 +1,18 @@
+function services2ServiceCategoryLink(data) {
+  let links = []
+
+  for (let i in data) {
+    data[i].category.forEach(function(c) {
+      let x = Object.assign({},data[i])
+      x.category = c;
+
+      links.push(x)
+    })    
+  }
+
+  return links
+}
+
 function servicesVsGroups(data) {
     var width=1000,
         height=850,

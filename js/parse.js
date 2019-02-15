@@ -61,6 +61,7 @@ getHtml()
                           servicesMap[id].category.push(curCategory)
                         } else {
                           servicesMap[id] = {
+                            id,
                             name, 
                             category: [curCategory], 
                             servicesIO: [],

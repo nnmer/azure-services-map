@@ -1,5 +1,6 @@
 {
   "batch-ai": {
+    "id": "batch-ai",
     "name": "Azure Batch AI",
     "category": [
       "AI + Machine Learning",
@@ -10,6 +11,7 @@
     "url": "https://azure.microsoft.com/en-us/services/batch-ai/"
   },
   "bot-service": {
+    "id": "bot-service",
     "name": "Azure Bot Service",
     "category": [
       "AI + Machine Learning"
@@ -19,6 +21,7 @@
     "url": "https://azure.microsoft.com/en-us/services/bot-service/"
   },
   "databricks": {
+    "id": "databricks",
     "name": "Azure Databricks",
     "category": [
       "AI + Machine Learning",
@@ -29,6 +32,7 @@
     "url": "https://azure.microsoft.com/en-us/services/databricks/"
   },
   "search": {
+    "id": "search",
     "name": "Azure Search",
     "category": [
       "AI + Machine Learning",
@@ -39,6 +43,7 @@
     "url": "https://azure.microsoft.com/en-us/services/search/"
   },
   "bing-autosuggest": {
+    "id": "bing-autosuggest",
     "name": "Bing Autosuggest",
     "category": [
       "AI + Machine Learning"
@@ -48,6 +53,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/autosuggest/"
   },
   "bing-custom-search": {
+    "id": "bing-custom-search",
     "name": "Bing Custom Search",
     "category": [
       "AI + Machine Learning"
@@ -57,6 +63,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-custom-search/"
   },
   "bing-entity-search": {
+    "id": "bing-entity-search",
     "name": "Bing Entity Search",
     "category": [
       "AI + Machine Learning"
@@ -66,6 +73,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-entity-search-api/"
   },
   "bing-image-search": {
+    "id": "bing-image-search",
     "name": "Bing Image Search",
     "category": [
       "AI + Machine Learning"
@@ -75,6 +83,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/"
   },
   "bing-news-search": {
+    "id": "bing-news-search",
     "name": "Bing News Search",
     "category": [
       "AI + Machine Learning"
@@ -84,6 +93,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-news-search-api/"
   },
   "bing-spell-check": {
+    "id": "bing-spell-check",
     "name": "Bing Spell Check",
     "category": [
       "AI + Machine Learning"
@@ -93,6 +103,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/spell-check/"
   },
   "bing-video-search": {
+    "id": "bing-video-search",
     "name": "Bing Video Search",
     "category": [
       "AI + Machine Learning"
@@ -102,6 +113,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-video-search-api/"
   },
   "bing-visual-search": {
+    "id": "bing-visual-search",
     "name": "Bing Visual Search",
     "category": [
       "AI + Machine Learning"
@@ -111,6 +123,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-visual-search/"
   },
   "bing-web-search": {
+    "id": "bing-web-search",
     "name": "Bing Web Search",
     "category": [
       "AI + Machine Learning"
@@ -120,6 +133,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/"
   },
   "cognitive-services": {
+    "id": "cognitive-services",
     "name": "Cognitive Services",
     "category": [
       "AI + Machine Learning"
@@ -129,6 +143,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/"
   },
   "computer-vision": {
+    "id": "computer-vision",
     "name": "Computer Vision",
     "category": [
       "AI + Machine Learning"
@@ -138,6 +153,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/"
   },
   "content-moderator": {
+    "id": "content-moderator",
     "name": "Content Moderator",
     "category": [
       "AI + Machine Learning"
@@ -147,6 +163,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/content-moderator/"
   },
   "custom-speech": {
+    "id": "custom-speech",
     "name": "Custom Speech",
     "category": [
       "AI + Machine Learning"
@@ -156,6 +173,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/custom-speech-service/"
   },
   "custom-vision": {
+    "id": "custom-vision",
     "name": "Custom Vision",
     "category": [
       "AI + Machine Learning"
@@ -165,6 +183,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/"
   },
   "data-science-virtual-machines": {
+    "id": "data-science-virtual-machines",
     "name": "Data Science Virtual Machines",
     "category": [
       "AI + Machine Learning"
@@ -174,6 +193,7 @@
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/data-science-virtual-machines/"
   },
   "emotion": {
+    "id": "emotion",
     "name": "Emotion",
     "category": [
       "AI + Machine Learning"
@@ -183,6 +203,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/emotion/"
   },
   "face": {
+    "id": "face",
     "name": "Face",
     "category": [
       "AI + Machine Learning"
@@ -192,6 +213,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/face/"
   },
   "machine-learning-service": {
+    "id": "machine-learning-service",
     "name": "Azure Machine Learning service",
     "category": [
       "AI + Machine Learning",
@@ -202,6 +224,7 @@
     "url": "https://azure.microsoft.com/en-us/services/machine-learning-service/"
   },
   "machine-learning-studio": {
+    "id": "machine-learning-studio",
     "name": "Machine Learning Studio",
     "category": [
       "AI + Machine Learning",
@@ -212,6 +235,7 @@
     "url": "https://azure.microsoft.com/en-us/services/machine-learning-studio/"
   },
   "microsoft-genomics": {
+    "id": "microsoft-genomics",
     "name": "Microsoft Genomics",
     "category": [
       "AI + Machine Learning"
@@ -221,6 +245,7 @@
     "url": "https://azure.microsoft.com/en-us/services/genomics/"
   },
   "translator-speech": {
+    "id": "translator-speech",
     "name": "Translator Speech",
     "category": [
       "AI + Machine Learning"
@@ -230,6 +255,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/translator-speech-api/"
   },
   "language-understanding": {
+    "id": "language-understanding",
     "name": "Language Understanding",
     "category": [
       "AI + Machine Learning"
@@ -239,6 +265,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/"
   },
   "linguistic-analysis": {
+    "id": "linguistic-analysis",
     "name": "Linguistic Analysis",
     "category": [
       "AI + Machine Learning"
@@ -248,6 +275,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/linguistic-analysis-api/"
   },
   "qna-maker": {
+    "id": "qna-maker",
     "name": "QnA Maker",
     "category": [
       "AI + Machine Learning"
@@ -257,6 +285,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/qna-maker/"
   },
   "speaker-recognition": {
+    "id": "speaker-recognition",
     "name": "Speaker Recognition",
     "category": [
       "AI + Machine Learning"
@@ -266,6 +295,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/speaker-recognition/"
   },
   "speech-translation": {
+    "id": "speech-translation",
     "name": "Speech Translation",
     "category": [
       "AI + Machine Learning"
@@ -275,6 +305,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/speech-translation/"
   },
   "speech-to-text": {
+    "id": "speech-to-text",
     "name": "Speech to Text",
     "category": [
       "AI + Machine Learning"
@@ -284,6 +315,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/"
   },
   "text-analytics": {
+    "id": "text-analytics",
     "name": "Text Analytics",
     "category": [
       "AI + Machine Learning"
@@ -293,6 +325,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/"
   },
   "text-to-speech": {
+    "id": "text-to-speech",
     "name": "Text to Speech",
     "category": [
       "AI + Machine Learning"
@@ -302,6 +335,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/"
   },
   "translator-text": {
+    "id": "translator-text",
     "name": "Translator Text",
     "category": [
       "AI + Machine Learning"
@@ -311,6 +345,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/"
   },
   "video-indexer": {
+    "id": "video-indexer",
     "name": "Video Indexer",
     "category": [
       "AI + Machine Learning",
@@ -321,6 +356,7 @@
     "url": "https://azure.microsoft.com/en-us/services/media-services/video-indexer/"
   },
   "stream-analytics": {
+    "id": "stream-analytics",
     "name": "Azure Stream Analytics",
     "category": [
       "Analytics",
@@ -331,6 +367,7 @@
     "url": "https://azure.microsoft.com/en-us/services/stream-analytics/"
   },
   "sql-data-warehouse": {
+    "id": "sql-data-warehouse",
     "name": "SQL Data Warehouse",
     "category": [
       "Analytics",
@@ -341,6 +378,7 @@
     "url": "https://azure.microsoft.com/en-us/services/sql-data-warehouse/"
   },
   "hdinsight": {
+    "id": "hdinsight",
     "name": "HDInsight",
     "category": [
       "Analytics"
@@ -350,6 +388,7 @@
     "url": "https://azure.microsoft.com/en-us/services/hdinsight/"
   },
   "data-factory": {
+    "id": "data-factory",
     "name": "Data Factory",
     "category": [
       "Analytics",
@@ -360,6 +399,7 @@
     "url": "https://azure.microsoft.com/en-us/services/data-factory/"
   },
   "data-lake-analytics": {
+    "id": "data-lake-analytics",
     "name": "Data Lake Analytics",
     "category": [
       "Analytics"
@@ -369,6 +409,7 @@
     "url": "https://azure.microsoft.com/en-us/services/data-lake-analytics/"
   },
   "event-hubs": {
+    "id": "event-hubs",
     "name": "Event Hubs",
     "category": [
       "Analytics"
@@ -378,6 +419,7 @@
     "url": "https://azure.microsoft.com/en-us/services/event-hubs/"
   },
   "power-bi-embedded": {
+    "id": "power-bi-embedded",
     "name": "Power BI Embedded",
     "category": [
       "Analytics"
@@ -387,6 +429,7 @@
     "url": "https://azure.microsoft.com/en-us/services/power-bi-embedded/"
   },
   "analysis-services": {
+    "id": "analysis-services",
     "name": "Azure Analysis Services",
     "category": [
       "Analytics"
@@ -396,6 +439,7 @@
     "url": "https://azure.microsoft.com/en-us/services/analysis-services/"
   },
   "r-server-for-hdinsight": {
+    "id": "r-server-for-hdinsight",
     "name": "R Server for HDInsight",
     "category": [
       "Analytics"
@@ -405,6 +449,7 @@
     "url": "https://azure.microsoft.com/en-us/services/hdinsight/r-server/"
   },
   "data-catalog": {
+    "id": "data-catalog",
     "name": "Data Catalog",
     "category": [
       "Analytics"
@@ -414,6 +459,7 @@
     "url": "https://azure.microsoft.com/en-us/services/data-catalog/"
   },
   "data-lake-storage": {
+    "id": "data-lake-storage",
     "name": "Azure Data Lake Storage",
     "category": [
       "Analytics",
@@ -424,6 +470,7 @@
     "url": "https://azure.microsoft.com/en-us/services/storage/data-lake-storage/"
   },
   "data-explorer": {
+    "id": "data-explorer",
     "name": "Azure Data Explorer",
     "category": [
       "Analytics"
@@ -433,6 +480,7 @@
     "url": "https://azure.microsoft.com/en-us/services/data-explorer/"
   },
   "virtual-machines": {
+    "id": "virtual-machines",
     "name": "Virtual Machines",
     "category": [
       "Compute"
@@ -442,6 +490,7 @@
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/"
   },
   "virtual-machine-scale-sets": {
+    "id": "virtual-machine-scale-sets",
     "name": "Virtual Machine Scale Sets",
     "category": [
       "Compute"
@@ -451,6 +500,7 @@
     "url": "https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/"
   },
   "kubernetes-service-(aks)": {
+    "id": "kubernetes-service-(aks)",
     "name": "Azure Kubernetes Service (AKS)",
     "category": [
       "Compute",
@@ -461,6 +511,7 @@
     "url": "https://azure.microsoft.com/en-us/services/kubernetes-service/"
   },
   "functions": {
+    "id": "functions",
     "name": "Azure Functions",
     "category": [
       "Compute",
@@ -472,6 +523,7 @@
     "url": "https://azure.microsoft.com/en-us/services/functions/"
   },
   "service-fabric": {
+    "id": "service-fabric",
     "name": "Service Fabric",
     "category": [
       "Compute",
@@ -482,6 +534,7 @@
     "url": "https://azure.microsoft.com/en-us/services/service-fabric/"
   },
   "app-service": {
+    "id": "app-service",
     "name": "App Service",
     "category": [
       "Compute",
@@ -494,6 +547,7 @@
     "url": "https://azure.microsoft.com/en-us/services/app-service/"
   },
   "container-instances": {
+    "id": "container-instances",
     "name": "Container Instances",
     "category": [
       "Compute",
@@ -504,6 +558,7 @@
     "url": "https://azure.microsoft.com/en-us/services/container-instances/"
   },
   "batch": {
+    "id": "batch",
     "name": "Batch",
     "category": [
       "Compute"
@@ -513,6 +568,7 @@
     "url": "https://azure.microsoft.com/en-us/services/batch/"
   },
   "sql-server-on-virtual-machines": {
+    "id": "sql-server-on-virtual-machines",
     "name": "SQL Server on Virtual Machines",
     "category": [
       "Compute",
@@ -523,6 +579,7 @@
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/"
   },
   "cloud-services": {
+    "id": "cloud-services",
     "name": "Cloud Services",
     "category": [
       "Compute"
@@ -532,6 +589,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cloud-services/"
   },
   "sap-hana-on-azure-large-instances": {
+    "id": "sap-hana-on-azure-large-instances",
     "name": "SAP HANA on Azure Large Instances",
     "category": [
       "Compute"
@@ -541,6 +599,7 @@
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/sap-hana/"
   },
   "web-apps": {
+    "id": "web-apps",
     "name": "Web Apps",
     "category": [
       "Compute",
@@ -553,6 +612,7 @@
     "url": "https://azure.microsoft.com/en-us/services/app-service/web/"
   },
   "mobile-apps": {
+    "id": "mobile-apps",
     "name": "Mobile Apps",
     "category": [
       "Compute",
@@ -565,6 +625,7 @@
     "url": "https://azure.microsoft.com/en-us/services/app-service/mobile/"
   },
   "api-apps": {
+    "id": "api-apps",
     "name": "API Apps",
     "category": [
       "Compute",
@@ -577,6 +638,7 @@
     "url": "https://azure.microsoft.com/en-us/services/app-service/api/"
   },
   "linux-virtual-machines": {
+    "id": "linux-virtual-machines",
     "name": "Linux Virtual Machines",
     "category": [
       "Compute"
@@ -586,6 +648,7 @@
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/linux-and-open/"
   },
   "cyclecloud": {
+    "id": "cyclecloud",
     "name": "Azure CycleCloud",
     "category": [
       "Compute"
@@ -595,6 +658,7 @@
     "url": "https://azure.microsoft.com/en-us/features/azure-cyclecloud/"
   },
   "container-registry": {
+    "id": "container-registry",
     "name": "Container Registry",
     "category": [
       "Containers"
@@ -604,6 +668,7 @@
     "url": "https://azure.microsoft.com/en-us/services/container-registry/"
   },
   "web-app-for-containers": {
+    "id": "web-app-for-containers",
     "name": "Web App for Containers",
     "category": [
       "Containers",
@@ -615,6 +680,7 @@
     "url": "https://azure.microsoft.com/en-us/services/app-service/containers/"
   },
   "sql-database": {
+    "id": "sql-database",
     "name": "Azure SQL Database",
     "category": [
       "Databases"
@@ -624,6 +690,7 @@
     "url": "https://azure.microsoft.com/en-us/services/sql-database/"
   },
   "cosmos-db": {
+    "id": "cosmos-db",
     "name": "Azure Cosmos DB",
     "category": [
       "Databases",
@@ -634,6 +701,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cosmos-db/"
   },
   "cache-for-redis": {
+    "id": "cache-for-redis",
     "name": "Azure Cache for Redis",
     "category": [
       "Databases"
@@ -643,6 +711,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cache/"
   },
   "sql-server-stretch-database": {
+    "id": "sql-server-stretch-database",
     "name": "SQL Server Stretch Database",
     "category": [
       "Databases"
@@ -652,6 +721,7 @@
     "url": "https://azure.microsoft.com/en-us/services/sql-server-stretch-database/"
   },
   "table-storage": {
+    "id": "table-storage",
     "name": "Table Storage",
     "category": [
       "Databases"
@@ -661,6 +731,7 @@
     "url": "https://azure.microsoft.com/en-us/services/storage/tables/"
   },
   "database-for-postgresql": {
+    "id": "database-for-postgresql",
     "name": "Azure Database for PostgreSQL",
     "category": [
       "Databases"
@@ -670,6 +741,7 @@
     "url": "https://azure.microsoft.com/en-us/services/postgresql/"
   },
   "database-for-mariadb": {
+    "id": "database-for-mariadb",
     "name": "Azure Database for MariaDB",
     "category": [
       "Databases"
@@ -679,6 +751,7 @@
     "url": "https://azure.microsoft.com/en-us/services/mariadb/"
   },
   "database-for-mysql": {
+    "id": "database-for-mysql",
     "name": "Azure Database for MySQL",
     "category": [
       "Databases"
@@ -688,6 +761,7 @@
     "url": "https://azure.microsoft.com/en-us/services/mysql/"
   },
   "database-migration-service": {
+    "id": "database-migration-service",
     "name": "Azure Database Migration Service",
     "category": [
       "Databases",
@@ -698,6 +772,7 @@
     "url": "https://azure.microsoft.com/en-us/services/database-migration/"
   },
   "visual-studio": {
+    "id": "visual-studio",
     "name": "Visual Studio",
     "category": [
       "Developer Tools"
@@ -707,6 +782,7 @@
     "url": "https://azure.microsoft.com/en-us/products/visual-studio/"
   },
   "visual-studio-code": {
+    "id": "visual-studio-code",
     "name": "Visual Studio Code",
     "category": [
       "Developer Tools"
@@ -716,6 +792,7 @@
     "url": "https://azure.microsoft.com/en-us/products/visual-studio-code/"
   },
   "sdks": {
+    "id": "sdks",
     "name": "SDKs",
     "category": [
       "Developer Tools"
@@ -725,6 +802,7 @@
     "url": "https://azure.microsoft.com/en-us/downloads/"
   },
   "devops": {
+    "id": "devops",
     "name": "Azure DevOps",
     "category": [
       "Developer Tools",
@@ -735,6 +813,7 @@
     "url": "https://azure.microsoft.com/en-us/services/devops/"
   },
   "clis": {
+    "id": "clis",
     "name": "CLIs",
     "category": [
       "Developer Tools"
@@ -744,6 +823,7 @@
     "url": "https://azure.microsoft.com/en-us/tools/"
   },
   "pipelines": {
+    "id": "pipelines",
     "name": "Azure Pipelines",
     "category": [
       "Developer Tools",
@@ -754,6 +834,7 @@
     "url": "https://azure.microsoft.com/en-us/services/devops/pipelines/"
   },
   "lab-services": {
+    "id": "lab-services",
     "name": "Azure Lab Services",
     "category": [
       "Developer Tools"
@@ -763,6 +844,7 @@
     "url": "https://azure.microsoft.com/en-us/services/lab-services/"
   },
   "devtest-labs": {
+    "id": "devtest-labs",
     "name": "Azure DevTest Labs",
     "category": [
       "Developer Tools",
@@ -773,6 +855,7 @@
     "url": "https://azure.microsoft.com/en-us/services/devtest-lab/"
   },
   "developer-tool-integrations": {
+    "id": "developer-tool-integrations",
     "name": "Developer tool integrations",
     "category": [
       "Developer Tools"
@@ -782,6 +865,7 @@
     "url": "https://azure.microsoft.com/en-us/products/developer-tool-integrations/"
   },
   "boards": {
+    "id": "boards",
     "name": "Azure Boards",
     "category": [
       "DevOps"
@@ -791,6 +875,7 @@
     "url": "https://azure.microsoft.com/en-us/services/devops/boards/"
   },
   "repos": {
+    "id": "repos",
     "name": "Azure Repos",
     "category": [
       "DevOps"
@@ -800,6 +885,7 @@
     "url": "https://azure.microsoft.com/en-us/services/devops/repos/"
   },
   "artifacts": {
+    "id": "artifacts",
     "name": "Azure Artifacts",
     "category": [
       "DevOps"
@@ -809,6 +895,7 @@
     "url": "https://azure.microsoft.com/en-us/services/devops/artifacts/"
   },
   "test-plans": {
+    "id": "test-plans",
     "name": "Azure Test Plans",
     "category": [
       "DevOps"
@@ -818,6 +905,7 @@
     "url": "https://azure.microsoft.com/en-us/services/devops/test-plans/"
   },
   "devops-tool-integrations": {
+    "id": "devops-tool-integrations",
     "name": "DevOps tool integrations",
     "category": [
       "DevOps"
@@ -827,6 +915,7 @@
     "url": "https://azure.microsoft.com/en-us/products/devops-tool-integrations/"
   },
   "active-directory": {
+    "id": "active-directory",
     "name": "Azure Active Directory",
     "category": [
       "Identity",
@@ -837,6 +926,7 @@
     "url": "https://azure.microsoft.com/en-us/services/active-directory/"
   },
   "information-protection": {
+    "id": "information-protection",
     "name": "Azure Information Protection",
     "category": [
       "Identity",
@@ -847,6 +937,7 @@
     "url": "https://azure.microsoft.com/en-us/services/information-protection/"
   },
   "active-directory-domain-services": {
+    "id": "active-directory-domain-services",
     "name": "Azure Active Directory Domain Services",
     "category": [
       "Identity",
@@ -857,6 +948,7 @@
     "url": "https://azure.microsoft.com/en-us/services/active-directory-ds/"
   },
   "active-directory-b2c": {
+    "id": "active-directory-b2c",
     "name": "Azure Active Directory B2C",
     "category": [
       "Identity"
@@ -866,6 +958,7 @@
     "url": "https://azure.microsoft.com/en-us/services/active-directory-b2c/"
   },
   "event-grid": {
+    "id": "event-grid",
     "name": "Event Grid",
     "category": [
       "Integration",
@@ -876,6 +969,7 @@
     "url": "https://azure.microsoft.com/en-us/services/event-grid/"
   },
   "logic-apps": {
+    "id": "logic-apps",
     "name": "Logic Apps",
     "category": [
       "Integration",
@@ -886,6 +980,7 @@
     "url": "https://azure.microsoft.com/en-us/services/logic-apps/"
   },
   "api-management": {
+    "id": "api-management",
     "name": "API Management",
     "category": [
       "Integration",
@@ -897,6 +992,7 @@
     "url": "https://azure.microsoft.com/en-us/services/api-management/"
   },
   "service-bus": {
+    "id": "service-bus",
     "name": "Service Bus",
     "category": [
       "Integration"
@@ -906,6 +1002,7 @@
     "url": "https://azure.microsoft.com/en-us/services/service-bus/"
   },
   "iot-hub": {
+    "id": "iot-hub",
     "name": "Azure IoT Hub",
     "category": [
       "Internet of Things"
@@ -915,6 +1012,7 @@
     "url": "https://azure.microsoft.com/en-us/services/iot-hub/"
   },
   "iot-edge": {
+    "id": "iot-edge",
     "name": "Azure IoT Edge",
     "category": [
       "Internet of Things"
@@ -924,6 +1022,7 @@
     "url": "https://azure.microsoft.com/en-us/services/iot-edge/"
   },
   "iot-central": {
+    "id": "iot-central",
     "name": "Azure IoT Central",
     "category": [
       "Internet of Things"
@@ -933,6 +1032,7 @@
     "url": "https://azure.microsoft.com/en-us/services/iot-central/"
   },
   "iot-solution-accelerators": {
+    "id": "iot-solution-accelerators",
     "name": "Azure IoT solution accelerators",
     "category": [
       "Internet of Things"
@@ -942,6 +1042,7 @@
     "url": "https://azure.microsoft.com/en-us/features/iot-accelerators/"
   },
   "sphere": {
+    "id": "sphere",
     "name": "Azure Sphere",
     "category": [
       "Internet of Things"
@@ -951,6 +1052,7 @@
     "url": "https://azure.microsoft.com/en-us/services/azure-sphere/"
   },
   "time-series-insights": {
+    "id": "time-series-insights",
     "name": "Azure Time Series Insights",
     "category": [
       "Internet of Things"
@@ -960,6 +1062,7 @@
     "url": "https://azure.microsoft.com/en-us/services/time-series-insights/"
   },
   "maps": {
+    "id": "maps",
     "name": "Azure Maps",
     "category": [
       "Internet of Things",
@@ -970,6 +1073,7 @@
     "url": "https://azure.microsoft.com/en-us/services/azure-maps/"
   },
   "windows-10-iot-core-services": {
+    "id": "windows-10-iot-core-services",
     "name": "Windows 10 IoT Core Services",
     "category": [
       "Internet of Things"
@@ -979,6 +1083,7 @@
     "url": "https://azure.microsoft.com/en-us/services/windows-10-iot-core/"
   },
   "notification-hubs": {
+    "id": "notification-hubs",
     "name": "Notification Hubs",
     "category": [
       "Internet of Things",
@@ -990,6 +1095,7 @@
     "url": "https://azure.microsoft.com/en-us/services/notification-hubs/"
   },
   "digital-twins": {
+    "id": "digital-twins",
     "name": "Azure Digital Twins",
     "category": [
       "Internet of Things"
@@ -999,6 +1105,7 @@
     "url": "https://azure.microsoft.com/en-us/services/digital-twins/"
   },
   "backup": {
+    "id": "backup",
     "name": "Azure Backup",
     "category": [
       "Management and Governance",
@@ -1009,6 +1116,7 @@
     "url": "https://azure.microsoft.com/en-us/services/backup/"
   },
   "site-recovery": {
+    "id": "site-recovery",
     "name": "Azure Site Recovery",
     "category": [
       "Management and Governance",
@@ -1019,6 +1127,7 @@
     "url": "https://azure.microsoft.com/en-us/services/site-recovery/"
   },
   "advisor": {
+    "id": "advisor",
     "name": "Azure Advisor",
     "category": [
       "Management and Governance"
@@ -1028,6 +1137,7 @@
     "url": "https://azure.microsoft.com/en-us/services/advisor/"
   },
   "scheduler": {
+    "id": "scheduler",
     "name": "Scheduler",
     "category": [
       "Management and Governance"
@@ -1037,6 +1147,7 @@
     "url": "https://azure.microsoft.com/en-us/services/scheduler/"
   },
   "automation": {
+    "id": "automation",
     "name": "Automation",
     "category": [
       "Management and Governance"
@@ -1046,6 +1157,7 @@
     "url": "https://azure.microsoft.com/en-us/services/automation/"
   },
   "traffic-manager": {
+    "id": "traffic-manager",
     "name": "Traffic Manager",
     "category": [
       "Management and Governance",
@@ -1056,6 +1168,7 @@
     "url": "https://azure.microsoft.com/en-us/services/traffic-manager/"
   },
   "monitor": {
+    "id": "monitor",
     "name": "Azure Monitor",
     "category": [
       "Management and Governance"
@@ -1065,6 +1178,7 @@
     "url": "https://azure.microsoft.com/en-us/services/monitor/"
   },
   "network-watcher": {
+    "id": "network-watcher",
     "name": "Network Watcher",
     "category": [
       "Management and Governance",
@@ -1075,6 +1189,7 @@
     "url": "https://azure.microsoft.com/en-us/services/network-watcher/"
   },
   "service-health": {
+    "id": "service-health",
     "name": "Azure Service Health",
     "category": [
       "Management and Governance"
@@ -1084,6 +1199,7 @@
     "url": "https://azure.microsoft.com/en-us/features/service-health/"
   },
   "microsoft-azure-portal": {
+    "id": "microsoft-azure-portal",
     "name": "Microsoft Azure portal",
     "category": [
       "Management and Governance"
@@ -1093,6 +1209,7 @@
     "url": "https://azure.microsoft.com/en-us/features/azure-portal/"
   },
   "resource-manager": {
+    "id": "resource-manager",
     "name": "Azure Resource Manager",
     "category": [
       "Management and Governance"
@@ -1102,6 +1219,7 @@
     "url": "https://azure.microsoft.com/en-us/features/resource-manager/"
   },
   "cloud-shell": {
+    "id": "cloud-shell",
     "name": "Cloud Shell",
     "category": [
       "Management and Governance"
@@ -1111,6 +1229,7 @@
     "url": "https://azure.microsoft.com/en-us/features/cloud-shell/"
   },
   "mobile-app": {
+    "id": "mobile-app",
     "name": "Azure Mobile App",
     "category": [
       "Management and Governance",
@@ -1121,6 +1240,7 @@
     "url": "https://azure.microsoft.com/en-us/features/azure-portal/mobile-app/"
   },
   "policy": {
+    "id": "policy",
     "name": "Azure Policy",
     "category": [
       "Management and Governance"
@@ -1130,6 +1250,7 @@
     "url": "https://azure.microsoft.com/en-us/services/azure-policy/"
   },
   "cost-management": {
+    "id": "cost-management",
     "name": "Cost Management",
     "category": [
       "Management and Governance",
@@ -1140,6 +1261,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cost-management/"
   },
   "managed-applications": {
+    "id": "managed-applications",
     "name": "Azure Managed Applications",
     "category": [
       "Management and Governance"
@@ -1149,6 +1271,7 @@
     "url": "https://azure.microsoft.com/en-us/services/managed-applications/"
   },
   "migrate": {
+    "id": "migrate",
     "name": "Azure Migrate",
     "category": [
       "Management and Governance",
@@ -1159,6 +1282,7 @@
     "url": "https://azure.microsoft.com/en-us/services/azure-migrate/"
   },
   "blueprints": {
+    "id": "blueprints",
     "name": "Azure Blueprints",
     "category": [
       "Management and Governance"
@@ -1168,6 +1292,7 @@
     "url": "https://azure.microsoft.com/en-us/services/blueprints/"
   },
   "content-delivery-network": {
+    "id": "content-delivery-network",
     "name": "Content Delivery Network",
     "category": [
       "Media",
@@ -1179,6 +1304,7 @@
     "url": "https://azure.microsoft.com/en-us/services/cdn/"
   },
   "media-services": {
+    "id": "media-services",
     "name": "Media Services",
     "category": [
       "Media"
@@ -1188,6 +1314,7 @@
     "url": "https://azure.microsoft.com/en-us/services/media-services/"
   },
   "encoding": {
+    "id": "encoding",
     "name": "Encoding",
     "category": [
       "Media"
@@ -1197,6 +1324,7 @@
     "url": "https://azure.microsoft.com/en-us/services/media-services/encoding/"
   },
   "live-and-on-demand-streaming": {
+    "id": "live-and-on-demand-streaming",
     "name": "Live and On-Demand Streaming",
     "category": [
       "Media"
@@ -1206,6 +1334,7 @@
     "url": "https://azure.microsoft.com/en-us/services/media-services/live-on-demand/"
   },
   "media-player": {
+    "id": "media-player",
     "name": "Azure Media Player",
     "category": [
       "Media"
@@ -1215,6 +1344,7 @@
     "url": "https://azure.microsoft.com/en-us/services/media-services/media-player/"
   },
   "content-protection": {
+    "id": "content-protection",
     "name": "Content Protection",
     "category": [
       "Media"
@@ -1224,6 +1354,7 @@
     "url": "https://azure.microsoft.com/en-us/services/media-services/content-protection/"
   },
   "media-analytics": {
+    "id": "media-analytics",
     "name": "Media Analytics",
     "category": [
       "Media"
@@ -1233,6 +1364,7 @@
     "url": "https://azure.microsoft.com/en-us/services/media-services/media-analytics/"
   },
   "data-box": {
+    "id": "data-box",
     "name": "Data Box",
     "category": [
       "Migration",
@@ -1243,6 +1375,7 @@
     "url": "https://azure.microsoft.com/en-us/services/storage/databox/"
   },
   "visual-studio-app-center": {
+    "id": "visual-studio-app-center",
     "name": "Visual Studio App Center",
     "category": [
       "Mobile"
@@ -1252,6 +1385,7 @@
     "url": "https://azure.microsoft.com/en-us/services/app-center/"
   },
   "xamarin": {
+    "id": "xamarin",
     "name": "Xamarin",
     "category": [
       "Mobile"
@@ -1261,6 +1395,7 @@
     "url": "https://azure.microsoft.com/en-us/features/xamarin/"
   },
   "expressroute": {
+    "id": "expressroute",
     "name": "ExpressRoute",
     "category": [
       "Networking"
@@ -1270,6 +1405,7 @@
     "url": "https://azure.microsoft.com/en-us/services/expressroute/"
   },
   "dns": {
+    "id": "dns",
     "name": "Azure DNS",
     "category": [
       "Networking"
@@ -1279,6 +1415,7 @@
     "url": "https://azure.microsoft.com/en-us/services/dns/"
   },
   "virtual-network": {
+    "id": "virtual-network",
     "name": "Virtual Network",
     "category": [
       "Networking"
@@ -1288,6 +1425,7 @@
     "url": "https://azure.microsoft.com/en-us/services/virtual-network/"
   },
   "load-balancer": {
+    "id": "load-balancer",
     "name": "Load Balancer",
     "category": [
       "Networking"
@@ -1297,6 +1435,7 @@
     "url": "https://azure.microsoft.com/en-us/services/load-balancer/"
   },
   "vpn-gateway": {
+    "id": "vpn-gateway",
     "name": "VPN Gateway",
     "category": [
       "Networking",
@@ -1307,6 +1446,7 @@
     "url": "https://azure.microsoft.com/en-us/services/vpn-gateway/"
   },
   "application-gateway": {
+    "id": "application-gateway",
     "name": "Application Gateway",
     "category": [
       "Networking",
@@ -1317,6 +1457,7 @@
     "url": "https://azure.microsoft.com/en-us/services/application-gateway/"
   },
   "ddos-protection": {
+    "id": "ddos-protection",
     "name": "Azure DDoS Protection",
     "category": [
       "Networking",
@@ -1327,6 +1468,7 @@
     "url": "https://azure.microsoft.com/en-us/services/ddos-protection/"
   },
   "firewall": {
+    "id": "firewall",
     "name": "Azure Firewall",
     "category": [
       "Networking"
@@ -1336,6 +1478,7 @@
     "url": "https://azure.microsoft.com/en-us/services/azure-firewall/"
   },
   "virtual-wan": {
+    "id": "virtual-wan",
     "name": "Virtual WAN",
     "category": [
       "Networking"
@@ -1345,6 +1488,7 @@
     "url": "https://azure.microsoft.com/en-us/services/virtual-wan/"
   },
   "front-door-service": {
+    "id": "front-door-service",
     "name": "Azure Front Door Service",
     "category": [
       "Networking"
@@ -1354,6 +1498,7 @@
     "url": "https://azure.microsoft.com/en-us/services/frontdoor/"
   },
   "key-vault": {
+    "id": "key-vault",
     "name": "Key Vault",
     "category": [
       "Security"
@@ -1363,6 +1508,7 @@
     "url": "https://azure.microsoft.com/en-us/services/key-vault/"
   },
   "security-center": {
+    "id": "security-center",
     "name": "Security Center",
     "category": [
       "Security"
@@ -1372,6 +1518,7 @@
     "url": "https://azure.microsoft.com/en-us/services/security-center/"
   },
   "dedicated-hsm": {
+    "id": "dedicated-hsm",
     "name": "Azure Dedicated HSM",
     "category": [
       "Security"
@@ -1381,6 +1528,7 @@
     "url": "https://azure.microsoft.com/en-us/services/azure-dedicated-hsm/"
   },
   "storsimple": {
+    "id": "storsimple",
     "name": "StorSimple",
     "category": [
       "Storage"
@@ -1390,6 +1538,7 @@
     "url": "https://azure.microsoft.com/en-us/services/storsimple/"
   },
   "blob-storage": {
+    "id": "blob-storage",
     "name": "Blob Storage",
     "category": [
       "Storage"
@@ -1399,6 +1548,7 @@
     "url": "https://azure.microsoft.com/en-us/services/storage/blobs/"
   },
   "disk-storage": {
+    "id": "disk-storage",
     "name": "Disk Storage",
     "category": [
       "Storage"
@@ -1408,6 +1558,7 @@
     "url": "https://azure.microsoft.com/en-us/services/storage/disks/"
   },
   "managed-disks": {
+    "id": "managed-disks",
     "name": "Managed Disks",
     "category": [
       "Storage"
@@ -1417,6 +1568,7 @@
     "url": "https://azure.microsoft.com/en-us/services/managed-disks/"
   },
   "queue-storage": {
+    "id": "queue-storage",
     "name": "Queue Storage",
     "category": [
       "Storage"
@@ -1426,6 +1578,7 @@
     "url": "https://azure.microsoft.com/en-us/services/storage/queues/"
   },
   "file-storage": {
+    "id": "file-storage",
     "name": "File Storage",
     "category": [
       "Storage"
@@ -1435,6 +1588,7 @@
     "url": "https://azure.microsoft.com/en-us/services/storage/files/"
   },
   "avere-vfxt-for-azure": {
+    "id": "avere-vfxt-for-azure",
     "name": "Avere vFXT for Azure",
     "category": [
       "Storage"
@@ -1444,6 +1598,7 @@
     "url": "https://azure.microsoft.com/en-us/services/storage/avere-vfxt/"
   },
   "storage-explorer": {
+    "id": "storage-explorer",
     "name": "Storage Explorer",
     "category": [
       "Storage"
@@ -1453,6 +1608,7 @@
     "url": "https://azure.microsoft.com/en-us/features/storage-explorer/"
   },
   "archive-storage": {
+    "id": "archive-storage",
     "name": "Archive Storage",
     "category": [
       "Storage"
@@ -1462,6 +1618,7 @@
     "url": "https://azure.microsoft.com/en-us/services/storage/archive/"
   },
   "netapp-files": {
+    "id": "netapp-files",
     "name": "Azure NetApp Files",
     "category": [
       "Storage"
@@ -1471,6 +1628,7 @@
     "url": "https://azure.microsoft.com/en-us/services/storage/netapp/"
   },
   "signalr-service": {
+    "id": "signalr-service",
     "name": "Azure SignalR Service",
     "category": [
       "Web"

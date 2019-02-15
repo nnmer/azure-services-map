@@ -105,21 +105,16 @@
               .defer(d3.json, "js/data/azure-services-linking.json")
               .await(start);
 
-            function start(error, serviceVsGroup, serviceLinking) {
-              let SL = new ServiceLinking(serviceVsGroup, serviceLinking)
+            function start(error, services, serviceLinking) {
+              let SL = new ServiceLinking(services, serviceLinking)
 
-              for (let key in SL.flatSourceTargetMap) {
-                if (serviceVsGroup[key]) {
-                  serviceVsGroup[key].servicesIO = SL.flatSourceTargetMap[key]
-                }
-              }
-              serviceVsGroup = services2ServiceCategoryLink(serviceVsGroup)              
-
+              builtLinks = services2ServiceCategoryLink(SL.services)              
+              
               if(error) {
                 alert('Cannot get data')
                 return false 
               }
-              servicesVsGroups(serviceVsGroup)
+              servicesVsGroups(builtLinks)
             }      
             
             function showServiceLinking(selectedService) {

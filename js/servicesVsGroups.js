@@ -1,14 +1,19 @@
 class ServiceLinking {
 
   constructor(services, serviceLinks) {
-    this.services = services;
-    this.sourceData = serviceLinks;
+    this.services = Object.assign({}, services)
+    this.sourceData = Object.assign({}, serviceLinks)
     this.flatServiceIOMap = {};
 
     this.buildFlatSourceTargetMap();
+    this.mergeServicesWithRespectedIOServices()
   }
 
   buildFlatSourceTargetMap() {
+    function onlyUnique(value, index, self) { 
+      return self.indexOf(value) === index;
+    }
+
     for (let key in this.sourceData) {
       let item = this.sourceData[key];
       let that = this
@@ -33,6 +38,17 @@ class ServiceLinking {
           that.flatServiceIOMap[inputElement] = that.flatServiceIOMap[inputElement] || {input:[], output:[]}
           that.flatServiceIOMap[inputElement].output.push(key)
         })        
+      }      
+
+      this.flatServiceIOMap[key].input = (this.flatServiceIOMap[key].input).filter(onlyUnique)
+      this.flatServiceIOMap[key].output = (this.flatServiceIOMap[key].output).filter(onlyUnique)
+    }
+  }
+
+  mergeServicesWithRespectedIOServices() {
+    for (let key in this.flatSourceTargetMap) {
+      if (this.services[key]) {
+        this.services[key].servicesIO = this.flatSourceTargetMap[key]
       }
     }
   }

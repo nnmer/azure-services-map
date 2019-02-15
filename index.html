@@ -106,12 +106,14 @@
               .await(start);
 
             function start(error, serviceVsGroup, serviceLinking) {
-              for (let key in serviceLinking) {
+              let SL = new ServiceLinking(serviceVsGroup, serviceLinking)
+
+              for (let key in SL.flatSourceTargetMap) {
                 if (serviceVsGroup[key]) {
-                  serviceVsGroup[key].servicesIO = serviceLinking[key]
+                  serviceVsGroup[key].servicesIO = SL.flatSourceTargetMap[key]
                 }
               }
-              serviceVsGroup = services2ServiceCategoryLink(serviceVsGroup)
+              serviceVsGroup = services2ServiceCategoryLink(serviceVsGroup)              
 
               if(error) {
                 alert('Cannot get data')

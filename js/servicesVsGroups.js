@@ -1,3 +1,66 @@
+class ServiceLinking {
+
+  constructor(services, serviceLinks) {
+    this.services = services;
+    this.sourceData = serviceLinks;
+    this.flatServiceIOMap = {};
+
+    this.buildFlatSourceTargetMap();
+  }
+
+  buildFlatSourceTargetMap() {
+    for (let key in this.sourceData) {
+      let item = this.sourceData[key];
+      let that = this
+
+      this.flatServiceIOMap[key] = this.flatServiceIOMap[key] || {input:[], output:[]}
+
+      if (undefined !== item.output && typeof item.output === 'object') {
+        let out = item.output.map(function(i){return that.name2Key(i)})
+        Array.prototype.push.apply(this.flatServiceIOMap[key].output, out);
+        
+        out.map(function(outputElement){
+          that.flatServiceIOMap[outputElement] = that.flatServiceIOMap[outputElement] || {input:[], output:[]}
+          that.flatServiceIOMap[outputElement].input.push(key)
+        })        
+
+      }      
+
+      if (undefined !== item.input && typeof item.input === 'object') {
+        let inputs = item.input.map(function(i){return that.name2Key(i)})
+        Array.prototype.push.apply(this.flatServiceIOMap[key].input, inputs);
+        inputs.map(function(inputElement){
+          that.flatServiceIOMap[inputElement] = that.flatServiceIOMap[inputElement] || {input:[], output:[]}
+          that.flatServiceIOMap[inputElement].output.push(key)
+        })        
+      }
+    }
+  }
+
+  name2Key(name) {
+    if (name.search(/^\(external\)/) !== -1) {
+      return name;
+    }
+  
+    let key = String(name)
+      .toLowerCase()
+      .replace(new RegExp('^azure'),'')
+      .trim()
+      .replace(new RegExp(' ', 'g'),'-')
+      ;
+  
+      return key;
+  }
+
+  get service() {
+    return this.services
+  }
+
+  get flatSourceTargetMap() {
+    return this.flatServiceIOMap
+  }
+}
+
 function services2ServiceCategoryLink(data) {
   let links = []
 

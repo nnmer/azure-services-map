@@ -106,15 +106,13 @@
               .await(start);
 
             function start(error, services, serviceLinking) {
-              let SL = new ServiceLinking(services, serviceLinking)
-
-              builtLinks = services2ServiceCategoryLink(SL.services)              
-              
               if(error) {
                 alert('Cannot get data')
                 return false 
               }
-              servicesVsGroups(builtLinks)
+
+              let SL = new ServiceLinking(services, serviceLinking)            
+              servicesVsGroupsForceDirectedTree(SL.services)
             }      
             
             function showServiceLinking(selectedService) {
@@ -124,8 +122,7 @@
                 toggle.removeAttribute('checked')                
                 return;
               }
-              
-              if (selectedService.servicesIO.input || selectedService.servicesIO.output ) {
+              if (selectedService.hasLinkingServices ) {
                 toggle.setAttribute('checked','checked')
                 drawer.innerHTML = tmpl("service_linking_drawer", selectedService);
               }

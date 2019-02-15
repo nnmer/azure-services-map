@@ -49,6 +49,10 @@ class ServiceLinking {
     for (let key in this.flatSourceTargetMap) {
       if (this.services[key]) {
         this.services[key].servicesIO = this.flatSourceTargetMap[key]
+        this.services[key].hasLinkingServices = 
+        ((this.services[key].servicesIO.input || this.services[key].servicesIO.output)) 
+          ? true 
+          : false
       }
     }
   }
@@ -77,41 +81,44 @@ class ServiceLinking {
   }
 }
 
-function services2ServiceCategoryLink(data) {
-  let links = []
 
-  for (let i in data) {
-    data[i].category.forEach(function(c) {
-      let x = Object.assign({},data[i])
-      x.category = c;
 
-      links.push(x)
-    })    
-  }
 
-  return links
-}
 
-function servicesVsGroups(data) {
+function servicesVsGroupsForceDirectedTree(services) {
+    function services2ServiceCategoryLink(data) {
+      let links = []
+    
+      for (let i in data) {
+        data[i].category.forEach(function(c) {          
+          links.push({
+            id: data[i].id,
+            name: data[i].name,
+            category: c,
+            hasLinkingServices: data[i].hasLinkingServices
+          })
+        })    
+      }
+    
+      return links
+    }
+
     var width=1000,
         height=850,
         centerX = width/2,
         centerY = height/2,
-        links = data,
+        links = services2ServiceCategoryLink(services),
         nodes = {},
         categories = {}
     ;
 
     links.forEach(function(item) {            
-      item.source = nodes[item.name] || (nodes[item.name] = {name: item.name,isCategory: (item.category=='Azure'?true:false)});
+      item.source = nodes[item.name] || (nodes[item.name] = {name: item.name, id: item.id, hasLinkingServices: item.hasLinkingServices, isCategory: (item.category=='Azure'?true:false)});
       item.target = nodes[item.category] || (nodes[item.category] = {name: item.category, isCategory: true});
       if (!categories[item.category]){
           categories[item.category] = item.category
       }
-      nodes[item.name]['hasLinkingServices'] = (item.servicesIO && (item.servicesIO.input || item.servicesIO.output)) ? true : false;
     });
-
-
 
 
     nodes = d3.values(nodes);
@@ -239,8 +246,7 @@ function servicesVsGroups(data) {
             toggle = 0;
         }
 
-        let serviceItem = data.find(function(item){return item.name == d.name})
-        showServiceLinking(toggle && false === d.isCategory ? serviceItem :false)
+        showServiceLinking(toggle && false === d.isCategory ? services[d.id] : false)
     }
 
     function forceTick() {

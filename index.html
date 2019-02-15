@@ -4,10 +4,37 @@
 <base href="">
  <link rel="stylesheet" href="css/style.css"/>
  <link rel="stylesheet" href="css/drawer.css"/>
+ <link type="text/css" rel="stylesheet" href="http://mbostock.github.io/d3/talk/20111018/style.css"/>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+<script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
 <script src="js/micro-templating.js"></script>
 <script src="js/servicesVsGroups.js"></script>
+
+<style>
+  
+.node {
+  stroke: initial
+}
+.node circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size: 11px;
+}
+
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+    </style>
+</style>
 
 <body>
     <script type="text/html" id="service_linking_drawer">
@@ -97,9 +124,9 @@
 
         <nav id="drawer"></nav>
 
-        <div id="service-vs-group-map">
+        <div id="service-flow"></div>
+        <div id="service-vs-group-map" ></div>
         <script>
-
             d3.queue()
               .defer(d3.json, "js/data/azure-services.json")
               .defer(d3.json, "js/data/azure-services-linking.json")
@@ -115,21 +142,63 @@
               servicesVsGroupsForceDirectedTree(SL.services)
             }      
             
-            function showServiceLinking(selectedService) {
+            function showServiceLinkingDrawer(serviceId, services) {
               let drawer = document.getElementById("drawer");
               let toggle = document.getElementById("drawer-toggle")
-              if (false === selectedService) { 
+              if (false === serviceId) { 
                 toggle.removeAttribute('checked')                
+                document.getElementById("service-flow").innerHTML = '';
                 return;
               }
-              if (selectedService.hasLinkingServices ) {
+              if (services[serviceId].hasLinkingServices ) {
                 toggle.setAttribute('checked','checked')
-                drawer.innerHTML = tmpl("service_linking_drawer", selectedService);
+                drawer.innerHTML = tmpl("service_linking_drawer", services[serviceId]);
+                showServiceIntegrationTree(serviceId, services)
               }
+            }
+
+            function showServiceIntegrationTree(serviceId, services) {
+              function buildChildren(id) {
+                // console.warn('Called buildChildren',id)
+                let service = services[id];
+                let obj = {
+                  name: service ? service.name : id
+                }
+                circularRefTrack.push(id)
+
+                if (service && service.servicesIO.output.length > 0){
+                  for (let i=0;i<service.servicesIO.output.length;i++){
+                    let servId = service.servicesIO.output[i];
+                      // console.warn(i)
+                      // console.warn(servId)
+                      // console.warn(services[servId])
+                      // console.warn(circularRefTrack)
+                      let depService = services[servId]
+                    let toInject = null;
+                    if (circularRefTrack.indexOf(servId) === -1 && depService) {
+                      toInject = buildChildren(servId)
+                    } else {
+                      toInject = {
+                        name: depService ? depService.name : servId
+                      }
+                      circularRefTrack.push(servId)
+                    }
+                    if (!obj.children){
+                      obj.children = []
+                    }
+                    obj.children.push(toInject)                    
+                  }
+                }
+
+                return obj;
+              }
+
+              var circularRefTrack = [];
+              let tree = buildChildren(serviceId)              
+              serviceFlowTree(tree)                            
             }
             
         </script>
-        </div>
     </div>
 </body>
 </html>

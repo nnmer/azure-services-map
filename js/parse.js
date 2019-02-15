@@ -63,6 +63,7 @@ getHtml()
                           servicesMap[id] = {
                             name, 
                             category: [curCategory], 
+                            servicesIO: [],
                             description,
                             url: urlPrefix+href
                           }

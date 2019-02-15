@@ -5,6 +5,7 @@
       "AI + Machine Learning",
       "Compute"
     ],
+    "servicesIO": [],
     "description": "Easily experiment and train your deep learning and AI models in parallel at scale",
     "url": "https://azure.microsoft.com/en-us/services/batch-ai/"
   },
@@ -13,6 +14,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Intelligent, serverless bot service that scales on demand",
     "url": "https://azure.microsoft.com/en-us/services/bot-service/"
   },
@@ -22,6 +24,7 @@
       "AI + Machine Learning",
       "Analytics"
     ],
+    "servicesIO": [],
     "description": "Fast, easy, and collaborative Apache Spark-based analytics platform",
     "url": "https://azure.microsoft.com/en-us/services/databricks/"
   },
@@ -31,6 +34,7 @@
       "AI + Machine Learning",
       "Web"
     ],
+    "servicesIO": [],
     "description": "Fully-managed search-as-a-service",
     "url": "https://azure.microsoft.com/en-us/services/search/"
   },
@@ -39,6 +43,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Give your app intelligent autosuggest options for searches",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/autosuggest/"
   },
@@ -47,6 +52,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "An easy-to-use, ad-free, commercial-grade search tool that lets you deliver the results you want",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-custom-search/"
   },
@@ -55,6 +61,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Enrich your experiences by identifying and augmenting entity information from the web",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-entity-search-api/"
   },
@@ -63,6 +70,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Search for images and get comprehensive results",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/"
   },
@@ -71,6 +79,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Search for news and get comprehensive results",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-news-search-api/"
   },
@@ -79,6 +88,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Detect and correct spelling mistakes in your app",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/spell-check/"
   },
@@ -87,6 +97,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Search for videos and get comprehensive results",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-video-search-api/"
   },
@@ -95,6 +106,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Get rich insights to help build compelling image applications on the device of your choice.",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-visual-search/"
   },
@@ -103,6 +115,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Get enhanced search details from billions of web documents",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/"
   },
@@ -111,6 +124,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Add smart API capabilities to enable contextual interactions",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/"
   },
@@ -119,6 +133,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Distill actionable information from images",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/"
   },
@@ -127,6 +142,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Automated image, text, and video moderation",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/content-moderator/"
   },
@@ -135,6 +151,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Overcome speech recognition barriers like speaking style, background noise, and vocabulary",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/custom-speech-service/"
   },
@@ -143,6 +160,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Easily customize your own state-of-the-art computer vision models for your unique use case",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/"
   },
@@ -151,6 +169,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Rich pre-configured environment for AI development",
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/data-science-virtual-machines/"
   },
@@ -159,6 +178,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Personalize user experiences with emotion recognition",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/emotion/"
   },
@@ -167,6 +187,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Detect, identify, analyze, organize, and tag faces in photos",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/face/"
   },
@@ -176,6 +197,7 @@
       "AI + Machine Learning",
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Bring AI to everyone with an end-to-end, scalable, trusted platform with experimentation and model management",
     "url": "https://azure.microsoft.com/en-us/services/machine-learning-service/"
   },
@@ -185,6 +207,7 @@
       "AI + Machine Learning",
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Easily build, deploy, and manage predictive analytics solutions",
     "url": "https://azure.microsoft.com/en-us/services/machine-learning-studio/"
   },
@@ -193,6 +216,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Power genome sequencing &amp; research insights",
     "url": "https://azure.microsoft.com/en-us/services/genomics/"
   },
@@ -201,6 +225,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Easily conduct real-time speech translation with a simple REST API call",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/translator-speech-api/"
   },
@@ -209,6 +234,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Teach your apps to understand commands from your users",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/"
   },
@@ -217,6 +243,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Simplify complex language concepts and parse text with the Linguistic Analysis API",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/linguistic-analysis-api/"
   },
@@ -225,6 +252,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Distill information into conversational, easy-to-navigate answers",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/qna-maker/"
   },
@@ -233,6 +261,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Use speech to identify and verify individual speakers",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/speaker-recognition/"
   },
@@ -241,6 +270,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Easily integrate real-time speech translation to your app",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/speech-translation/"
   },
@@ -249,6 +279,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "The Speech to Text API is part of Azure Cognitive Services Speech Services",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/"
   },
@@ -257,6 +288,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Easily evaluate sentiment and topics to understand what users want",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/"
   },
@@ -265,6 +297,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Convert text to speech to create more natural, accessible interfaces",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/"
   },
@@ -273,6 +306,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "servicesIO": [],
     "description": "Easily conduct machine translation with a simple REST API call",
     "url": "https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/"
   },
@@ -282,6 +316,7 @@
       "AI + Machine Learning",
       "Media"
     ],
+    "servicesIO": [],
     "description": "Unlock video insights",
     "url": "https://azure.microsoft.com/en-us/services/media-services/video-indexer/"
   },
@@ -291,6 +326,7 @@
       "Analytics",
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Real-time data stream processing from millions of IoT devices",
     "url": "https://azure.microsoft.com/en-us/services/stream-analytics/"
   },
@@ -300,6 +336,7 @@
       "Analytics",
       "Databases"
     ],
+    "servicesIO": [],
     "description": "Elastic data warehouse as a service with enterprise-class features",
     "url": "https://azure.microsoft.com/en-us/services/sql-data-warehouse/"
   },
@@ -308,6 +345,7 @@
     "category": [
       "Analytics"
     ],
+    "servicesIO": [],
     "description": "Provision cloud Hadoop, Spark, R Server, HBase, and Storm clusters",
     "url": "https://azure.microsoft.com/en-us/services/hdinsight/"
   },
@@ -317,6 +355,7 @@
       "Analytics",
       "Databases"
     ],
+    "servicesIO": [],
     "description": "Hybrid data integration at enterprise scale, made easy",
     "url": "https://azure.microsoft.com/en-us/services/data-factory/"
   },
@@ -325,6 +364,7 @@
     "category": [
       "Analytics"
     ],
+    "servicesIO": [],
     "description": "Distributed analytics service that makes big data easy",
     "url": "https://azure.microsoft.com/en-us/services/data-lake-analytics/"
   },
@@ -333,6 +373,7 @@
     "category": [
       "Analytics"
     ],
+    "servicesIO": [],
     "description": "Receive telemetry from millions of devices",
     "url": "https://azure.microsoft.com/en-us/services/event-hubs/"
   },
@@ -341,6 +382,7 @@
     "category": [
       "Analytics"
     ],
+    "servicesIO": [],
     "description": "Embed fully interactive, stunning data visualizations in your applications",
     "url": "https://azure.microsoft.com/en-us/services/power-bi-embedded/"
   },
@@ -349,6 +391,7 @@
     "category": [
       "Analytics"
     ],
+    "servicesIO": [],
     "description": "Enterprise-grade analytics engine as a service",
     "url": "https://azure.microsoft.com/en-us/services/analysis-services/"
   },
@@ -357,6 +400,7 @@
     "category": [
       "Analytics"
     ],
+    "servicesIO": [],
     "description": "Predictive analytics, machine learning, and statistical modeling for big data",
     "url": "https://azure.microsoft.com/en-us/services/hdinsight/r-server/"
   },
@@ -365,6 +409,7 @@
     "category": [
       "Analytics"
     ],
+    "servicesIO": [],
     "description": "Get more value from your enterprise data assets",
     "url": "https://azure.microsoft.com/en-us/services/data-catalog/"
   },
@@ -374,6 +419,7 @@
       "Analytics",
       "Storage"
     ],
+    "servicesIO": [],
     "description": "Massively scalable, secure data lake functionality built on Azure Blob Storage",
     "url": "https://azure.microsoft.com/en-us/services/storage/data-lake-storage/"
   },
@@ -382,6 +428,7 @@
     "category": [
       "Analytics"
     ],
+    "servicesIO": [],
     "description": "Fast and highly scalable data exploration service",
     "url": "https://azure.microsoft.com/en-us/services/data-explorer/"
   },
@@ -390,6 +437,7 @@
     "category": [
       "Compute"
     ],
+    "servicesIO": [],
     "description": "Provision Windows and Linux virtual machines in seconds",
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/"
   },
@@ -398,6 +446,7 @@
     "category": [
       "Compute"
     ],
+    "servicesIO": [],
     "description": "Manage and scale up to thousands of Linux and Windows virtual machines",
     "url": "https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/"
   },
@@ -407,6 +456,7 @@
       "Compute",
       "Containers"
     ],
+    "servicesIO": [],
     "description": "Simplify the deployment, management, and operations of Kubernetes",
     "url": "https://azure.microsoft.com/en-us/services/kubernetes-service/"
   },
@@ -417,6 +467,7 @@
       "Containers",
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Process events with serverless code",
     "url": "https://azure.microsoft.com/en-us/services/functions/"
   },
@@ -426,6 +477,7 @@
       "Compute",
       "Containers"
     ],
+    "servicesIO": [],
     "description": "Develop microservices and orchestrate containers on Windows or Linux",
     "url": "https://azure.microsoft.com/en-us/services/service-fabric/"
   },
@@ -437,6 +489,7 @@
       "Mobile",
       "Web"
     ],
+    "servicesIO": [],
     "description": "Quickly create powerful cloud apps for web and mobile",
     "url": "https://azure.microsoft.com/en-us/services/app-service/"
   },
@@ -446,6 +499,7 @@
       "Compute",
       "Containers"
     ],
+    "servicesIO": [],
     "description": "Easily run containers on Azure without managing servers",
     "url": "https://azure.microsoft.com/en-us/services/container-instances/"
   },
@@ -454,6 +508,7 @@
     "category": [
       "Compute"
     ],
+    "servicesIO": [],
     "description": "Cloud-scale job scheduling and compute management",
     "url": "https://azure.microsoft.com/en-us/services/batch/"
   },
@@ -463,6 +518,7 @@
       "Compute",
       "Databases"
     ],
+    "servicesIO": [],
     "description": "Host enterprise SQL Server apps in the cloud",
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/"
   },
@@ -471,6 +527,7 @@
     "category": [
       "Compute"
     ],
+    "servicesIO": [],
     "description": "Create highly-available, infinitely-scalable cloud applications and APIs",
     "url": "https://azure.microsoft.com/en-us/services/cloud-services/"
   },
@@ -479,6 +536,7 @@
     "category": [
       "Compute"
     ],
+    "servicesIO": [],
     "description": "Run the largest SAP HANA workloads of any hyperscale cloud provider",
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/sap-hana/"
   },
@@ -490,6 +548,7 @@
       "Mobile",
       "Web"
     ],
+    "servicesIO": [],
     "description": "Quickly create and deploy mission critical web apps at scale",
     "url": "https://azure.microsoft.com/en-us/services/app-service/web/"
   },
@@ -501,6 +560,7 @@
       "Mobile",
       "Web"
     ],
+    "servicesIO": [],
     "description": "Build and host the backend for any mobile app",
     "url": "https://azure.microsoft.com/en-us/services/app-service/mobile/"
   },
@@ -512,6 +572,7 @@
       "Mobile",
       "Web"
     ],
+    "servicesIO": [],
     "description": "Easily build and consume Cloud APIs",
     "url": "https://azure.microsoft.com/en-us/services/app-service/api/"
   },
@@ -520,6 +581,7 @@
     "category": [
       "Compute"
     ],
+    "servicesIO": [],
     "description": "Provision virtual machines for Ubuntu, Red Hat, and more",
     "url": "https://azure.microsoft.com/en-us/services/virtual-machines/linux-and-open/"
   },
@@ -528,6 +590,7 @@
     "category": [
       "Compute"
     ],
+    "servicesIO": [],
     "description": "Create, manage, operate, and optimize HPC and big compute clusters of any scale",
     "url": "https://azure.microsoft.com/en-us/features/azure-cyclecloud/"
   },
@@ -536,6 +599,7 @@
     "category": [
       "Containers"
     ],
+    "servicesIO": [],
     "description": "Store and manage container images across all types of Azure deployments",
     "url": "https://azure.microsoft.com/en-us/services/container-registry/"
   },
@@ -546,6 +610,7 @@
       "Mobile",
       "Web"
     ],
+    "servicesIO": [],
     "description": "Easily deploy and run containerized web apps that scale with your business",
     "url": "https://azure.microsoft.com/en-us/services/app-service/containers/"
   },
@@ -554,6 +619,7 @@
     "category": [
       "Databases"
     ],
+    "servicesIO": [],
     "description": "Managed relational SQL Database as a service",
     "url": "https://azure.microsoft.com/en-us/services/sql-database/"
   },
@@ -563,6 +629,7 @@
       "Databases",
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Globally distributed, multi-model database for any scale",
     "url": "https://azure.microsoft.com/en-us/services/cosmos-db/"
   },
@@ -571,6 +638,7 @@
     "category": [
       "Databases"
     ],
+    "servicesIO": [],
     "description": "Power applications with high-throughput, low-latency data access",
     "url": "https://azure.microsoft.com/en-us/services/cache/"
   },
@@ -579,6 +647,7 @@
     "category": [
       "Databases"
     ],
+    "servicesIO": [],
     "description": "Dynamically stretch on-premises SQL Server databases to Azure",
     "url": "https://azure.microsoft.com/en-us/services/sql-server-stretch-database/"
   },
@@ -587,6 +656,7 @@
     "category": [
       "Databases"
     ],
+    "servicesIO": [],
     "description": "NoSQL key-value store using semi-structured datasets",
     "url": "https://azure.microsoft.com/en-us/services/storage/tables/"
   },
@@ -595,6 +665,7 @@
     "category": [
       "Databases"
     ],
+    "servicesIO": [],
     "description": "Managed PostgreSQL database service for app developers",
     "url": "https://azure.microsoft.com/en-us/services/postgresql/"
   },
@@ -603,6 +674,7 @@
     "category": [
       "Databases"
     ],
+    "servicesIO": [],
     "description": "Managed MariaDB database service for app developers",
     "url": "https://azure.microsoft.com/en-us/services/mariadb/"
   },
@@ -611,6 +683,7 @@
     "category": [
       "Databases"
     ],
+    "servicesIO": [],
     "description": "Managed MySQL database service for app developers",
     "url": "https://azure.microsoft.com/en-us/services/mysql/"
   },
@@ -620,6 +693,7 @@
       "Databases",
       "Migration"
     ],
+    "servicesIO": [],
     "description": "Simplify on-premises database migration to the cloud",
     "url": "https://azure.microsoft.com/en-us/services/database-migration/"
   },
@@ -628,6 +702,7 @@
     "category": [
       "Developer Tools"
     ],
+    "servicesIO": [],
     "description": "The powerful and flexible environment for developing applications in the cloud",
     "url": "https://azure.microsoft.com/en-us/products/visual-studio/"
   },
@@ -636,6 +711,7 @@
     "category": [
       "Developer Tools"
     ],
+    "servicesIO": [],
     "description": "A powerful, lightweight code editor for cloud development",
     "url": "https://azure.microsoft.com/en-us/products/visual-studio-code/"
   },
@@ -644,6 +720,7 @@
     "category": [
       "Developer Tools"
     ],
+    "servicesIO": [],
     "description": "Get the SDKs and command-line tools you need",
     "url": "https://azure.microsoft.com/en-us/downloads/"
   },
@@ -653,6 +730,7 @@
       "Developer Tools",
       "DevOps"
     ],
+    "servicesIO": [],
     "description": "Services for teams to share code, track work, and ship software",
     "url": "https://azure.microsoft.com/en-us/services/devops/"
   },
@@ -661,6 +739,7 @@
     "category": [
       "Developer Tools"
     ],
+    "servicesIO": [],
     "description": "Build, deploy, diagnose, and manage multi-platform, scalable apps and services",
     "url": "https://azure.microsoft.com/en-us/tools/"
   },
@@ -670,6 +749,7 @@
       "Developer Tools",
       "DevOps"
     ],
+    "servicesIO": [],
     "description": "Continuously build, test, and deploy to any platform and cloud",
     "url": "https://azure.microsoft.com/en-us/services/devops/pipelines/"
   },
@@ -678,6 +758,7 @@
     "category": [
       "Developer Tools"
     ],
+    "servicesIO": [],
     "description": "Set up labs for classrooms, trials, development and testing, and other scenarios",
     "url": "https://azure.microsoft.com/en-us/services/lab-services/"
   },
@@ -687,6 +768,7 @@
       "Developer Tools",
       "DevOps"
     ],
+    "servicesIO": [],
     "description": "Quickly create environments using reusable templates and artifacts",
     "url": "https://azure.microsoft.com/en-us/services/devtest-lab/"
   },
@@ -695,6 +777,7 @@
     "category": [
       "Developer Tools"
     ],
+    "servicesIO": [],
     "description": "Use the development tools you know&#x2014;including Eclipse, IntelliJ, and Maven&#x2014;with Azure",
     "url": "https://azure.microsoft.com/en-us/products/developer-tool-integrations/"
   },
@@ -703,6 +786,7 @@
     "category": [
       "DevOps"
     ],
+    "servicesIO": [],
     "description": "Plan, track, and discuss work across your teams",
     "url": "https://azure.microsoft.com/en-us/services/devops/boards/"
   },
@@ -711,6 +795,7 @@
     "category": [
       "DevOps"
     ],
+    "servicesIO": [],
     "description": "Get unlimited, cloud-hosted private Git repos for your project",
     "url": "https://azure.microsoft.com/en-us/services/devops/repos/"
   },
@@ -719,6 +804,7 @@
     "category": [
       "DevOps"
     ],
+    "servicesIO": [],
     "description": "Create, host, and share packages with your team",
     "url": "https://azure.microsoft.com/en-us/services/devops/artifacts/"
   },
@@ -727,6 +813,7 @@
     "category": [
       "DevOps"
     ],
+    "servicesIO": [],
     "description": "Test and ship with confidence with a manual and exploratory testing toolkit",
     "url": "https://azure.microsoft.com/en-us/services/devops/test-plans/"
   },
@@ -735,6 +822,7 @@
     "category": [
       "DevOps"
     ],
+    "servicesIO": [],
     "description": "Use your favorite DevOps tools with Azure",
     "url": "https://azure.microsoft.com/en-us/products/devops-tool-integrations/"
   },
@@ -744,6 +832,7 @@
       "Identity",
       "Security"
     ],
+    "servicesIO": [],
     "description": "Synchronize on-premises directories and enable single sign-on",
     "url": "https://azure.microsoft.com/en-us/services/active-directory/"
   },
@@ -753,6 +842,7 @@
       "Identity",
       "Security"
     ],
+    "servicesIO": [],
     "description": "Better protect your sensitive information&#x2014;anytime, anywhere",
     "url": "https://azure.microsoft.com/en-us/services/information-protection/"
   },
@@ -762,6 +852,7 @@
       "Identity",
       "Security"
     ],
+    "servicesIO": [],
     "description": "Join Azure virtual machines to a domain without domain controllers",
     "url": "https://azure.microsoft.com/en-us/services/active-directory-ds/"
   },
@@ -770,6 +861,7 @@
     "category": [
       "Identity"
     ],
+    "servicesIO": [],
     "description": "Consumer identity and access management in the cloud",
     "url": "https://azure.microsoft.com/en-us/services/active-directory-b2c/"
   },
@@ -779,6 +871,7 @@
       "Integration",
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Get reliable event delivery at massive scale",
     "url": "https://azure.microsoft.com/en-us/services/event-grid/"
   },
@@ -788,6 +881,7 @@
       "Integration",
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Automate the access and use of data across clouds without writing code",
     "url": "https://azure.microsoft.com/en-us/services/logic-apps/"
   },
@@ -798,6 +892,7 @@
       "Internet of Things",
       "Web"
     ],
+    "servicesIO": [],
     "description": "Publish APIs to developers, partners, and employees securely and at scale",
     "url": "https://azure.microsoft.com/en-us/services/api-management/"
   },
@@ -806,6 +901,7 @@
     "category": [
       "Integration"
     ],
+    "servicesIO": [],
     "description": "Connect across private and public cloud environments",
     "url": "https://azure.microsoft.com/en-us/services/service-bus/"
   },
@@ -814,6 +910,7 @@
     "category": [
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Connect, monitor and manage billions of IoT assets",
     "url": "https://azure.microsoft.com/en-us/services/iot-hub/"
   },
@@ -822,6 +919,7 @@
     "category": [
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Extend cloud intelligence and analytics to edge devices",
     "url": "https://azure.microsoft.com/en-us/services/iot-edge/"
   },
@@ -830,6 +928,7 @@
     "category": [
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Experience the simplicity of SaaS for IoT, with no cloud expertise required",
     "url": "https://azure.microsoft.com/en-us/services/iot-central/"
   },
@@ -838,6 +937,7 @@
     "category": [
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Create fully customizable solutions with templates for common IoT scenarios",
     "url": "https://azure.microsoft.com/en-us/features/iot-accelerators/"
   },
@@ -846,6 +946,7 @@
     "category": [
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Securely connect MCU-powered devices from the silicon to the cloud",
     "url": "https://azure.microsoft.com/en-us/services/azure-sphere/"
   },
@@ -854,6 +955,7 @@
     "category": [
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Explore and analyze time-series data from IoT devices",
     "url": "https://azure.microsoft.com/en-us/services/time-series-insights/"
   },
@@ -863,6 +965,7 @@
       "Internet of Things",
       "Mobile"
     ],
+    "servicesIO": [],
     "description": "Simple and secure location APIs provide geospatial context to data",
     "url": "https://azure.microsoft.com/en-us/services/azure-maps/"
   },
@@ -871,6 +974,7 @@
     "category": [
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Long-term OS support and services to manage device updates and assess device health",
     "url": "https://azure.microsoft.com/en-us/services/windows-10-iot-core/"
   },
@@ -881,6 +985,7 @@
       "Mobile",
       "Web"
     ],
+    "servicesIO": [],
     "description": "Send push notifications to any platform from any back end",
     "url": "https://azure.microsoft.com/en-us/services/notification-hubs/"
   },
@@ -889,6 +994,7 @@
     "category": [
       "Internet of Things"
     ],
+    "servicesIO": [],
     "description": "Build next-generation IoT spatial intelligence solutions",
     "url": "https://azure.microsoft.com/en-us/services/digital-twins/"
   },
@@ -898,6 +1004,7 @@
       "Management and Governance",
       "Storage"
     ],
+    "servicesIO": [],
     "description": "Simplify data protection and protect against ransomware",
     "url": "https://azure.microsoft.com/en-us/services/backup/"
   },
@@ -907,6 +1014,7 @@
       "Management and Governance",
       "Migration"
     ],
+    "servicesIO": [],
     "description": "Keep your business running with built-in disaster recovery service",
     "url": "https://azure.microsoft.com/en-us/services/site-recovery/"
   },
@@ -915,6 +1023,7 @@
     "category": [
       "Management and Governance"
     ],
+    "servicesIO": [],
     "description": "Your personalized Azure best practices recommendation engine",
     "url": "https://azure.microsoft.com/en-us/services/advisor/"
   },
@@ -923,6 +1032,7 @@
     "category": [
       "Management and Governance"
     ],
+    "servicesIO": [],
     "description": "Run your jobs on simple or complex recurring schedules",
     "url": "https://azure.microsoft.com/en-us/services/scheduler/"
   },
@@ -931,6 +1041,7 @@
     "category": [
       "Management and Governance"
     ],
+    "servicesIO": [],
     "description": "Simplify cloud management with process automation",
     "url": "https://azure.microsoft.com/en-us/services/automation/"
   },
@@ -940,6 +1051,7 @@
       "Management and Governance",
       "Networking"
     ],
+    "servicesIO": [],
     "description": "Route incoming traffic for high performance and availability",
     "url": "https://azure.microsoft.com/en-us/services/traffic-manager/"
   },
@@ -948,6 +1060,7 @@
     "category": [
       "Management and Governance"
     ],
+    "servicesIO": [],
     "description": "Full observability into your applications, infrastructure, and network",
     "url": "https://azure.microsoft.com/en-us/services/monitor/"
   },
@@ -957,6 +1070,7 @@
       "Management and Governance",
       "Networking"
     ],
+    "servicesIO": [],
     "description": "Network performance monitoring and diagnostics solution",
     "url": "https://azure.microsoft.com/en-us/services/network-watcher/"
   },
@@ -965,6 +1079,7 @@
     "category": [
       "Management and Governance"
     ],
+    "servicesIO": [],
     "description": "Personalized guidance and support for when issues in Azure services affect you",
     "url": "https://azure.microsoft.com/en-us/features/service-health/"
   },
@@ -973,6 +1088,7 @@
     "category": [
       "Management and Governance"
     ],
+    "servicesIO": [],
     "description": "Build, manage, and monitor all Azure products in a single, unified console",
     "url": "https://azure.microsoft.com/en-us/features/azure-portal/"
   },
@@ -981,6 +1097,7 @@
     "category": [
       "Management and Governance"
     ],
+    "servicesIO": [],
     "description": "Simplify how you manage your app resources",
     "url": "https://azure.microsoft.com/en-us/features/resource-manager/"
   },
@@ -989,6 +1106,7 @@
     "category": [
       "Management and Governance"
     ],
+    "servicesIO": [],
     "description": "Streamline Azure administration with a browser-based shell",
     "url": "https://azure.microsoft.com/en-us/features/cloud-shell/"
   },
@@ -998,6 +1116,7 @@
       "Management and Governance",
       "Mobile"
     ],
+    "servicesIO": [],
     "description": "Stay connected to your Azure resources&#x2014;anytime, anywhere",
     "url": "https://azure.microsoft.com/en-us/features/azure-portal/mobile-app/"
   },
@@ -1006,6 +1125,7 @@
     "category": [
       "Management and Governance"
     ],
+    "servicesIO": [],
     "description": "Implement corporate governance and standards at scale for Azure resources",
     "url": "https://azure.microsoft.com/en-us/services/azure-policy/"
   },
@@ -1015,6 +1135,7 @@
       "Management and Governance",
       "Migration"
     ],
+    "servicesIO": [],
     "description": "Optimize what you spend on the cloud, while maximizing cloud potential",
     "url": "https://azure.microsoft.com/en-us/services/cost-management/"
   },
@@ -1023,6 +1144,7 @@
     "category": [
       "Management and Governance"
     ],
+    "servicesIO": [],
     "description": "Simplify management of cloud offerings",
     "url": "https://azure.microsoft.com/en-us/services/managed-applications/"
   },
@@ -1032,6 +1154,7 @@
       "Management and Governance",
       "Migration"
     ],
+    "servicesIO": [],
     "description": "Easily discover, assess, right-size, and migrate your on-premises VMs to Azure",
     "url": "https://azure.microsoft.com/en-us/services/azure-migrate/"
   },
@@ -1040,6 +1163,7 @@
     "category": [
       "Management and Governance"
     ],
+    "servicesIO": [],
     "description": "Enabling quick, repeatable creation of governed environments",
     "url": "https://azure.microsoft.com/en-us/services/blueprints/"
   },
@@ -1050,6 +1174,7 @@
       "Networking",
       "Web"
     ],
+    "servicesIO": [],
     "description": "Ensure secure, reliable content delivery with broad global reach",
     "url": "https://azure.microsoft.com/en-us/services/cdn/"
   },
@@ -1058,6 +1183,7 @@
     "category": [
       "Media"
     ],
+    "servicesIO": [],
     "description": "Encode, store, and stream video and audio at scale",
     "url": "https://azure.microsoft.com/en-us/services/media-services/"
   },
@@ -1066,6 +1192,7 @@
     "category": [
       "Media"
     ],
+    "servicesIO": [],
     "description": "Studio grade encoding at cloud scale",
     "url": "https://azure.microsoft.com/en-us/services/media-services/encoding/"
   },
@@ -1074,6 +1201,7 @@
     "category": [
       "Media"
     ],
+    "servicesIO": [],
     "description": "Deliver content to virtually all devices with scale to meet business needs",
     "url": "https://azure.microsoft.com/en-us/services/media-services/live-on-demand/"
   },
@@ -1082,6 +1210,7 @@
     "category": [
       "Media"
     ],
+    "servicesIO": [],
     "description": "A single layer for all your playback needs",
     "url": "https://azure.microsoft.com/en-us/services/media-services/media-player/"
   },
@@ -1090,6 +1219,7 @@
     "category": [
       "Media"
     ],
+    "servicesIO": [],
     "description": "Securely deliver content using AES, PlayReady, Widevine, and Fairplay",
     "url": "https://azure.microsoft.com/en-us/services/media-services/content-protection/"
   },
@@ -1098,6 +1228,7 @@
     "category": [
       "Media"
     ],
+    "servicesIO": [],
     "description": "Uncover insights from video files with speech and vision services",
     "url": "https://azure.microsoft.com/en-us/services/media-services/media-analytics/"
   },
@@ -1107,6 +1238,7 @@
       "Migration",
       "Storage"
     ],
+    "servicesIO": [],
     "description": "Secure, ruggedized appliance for Azure data transfer",
     "url": "https://azure.microsoft.com/en-us/services/storage/databox/"
   },
@@ -1115,6 +1247,7 @@
     "category": [
       "Mobile"
     ],
+    "servicesIO": [],
     "description": "Continuously build, test, release, and monitor your apps",
     "url": "https://azure.microsoft.com/en-us/services/app-center/"
   },
@@ -1123,6 +1256,7 @@
     "category": [
       "Mobile"
     ],
+    "servicesIO": [],
     "description": "Create cloud-powered mobile apps faster",
     "url": "https://azure.microsoft.com/en-us/features/xamarin/"
   },
@@ -1131,6 +1265,7 @@
     "category": [
       "Networking"
     ],
+    "servicesIO": [],
     "description": "Dedicated private network fiber connections to Azure",
     "url": "https://azure.microsoft.com/en-us/services/expressroute/"
   },
@@ -1139,6 +1274,7 @@
     "category": [
       "Networking"
     ],
+    "servicesIO": [],
     "description": "Host your DNS domain in Azure",
     "url": "https://azure.microsoft.com/en-us/services/dns/"
   },
@@ -1147,6 +1283,7 @@
     "category": [
       "Networking"
     ],
+    "servicesIO": [],
     "description": "Provision private networks, optionally connect to on-premises datacenters",
     "url": "https://azure.microsoft.com/en-us/services/virtual-network/"
   },
@@ -1155,6 +1292,7 @@
     "category": [
       "Networking"
     ],
+    "servicesIO": [],
     "description": "Deliver high availability and network performance to your applications",
     "url": "https://azure.microsoft.com/en-us/services/load-balancer/"
   },
@@ -1164,6 +1302,7 @@
       "Networking",
       "Security"
     ],
+    "servicesIO": [],
     "description": "Establish secure, cross-premises connectivity",
     "url": "https://azure.microsoft.com/en-us/services/vpn-gateway/"
   },
@@ -1173,6 +1312,7 @@
       "Networking",
       "Security"
     ],
+    "servicesIO": [],
     "description": "Build secure, scalable, and highly available web front ends in Azure",
     "url": "https://azure.microsoft.com/en-us/services/application-gateway/"
   },
@@ -1182,6 +1322,7 @@
       "Networking",
       "Security"
     ],
+    "servicesIO": [],
     "description": "Protect your applications from Distributed Denial of Service (DDoS) attacks",
     "url": "https://azure.microsoft.com/en-us/services/ddos-protection/"
   },
@@ -1190,6 +1331,7 @@
     "category": [
       "Networking"
     ],
+    "servicesIO": [],
     "description": "Native firewalling capabilities with built-in high availability, unrestricted cloud scalability, and zero maintenance",
     "url": "https://azure.microsoft.com/en-us/services/azure-firewall/"
   },
@@ -1198,6 +1340,7 @@
     "category": [
       "Networking"
     ],
+    "servicesIO": [],
     "description": "Optimize and automate branch to branch connectivity through Azure",
     "url": "https://azure.microsoft.com/en-us/services/virtual-wan/"
   },
@@ -1206,6 +1349,7 @@
     "category": [
       "Networking"
     ],
+    "servicesIO": [],
     "description": "Scalable, security-enhanced delivery point for global, microservice-based web applications",
     "url": "https://azure.microsoft.com/en-us/services/frontdoor/"
   },
@@ -1214,6 +1358,7 @@
     "category": [
       "Security"
     ],
+    "servicesIO": [],
     "description": "Safeguard and maintain control of keys and other secrets",
     "url": "https://azure.microsoft.com/en-us/services/key-vault/"
   },
@@ -1222,6 +1367,7 @@
     "category": [
       "Security"
     ],
+    "servicesIO": [],
     "description": "Unify security management and enable advanced threat protection across hybrid cloud workloads",
     "url": "https://azure.microsoft.com/en-us/services/security-center/"
   },
@@ -1230,6 +1376,7 @@
     "category": [
       "Security"
     ],
+    "servicesIO": [],
     "description": "Manage hardware security modules that you use in the cloud",
     "url": "https://azure.microsoft.com/en-us/services/azure-dedicated-hsm/"
   },
@@ -1238,6 +1385,7 @@
     "category": [
       "Storage"
     ],
+    "servicesIO": [],
     "description": "Lower costs with an enterprise hybrid cloud storage solution",
     "url": "https://azure.microsoft.com/en-us/services/storsimple/"
   },
@@ -1246,6 +1394,7 @@
     "category": [
       "Storage"
     ],
+    "servicesIO": [],
     "description": "REST-based object storage for unstructured data",
     "url": "https://azure.microsoft.com/en-us/services/storage/blobs/"
   },
@@ -1254,6 +1403,7 @@
     "category": [
       "Storage"
     ],
+    "servicesIO": [],
     "description": "Persistent, secured disk options supporting virtual machines",
     "url": "https://azure.microsoft.com/en-us/services/storage/disks/"
   },
@@ -1262,6 +1412,7 @@
     "category": [
       "Storage"
     ],
+    "servicesIO": [],
     "description": "Persistent, secured disk storage for Azure virtual machines",
     "url": "https://azure.microsoft.com/en-us/services/managed-disks/"
   },
@@ -1270,6 +1421,7 @@
     "category": [
       "Storage"
     ],
+    "servicesIO": [],
     "description": "Effectively scale apps according to traffic",
     "url": "https://azure.microsoft.com/en-us/services/storage/queues/"
   },
@@ -1278,6 +1430,7 @@
     "category": [
       "Storage"
     ],
+    "servicesIO": [],
     "description": "File shares that use the standard SMB 3.0 protocol",
     "url": "https://azure.microsoft.com/en-us/services/storage/files/"
   },
@@ -1286,6 +1439,7 @@
     "category": [
       "Storage"
     ],
+    "servicesIO": [],
     "description": "Run high-performance, file-based workloads in the cloud",
     "url": "https://azure.microsoft.com/en-us/services/storage/avere-vfxt/"
   },
@@ -1294,6 +1448,7 @@
     "category": [
       "Storage"
     ],
+    "servicesIO": [],
     "description": "View and interact with Azure Storage resources",
     "url": "https://azure.microsoft.com/en-us/features/storage-explorer/"
   },
@@ -1302,6 +1457,7 @@
     "category": [
       "Storage"
     ],
+    "servicesIO": [],
     "description": "Industry leading price point for storing rarely accessed data",
     "url": "https://azure.microsoft.com/en-us/services/storage/archive/"
   },
@@ -1310,6 +1466,7 @@
     "category": [
       "Storage"
     ],
+    "servicesIO": [],
     "description": "Powerful, hybrid network file system (NFS) file shares",
     "url": "https://azure.microsoft.com/en-us/services/storage/netapp/"
   },
@@ -1318,6 +1475,7 @@
     "category": [
       "Web"
     ],
+    "servicesIO": [],
     "description": "Add real-time web functionalities easily",
     "url": "https://azure.microsoft.com/en-us/services/signalr-service/"
   }

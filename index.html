@@ -108,7 +108,7 @@
             function start(error, serviceVsGroup, serviceLinking) {
               for (let key in serviceLinking) {
                 if (serviceVsGroup[key]) {
-                  serviceVsGroup[key] = Object.assign(serviceVsGroup[key], {servicesIO: serviceLinking[key]});                             
+                  serviceVsGroup[key].servicesIO = serviceLinking[key]
                 }
               }
               serviceVsGroup = services2ServiceCategoryLink(serviceVsGroup)

@@ -106,14 +106,12 @@
               .await(start);
 
             function start(error, serviceVsGroup, serviceLinking) {
-
-              serviceVsGroup = services2ServiceCategoryLink(serviceVsGroup)
-
-              serviceVsGroup.map(function(item) {
-                if (undefined !== serviceLinking[item.name]) {
-                  item = Object.assign(item, {servicesIO: serviceLinking[item.name]});
+              for (let key in serviceLinking) {
+                if (serviceVsGroup[key]) {
+                  serviceVsGroup[key] = Object.assign(serviceVsGroup[key], {servicesIO: serviceLinking[key]});                             
                 }
-              });
+              }
+              serviceVsGroup = services2ServiceCategoryLink(serviceVsGroup)
 
               if(error) {
                 alert('Cannot get data')

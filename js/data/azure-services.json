@@ -1,526 +1,67 @@
 {
-  "batch-ai": {
-    "id": "batch-ai",
-    "name": "Azure Batch AI",
-    "category": [
-      "AI + Machine Learning",
-      "Compute"
-    ],
-    "servicesIO": [],
-    "description": "Easily experiment and train your deep learning and AI models in parallel at scale",
-    "url": "https://azure.microsoft.com/en-us/services/batch-ai/"
-  },
-  "bot-service": {
-    "id": "bot-service",
-    "name": "Azure Bot Service",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Intelligent, serverless bot service that scales on demand",
-    "url": "https://azure.microsoft.com/en-us/services/bot-service/"
-  },
-  "databricks": {
-    "id": "databricks",
-    "name": "Azure Databricks",
-    "category": [
-      "AI + Machine Learning",
-      "Analytics"
-    ],
-    "servicesIO": [],
-    "description": "Fast, easy, and collaborative Apache Spark-based analytics platform",
-    "url": "https://azure.microsoft.com/en-us/services/databricks/"
-  },
-  "search": {
-    "id": "search",
-    "name": "Azure Search",
-    "category": [
-      "AI + Machine Learning",
-      "Web"
-    ],
-    "servicesIO": [],
-    "description": "Fully-managed search-as-a-service",
-    "url": "https://azure.microsoft.com/en-us/services/search/"
-  },
-  "bing-autosuggest": {
-    "id": "bing-autosuggest",
-    "name": "Bing Autosuggest",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Give your app intelligent autosuggest options for searches",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/autosuggest/"
-  },
-  "bing-custom-search": {
-    "id": "bing-custom-search",
-    "name": "Bing Custom Search",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "An easy-to-use, ad-free, commercial-grade search tool that lets you deliver the results you want",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-custom-search/"
-  },
-  "bing-entity-search": {
-    "id": "bing-entity-search",
-    "name": "Bing Entity Search",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Enrich your experiences by identifying and augmenting entity information from the web",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-entity-search-api/"
-  },
-  "bing-image-search": {
-    "id": "bing-image-search",
-    "name": "Bing Image Search",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Search for images and get comprehensive results",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/"
-  },
-  "bing-news-search": {
-    "id": "bing-news-search",
-    "name": "Bing News Search",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Search for news and get comprehensive results",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-news-search-api/"
-  },
-  "bing-spell-check": {
-    "id": "bing-spell-check",
-    "name": "Bing Spell Check",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Detect and correct spelling mistakes in your app",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/spell-check/"
-  },
-  "bing-video-search": {
-    "id": "bing-video-search",
-    "name": "Bing Video Search",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Search for videos and get comprehensive results",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-video-search-api/"
-  },
-  "bing-visual-search": {
-    "id": "bing-visual-search",
-    "name": "Bing Visual Search",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Get rich insights to help build compelling image applications on the device of your choice.",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-visual-search/"
-  },
-  "bing-web-search": {
-    "id": "bing-web-search",
-    "name": "Bing Web Search",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Get enhanced search details from billions of web documents",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/"
-  },
-  "cognitive-services": {
-    "id": "cognitive-services",
-    "name": "Cognitive Services",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Add smart API capabilities to enable contextual interactions",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/"
-  },
-  "computer-vision": {
-    "id": "computer-vision",
-    "name": "Computer Vision",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Distill actionable information from images",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/"
-  },
-  "content-moderator": {
-    "id": "content-moderator",
-    "name": "Content Moderator",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Automated image, text, and video moderation",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/content-moderator/"
-  },
-  "custom-speech": {
-    "id": "custom-speech",
-    "name": "Custom Speech",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Overcome speech recognition barriers like speaking style, background noise, and vocabulary",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/custom-speech-service/"
-  },
-  "custom-vision": {
-    "id": "custom-vision",
-    "name": "Custom Vision",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Easily customize your own state-of-the-art computer vision models for your unique use case",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/"
-  },
-  "data-science-virtual-machines": {
-    "id": "data-science-virtual-machines",
-    "name": "Data Science Virtual Machines",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Rich pre-configured environment for AI development",
-    "url": "https://azure.microsoft.com/en-us/services/virtual-machines/data-science-virtual-machines/"
-  },
-  "emotion": {
-    "id": "emotion",
-    "name": "Emotion",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Personalize user experiences with emotion recognition",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/emotion/"
-  },
-  "face": {
-    "id": "face",
-    "name": "Face",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Detect, identify, analyze, organize, and tag faces in photos",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/face/"
-  },
-  "machine-learning-service": {
-    "id": "machine-learning-service",
-    "name": "Azure Machine Learning service",
-    "category": [
-      "AI + Machine Learning",
-      "Internet of Things"
-    ],
-    "servicesIO": [],
-    "description": "Bring AI to everyone with an end-to-end, scalable, trusted platform with experimentation and model management",
-    "url": "https://azure.microsoft.com/en-us/services/machine-learning-service/"
-  },
-  "machine-learning-studio": {
-    "id": "machine-learning-studio",
-    "name": "Machine Learning Studio",
-    "category": [
-      "AI + Machine Learning",
-      "Internet of Things"
-    ],
-    "servicesIO": [],
-    "description": "Easily build, deploy, and manage predictive analytics solutions",
-    "url": "https://azure.microsoft.com/en-us/services/machine-learning-studio/"
-  },
-  "microsoft-genomics": {
-    "id": "microsoft-genomics",
-    "name": "Microsoft Genomics",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Power genome sequencing &amp; research insights",
-    "url": "https://azure.microsoft.com/en-us/services/genomics/"
-  },
-  "translator-speech": {
-    "id": "translator-speech",
-    "name": "Translator Speech",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Easily conduct real-time speech translation with a simple REST API call",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/translator-speech-api/"
-  },
-  "language-understanding": {
-    "id": "language-understanding",
-    "name": "Language Understanding",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Teach your apps to understand commands from your users",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/"
-  },
-  "linguistic-analysis": {
-    "id": "linguistic-analysis",
-    "name": "Linguistic Analysis",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Simplify complex language concepts and parse text with the Linguistic Analysis API",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/linguistic-analysis-api/"
-  },
-  "qna-maker": {
-    "id": "qna-maker",
-    "name": "QnA Maker",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Distill information into conversational, easy-to-navigate answers",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/qna-maker/"
-  },
-  "speaker-recognition": {
-    "id": "speaker-recognition",
-    "name": "Speaker Recognition",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Use speech to identify and verify individual speakers",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/speaker-recognition/"
-  },
-  "speech-translation": {
-    "id": "speech-translation",
-    "name": "Speech Translation",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Easily integrate real-time speech translation to your app",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/speech-translation/"
-  },
-  "speech-to-text": {
-    "id": "speech-to-text",
-    "name": "Speech to Text",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "The Speech to Text API is part of Azure Cognitive Services Speech Services",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/"
-  },
-  "text-analytics": {
-    "id": "text-analytics",
-    "name": "Text Analytics",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Easily evaluate sentiment and topics to understand what users want",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/"
-  },
-  "text-to-speech": {
-    "id": "text-to-speech",
-    "name": "Text to Speech",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Convert text to speech to create more natural, accessible interfaces",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/"
-  },
-  "translator-text": {
-    "id": "translator-text",
-    "name": "Translator Text",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "servicesIO": [],
-    "description": "Easily conduct machine translation with a simple REST API call",
-    "url": "https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/"
-  },
-  "video-indexer": {
-    "id": "video-indexer",
-    "name": "Video Indexer",
-    "category": [
-      "AI + Machine Learning",
-      "Media"
-    ],
-    "servicesIO": [],
-    "description": "Unlock video insights",
-    "url": "https://azure.microsoft.com/en-us/services/media-services/video-indexer/"
-  },
-  "stream-analytics": {
-    "id": "stream-analytics",
-    "name": "Azure Stream Analytics",
-    "category": [
-      "Analytics",
-      "Internet of Things"
-    ],
-    "servicesIO": [],
-    "description": "Real-time data stream processing from millions of IoT devices",
-    "url": "https://azure.microsoft.com/en-us/services/stream-analytics/"
-  },
-  "sql-data-warehouse": {
-    "id": "sql-data-warehouse",
-    "name": "SQL Data Warehouse",
-    "category": [
-      "Analytics",
-      "Databases"
-    ],
-    "servicesIO": [],
-    "description": "Elastic data warehouse as a service with enterprise-class features",
-    "url": "https://azure.microsoft.com/en-us/services/sql-data-warehouse/"
-  },
-  "hdinsight": {
-    "id": "hdinsight",
-    "name": "HDInsight",
-    "category": [
-      "Analytics"
-    ],
-    "servicesIO": [],
-    "description": "Provision cloud Hadoop, Spark, R Server, HBase, and Storm clusters",
-    "url": "https://azure.microsoft.com/en-us/services/hdinsight/"
-  },
-  "data-factory": {
-    "id": "data-factory",
-    "name": "Data Factory",
-    "category": [
-      "Analytics",
-      "Databases"
-    ],
-    "servicesIO": [],
-    "description": "Hybrid data integration at enterprise scale, made easy",
-    "url": "https://azure.microsoft.com/en-us/services/data-factory/"
-  },
-  "data-lake-analytics": {
-    "id": "data-lake-analytics",
-    "name": "Data Lake Analytics",
-    "category": [
-      "Analytics"
-    ],
-    "servicesIO": [],
-    "description": "Distributed analytics service that makes big data easy",
-    "url": "https://azure.microsoft.com/en-us/services/data-lake-analytics/"
-  },
-  "event-hubs": {
-    "id": "event-hubs",
-    "name": "Event Hubs",
-    "category": [
-      "Analytics"
-    ],
-    "servicesIO": [],
-    "description": "Receive telemetry from millions of devices",
-    "url": "https://azure.microsoft.com/en-us/services/event-hubs/"
-  },
-  "power-bi-embedded": {
-    "id": "power-bi-embedded",
-    "name": "Power BI Embedded",
-    "category": [
-      "Analytics"
-    ],
-    "servicesIO": [],
-    "description": "Embed fully interactive, stunning data visualizations in your applications",
-    "url": "https://azure.microsoft.com/en-us/services/power-bi-embedded/"
-  },
-  "analysis-services": {
-    "id": "analysis-services",
-    "name": "Azure Analysis Services",
-    "category": [
-      "Analytics"
-    ],
-    "servicesIO": [],
-    "description": "Enterprise-grade analytics engine as a service",
-    "url": "https://azure.microsoft.com/en-us/services/analysis-services/"
-  },
-  "r-server-for-hdinsight": {
-    "id": "r-server-for-hdinsight",
-    "name": "R Server for HDInsight",
-    "category": [
-      "Analytics"
-    ],
-    "servicesIO": [],
-    "description": "Predictive analytics, machine learning, and statistical modeling for big data",
-    "url": "https://azure.microsoft.com/en-us/services/hdinsight/r-server/"
-  },
-  "data-catalog": {
-    "id": "data-catalog",
-    "name": "Data Catalog",
-    "category": [
-      "Analytics"
-    ],
-    "servicesIO": [],
-    "description": "Get more value from your enterprise data assets",
-    "url": "https://azure.microsoft.com/en-us/services/data-catalog/"
-  },
-  "data-lake-storage": {
-    "id": "data-lake-storage",
-    "name": "Azure Data Lake Storage",
-    "category": [
-      "Analytics",
-      "Storage"
-    ],
-    "servicesIO": [],
-    "description": "Massively scalable, secure data lake functionality built on Azure Blob Storage",
-    "url": "https://azure.microsoft.com/en-us/services/storage/data-lake-storage/"
-  },
-  "data-explorer": {
-    "id": "data-explorer",
-    "name": "Azure Data Explorer",
-    "category": [
-      "Analytics"
-    ],
-    "servicesIO": [],
-    "description": "Fast and highly scalable data exploration service",
-    "url": "https://azure.microsoft.com/en-us/services/data-explorer/"
-  },
-  "virtual-machines": {
-    "id": "virtual-machines",
-    "name": "Virtual Machines",
+  "linux-virtual-machines": {
+    "id": "linux-virtual-machines",
+    "name": "Linux Virtual Machines",
     "category": [
       "Compute"
     ],
     "servicesIO": [],
-    "description": "Provision Windows and Linux virtual machines in seconds",
-    "url": "https://azure.microsoft.com/en-us/services/virtual-machines/"
+    "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/virtualmachine.svg"
   },
-  "virtual-machine-scale-sets": {
-    "id": "virtual-machine-scale-sets",
-    "name": "Virtual Machine Scale Sets",
+  "windows-virtual-machines": {
+    "id": "windows-virtual-machines",
+    "name": "Windows Virtual Machines",
     "category": [
       "Compute"
     ],
     "servicesIO": [],
-    "description": "Manage and scale up to thousands of Linux and Windows virtual machines",
-    "url": "https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/"
+    "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/virtualmachine.svg"
   },
-  "kubernetes-service-(aks)": {
-    "id": "kubernetes-service-(aks)",
-    "name": "Azure Kubernetes Service (AKS)",
+  "app-service": {
+    "id": "app-service",
+    "name": "App Service",
     "category": [
       "Compute",
       "Containers"
     ],
     "servicesIO": [],
-    "description": "Simplify the deployment, management, and operations of Kubernetes",
-    "url": "https://azure.microsoft.com/en-us/services/kubernetes-service/"
+    "url": "https://docs.microsoft.com/en-us/azure/app-service/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/appservice.svg"
   },
   "functions": {
     "id": "functions",
-    "name": "Azure Functions",
+    "name": "Functions",
     "category": [
       "Compute",
-      "Containers",
       "Internet of Things"
     ],
     "servicesIO": [],
-    "description": "Process events with serverless code",
-    "url": "https://azure.microsoft.com/en-us/services/functions/"
+    "url": "https://docs.microsoft.com/en-us/azure/azure-functions/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg"
+  },
+  "batch": {
+    "id": "batch",
+    "name": "Batch",
+    "category": [
+      "Compute",
+      "Containers"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/batch/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/batch.svg"
+  },
+  "container-instances": {
+    "id": "container-instances",
+    "name": "Azure Container Instances",
+    "category": [
+      "Compute",
+      "Containers"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/container-instances/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/containerinstances.svg"
   },
   "service-fabric": {
     "id": "service-fabric",
@@ -530,42 +71,39 @@
       "Containers"
     ],
     "servicesIO": [],
-    "description": "Develop microservices and orchestrate containers on Windows or Linux",
-    "url": "https://azure.microsoft.com/en-us/services/service-fabric/"
+    "url": "https://docs.microsoft.com/en-us/azure/service-fabric/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/fabric.svg"
   },
-  "app-service": {
-    "id": "app-service",
-    "name": "App Service",
+  "virtual-machine-scale-sets": {
+    "id": "virtual-machine-scale-sets",
+    "name": "Virtual Machine Scale Sets",
     "category": [
-      "Compute",
-      "Containers",
-      "Mobile",
-      "Web"
+      "Compute"
     ],
     "servicesIO": [],
-    "description": "Quickly create powerful cloud apps for web and mobile",
-    "url": "https://azure.microsoft.com/en-us/services/app-service/"
+    "url": "https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/availabilitysetold.svg"
   },
-  "container-instances": {
-    "id": "container-instances",
-    "name": "Container Instances",
+  "kubernetes-service-(aks)": {
+    "id": "kubernetes-service-(aks)",
+    "name": "Azure Kubernetes Service (AKS)",
     "category": [
       "Compute",
       "Containers"
     ],
     "servicesIO": [],
-    "description": "Easily run containers on Azure without managing servers",
-    "url": "https://azure.microsoft.com/en-us/services/container-instances/"
+    "url": "https://docs.microsoft.com/en-us/azure/aks/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/containerservice.svg"
   },
-  "batch": {
-    "id": "batch",
-    "name": "Batch",
+  "cloud-services": {
+    "id": "cloud-services",
+    "name": "Cloud Services",
     "category": [
       "Compute"
     ],
     "servicesIO": [],
-    "description": "Cloud-scale job scheduling and compute management",
-    "url": "https://azure.microsoft.com/en-us/services/batch/"
+    "url": "https://docs.microsoft.com/en-us/azure/cloud-services/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/cloudservice.svg"
   },
   "sql-server-on-virtual-machines": {
     "id": "sql-server-on-virtual-machines",
@@ -575,18 +113,8 @@
       "Databases"
     ],
     "servicesIO": [],
-    "description": "Host enterprise SQL Server apps in the cloud",
-    "url": "https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/"
-  },
-  "cloud-services": {
-    "id": "cloud-services",
-    "name": "Cloud Services",
-    "category": [
-      "Compute"
-    ],
-    "servicesIO": [],
-    "description": "Create highly-available, infinitely-scalable cloud applications and APIs",
-    "url": "https://azure.microsoft.com/en-us/services/cloud-services/"
+    "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview?toc=%2Fazure%2Fvirtual-machines%2Fwindows%2Ftoc.json",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/virtualmachine.svg"
   },
   "sap-hana-on-azure-large-instances": {
     "id": "sap-hana-on-azure-large-instances",
@@ -595,89 +123,18 @@
       "Compute"
     ],
     "servicesIO": [],
-    "description": "Run the largest SAP HANA workloads of any hyperscale cloud provider",
-    "url": "https://azure.microsoft.com/en-us/services/virtual-machines/sap-hana/"
-  },
-  "web-apps": {
-    "id": "web-apps",
-    "name": "Web Apps",
-    "category": [
-      "Compute",
-      "Containers",
-      "Mobile",
-      "Web"
-    ],
-    "servicesIO": [],
-    "description": "Quickly create and deploy mission critical web apps at scale",
-    "url": "https://azure.microsoft.com/en-us/services/app-service/web/"
-  },
-  "mobile-apps": {
-    "id": "mobile-apps",
-    "name": "Mobile Apps",
-    "category": [
-      "Compute",
-      "Containers",
-      "Mobile",
-      "Web"
-    ],
-    "servicesIO": [],
-    "description": "Build and host the backend for any mobile app",
-    "url": "https://azure.microsoft.com/en-us/services/app-service/mobile/"
-  },
-  "api-apps": {
-    "id": "api-apps",
-    "name": "API Apps",
-    "category": [
-      "Compute",
-      "Containers",
-      "Mobile",
-      "Web"
-    ],
-    "servicesIO": [],
-    "description": "Easily build and consume Cloud APIs",
-    "url": "https://azure.microsoft.com/en-us/services/app-service/api/"
-  },
-  "linux-virtual-machines": {
-    "id": "linux-virtual-machines",
-    "name": "Linux Virtual Machines",
-    "category": [
-      "Compute"
-    ],
-    "servicesIO": [],
-    "description": "Provision virtual machines for Ubuntu, Red Hat, and more",
-    "url": "https://azure.microsoft.com/en-us/services/virtual-machines/linux-and-open/"
+    "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/hana-overview-architecture",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/virtualmachine.svg"
   },
   "cyclecloud": {
     "id": "cyclecloud",
-    "name": "Azure CycleCloud",
+    "name": "CycleCloud",
     "category": [
       "Compute"
     ],
     "servicesIO": [],
-    "description": "Create, manage, operate, and optimize HPC and big compute clusters of any scale",
-    "url": "https://azure.microsoft.com/en-us/features/azure-cyclecloud/"
-  },
-  "container-registry": {
-    "id": "container-registry",
-    "name": "Container Registry",
-    "category": [
-      "Containers"
-    ],
-    "servicesIO": [],
-    "description": "Store and manage container images across all types of Azure deployments",
-    "url": "https://azure.microsoft.com/en-us/services/container-registry/"
-  },
-  "web-app-for-containers": {
-    "id": "web-app-for-containers",
-    "name": "Web App for Containers",
-    "category": [
-      "Containers",
-      "Mobile",
-      "Web"
-    ],
-    "servicesIO": [],
-    "description": "Easily deploy and run containerized web apps that scale with your business",
-    "url": "https://azure.microsoft.com/en-us/services/app-service/containers/"
+    "url": "https://docs.microsoft.com/en-us/azure/cyclecloud/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_cyclecloud.svg"
   },
   "sql-database": {
     "id": "sql-database",
@@ -686,8 +143,8 @@
       "Databases"
     ],
     "servicesIO": [],
-    "description": "Managed relational SQL Database as a service",
-    "url": "https://azure.microsoft.com/en-us/services/sql-database/"
+    "url": "https://docs.microsoft.com/en-us/azure/sql-database/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg"
   },
   "cosmos-db": {
     "id": "cosmos-db",
@@ -697,8 +154,30 @@
       "Internet of Things"
     ],
     "servicesIO": [],
-    "description": "Globally distributed, multi-model database for any scale",
-    "url": "https://azure.microsoft.com/en-us/services/cosmos-db/"
+    "url": "https://docs.microsoft.com/en-us/azure/cosmos-db/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg"
+  },
+  "sql-data-warehouse": {
+    "id": "sql-data-warehouse",
+    "name": "SQL Data Warehouse",
+    "category": [
+      "Databases",
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/sql-data-warehouse/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/sqldatawarehouse.svg"
+  },
+  "data-factory": {
+    "id": "data-factory",
+    "name": "Data Factory",
+    "category": [
+      "Databases",
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/data-factory/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/datafactory.svg"
   },
   "cache-for-redis": {
     "id": "cache-for-redis",
@@ -707,8 +186,8 @@
       "Databases"
     ],
     "servicesIO": [],
-    "description": "Power applications with high-throughput, low-latency data access",
-    "url": "https://azure.microsoft.com/en-us/services/cache/"
+    "url": "https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/rediscache.svg"
   },
   "sql-server-stretch-database": {
     "id": "sql-server-stretch-database",
@@ -717,8 +196,8 @@
       "Databases"
     ],
     "servicesIO": [],
-    "description": "Dynamically stretch on-premises SQL Server databases to Azure",
-    "url": "https://azure.microsoft.com/en-us/services/sql-server-stretch-database/"
+    "url": "https://docs.microsoft.com/en-us/azure/sql-server-stretch-database/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg"
   },
   "table-storage": {
     "id": "table-storage",
@@ -727,8 +206,8 @@
       "Databases"
     ],
     "servicesIO": [],
-    "description": "NoSQL key-value store using semi-structured datasets",
-    "url": "https://azure.microsoft.com/en-us/services/storage/tables/"
+    "url": "https://docs.microsoft.com/en-us/azure/cosmos-db/table-storage-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg"
   },
   "database-for-postgresql": {
     "id": "database-for-postgresql",
@@ -737,18 +216,8 @@
       "Databases"
     ],
     "servicesIO": [],
-    "description": "Managed PostgreSQL database service for app developers",
-    "url": "https://azure.microsoft.com/en-us/services/postgresql/"
-  },
-  "database-for-mariadb": {
-    "id": "database-for-mariadb",
-    "name": "Azure Database for MariaDB",
-    "category": [
-      "Databases"
-    ],
-    "servicesIO": [],
-    "description": "Managed MariaDB database service for app developers",
-    "url": "https://azure.microsoft.com/en-us/services/mariadb/"
+    "url": "https://docs.microsoft.com/en-us/azure/postgresql/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/postgresql.svg"
   },
   "database-for-mysql": {
     "id": "database-for-mysql",
@@ -757,8 +226,18 @@
       "Databases"
     ],
     "servicesIO": [],
-    "description": "Managed MySQL database service for app developers",
-    "url": "https://azure.microsoft.com/en-us/services/mysql/"
+    "url": "https://docs.microsoft.com/en-us/azure/mysql/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/mysql.svg"
+  },
+  "database-for-mariadb": {
+    "id": "database-for-mariadb",
+    "name": "Azure Database for MariaDB",
+    "category": [
+      "Databases"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/mariadb/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/mariadb.svg"
   },
   "database-migration-service": {
     "id": "database-migration-service",
@@ -768,216 +247,38 @@
       "Migration"
     ],
     "servicesIO": [],
-    "description": "Simplify on-premises database migration to the cloud",
-    "url": "https://azure.microsoft.com/en-us/services/database-migration/"
+    "url": "https://docs.microsoft.com/en-us/azure/dms/dms-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/database-migration.svg"
   },
-  "visual-studio": {
-    "id": "visual-studio",
-    "name": "Visual Studio",
+  "container-registry": {
+    "id": "container-registry",
+    "name": "Container Registry",
     "category": [
-      "Developer Tools"
+      "Containers"
     ],
     "servicesIO": [],
-    "description": "The powerful and flexible environment for developing applications in the cloud",
-    "url": "https://azure.microsoft.com/en-us/products/visual-studio/"
+    "url": "https://docs.microsoft.com/en-us/azure/container-registry/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/container-registry.svg"
   },
-  "visual-studio-code": {
-    "id": "visual-studio-code",
-    "name": "Visual Studio Code",
+  "web-app-for-containers": {
+    "id": "web-app-for-containers",
+    "name": "Web App for Containers",
     "category": [
-      "Developer Tools"
+      "Containers"
     ],
     "servicesIO": [],
-    "description": "A powerful, lightweight code editor for cloud development",
-    "url": "https://azure.microsoft.com/en-us/products/visual-studio-code/"
+    "url": "https://docs.microsoft.com/en-us/azure/app-service/containers/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/appservice.svg"
   },
-  "sdks": {
-    "id": "sdks",
-    "name": "SDKs",
+  "dev-spaces": {
+    "id": "dev-spaces",
+    "name": "Azure Dev Spaces",
     "category": [
-      "Developer Tools"
+      "Containers"
     ],
     "servicesIO": [],
-    "description": "Get the SDKs and command-line tools you need",
-    "url": "https://azure.microsoft.com/en-us/downloads/"
-  },
-  "devops": {
-    "id": "devops",
-    "name": "Azure DevOps",
-    "category": [
-      "Developer Tools",
-      "DevOps"
-    ],
-    "servicesIO": [],
-    "description": "Services for teams to share code, track work, and ship software",
-    "url": "https://azure.microsoft.com/en-us/services/devops/"
-  },
-  "clis": {
-    "id": "clis",
-    "name": "CLIs",
-    "category": [
-      "Developer Tools"
-    ],
-    "servicesIO": [],
-    "description": "Build, deploy, diagnose, and manage multi-platform, scalable apps and services",
-    "url": "https://azure.microsoft.com/en-us/tools/"
-  },
-  "pipelines": {
-    "id": "pipelines",
-    "name": "Azure Pipelines",
-    "category": [
-      "Developer Tools",
-      "DevOps"
-    ],
-    "servicesIO": [],
-    "description": "Continuously build, test, and deploy to any platform and cloud",
-    "url": "https://azure.microsoft.com/en-us/services/devops/pipelines/"
-  },
-  "lab-services": {
-    "id": "lab-services",
-    "name": "Azure Lab Services",
-    "category": [
-      "Developer Tools"
-    ],
-    "servicesIO": [],
-    "description": "Set up labs for classrooms, trials, development and testing, and other scenarios",
-    "url": "https://azure.microsoft.com/en-us/services/lab-services/"
-  },
-  "devtest-labs": {
-    "id": "devtest-labs",
-    "name": "Azure DevTest Labs",
-    "category": [
-      "Developer Tools",
-      "DevOps"
-    ],
-    "servicesIO": [],
-    "description": "Quickly create environments using reusable templates and artifacts",
-    "url": "https://azure.microsoft.com/en-us/services/devtest-lab/"
-  },
-  "developer-tool-integrations": {
-    "id": "developer-tool-integrations",
-    "name": "Developer tool integrations",
-    "category": [
-      "Developer Tools"
-    ],
-    "servicesIO": [],
-    "description": "Use the development tools you know&#x2014;including Eclipse, IntelliJ, and Maven&#x2014;with Azure",
-    "url": "https://azure.microsoft.com/en-us/products/developer-tool-integrations/"
-  },
-  "boards": {
-    "id": "boards",
-    "name": "Azure Boards",
-    "category": [
-      "DevOps"
-    ],
-    "servicesIO": [],
-    "description": "Plan, track, and discuss work across your teams",
-    "url": "https://azure.microsoft.com/en-us/services/devops/boards/"
-  },
-  "repos": {
-    "id": "repos",
-    "name": "Azure Repos",
-    "category": [
-      "DevOps"
-    ],
-    "servicesIO": [],
-    "description": "Get unlimited, cloud-hosted private Git repos for your project",
-    "url": "https://azure.microsoft.com/en-us/services/devops/repos/"
-  },
-  "artifacts": {
-    "id": "artifacts",
-    "name": "Azure Artifacts",
-    "category": [
-      "DevOps"
-    ],
-    "servicesIO": [],
-    "description": "Create, host, and share packages with your team",
-    "url": "https://azure.microsoft.com/en-us/services/devops/artifacts/"
-  },
-  "test-plans": {
-    "id": "test-plans",
-    "name": "Azure Test Plans",
-    "category": [
-      "DevOps"
-    ],
-    "servicesIO": [],
-    "description": "Test and ship with confidence with a manual and exploratory testing toolkit",
-    "url": "https://azure.microsoft.com/en-us/services/devops/test-plans/"
-  },
-  "devops-tool-integrations": {
-    "id": "devops-tool-integrations",
-    "name": "DevOps tool integrations",
-    "category": [
-      "DevOps"
-    ],
-    "servicesIO": [],
-    "description": "Use your favorite DevOps tools with Azure",
-    "url": "https://azure.microsoft.com/en-us/products/devops-tool-integrations/"
-  },
-  "active-directory": {
-    "id": "active-directory",
-    "name": "Azure Active Directory",
-    "category": [
-      "Identity",
-      "Security"
-    ],
-    "servicesIO": [],
-    "description": "Synchronize on-premises directories and enable single sign-on",
-    "url": "https://azure.microsoft.com/en-us/services/active-directory/"
-  },
-  "information-protection": {
-    "id": "information-protection",
-    "name": "Azure Information Protection",
-    "category": [
-      "Identity",
-      "Security"
-    ],
-    "servicesIO": [],
-    "description": "Better protect your sensitive information&#x2014;anytime, anywhere",
-    "url": "https://azure.microsoft.com/en-us/services/information-protection/"
-  },
-  "active-directory-domain-services": {
-    "id": "active-directory-domain-services",
-    "name": "Azure Active Directory Domain Services",
-    "category": [
-      "Identity",
-      "Security"
-    ],
-    "servicesIO": [],
-    "description": "Join Azure virtual machines to a domain without domain controllers",
-    "url": "https://azure.microsoft.com/en-us/services/active-directory-ds/"
-  },
-  "active-directory-b2c": {
-    "id": "active-directory-b2c",
-    "name": "Azure Active Directory B2C",
-    "category": [
-      "Identity"
-    ],
-    "servicesIO": [],
-    "description": "Consumer identity and access management in the cloud",
-    "url": "https://azure.microsoft.com/en-us/services/active-directory-b2c/"
-  },
-  "event-grid": {
-    "id": "event-grid",
-    "name": "Event Grid",
-    "category": [
-      "Integration",
-      "Internet of Things"
-    ],
-    "servicesIO": [],
-    "description": "Get reliable event delivery at massive scale",
-    "url": "https://azure.microsoft.com/en-us/services/event-grid/"
-  },
-  "logic-apps": {
-    "id": "logic-apps",
-    "name": "Logic Apps",
-    "category": [
-      "Integration",
-      "Internet of Things"
-    ],
-    "servicesIO": [],
-    "description": "Automate the access and use of data across clouds without writing code",
-    "url": "https://azure.microsoft.com/en-us/services/logic-apps/"
+    "url": "https://docs.microsoft.com/en-us/azure/dev-spaces/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azuredevspacecontroller_50x.svg"
   },
   "api-management": {
     "id": "api-management",
@@ -988,8 +289,8 @@
       "Web"
     ],
     "servicesIO": [],
-    "description": "Publish APIs to developers, partners, and employees securely and at scale",
-    "url": "https://azure.microsoft.com/en-us/services/api-management/"
+    "url": "https://docs.microsoft.com/en-us/azure/api-management/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/apimanagement.svg"
   },
   "service-bus": {
     "id": "service-bus",
@@ -998,310 +299,30 @@
       "Integration"
     ],
     "servicesIO": [],
-    "description": "Connect across private and public cloud environments",
-    "url": "https://azure.microsoft.com/en-us/services/service-bus/"
+    "url": "https://docs.microsoft.com/en-us/azure/service-bus/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/servicebus.svg"
   },
-  "iot-hub": {
-    "id": "iot-hub",
-    "name": "Azure IoT Hub",
+  "logic-apps": {
+    "id": "logic-apps",
+    "name": "Logic Apps",
     "category": [
+      "Integration",
       "Internet of Things"
     ],
     "servicesIO": [],
-    "description": "Connect, monitor and manage billions of IoT assets",
-    "url": "https://azure.microsoft.com/en-us/services/iot-hub/"
+    "url": "https://docs.microsoft.com/en-us/azure/logic-apps/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/logicapp.svg"
   },
-  "iot-edge": {
-    "id": "iot-edge",
-    "name": "Azure IoT Edge",
+  "event-grid": {
+    "id": "event-grid",
+    "name": "Event Grid",
     "category": [
+      "Integration",
       "Internet of Things"
     ],
     "servicesIO": [],
-    "description": "Extend cloud intelligence and analytics to edge devices",
-    "url": "https://azure.microsoft.com/en-us/services/iot-edge/"
-  },
-  "iot-central": {
-    "id": "iot-central",
-    "name": "Azure IoT Central",
-    "category": [
-      "Internet of Things"
-    ],
-    "servicesIO": [],
-    "description": "Experience the simplicity of SaaS for IoT, with no cloud expertise required",
-    "url": "https://azure.microsoft.com/en-us/services/iot-central/"
-  },
-  "iot-solution-accelerators": {
-    "id": "iot-solution-accelerators",
-    "name": "Azure IoT solution accelerators",
-    "category": [
-      "Internet of Things"
-    ],
-    "servicesIO": [],
-    "description": "Create fully customizable solutions with templates for common IoT scenarios",
-    "url": "https://azure.microsoft.com/en-us/features/iot-accelerators/"
-  },
-  "sphere": {
-    "id": "sphere",
-    "name": "Azure Sphere",
-    "category": [
-      "Internet of Things"
-    ],
-    "servicesIO": [],
-    "description": "Securely connect MCU-powered devices from the silicon to the cloud",
-    "url": "https://azure.microsoft.com/en-us/services/azure-sphere/"
-  },
-  "time-series-insights": {
-    "id": "time-series-insights",
-    "name": "Azure Time Series Insights",
-    "category": [
-      "Internet of Things"
-    ],
-    "servicesIO": [],
-    "description": "Explore and analyze time-series data from IoT devices",
-    "url": "https://azure.microsoft.com/en-us/services/time-series-insights/"
-  },
-  "maps": {
-    "id": "maps",
-    "name": "Azure Maps",
-    "category": [
-      "Internet of Things",
-      "Mobile"
-    ],
-    "servicesIO": [],
-    "description": "Simple and secure location APIs provide geospatial context to data",
-    "url": "https://azure.microsoft.com/en-us/services/azure-maps/"
-  },
-  "windows-10-iot-core-services": {
-    "id": "windows-10-iot-core-services",
-    "name": "Windows 10 IoT Core Services",
-    "category": [
-      "Internet of Things"
-    ],
-    "servicesIO": [],
-    "description": "Long-term OS support and services to manage device updates and assess device health",
-    "url": "https://azure.microsoft.com/en-us/services/windows-10-iot-core/"
-  },
-  "notification-hubs": {
-    "id": "notification-hubs",
-    "name": "Notification Hubs",
-    "category": [
-      "Internet of Things",
-      "Mobile",
-      "Web"
-    ],
-    "servicesIO": [],
-    "description": "Send push notifications to any platform from any back end",
-    "url": "https://azure.microsoft.com/en-us/services/notification-hubs/"
-  },
-  "digital-twins": {
-    "id": "digital-twins",
-    "name": "Azure Digital Twins",
-    "category": [
-      "Internet of Things"
-    ],
-    "servicesIO": [],
-    "description": "Build next-generation IoT spatial intelligence solutions",
-    "url": "https://azure.microsoft.com/en-us/services/digital-twins/"
-  },
-  "backup": {
-    "id": "backup",
-    "name": "Azure Backup",
-    "category": [
-      "Management and Governance",
-      "Storage"
-    ],
-    "servicesIO": [],
-    "description": "Simplify data protection and protect against ransomware",
-    "url": "https://azure.microsoft.com/en-us/services/backup/"
-  },
-  "site-recovery": {
-    "id": "site-recovery",
-    "name": "Azure Site Recovery",
-    "category": [
-      "Management and Governance",
-      "Migration"
-    ],
-    "servicesIO": [],
-    "description": "Keep your business running with built-in disaster recovery service",
-    "url": "https://azure.microsoft.com/en-us/services/site-recovery/"
-  },
-  "advisor": {
-    "id": "advisor",
-    "name": "Azure Advisor",
-    "category": [
-      "Management and Governance"
-    ],
-    "servicesIO": [],
-    "description": "Your personalized Azure best practices recommendation engine",
-    "url": "https://azure.microsoft.com/en-us/services/advisor/"
-  },
-  "scheduler": {
-    "id": "scheduler",
-    "name": "Scheduler",
-    "category": [
-      "Management and Governance"
-    ],
-    "servicesIO": [],
-    "description": "Run your jobs on simple or complex recurring schedules",
-    "url": "https://azure.microsoft.com/en-us/services/scheduler/"
-  },
-  "automation": {
-    "id": "automation",
-    "name": "Automation",
-    "category": [
-      "Management and Governance"
-    ],
-    "servicesIO": [],
-    "description": "Simplify cloud management with process automation",
-    "url": "https://azure.microsoft.com/en-us/services/automation/"
-  },
-  "traffic-manager": {
-    "id": "traffic-manager",
-    "name": "Traffic Manager",
-    "category": [
-      "Management and Governance",
-      "Networking"
-    ],
-    "servicesIO": [],
-    "description": "Route incoming traffic for high performance and availability",
-    "url": "https://azure.microsoft.com/en-us/services/traffic-manager/"
-  },
-  "monitor": {
-    "id": "monitor",
-    "name": "Azure Monitor",
-    "category": [
-      "Management and Governance"
-    ],
-    "servicesIO": [],
-    "description": "Full observability into your applications, infrastructure, and network",
-    "url": "https://azure.microsoft.com/en-us/services/monitor/"
-  },
-  "network-watcher": {
-    "id": "network-watcher",
-    "name": "Network Watcher",
-    "category": [
-      "Management and Governance",
-      "Networking"
-    ],
-    "servicesIO": [],
-    "description": "Network performance monitoring and diagnostics solution",
-    "url": "https://azure.microsoft.com/en-us/services/network-watcher/"
-  },
-  "service-health": {
-    "id": "service-health",
-    "name": "Azure Service Health",
-    "category": [
-      "Management and Governance"
-    ],
-    "servicesIO": [],
-    "description": "Personalized guidance and support for when issues in Azure services affect you",
-    "url": "https://azure.microsoft.com/en-us/features/service-health/"
-  },
-  "microsoft-azure-portal": {
-    "id": "microsoft-azure-portal",
-    "name": "Microsoft Azure portal",
-    "category": [
-      "Management and Governance"
-    ],
-    "servicesIO": [],
-    "description": "Build, manage, and monitor all Azure products in a single, unified console",
-    "url": "https://azure.microsoft.com/en-us/features/azure-portal/"
-  },
-  "resource-manager": {
-    "id": "resource-manager",
-    "name": "Azure Resource Manager",
-    "category": [
-      "Management and Governance"
-    ],
-    "servicesIO": [],
-    "description": "Simplify how you manage your app resources",
-    "url": "https://azure.microsoft.com/en-us/features/resource-manager/"
-  },
-  "cloud-shell": {
-    "id": "cloud-shell",
-    "name": "Cloud Shell",
-    "category": [
-      "Management and Governance"
-    ],
-    "servicesIO": [],
-    "description": "Streamline Azure administration with a browser-based shell",
-    "url": "https://azure.microsoft.com/en-us/features/cloud-shell/"
-  },
-  "mobile-app": {
-    "id": "mobile-app",
-    "name": "Azure Mobile App",
-    "category": [
-      "Management and Governance",
-      "Mobile"
-    ],
-    "servicesIO": [],
-    "description": "Stay connected to your Azure resources&#x2014;anytime, anywhere",
-    "url": "https://azure.microsoft.com/en-us/features/azure-portal/mobile-app/"
-  },
-  "policy": {
-    "id": "policy",
-    "name": "Azure Policy",
-    "category": [
-      "Management and Governance"
-    ],
-    "servicesIO": [],
-    "description": "Implement corporate governance and standards at scale for Azure resources",
-    "url": "https://azure.microsoft.com/en-us/services/azure-policy/"
-  },
-  "cost-management": {
-    "id": "cost-management",
-    "name": "Cost Management",
-    "category": [
-      "Management and Governance",
-      "Migration"
-    ],
-    "servicesIO": [],
-    "description": "Optimize what you spend on the cloud, while maximizing cloud potential",
-    "url": "https://azure.microsoft.com/en-us/services/cost-management/"
-  },
-  "managed-applications": {
-    "id": "managed-applications",
-    "name": "Azure Managed Applications",
-    "category": [
-      "Management and Governance"
-    ],
-    "servicesIO": [],
-    "description": "Simplify management of cloud offerings",
-    "url": "https://azure.microsoft.com/en-us/services/managed-applications/"
-  },
-  "migrate": {
-    "id": "migrate",
-    "name": "Azure Migrate",
-    "category": [
-      "Management and Governance",
-      "Migration"
-    ],
-    "servicesIO": [],
-    "description": "Easily discover, assess, right-size, and migrate your on-premises VMs to Azure",
-    "url": "https://azure.microsoft.com/en-us/services/azure-migrate/"
-  },
-  "blueprints": {
-    "id": "blueprints",
-    "name": "Azure Blueprints",
-    "category": [
-      "Management and Governance"
-    ],
-    "servicesIO": [],
-    "description": "Enabling quick, repeatable creation of governed environments",
-    "url": "https://azure.microsoft.com/en-us/services/blueprints/"
-  },
-  "content-delivery-network": {
-    "id": "content-delivery-network",
-    "name": "Content Delivery Network",
-    "category": [
-      "Media",
-      "Networking",
-      "Web"
-    ],
-    "servicesIO": [],
-    "description": "Ensure secure, reliable content delivery with broad global reach",
-    "url": "https://azure.microsoft.com/en-us/services/cdn/"
+    "url": "https://docs.microsoft.com/en-us/azure/event-grid/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure_event_grid.svg"
   },
   "media-services": {
     "id": "media-services",
@@ -1310,8 +331,8 @@
       "Media"
     ],
     "servicesIO": [],
-    "description": "Encode, store, and stream video and audio at scale",
-    "url": "https://azure.microsoft.com/en-us/services/media-services/"
+    "url": "https://docs.microsoft.com/en-us/azure/media-services/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/media-services.svg"
   },
   "encoding": {
     "id": "encoding",
@@ -1320,8 +341,8 @@
       "Media"
     ],
     "servicesIO": [],
-    "description": "Studio grade encoding at cloud scale",
-    "url": "https://azure.microsoft.com/en-us/services/media-services/encoding/"
+    "url": "https://docs.microsoft.com/en-us/azure/media-services/media-services-encode-asset",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/media-encoding.svg"
   },
   "live-and-on-demand-streaming": {
     "id": "live-and-on-demand-streaming",
@@ -1330,8 +351,8 @@
       "Media"
     ],
     "servicesIO": [],
-    "description": "Deliver content to virtually all devices with scale to meet business needs",
-    "url": "https://azure.microsoft.com/en-us/services/media-services/live-on-demand/"
+    "url": "https://docs.microsoft.com/en-us/azure/media-services/media-services-manage-channels-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/media-ondemand.svg"
   },
   "media-player": {
     "id": "media-player",
@@ -1340,8 +361,8 @@
       "Media"
     ],
     "servicesIO": [],
-    "description": "A single layer for all your playback needs",
-    "url": "https://azure.microsoft.com/en-us/services/media-services/media-player/"
+    "url": "https://docs.microsoft.com/en-us/azure/media-services/media-services-playback-content-with-existing-players",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/media-player.svg"
   },
   "content-protection": {
     "id": "content-protection",
@@ -1350,8 +371,8 @@
       "Media"
     ],
     "servicesIO": [],
-    "description": "Securely deliver content using AES, PlayReady, Widevine, and Fairplay",
-    "url": "https://azure.microsoft.com/en-us/services/media-services/content-protection/"
+    "url": "https://docs.microsoft.com/en-us/azure/media-services/media-services-content-protection-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/media-protection.svg"
   },
   "media-analytics": {
     "id": "media-analytics",
@@ -1360,39 +381,90 @@
       "Media"
     ],
     "servicesIO": [],
-    "description": "Uncover insights from video files with speech and vision services",
-    "url": "https://azure.microsoft.com/en-us/services/media-services/media-analytics/"
+    "url": "https://docs.microsoft.com/en-us/azure/media-services/media-services-analytics-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/mediaservices.svg"
   },
-  "data-box": {
-    "id": "data-box",
-    "name": "Data Box",
+  "video-indexer": {
+    "id": "video-indexer",
+    "name": "Video Indexer",
     "category": [
-      "Migration",
-      "Storage"
+      "Media",
+      "AI + Machine Learning"
     ],
     "servicesIO": [],
-    "description": "Secure, ruggedized appliance for Azure data transfer",
-    "url": "https://azure.microsoft.com/en-us/services/storage/databox/"
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_videoindexer.svg"
   },
-  "visual-studio-app-center": {
-    "id": "visual-studio-app-center",
-    "name": "Visual Studio App Center",
+  "stack-operator": {
+    "id": "stack-operator",
+    "name": "Azure Stack Operator",
     "category": [
-      "Mobile"
+      "Azure Stack"
     ],
     "servicesIO": [],
-    "description": "Continuously build, test, release, and monitor your apps",
-    "url": "https://azure.microsoft.com/en-us/services/app-center/"
+    "url": "https://docs.microsoft.com/en-us/azure/azure-stack/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-stack.svg"
   },
-  "xamarin": {
-    "id": "xamarin",
-    "name": "Xamarin",
+  "stack-user": {
+    "id": "stack-user",
+    "name": "Azure Stack User",
     "category": [
-      "Mobile"
+      "Azure Stack"
     ],
     "servicesIO": [],
-    "description": "Create cloud-powered mobile apps faster",
-    "url": "https://azure.microsoft.com/en-us/features/xamarin/"
+    "url": "https://docs.microsoft.com/en-us/azure/azure-stack/user",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-stack.svg"
+  },
+  "us-government": {
+    "id": "us-government",
+    "name": "Azure US Government",
+    "category": [
+      "Sovereign Clouds"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/azure-government/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-government.svg"
+  },
+  "germany": {
+    "id": "germany",
+    "name": "Azure Germany",
+    "category": [
+      "Sovereign Clouds"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/germany/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-germany.svg"
+  },
+  "microsoft-azure-china-21vianet": {
+    "id": "microsoft-azure-china-21vianet",
+    "name": "Microsoft Azure China 21Vianet",
+    "category": [
+      "Sovereign Clouds"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/china/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-germany.svg"
+  },
+  "networking-overview": {
+    "id": "networking-overview",
+    "name": "Networking Overview",
+    "category": [
+      "Networking"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/networking/networking-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/networking-overview.svg"
+  },
+  "content-delivery-network": {
+    "id": "content-delivery-network",
+    "name": "Content Delivery Network",
+    "category": [
+      "Networking",
+      "Web"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cdn/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/contentdeliverynetwork.svg"
   },
   "expressroute": {
     "id": "expressroute",
@@ -1401,8 +473,8 @@
       "Networking"
     ],
     "servicesIO": [],
-    "description": "Dedicated private network fiber connections to Azure",
-    "url": "https://azure.microsoft.com/en-us/services/expressroute/"
+    "url": "https://docs.microsoft.com/en-us/azure/expressroute/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/expressroute.svg"
   },
   "dns": {
     "id": "dns",
@@ -1411,8 +483,8 @@
       "Networking"
     ],
     "servicesIO": [],
-    "description": "Host your DNS domain in Azure",
-    "url": "https://azure.microsoft.com/en-us/services/dns/"
+    "url": "https://docs.microsoft.com/en-us/azure/dns/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/dns.svg"
   },
   "virtual-network": {
     "id": "virtual-network",
@@ -1421,8 +493,19 @@
       "Networking"
     ],
     "servicesIO": [],
-    "description": "Provision private networks, optionally connect to on-premises datacenters",
-    "url": "https://azure.microsoft.com/en-us/services/virtual-network/"
+    "url": "https://docs.microsoft.com/en-us/azure/virtual-network/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/virtualnetwork.svg"
+  },
+  "traffic-manager": {
+    "id": "traffic-manager",
+    "name": "Traffic Manager",
+    "category": [
+      "Networking",
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/traffic-manager/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/trafficmanager.svg"
   },
   "load-balancer": {
     "id": "load-balancer",
@@ -1431,8 +514,8 @@
       "Networking"
     ],
     "servicesIO": [],
-    "description": "Deliver high availability and network performance to your applications",
-    "url": "https://azure.microsoft.com/en-us/services/load-balancer/"
+    "url": "https://docs.microsoft.com/en-us/azure/load-balancer/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/loadbalancer.svg"
   },
   "vpn-gateway": {
     "id": "vpn-gateway",
@@ -1442,8 +525,8 @@
       "Security"
     ],
     "servicesIO": [],
-    "description": "Establish secure, cross-premises connectivity",
-    "url": "https://azure.microsoft.com/en-us/services/vpn-gateway/"
+    "url": "https://docs.microsoft.com/en-us/azure/vpn-gateway/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/vpngateway.svg"
   },
   "application-gateway": {
     "id": "application-gateway",
@@ -1453,19 +536,30 @@
       "Security"
     ],
     "servicesIO": [],
-    "description": "Build secure, scalable, and highly available web front ends in Azure",
-    "url": "https://azure.microsoft.com/en-us/services/application-gateway/"
+    "url": "https://docs.microsoft.com/en-us/azure/application-gateway/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/applicationgateway.svg"
   },
   "ddos-protection": {
     "id": "ddos-protection",
-    "name": "Azure DDoS Protection",
+    "name": "Azure DDoS protection",
     "category": [
       "Networking",
       "Security"
     ],
     "servicesIO": [],
-    "description": "Protect your applications from Distributed Denial of Service (DDoS) attacks",
-    "url": "https://azure.microsoft.com/en-us/services/ddos-protection/"
+    "url": "https://docs.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/ddos.svg"
+  },
+  "network-watcher": {
+    "id": "network-watcher",
+    "name": "Network Watcher",
+    "category": [
+      "Networking",
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/network-watcher/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/network-watcher.svg"
   },
   "firewall": {
     "id": "firewall",
@@ -1474,18 +568,8 @@
       "Networking"
     ],
     "servicesIO": [],
-    "description": "Native firewalling capabilities with built-in high availability, unrestricted cloud scalability, and zero maintenance",
-    "url": "https://azure.microsoft.com/en-us/services/azure-firewall/"
-  },
-  "virtual-wan": {
-    "id": "virtual-wan",
-    "name": "Virtual WAN",
-    "category": [
-      "Networking"
-    ],
-    "servicesIO": [],
-    "description": "Optimize and automate branch to branch connectivity through Azure",
-    "url": "https://azure.microsoft.com/en-us/services/virtual-wan/"
+    "url": "https://docs.microsoft.com/en-us/azure/firewall/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure_firewall.svg"
   },
   "front-door-service": {
     "id": "front-door-service",
@@ -1494,38 +578,475 @@
       "Networking"
     ],
     "servicesIO": [],
-    "description": "Scalable, security-enhanced delivery point for global, microservice-based web applications",
-    "url": "https://azure.microsoft.com/en-us/services/frontdoor/"
+    "url": "https://docs.microsoft.com/en-us/azure/frontdoor/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/frontdoor.svg"
   },
-  "key-vault": {
-    "id": "key-vault",
-    "name": "Key Vault",
+  "databricks": {
+    "id": "databricks",
+    "name": "Azure Databricks",
     "category": [
-      "Security"
+      "AI + Machine Learning",
+      "Analytics"
     ],
     "servicesIO": [],
-    "description": "Safeguard and maintain control of keys and other secrets",
-    "url": "https://azure.microsoft.com/en-us/services/key-vault/"
+    "url": "https://docs.microsoft.com/en-us/azure/azure-databricks/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_databricks.svg"
   },
-  "security-center": {
-    "id": "security-center",
-    "name": "Security Center",
+  "bot-service": {
+    "id": "bot-service",
+    "name": "Azure Bot Service",
     "category": [
-      "Security"
+      "AI + Machine Learning"
     ],
     "servicesIO": [],
-    "description": "Unify security management and enable advanced threat protection across hybrid cloud workloads",
-    "url": "https://azure.microsoft.com/en-us/services/security-center/"
+    "url": "https://docs.microsoft.comhttps://docs.microsoft.com/bot-framework/bot-service-overview-introduction",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/bot-service.svg"
   },
-  "dedicated-hsm": {
-    "id": "dedicated-hsm",
-    "name": "Azure Dedicated HSM",
+  "microsoft-genomics": {
+    "id": "microsoft-genomics",
+    "name": "Microsoft Genomics",
     "category": [
-      "Security"
+      "AI + Machine Learning"
     ],
     "servicesIO": [],
-    "description": "Manage hardware security modules that you use in the cloud",
-    "url": "https://azure.microsoft.com/en-us/services/azure-dedicated-hsm/"
+    "url": "https://docs.microsoft.com/en-us/azure/genomics/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/genomics.svg"
+  },
+  "machine-learning-services": {
+    "id": "machine-learning-services",
+    "name": "Machine Learning Services",
+    "category": [
+      "AI + Machine Learning",
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/machine-learning/service",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/machinelearning.svg"
+  },
+  "machine-learning-studio": {
+    "id": "machine-learning-studio",
+    "name": "Machine Learning Studio",
+    "category": [
+      "AI + Machine Learning",
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/machine-learning/studio",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/machinelearning.svg"
+  },
+  "cognitive-services": {
+    "id": "cognitive-services",
+    "name": "Cognitive Services",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/welcome",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/machinelearning.svg"
+  },
+  "notebooks": {
+    "id": "notebooks",
+    "name": "Azure Notebooks",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/notebooks",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/notebooks.svg"
+  },
+  "search": {
+    "id": "search",
+    "name": "Azure Search",
+    "category": [
+      "AI + Machine Learning",
+      "Web"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/search/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/search.svg"
+  },
+  "computer-vision-api": {
+    "id": "computer-vision-api",
+    "name": "Computer Vision API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_computer_vision.svg"
+  },
+  "content-moderator": {
+    "id": "content-moderator",
+    "name": "Content Moderator",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/content-moderator/overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_content_moderator.svg"
+  },
+  "custom-vision-service": {
+    "id": "custom-vision-service",
+    "name": "Custom Vision Service",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/Custom-Vision-Service/home",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_custom_vision.svg"
+  },
+  "emotion-api": {
+    "id": "emotion-api",
+    "name": "Emotion API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/emotion/home",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_emotion.svg"
+  },
+  "face-api": {
+    "id": "face-api",
+    "name": "Face API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/face/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_face.svg"
+  },
+  "speech-service": {
+    "id": "speech-service",
+    "name": "Speech Service",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_speech_service.svg"
+  },
+  "speech-api": {
+    "id": "speech-api",
+    "name": "Speech API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/speech/home",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_speech.svg"
+  },
+  "custom-speech-service": {
+    "id": "custom-speech-service",
+    "name": "Custom Speech Service",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/custom-speech-service/cognitive-services-custom-speech-home",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_custom_speech.svg"
+  },
+  "speaker-recognition-api": {
+    "id": "speaker-recognition-api",
+    "name": "Speaker Recognition API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/speaker-recognition/home",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_speaker_recognition.svg"
+  },
+  "translator-speech-api": {
+    "id": "translator-speech-api",
+    "name": "Translator Speech API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator-speech/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_translatorspeech.svg"
+  },
+  "bing-spell-check-api": {
+    "id": "bing-spell-check-api",
+    "name": "Bing Spell Check API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-spell-check/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_spell_check.svg"
+  },
+  "language-understanding-(luis)": {
+    "id": "language-understanding-(luis)",
+    "name": "Language Understanding (LUIS)",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/luis/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_luis.svg"
+  },
+  "linguistic-analysis-api": {
+    "id": "linguistic-analysis-api",
+    "name": "Linguistic Analysis API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/linguisticanalysisapi/home",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_linguisticanalysis.svg"
+  },
+  "text-analytics-api": {
+    "id": "text-analytics-api",
+    "name": "Text Analytics API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_textanalytics.svg"
+  },
+  "translator-text-api": {
+    "id": "translator-text-api",
+    "name": "Translator Text API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_translatortext.svg"
+  },
+  "web-language-model-api": {
+    "id": "web-language-model-api",
+    "name": "Web Language Model API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/web-language-model/home",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_weblanguagemodel.svg"
+  },
+  "custom-decision-service": {
+    "id": "custom-decision-service",
+    "name": "Custom Decision Service",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/custom-decision-service/custom-decision-service-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_custom_decision_service.svg"
+  },
+  "qna-maker-api": {
+    "id": "qna-maker-api",
+    "name": "QnA Maker API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/home",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_qnamaker.svg"
+  },
+  "recommendations-api": {
+    "id": "recommendations-api",
+    "name": "Recommendations API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/recommendations/overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_recommendations.svg"
+  },
+  "knowledge-exploration-service-(kes)": {
+    "id": "knowledge-exploration-service-(kes)",
+    "name": "Knowledge Exploration Service (KES)",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/kes/overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_knowledgeexploration.svg"
+  },
+  "academic-knowledge-api": {
+    "id": "academic-knowledge-api",
+    "name": "Academic Knowledge API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/academic-knowledge/home",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_know_academic.svg"
+  },
+  "entity-linking-intelligence-service-api": {
+    "id": "entity-linking-intelligence-service-api",
+    "name": "Entity Linking Intelligence Service API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/entitylinking/home",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_entity_linkingintelligence.svg"
+  },
+  "url-preview": {
+    "id": "url-preview",
+    "name": "URL Preview",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/labs/url-preview/overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_url_preview.svg"
+  },
+  "answer-search": {
+    "id": "answer-search",
+    "name": "Answer Search",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/labs/answer-search/overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_answer_search.svg"
+  },
+  "anomaly-finder": {
+    "id": "anomaly-finder",
+    "name": "Anomaly Finder",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/labs/anomaly-finder/overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_anomaly_finder.svg"
+  },
+  "conversation-learner": {
+    "id": "conversation-learner",
+    "name": "Conversation Learner",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/labs/conversation-learner/overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_conversation_learner.svg"
+  },
+  "bing-news-search-api": {
+    "id": "bing-news-search-api",
+    "name": "Bing News Search API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-news-search/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_news_search.svg"
+  },
+  "bing-video-search-api": {
+    "id": "bing-video-search-api",
+    "name": "Bing Video Search API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/Bing-Video-Search/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_video_search.svg"
+  },
+  "bing-web-search-api": {
+    "id": "bing-web-search-api",
+    "name": "Bing Web Search API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-web-search/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_web_search.svg"
+  },
+  "bing-visual-search-api": {
+    "id": "bing-visual-search-api",
+    "name": "Bing Visual Search API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-visual-search/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_visual_search.svg"
+  },
+  "bing-autosuggest-api": {
+    "id": "bing-autosuggest-api",
+    "name": "Bing Autosuggest API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/Bing-Autosuggest/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_autosuggest.svg"
+  },
+  "bing-custom-search-api": {
+    "id": "bing-custom-search-api",
+    "name": "Bing Custom Search API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-custom-search/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_custom_search.svg"
+  },
+  "bing-entity-search-api": {
+    "id": "bing-entity-search-api",
+    "name": "Bing Entity Search API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-entities-search/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_entity_search.svg"
+  },
+  "bing-image-search-api": {
+    "id": "bing-image-search-api",
+    "name": "Bing Image Search API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-image-search/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_image_search.svg"
+  },
+  "site-recovery": {
+    "id": "site-recovery",
+    "name": "Site Recovery",
+    "category": [
+      "Migration",
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/site-recovery/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/siterecovery.svg"
+  },
+  "cost-management": {
+    "id": "cost-management",
+    "name": "Cost Management",
+    "category": [
+      "Migration",
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cost-management/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/cost-management.svg"
+  },
+  "migrate": {
+    "id": "migrate",
+    "name": "Azure Migrate",
+    "category": [
+      "Migration",
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/migrate/migrate-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-migrate.svg"
+  },
+  "storage": {
+    "id": "storage",
+    "name": "Storage",
+    "category": [
+      "Storage"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/storage/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/storage.svg"
   },
   "storsimple": {
     "id": "storsimple",
@@ -1534,8 +1055,30 @@
       "Storage"
     ],
     "servicesIO": [],
-    "description": "Lower costs with an enterprise hybrid cloud storage solution",
-    "url": "https://azure.microsoft.com/en-us/services/storsimple/"
+    "url": "https://docs.microsoft.com/en-us/azure/storsimple/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/storsimple.svg"
+  },
+  "data-lake-storage-gen2": {
+    "id": "data-lake-storage-gen2",
+    "name": "Data Lake Storage Gen2",
+    "category": [
+      "Storage",
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-data-lake-store-color.svg"
+  },
+  "data-lake-storage-gen1": {
+    "id": "data-lake-storage-gen1",
+    "name": "Data Lake Storage Gen1",
+    "category": [
+      "Storage",
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/data-lake-store/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-data-lake-store-color.svg"
   },
   "blob-storage": {
     "id": "blob-storage",
@@ -1544,8 +1087,8 @@
       "Storage"
     ],
     "servicesIO": [],
-    "description": "REST-based object storage for unstructured data",
-    "url": "https://azure.microsoft.com/en-us/services/storage/blobs/"
+    "url": "https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_azure-blob-storage.svg"
   },
   "disk-storage": {
     "id": "disk-storage",
@@ -1554,8 +1097,8 @@
       "Storage"
     ],
     "servicesIO": [],
-    "description": "Persistent, secured disk options supporting virtual machines",
-    "url": "https://azure.microsoft.com/en-us/services/storage/disks/"
+    "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/disks-color.svg"
   },
   "managed-disks": {
     "id": "managed-disks",
@@ -1564,8 +1107,8 @@
       "Storage"
     ],
     "servicesIO": [],
-    "description": "Persistent, secured disk storage for Azure virtual machines",
-    "url": "https://azure.microsoft.com/en-us/services/managed-disks/"
+    "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/managed-disks.svg"
   },
   "queue-storage": {
     "id": "queue-storage",
@@ -1574,8 +1117,8 @@
       "Storage"
     ],
     "servicesIO": [],
-    "description": "Effectively scale apps according to traffic",
-    "url": "https://azure.microsoft.com/en-us/services/storage/queues/"
+    "url": "https://docs.microsoft.com/en-us/azure/storage/queues/storage-queues-introduction",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_azure-storage-q.svg"
   },
   "file-storage": {
     "id": "file-storage",
@@ -1584,18 +1127,28 @@
       "Storage"
     ],
     "servicesIO": [],
-    "description": "File shares that use the standard SMB 3.0 protocol",
-    "url": "https://azure.microsoft.com/en-us/services/storage/files/"
+    "url": "https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_azure-storage-file.svg"
   },
-  "avere-vfxt-for-azure": {
-    "id": "avere-vfxt-for-azure",
-    "name": "Avere vFXT for Azure",
+  "data-box": {
+    "id": "data-box",
+    "name": "Data Box",
     "category": [
       "Storage"
     ],
     "servicesIO": [],
-    "description": "Run high-performance, file-based workloads in the cloud",
-    "url": "https://azure.microsoft.com/en-us/services/storage/avere-vfxt/"
+    "url": "https://docs.microsoft.com/en-us/azure/databox-family/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/service-icon.png"
+  },
+  "avere-vfxt": {
+    "id": "avere-vfxt",
+    "name": "Avere vFXT",
+    "category": [
+      "Storage"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/avere-vfxt/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/avere.svg"
   },
   "storage-explorer": {
     "id": "storage-explorer",
@@ -1604,8 +1157,8 @@
       "Storage"
     ],
     "servicesIO": [],
-    "description": "View and interact with Azure Storage resources",
-    "url": "https://azure.microsoft.com/en-us/features/storage-explorer/"
+    "url": "https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/storage.svg"
   },
   "archive-storage": {
     "id": "archive-storage",
@@ -1614,8 +1167,8 @@
       "Storage"
     ],
     "servicesIO": [],
-    "description": "Industry leading price point for storing rarely accessed data",
-    "url": "https://azure.microsoft.com/en-us/services/storage/archive/"
+    "url": "https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/storage.svg"
   },
   "netapp-files": {
     "id": "netapp-files",
@@ -1624,8 +1177,398 @@
       "Storage"
     ],
     "servicesIO": [],
-    "description": "Powerful, hybrid network file system (NFS) file shares",
-    "url": "https://azure.microsoft.com/en-us/services/storage/netapp/"
+    "url": "https://docs.microsoft.com/en-us/azure/azure-netapp-files/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/netappstorage.svg"
+  },
+  "hdinsight": {
+    "id": "hdinsight",
+    "name": "HDInsight",
+    "category": [
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/hdinsight/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/hdinsight.svg"
+  },
+  "data-explorer": {
+    "id": "data-explorer",
+    "name": "Azure Data Explorer",
+    "category": [
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/data-explorer/",
+    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/logos/logo_azure.svg"
+  },
+  "stream-analytics": {
+    "id": "stream-analytics",
+    "name": "Stream Analytics",
+    "category": [
+      "Analytics",
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/stream-analytics/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/streamanalytics.svg"
+  },
+  "data-lake-analytics": {
+    "id": "data-lake-analytics",
+    "name": "Data Lake Analytics",
+    "category": [
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/data-lake-analytics/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-data-lake-analytics-color.svg"
+  },
+  "event-hubs": {
+    "id": "event-hubs",
+    "name": "Event Hubs",
+    "category": [
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/event-hubs/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/eventhubs.svg"
+  },
+  "power-bi-embedded": {
+    "id": "power-bi-embedded",
+    "name": "Power BI Embedded",
+    "category": [
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/power-bi-embedded/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/powerbiembedded.svg"
+  },
+  "analysis-services": {
+    "id": "analysis-services",
+    "name": "Azure Analysis Services",
+    "category": [
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/analysis-services/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/analysisservices.svg"
+  },
+  "apache-spark-for-azure-hdinsight": {
+    "id": "apache-spark-for-azure-hdinsight",
+    "name": "Apache Spark for Azure HDInsight",
+    "category": [
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/hdinsight.svg"
+  },
+  "apache-storm-for--hdinsight": {
+    "id": "apache-storm-for--hdinsight",
+    "name": "Apache Storm for  HDInsight",
+    "category": [
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/hdinsight/storm/apache-storm-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/hdinsight.svg"
+  },
+  "r-server-for-hdinsight": {
+    "id": "r-server-for-hdinsight",
+    "name": "R Server for HDInsight",
+    "category": [
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/hdinsight/r-server/r-server-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/hdinsight.svg"
+  },
+  "log-analytics": {
+    "id": "log-analytics",
+    "name": "Log Analytics",
+    "category": [
+      "Analytics",
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/log-analytics/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/operationsmanagementsuite.svg"
+  },
+  "data-catalog": {
+    "id": "data-catalog",
+    "name": "Data Catalog",
+    "category": [
+      "Analytics"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/data-catalog/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/data-catalog.svg"
+  },
+  "devops": {
+    "id": "devops",
+    "name": "Azure DevOps",
+    "category": [
+      "DevOps",
+      "Developer Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/devops/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_vs-team-services.svg"
+  },
+  "application-insights": {
+    "id": "application-insights",
+    "name": "Application Insights",
+    "category": [
+      "DevOps",
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/application-insights/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/applicationinsights.svg"
+  },
+  "lab-services": {
+    "id": "lab-services",
+    "name": "Azure Lab Services",
+    "category": [
+      "DevOps"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/lab-services/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/devtestlabs.svg"
+  },
+  "visual-studio-app-center": {
+    "id": "visual-studio-app-center",
+    "name": "Visual Studio App Center",
+    "category": [
+      "DevOps",
+      "Mobile"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/appcenter/",
+    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/logos/logo_vs-mobile-center.svg"
+  },
+  "developer-tool-integrations": {
+    "id": "developer-tool-integrations",
+    "name": "Developer Tool Integrations",
+    "category": [
+      "DevOps",
+      "Developer Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/integrations",
+    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/common/i_extensions.svg"
+  },
+  "hockeyapp": {
+    "id": "hockeyapp",
+    "name": "HockeyApp",
+    "category": [
+      "DevOps"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.comhttps://support.hockeyapp.net/kb",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/hockeyapp.svg"
+  },
+  "devops-projects": {
+    "id": "devops-projects",
+    "name": "Azure DevOps Projects",
+    "category": [
+      "DevOps"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/devops-project",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_vs-team-services.svg"
+  },
+  "visual-studio": {
+    "id": "visual-studio",
+    "name": "Visual Studio",
+    "category": [
+      "Developer Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/visualstudio/products",
+    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/logos/logo_visual-studio.svg"
+  },
+  "visual-studio-code": {
+    "id": "visual-studio-code",
+    "name": "Visual Studio Code",
+    "category": [
+      "Developer Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.comhttps://code.visualstudio.com/docs",
+    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/logos/logo_vs-code.svg"
+  },
+  "sdks": {
+    "id": "sdks",
+    "name": "SDKs",
+    "category": [
+      "Developer Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/sdks",
+    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/common/i_tools.svg"
+  },
+  "cli": {
+    "id": "cli",
+    "name": "CLI",
+    "category": [
+      "Developer Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cli",
+    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/common/i_cligeneric.svg"
+  },
+  "blockchain-workbench": {
+    "id": "blockchain-workbench",
+    "name": "Blockchain Workbench",
+    "category": [
+      "Developer Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/blockchain-workbench",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/blockchain-workbench.svg"
+  },
+  "iot-fundamentals": {
+    "id": "iot-fundamentals",
+    "name": "IoT Fundamentals",
+    "category": [
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/iot-fundamentals",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/iothub.svg"
+  },
+  "iot-central": {
+    "id": "iot-central",
+    "name": "IoT Central",
+    "category": [
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/iot-central/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/iot-central.svg"
+  },
+  "iot-hub": {
+    "id": "iot-hub",
+    "name": "IoT Hub",
+    "category": [
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/iot-hub/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/iothub.svg"
+  },
+  "iot-edge": {
+    "id": "iot-edge",
+    "name": "IoT Edge",
+    "category": [
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/iot-edge/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/iot-edge-alt.svg"
+  },
+  "iot-solution-accelerators": {
+    "id": "iot-solution-accelerators",
+    "name": "IoT solution accelerators",
+    "category": [
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/iot-suite/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/iot-solution-accelerators.svg"
+  },
+  "digital-twins": {
+    "id": "digital-twins",
+    "name": "Azure Digital Twins",
+    "category": [
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/digital-twins/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/digital_twin.svg"
+  },
+  "iot-hub-device-provisioning-service": {
+    "id": "iot-hub-device-provisioning-service",
+    "name": "IoT Hub Device Provisioning Service",
+    "category": [
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/iot-dps/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/dps.svg"
+  },
+  "time-series-insights": {
+    "id": "time-series-insights",
+    "name": "Time Series Insights",
+    "category": [
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/time-series-insights/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/time-series-insights.svg"
+  },
+  "maps": {
+    "id": "maps",
+    "name": "Azure Maps",
+    "category": [
+      "Internet of Things",
+      "Mobile"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/azure-maps/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-maps-icon-portal.svg"
+  },
+  "machine-learning": {
+    "id": "machine-learning",
+    "name": "Machine Learning",
+    "category": [
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/machine-learning/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/machinelearning.svg"
+  },
+  "notification-hubs": {
+    "id": "notification-hubs",
+    "name": "Notification Hubs",
+    "category": [
+      "Internet of Things",
+      "Web",
+      "Mobile"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/notification-hubs/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/notificationhubs.svg"
+  },
+  "sphere": {
+    "id": "sphere",
+    "name": "Azure Sphere",
+    "category": [
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure-sphere/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure_sphere.svg"
+  },
+  "app-service---web-apps": {
+    "id": "app-service---web-apps",
+    "name": "App Service - Web Apps",
+    "category": [
+      "Web"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/app-service-web/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg"
+  },
+  "api-apps": {
+    "id": "api-apps",
+    "name": "API Apps",
+    "category": [
+      "Web",
+      "Mobile"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/app-service-api/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/app-service-api.svg"
   },
   "signalr-service": {
     "id": "signalr-service",
@@ -1634,7 +1577,311 @@
       "Web"
     ],
     "servicesIO": [],
-    "description": "Add real-time web functionalities easily",
-    "url": "https://azure.microsoft.com/en-us/services/signalr-service/"
+    "url": "https://docs.microsoft.com/en-us/azure/azure-signalr/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-signalr.svg"
+  },
+  "app-service---mobile-apps": {
+    "id": "app-service---mobile-apps",
+    "name": "App Service - Mobile Apps",
+    "category": [
+      "Mobile"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/app-service-mobile/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/app-service-mobile.svg"
+  },
+  "xamarin": {
+    "id": "xamarin",
+    "name": "Xamarin",
+    "category": [
+      "Mobile"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.comhttps://azure.microsoft.com/features/xamarin",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_xamarin.svg"
+  },
+  "security-information": {
+    "id": "security-information",
+    "name": "Security Information",
+    "category": [
+      "Security",
+      "Identity"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/security/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/securitycenter.svg"
+  },
+  "security-center": {
+    "id": "security-center",
+    "name": "Security Center",
+    "category": [
+      "Security"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/security-center",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/securitycenter.svg"
+  },
+  "key-vault": {
+    "id": "key-vault",
+    "name": "Key Vault",
+    "category": [
+      "Security"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/key-vault/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/keyvault.svg"
+  },
+  "": {
+    "id": "",
+    "name": "",
+    "category": [
+      "Security"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.comundefined",
+    "icon": "https://docs.microsoft.com/en-us/azure/undefined"
+  },
+  "dedicated-hsm": {
+    "id": "dedicated-hsm",
+    "name": "Azure Dedicated HSM",
+    "category": [
+      "Security"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/dedicated-hsm",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/dedicated-hsm.svg"
+  },
+  "advanced-threat-protection": {
+    "id": "advanced-threat-protection",
+    "name": "Azure Advanced Threat Protection",
+    "category": [
+      "Security"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/security/azure-threat-detection",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/securitycenter.svg"
+  },
+  "information-protection": {
+    "id": "information-protection",
+    "name": "Azure Information Protection",
+    "category": [
+      "Security",
+      "Identity"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/information-protection/",
+    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/common/i_information-protection.svg"
+  },
+  "active-directory": {
+    "id": "active-directory",
+    "name": "Azure Active Directory",
+    "category": [
+      "Security",
+      "Identity"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/active-directory/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/activedirectory.svg"
+  },
+  "active-directory-for-domain-services": {
+    "id": "active-directory-for-domain-services",
+    "name": "Azure Active Directory for Domain Services",
+    "category": [
+      "Security",
+      "Identity"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/active-directory-domain-services",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/activedirectory.svg"
+  },
+  "role-based-access-control": {
+    "id": "role-based-access-control",
+    "name": "Role-based access control",
+    "category": [
+      "Security"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/role-based-access-control/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/personwithfriend.svg"
+  },
+  "multi-factor-authentication": {
+    "id": "multi-factor-authentication",
+    "name": "Multi-Factor Authentication",
+    "category": [
+      "Identity"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/multi-factor-authentication/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/multifactorauthentication.svg"
+  },
+  "active-directory-b2c": {
+    "id": "active-directory-b2c",
+    "name": "Azure Active Directory B2C",
+    "category": [
+      "Identity"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/active-directory-b2c",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/activedirectory.svg"
+  },
+  "backup": {
+    "id": "backup",
+    "name": "Backup",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/backup/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/backup.svg"
+  },
+  "advisor": {
+    "id": "advisor",
+    "name": "Azure Advisor",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/advisor",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/advisor.svg"
+  },
+  "scheduler": {
+    "id": "scheduler",
+    "name": "Scheduler",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/scheduler/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/scheduler.svg"
+  },
+  "automation": {
+    "id": "automation",
+    "name": "Automation",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/automation/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/automation.svg"
+  },
+  "monitor": {
+    "id": "monitor",
+    "name": "Azure Monitor",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azuremonitoring.svg"
+  },
+  "security-&-compliance": {
+    "id": "security-&-compliance",
+    "name": "Security & Compliance",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/security/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/securitycenter.svg"
+  },
+  "service-health": {
+    "id": "service-health",
+    "name": "Azure Service Health",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/service-health",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/resource-health.svg"
+  },
+  "microsoft-azure-portal": {
+    "id": "microsoft-azure-portal",
+    "name": "Microsoft Azure Portal",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.comhttps://azure.microsoft.com/",
+    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/logos/logo_azure.svg"
+  },
+  "resource-manager": {
+    "id": "resource-manager",
+    "name": "Azure Resource Manager",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/azure-resource-manager/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-resource-manager.svg"
+  },
+  "cloud-shell": {
+    "id": "cloud-shell",
+    "name": "Cloud Shell",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cloud-shell/overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/cloud-shell.svg"
+  },
+  "mobile-app": {
+    "id": "mobile-app",
+    "name": "Azure mobile app",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/app-service-mobile",
+    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/common/i_mobile-app-developement.svg"
+  },
+  "policy": {
+    "id": "policy",
+    "name": "Azure Policy",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/governance/policy/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/governance.svg"
+  },
+  "blueprints": {
+    "id": "blueprints",
+    "name": "Azure Blueprints",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/governance/blueprints/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/blueprints.svg"
+  },
+  "resource-graph": {
+    "id": "resource-graph",
+    "name": "Azure Resource Graph",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/governance/resource-graph/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/resource-graph.svg"
+  },
+  "managed-applications": {
+    "id": "managed-applications",
+    "name": "Azure Managed Applications",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/managed-applications",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/i_managed-application.svg"
+  },
+  "billing": {
+    "id": "billing",
+    "name": "Billing",
+    "category": [
+      "Management Tools"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/billing/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/billing.svg"
   }
 }

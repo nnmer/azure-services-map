@@ -5,12 +5,13 @@ const cheerio = require('cheerio')
 const htmlDataFile = __dirname+"/data/azure-services.html"
 const serviceDataFile = __dirname+"/data/azure-services.json"
 var htmlData = "";
-var urlPrefix = "https://azure.microsoft.com"
+var urlPrefix = "https://docs.microsoft.com"
+var iconPrefix = "https://docs.microsoft.com/en-us/azure/"
 
 function getHtml() {
     
     if (!fs.existsSync(htmlDataFile)) {         
-        return axios.get("https://azure.microsoft.com/en-us/services/")
+        return axios.get("https://docs.microsoft.com/en-us/azure/#pivot=products&panel=all")
             .then(function(response){
                 fs.writeFileSync(htmlDataFile, response.data)
             });
@@ -41,37 +42,42 @@ getHtml()
         var curCategory = null;
         var servicesMap = {};
 
-        const divArr = $('#products-list').children();
+        const divArr = $('ul.directory .group');
         divArr.each(function (idx,val){
-
-            if ($(val).hasClass('column')) {
-                curCategory = $(val).find('.product-category').text()                
-            } else {
-
-                // servicesMap.push({name: curCategory, category: "Azure"});
-                
-                services = $('a[data-event-property]',val)
-                services.each(function(i,v){
-                    let name = $('h2',v).html()
-                    let href = $(v).attr('href')
-                    let description =$(v).next().html()
-                    if (name != curCategory) {
+            $children = $(val).children()
+            var curCategory = null;
+            $children.each(function(i,v) {
+                if ($(v).is('h3')) {
+                    console.warn('category');
+                    curCategory = $(v).html();
+                    console.warn(curCategory);
+                } else {
+                    console.warn('items')
+                    $(v).children().map(function(sIdx, sVal){
+                        // console.warn(sVal)
+                        let name = $(sVal).find('p').text()
+                        let href = $(sVal).find('a').attr('href')
+                        let icon = $(sVal).find('img').attr('src')
                         id = name2Key(name)
+                        console.warn(name)
+                        console.warn(href)
+                        console.warn(icon)
+                        
                         if (servicesMap.hasOwnProperty(id)){
-                          servicesMap[id].category.push(curCategory)
+                            servicesMap[id].category.push(curCategory)
                         } else {
-                          servicesMap[id] = {
+                            servicesMap[id] = {
                             id,
                             name, 
                             category: [curCategory], 
                             servicesIO: [],
-                            description,
-                            url: urlPrefix+href
-                          }
-                        }                        
-                    }
-                })                            
-            }            
+                            url: urlPrefix+href,
+                            icon: iconPrefix+icon
+                            }
+                        }
+                    })
+                }
+            })                 
         })
 
         fs.writeFileSync(serviceDataFile, JSON.stringify(servicesMap))

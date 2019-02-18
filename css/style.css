@@ -6,6 +6,53 @@ body {
   color: #fff;
 }
 
+.modal-fullscreen  {
+  margin: 0;
+  padding: 0 !important;
+}
+
+.modal-fullscreen .modal-dialog, 
+.modal-fullscreen .modal-dialog .modal-dialog-scrollable  {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: initial;
+  max-height: initial;
+}
+
+.modal-fullscreen .modal-content,
+.modal-fullscreen .modal-dialog .modal-dialog-scrollable   {
+  height: auto;
+  height: 100%;
+  border-radius: 0;
+  max-width: initial;
+  max-height: initial;
+}
+
+  
+#service-flow .node {
+  stroke: initial
+}
+#service-flow .node circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+#service-flow .node text {
+  font-size: 14px;
+}
+
+#service-flow path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+} 
+ 
+
+
 .pull-right {
     float: right;
 }

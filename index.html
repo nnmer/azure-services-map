@@ -14,7 +14,7 @@
     <script type='text/html' id='service_node_popover'>
       <div>
         <ul class="list-unstyled">
-          <li><a href="<%=url%>" target="_blank">Official docs</a></li>
+          <li><a href="<%=url%>" target="_blank"><img class="service-icon" src="<%=icon%>"/> Docs</a></li>
           <% if (servicesIO.input && servicesIO.input.length >0
           || servicesIO.output && servicesIO.output.length >0 ) { %>
             <li>
@@ -53,9 +53,11 @@
                 </div>
                 
                   <% for (var i =0; i < servicesIO.input.length; i++) { %>
-                    <span class="list-group-item list-group-item-action">
+                    <span class="list-group-item list-group-item-action">                        
                         <% if (SL.services[servicesIO.input[i]]) { %>
+                          <img class="service-icon" src="<%=SL.services[servicesIO.input[i]].icon%>"/>
                           <%=SL.services[servicesIO.input[i]].name%>
+                          (<a href="<%=SL.services[servicesIO.input[i]].url%>" target="_blank">docs</a>)
                         <% } else { %>  
                           <%=servicesIO.input[i]%>
                         <% } %> 
@@ -76,7 +78,9 @@
                   <% for (var i =0; i < servicesIO.output.length; i++) { %>
                     <span class="list-group-item list-group-item-action">
                       <% if (SL.services[servicesIO.output[i]]) { %>
+                        <img class="service-icon" src="<%=SL.services[servicesIO.output[i]].icon%>"/>
                         <%=SL.services[servicesIO.output[i]].name%>
+                        (<a href="<%=SL.services[servicesIO.output[i]].url%>" target="_blank">docs</a>)
                       <% } else { %>  
                         <%=servicesIO.output[i]%>
                       <% } %>  

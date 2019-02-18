@@ -45,23 +45,16 @@ getHtml()
         const divArr = $('ul.directory .group');
         divArr.each(function (idx,val){
             $children = $(val).children()
-            var curCategory = null;
+
             $children.each(function(i,v) {
                 if ($(v).is('h3')) {
-                    console.warn('category');
                     curCategory = $(v).html();
-                    console.warn(curCategory);
                 } else {
-                    console.warn('items')
                     $(v).children().map(function(sIdx, sVal){
-                        // console.warn(sVal)
                         let name = $(sVal).find('p').text()
                         let href = $(sVal).find('a').attr('href')
                         let icon = $(sVal).find('img').attr('src')
                         id = name2Key(name)
-                        console.warn(name)
-                        console.warn(href)
-                        console.warn(icon)
                         
                         if (servicesMap.hasOwnProperty(id)){
                             servicesMap[id].category.push(curCategory)

@@ -78,6 +78,9 @@ body {
   color: #000;
 }
 
+.service-icon {
+  width: 24px;
+}
 
 .pull-right {
     float: right;

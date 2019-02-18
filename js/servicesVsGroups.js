@@ -274,8 +274,6 @@ function servicesVsGroupsForceDirectedTree(services) {
             svgLabel.style("opacity", 1);
             toggle = 0;
         }
-
-        showServiceLinkingDrawer(toggle && false === d.isCategory ? d.id : false, services)
     }
 
     function forceTick() {

@@ -4,7 +4,6 @@
 <base href="/">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  <link rel="stylesheet" href="css/style.css"/>
- <link rel="stylesheet" href="css/drawer.css"/>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://d3js.org/d3-queue.v3.min.js"></script>
 <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
@@ -53,38 +52,6 @@ path.link {
 </style>
 
 <body>
-    <script type="text/html" id="service_linking_drawer">
-      <div class="section">
-        <div class="section-title">
-          <h3>Service direct input/output flow</h3>
-        </div>
-
-        <ul>
-            <% if (servicesIO.input && servicesIO.input.length >0 ) { %>
-              <% for (var i =0; i < servicesIO.input.length; i++) { %>
-                <li class="input"><span><%=servicesIO.input[i]%></span></li>
-              <% } %>        
-              
-              <li class="arrow-down"><img src="img/arrow-down.png" class="img-arrow-down"/></li>
-              <li class="input title"><span>Input</span></li>
-            <% } %>
-    
-            <li class="main-service">
-              <span><%=name%></span>
-            </li>
-    
-            <% if (servicesIO.output && servicesIO.output.length >0 ) { %>
-              <li class="output title"><span>Output</span></li>
-              <li class="arrow-down"><img src="img/arrow-down.png" class="img-arrow-down"/></li>
-            
-              <% for (var i =0; i < servicesIO.output.length; i++) { %>
-                <li class="output"><span><%=servicesIO.output[i]%></span></li>
-              <% } %>
-            <% } %>
-        </ul>  
-      </div>
-    </script>
-
     <script type='text/html' id='service_node_popover'>
       <div>
         <ul class="list-unstyled">
@@ -220,12 +187,7 @@ path.link {
         
         <div class="clearfix"></div>
     </div>
-    <div>
-        <input type="checkbox" id="drawer-toggle">
-        <label for="drawer-toggle" id="drawer-toggle-label"></label>
-
-        <nav id="drawer"></nav>
-
+    <div>        
         <div class="svg-container">
           <div id="service-flow"></div>
           <div id="service-vs-group-map" ></div>
@@ -246,28 +208,7 @@ path.link {
 
               SL = new ServiceLinking(services, serviceLinking)            
               servicesVsGroupsForceDirectedTree(SL.services)
-            }      
-            
-            function showServiceLinkingDrawer(serviceId, services) {
-              let drawer = document.getElementById("drawer");
-              let toggle = document.getElementById("drawer-toggle")
-              if (false === serviceId) { 
-                toggle.removeAttribute('checked')                
-                document.getElementById("service-flow").innerHTML = '';
-                return;
-              }
-              if (services[serviceId].hasLinkingServices ) {
-                toggle.setAttribute('checked','checked')
-                drawer.innerHTML = tmpl("service_linking_drawer", services[serviceId]);
-                showServiceIntegrationTree(serviceId, services)
-                // t = d3.select("#service-flow").select("svg")
-                // x = t.node().getBoundingClientRect();
-                // y = t.node().getBBox()
-                // //t.attr("width", x.width + y.width)
-                // t.attr("viewBox", "0 0 "+x.width +" "+ x.height)
-                // console.warn(t,x,y)
-              }
-            }
+            }                            
 
             function showServiceIntegrationTree(serviceId, services) {
               function buildChildren(id) {

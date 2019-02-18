@@ -55,7 +55,9 @@ getHtml()
                         let href = $(sVal).find('a').attr('href')
                         let icon = $(sVal).find('img').attr('src')
                         id = name2Key(name)
-                        
+                        if (name == '') {
+                            return
+                        }
                         if (servicesMap.hasOwnProperty(id)){
                             servicesMap[id].category.push(curCategory)
                         } else {
@@ -65,7 +67,7 @@ getHtml()
                             category: [curCategory], 
                             servicesIO: [],
                             url: urlPrefix+href,
-                            icon: iconPrefix+icon
+                            icon: (icon && icon.search('docs.microsoft.com') == -1 ? iconPrefix+icon : icon)
                             }
                         }
                     })

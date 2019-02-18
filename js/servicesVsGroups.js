@@ -183,6 +183,15 @@ function servicesVsGroupsForceDirectedTree(services) {
                 .call(drag)
                 // .on('click',  onNodeClick)                       
                 .on('dblclick', onNodeDblClick)   
+
+// var svgIcon = svg.append("g").attr('class','container-s-img').selectAll('.s-icon')    
+//   .data(force.nodes())
+//   .enter()
+//     .append('image')
+//       .attr('class','service-icon')
+//       .attr("xlink:href", function(d){return SL && SL.services[d.id] ? SL.services[d.id].icon : ''})
+//       // .attr("width", 16)
+//       // .attr("height", 16)
         
     var svgLabel = svg.append("g").attr('class','container-label').selectAll('.label')    
         .data(force.nodes())
@@ -287,6 +296,10 @@ function servicesVsGroupsForceDirectedTree(services) {
         svgNode
             .attr('cx', function (d) {return d.x})
             .attr('cy', function (d) {return d.y})
+            
+        // svgIcon
+        //     .attr('x', function (d) {return d.x-8})
+        //     .attr('y', function (d) {return d.y-8})
 
         svgLabel
             .attr('x', function (d) {return d.x})

@@ -1198,7 +1198,7 @@
     ],
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/data-explorer/",
-    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/logos/logo_azure.svg"
+    "icon": "https://docs.microsoft.com/media/logos/logo_azure.svg"
   },
   "stream-analytics": {
     "id": "stream-analytics",
@@ -1343,7 +1343,7 @@
     ],
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/appcenter/",
-    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/logos/logo_vs-mobile-center.svg"
+    "icon": "https://docs.microsoft.com/media/logos/logo_vs-mobile-center.svg"
   },
   "developer-tool-integrations": {
     "id": "developer-tool-integrations",
@@ -1354,7 +1354,7 @@
     ],
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/integrations",
-    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/common/i_extensions.svg"
+    "icon": "https://docs.microsoft.com/media/common/i_extensions.svg"
   },
   "hockeyapp": {
     "id": "hockeyapp",
@@ -1384,7 +1384,7 @@
     ],
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/visualstudio/products",
-    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/logos/logo_visual-studio.svg"
+    "icon": "https://docs.microsoft.com/media/logos/logo_visual-studio.svg"
   },
   "visual-studio-code": {
     "id": "visual-studio-code",
@@ -1394,7 +1394,7 @@
     ],
     "servicesIO": [],
     "url": "https://docs.microsoft.comhttps://code.visualstudio.com/docs",
-    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/logos/logo_vs-code.svg"
+    "icon": "https://docs.microsoft.com/media/logos/logo_vs-code.svg"
   },
   "sdks": {
     "id": "sdks",
@@ -1404,7 +1404,7 @@
     ],
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/sdks",
-    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/common/i_tools.svg"
+    "icon": "https://docs.microsoft.com/media/common/i_tools.svg"
   },
   "cli": {
     "id": "cli",
@@ -1414,7 +1414,7 @@
     ],
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cli",
-    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/common/i_cligeneric.svg"
+    "icon": "https://docs.microsoft.com/media/common/i_cligeneric.svg"
   },
   "blockchain-workbench": {
     "id": "blockchain-workbench",
@@ -1631,16 +1631,6 @@
     "url": "https://docs.microsoft.com/en-us/azure/key-vault/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/keyvault.svg"
   },
-  "": {
-    "id": "",
-    "name": "",
-    "category": [
-      "Security"
-    ],
-    "servicesIO": [],
-    "url": "https://docs.microsoft.comundefined",
-    "icon": "https://docs.microsoft.com/en-us/azure/undefined"
-  },
   "dedicated-hsm": {
     "id": "dedicated-hsm",
     "name": "Azure Dedicated HSM",
@@ -1670,7 +1660,7 @@
     ],
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/information-protection/",
-    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/common/i_information-protection.svg"
+    "icon": "https://docs.microsoft.com/media/common/i_information-protection.svg"
   },
   "active-directory": {
     "id": "active-directory",
@@ -1802,7 +1792,7 @@
     ],
     "servicesIO": [],
     "url": "https://docs.microsoft.comhttps://azure.microsoft.com/",
-    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/logos/logo_azure.svg"
+    "icon": "https://docs.microsoft.com/media/logos/logo_azure.svg"
   },
   "resource-manager": {
     "id": "resource-manager",
@@ -1832,7 +1822,7 @@
     ],
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/app-service-mobile",
-    "icon": "https://docs.microsoft.com/en-us/azure/https://docs.microsoft.com/media/common/i_mobile-app-developement.svg"
+    "icon": "https://docs.microsoft.com/media/common/i_mobile-app-developement.svg"
   },
   "policy": {
     "id": "policy",

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
-<base href="">
+<base href="/">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  <link rel="stylesheet" href="css/style.css"/>
  <link rel="stylesheet" href="css/drawer.css"/>
 <script src="https://d3js.org/d3.v3.min.js"></script>
@@ -55,7 +56,7 @@ path.link {
     <script type="text/html" id="service_linking_drawer">
       <div class="section">
         <div class="section-title">
-          <h3>Service input/output flow</h3>
+          <h3>Service direct input/output flow</h3>
         </div>
 
         <ul>
@@ -83,7 +84,93 @@ path.link {
         </ul>  
       </div>
     </script>
-    <div>
+
+    <script type='text/html' id='service_node_popover'>
+      <div>
+        <ul class="list-unstyled">
+          <li><a href="<%=url%>" target="_blank">Official docs</a></li>
+          <% if (servicesIO.input && servicesIO.input.length >0
+          || servicesIO.output && servicesIO.output.length >0 ) { %>
+            <li>
+              <a href="#" 
+                data-toggle="modal"  
+                data-target="#direct-io-out-services-modal"  
+                data-service-id="<%=id%>" 
+                > 
+                Show Direct In/Out connections 
+              </a></li>          
+          </ul>
+          <% } %>
+      </div>
+    </script>
+
+    <script type='text/html' id="direct_io_out_services_modal_tpl">
+      <div class="container">
+        <div class="row">
+          <% if (servicesIO.input && servicesIO.input.length >0 ) { %>
+            <div class="col">
+              <div class="list-group">
+                <div class="list-group-item list-group-item-action bg-primary listIOtitle text-center text-bold">
+                  To: <%=name%><br/>
+                  <img src="/img/arrow-down.png" width="35px" style="transform: rotate(180deg);">
+                </div>
+                
+                  <% for (var i =0; i < servicesIO.input.length; i++) { %>
+                    <span class="list-group-item list-group-item-action">
+                        <% if (SL.services[servicesIO.input[i]]) { %>
+                          <%=SL.services[servicesIO.input[i]].name%>
+                        <% } else { %>  
+                          <%=servicesIO.input[i]%>
+                        <% } %> 
+                    </span>
+                  <% } %>                                    
+                </div>
+            </div>          
+          <% } %>
+
+          <% if (servicesIO.output && servicesIO.output.length >0 ) { %>
+            <div class="col">
+              <div class="list-group">
+                  <div class="list-group-item list-group-item-action bg-success listIOtitle text-center text-bold">
+                      From: <%=name%><br/>
+                      <img src="/img/arrow-down.png" width="35px">
+                    </div>
+                
+                  <% for (var i =0; i < servicesIO.output.length; i++) { %>
+                    <span class="list-group-item list-group-item-action">
+                      <% if (SL.services[servicesIO.output[i]]) { %>
+                        <%=SL.services[servicesIO.output[i]].name%>
+                      <% } else { %>  
+                        <%=servicesIO.output[i]%>
+                      <% } %>  
+                    </span>
+                  <% } %>
+              </div>
+            </div>
+          <% } %>
+        </div>        
+      </div>
+    </script>
+
+    <div class="modal" id="direct-io-out-services-modal" tabindex="-1" aria-labelledby="direct-io-out-services-modal" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalScrollableTitle">Service direct input/output connections </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+              </div>              
+          </div>
+      </div>      
+    </div>
+
+
+
+
+    <div class="container-fluid">
         <div class="text-center">
           <div class="github-link">
               <h3>
@@ -145,6 +232,7 @@ path.link {
         </div>
 
         <script>
+            var SL = null;
             d3.queue()
               .defer(d3.json, "js/data/azure-services.json")
               .defer(d3.json, "js/data/azure-services-linking.json")
@@ -156,7 +244,7 @@ path.link {
                 return false 
               }
 
-              let SL = new ServiceLinking(services, serviceLinking)            
+              SL = new ServiceLinking(services, serviceLinking)            
               servicesVsGroupsForceDirectedTree(SL.services)
             }      
             
@@ -224,5 +312,30 @@ path.link {
             
         </script>
     </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){      
+      $('body').click( function(e){
+        if (!$(e.target).is("circle[id^=service-node]")) {
+          $('circle[id^=service-node]').popover('hide')
+          }
+      });
+      
+      $('#direct-io-out-services-modal').on('shown.bs.modal', function (event) {
+        var button = $(event.relatedTarget)
+        var serviceId = button.data('serviceId')         
+        var modal = $(this)
+      
+        modal.find('.modal-body').html(
+          tmpl("direct_io_out_services_modal_tpl", SL.services[serviceId])
+        )    
+      })
+    })
+  </script>
 </body>
 </html>

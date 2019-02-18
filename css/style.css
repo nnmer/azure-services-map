@@ -1,3 +1,11 @@
+body {
+  background: url(../img/texture-noise.png);  
+}
+
+.listIOtitle, .listIOtitle:hover {
+  color: #fff;
+}
+
 .pull-right {
     float: right;
 }

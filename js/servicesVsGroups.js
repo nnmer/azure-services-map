@@ -155,9 +155,14 @@ function servicesVsGroupsForceDirectedTree(services) {
 
 
     var drag = force.drag()
-        .on("dragstart", function(d){
+        .on("dragstart", function(d, nodeId){
             d3.select(this).classed("fixed", d.fixed = true)
+            triggerPopoverOff(d, nodeId)
         })
+        .on("dragend", function(d, nodeId){
+          // d3.select(this).classed("fixed", d.fixed = true)
+          triggerPopover(d, nodeId)
+      })
 
     var svgLink = svg.append("g").attr('class','container-link').selectAll('.link')
         .data(force.links())
@@ -169,9 +174,15 @@ function servicesVsGroupsForceDirectedTree(services) {
         .data(force.nodes())
         .enter()
             .append("circle")
-                .attr('class',function(d){return 'node '+(d.isCategory?' node-category ':'')+(d.hasLinkingServices ?' has-linking-services ':'')})
+                .attr('id', function(d,id){return 'service-node-'+id})
+                .attr('class',function(d){
+                  return 'node '
+                        +(d.isCategory? 'node-category ':'')
+                        +(d.hasLinkingServices ? 'has-linking-services ':'')
+                })
                 .call(drag)
-                .on('dblclick', connectedNodes)          
+                // .on('click',  onNodeClick)                       
+                .on('dblclick', onNodeDblClick)   
         
     var svgLabel = svg.append("g").attr('class','container-label').selectAll('.label')    
         .data(force.nodes())
@@ -219,7 +230,25 @@ function servicesVsGroupsForceDirectedTree(services) {
         return linkedByIndex[a.index + "," + b.index];
     }
 
-    function connectedNodes(a,b,c) {
+    function triggerPopoverOff(d, nodeId) {
+      $('circle[id^=service-node]')
+        .not("circle[id=service-node-"+nodeId+"]")
+        .popover('hide')
+    }
+
+    function triggerPopover (d,nodeId){      
+       $('#service-node-'+nodeId)
+        .popover({
+          title: d.name,
+          content: tmpl("service_node_popover", services[d.id]),
+          sanitize: false,
+          trigger: 'manual',
+          html: true
+        })
+        .popover('show')
+    }
+
+    function onNodeDblClick(a,b,c) {
         if (toggle == 0) {
             //Reduce the opacity of all but the neighbouring nodes
             d = d3.select(this).node().__data__;
@@ -285,7 +314,7 @@ var vis = d3.select("#service-flow").append("svg:svg")
   //.attr("width", w + m[1] + m[3])
   //.attr("height", h + m[0] + m[2])
    .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "0 0 600 400")
+    .attr("viewBox", "-300 0 600 400")
     .classed("svg-content", true)
 .append("svg:g")
   // .attr("transform", "translate(" + m[3] + "," + m[0] + ")")
@@ -424,7 +453,7 @@ y = t.node().getBBox()
 // t.attr("width", x.width/2)
 nW = x.width //> y.width ? y.width: x.width;
 nY = x.height
-t.attr("viewBox", "0 0 "+nW+' '+nY)
+t.attr("viewBox", "-300 0 "+nW+' '+nY)
 console.warn(t,x,y, nW, nY)
   
 }

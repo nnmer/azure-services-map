@@ -4,7 +4,6 @@
 <base href="">
  <link rel="stylesheet" href="css/style.css"/>
  <link rel="stylesheet" href="css/drawer.css"/>
- <link type="text/css" rel="stylesheet" href="http://mbostock.github.io/d3/talk/20111018/style.css"/>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://d3js.org/d3-queue.v3.min.js"></script>
 <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
@@ -31,7 +30,23 @@ path.link {
   fill: none;
   stroke: #ccc;
   stroke-width: 1.5px;
+} 
+ 
+
+ .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    /* padding-bottom: 100%; */
+    vertical-align: top;
+    /* overflow: hidden; */
 }
+.svg-content {
+    display: inline-block;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}  
 
     </style>
 </style>
@@ -124,8 +139,11 @@ path.link {
 
         <nav id="drawer"></nav>
 
-        <div id="service-flow"></div>
-        <div id="service-vs-group-map" ></div>
+        <div class="svg-container">
+          <div id="service-flow"></div>
+          <div id="service-vs-group-map" ></div>
+        </div>
+
         <script>
             d3.queue()
               .defer(d3.json, "js/data/azure-services.json")
@@ -154,6 +172,12 @@ path.link {
                 toggle.setAttribute('checked','checked')
                 drawer.innerHTML = tmpl("service_linking_drawer", services[serviceId]);
                 showServiceIntegrationTree(serviceId, services)
+                // t = d3.select("#service-flow").select("svg")
+                // x = t.node().getBoundingClientRect();
+                // y = t.node().getBBox()
+                // //t.attr("width", x.width + y.width)
+                // t.attr("viewBox", "0 0 "+x.width +" "+ x.height)
+                // console.warn(t,x,y)
               }
             }
 

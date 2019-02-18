@@ -282,13 +282,14 @@ var diagonal = d3.svg.diagonal()
   .projection(function(d) { return [d.y, d.x]; });
 
 var vis = d3.select("#service-flow").append("svg:svg")
-  .attr("width", w + m[1] + m[3])
-  .attr("height", h + m[0] + m[2])
-  // .attr("preserveAspectRatio", "xMinYMin meet")
-  //  .attr("viewBox", "0 0 600 400")
-  //  .classed("svg-content-responsive", true)
+  //.attr("width", w + m[1] + m[3])
+  //.attr("height", h + m[0] + m[2])
+   .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 600 400")
+    .classed("svg-content", true)
 .append("svg:g")
-  .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+  // .attr("transform", "translate(" + m[3] + "," + m[0] + ")")
+  ;
 
 
 root = json;
@@ -400,6 +401,7 @@ nodes.forEach(function(d) {
   d.x0 = d.x;
   d.y0 = d.y;
 });
+
 }
 
 // Toggle children.
@@ -412,5 +414,17 @@ if (d.children) {
   d._children = null;
 }
 }
+
+
+
+
+t = d3.select("#service-flow").select("svg")
+x = t.node().getBoundingClientRect();
+y = t.node().getBBox()
+// t.attr("width", x.width/2)
+nW = x.width //> y.width ? y.width: x.width;
+nY = x.height
+t.attr("viewBox", "0 0 "+nW+' '+nY)
+console.warn(t,x,y, nW, nY)
   
 }

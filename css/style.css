@@ -8,7 +8,7 @@ body {
 
 .modal-fullscreen  {
   margin: 0;
-  padding: 0 !important;
+  padding: 0 !important;  
 }
 
 .modal-fullscreen .modal-dialog, 
@@ -22,12 +22,13 @@ body {
 }
 
 .modal-fullscreen .modal-content,
-.modal-fullscreen .modal-dialog .modal-dialog-scrollable   {
+.modal-fullscreen .modal-content .modal-dialog-scrollable   {
   height: auto;
   height: 100%;
   border-radius: 0;
   max-width: initial;
   max-height: initial;
+  background: url(../img/texture-noise.png);  
 }
 
   
@@ -50,6 +51,12 @@ body {
   stroke: #ccc;
   stroke-width: 1.5px;
 } 
+
+#service-flow .node text.nodeHasChildren {
+  font-weight: 600;
+  fill: rgb(85, 85, 85);
+  stroke: none;
+}
  
 
 

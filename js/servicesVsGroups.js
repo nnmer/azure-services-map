@@ -371,6 +371,7 @@ function serviceFlowTree(json) {
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeEnter.append("svg:text")
+      .attr('class', function(d) { return d.children || d._children ? 'nodeHasChildren' : ''; })
       .attr("x", function(d) { return d.children || d._children ? -15 : 15; })
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })

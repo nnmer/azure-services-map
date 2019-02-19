@@ -156,7 +156,7 @@ function servicesVsGroupsForceDirectedTree(services) {
         .links(links)
         .size([width, height])
         .charge(-300)
-        .linkDistance(50)
+        .linkDistance(function(d,a){return Math.floor(Math.random()*(150-50+1)+50)})
         .gravity(0.3)
         .friction(0.9)
         .on('tick', forceTick)

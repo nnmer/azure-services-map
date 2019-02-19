@@ -134,10 +134,19 @@ function servicesVsGroupsForceDirectedTree(services) {
         }
     });
 
+    var zoom = d3.behavior.zoom()
+    .scaleExtent([0.1, 10])
+    .on("zoom", zoomed);
+
+    function zoomed() {
+      svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+    }     
+
     var svg = d3.select("#service-vs-group-map")
         .append("svg")
-            .attr("width", width)
+            .attr("width", '100%')
             .attr("height", height)
+            .call(zoom)
             .append('g')
 
 
@@ -154,14 +163,25 @@ function servicesVsGroupsForceDirectedTree(services) {
         .start()
 
 
-    var drag = force.drag()
+    var drag = d3.behavior.drag()
         .on("dragstart", function(d, nodeId){
+            force.stop()
+            d3.event.sourceEvent.stopPropagation();
             d3.select(this).classed("fixed", d.fixed = true)
             triggerPopoverOff(d, nodeId)
+        })
+        .on("drag", function(d, nodeId){
+          d.px += d3.event.dx;
+          d.py += d3.event.dy;
+          d.x += d3.event.dx;
+          d.y += d3.event.dy; 
+          forceTick();
         })
         .on("dragend", function(d, nodeId){
           // d3.select(this).classed("fixed", d.fixed = true)
           triggerPopover(d, nodeId)
+          forceTick();
+          force.resume()
       })
 
     var svgLink = svg.append("g").attr('class','container-link').selectAll('.link')
@@ -337,28 +357,11 @@ function serviceFlowTree(json) {
       .attr("transform", "translate(" + m[3] + "," + m[0] + ")")
     ;
 
-    var zoom = function() {
-      console.warn('aaaaa', d3.event.scale)
-      var scale = d3.event.scale,
-          translation = d3.event.translate,
-          tbound = -height * scale,
-          bbound = height * scale,
-          lbound = (-width + margin.right) * scale,
-          rbound = (width - margin.left) * scale;
-      // limit translation to thresholds
-      translation = [
-          Math.max(Math.min(translation[0], rbound), lbound),
-          Math.max(Math.min(translation[1], bbound), tbound)
-      ];
-      svg.attr("transform", "translate(" + translation + ")" + " scale(" + scale + ")");
-    }
-
   root = json;
   root.x0 = h / 2;
   root.y0 = 0;
 
   update(root);
-
 
   function update(source) {
   var duration = d3.event && d3.event.altKey ? 5000 : 500;

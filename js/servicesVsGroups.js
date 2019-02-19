@@ -203,6 +203,47 @@ function servicesVsGroupsForceDirectedTree(services) {
                 .call(drag)
                 // .on('click',  onNodeClick)                       
                 .on('dblclick', onNodeDblClick)   
+                .on("mouseover",function(d, nodeId){
+                  d3.select(this).classed('node-hovered', true)
+                  $('#service-node-'+nodeId+'-label').toggleClass('node-hovered')
+
+                  
+
+                  let nx = Math.round($('#service-node-'+nodeId+'-label').attr('x')*1)
+                  let ny = Math.round($('#service-node-'+nodeId+'-label').attr('y')*1)
+                  let ndx = parseFloat($('#service-node-'+nodeId+'-label').attr('dx'))
+                  let ndy = parseFloat($('#service-node-'+nodeId+'-label').attr('dy'))
+                  
+                  svg.append('rect')
+                    .attr('id',"service-node-hovered-label-background")
+                    .attr('x', nx+ndx+12)
+                    .attr("y",ny+ndy-10)
+                    .attr('height', 20)
+                    .attr('width', 250)
+                    .attr('fill','#ff0')
+                  
+                  $('.container-label')
+                    .append($('#service-node-hovered-label-background'))
+                    .append($('#service-node-'+nodeId+'-label'))
+                
+                  
+                })
+                .on("mouseout",function(d, nodeId){
+                  d3.select(this).classed('node-hovered', false)
+                  $('#service-node-'+nodeId+'-label').toggleClass('node-hovered')
+                  $('#service-node-hovered-label-background').remove()
+                })
+
+  var svgLabel = svg.append("g").attr('class','container-label').selectAll('.label')
+    .data(force.nodes())
+    .enter()            
+        .append("text")
+            .attr('id', function(d,id){return 'service-node-'+id+'-label'})
+            .attr('class',function(d){return 'label '+(d.isCategory?'label-category':'')})
+            .attr("dx", "1.4em")
+            .attr("dy", ".35em")
+            .attr('font-size','15px')
+            .text(function(d){return d.name})        
 
 // var svgIcon = svg.append("g").attr('class','container-s-img').selectAll('.s-icon')    
 //   .data(force.nodes())
@@ -213,15 +254,7 @@ function servicesVsGroupsForceDirectedTree(services) {
 //       // .attr("width", 16)
 //       // .attr("height", 16)
         
-    var svgLabel = svg.append("g").attr('class','container-label').selectAll('.label')    
-        .data(force.nodes())
-        .enter()            
-            .append("text")
-                .attr('class',function(d){return 'label '+(d.isCategory?'label-category':'')})
-                .attr("dx", "1.4em")
-                .attr("dy", ".35em")
-                .attr('font-size','15px')
-                .text(function(d){return d.name})
+
 
     svg.append("defs").selectAll("marker")
         .data(d3.values(categories))
@@ -267,6 +300,7 @@ function servicesVsGroupsForceDirectedTree(services) {
 
     function triggerPopover (d,nodeId){      
        $('#service-node-'+nodeId)
+        .not(".node-category")
         .popover({
           title: d.name,
           content: tmpl("service_node_popover", services[d.id]),

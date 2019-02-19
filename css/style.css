@@ -114,9 +114,26 @@ body {
     stroke: #fff;
     fill: rgb(113, 136, 146);
     stroke-width: 1.5px;
+    cursor: pointer
 }
 circle {
   r: 10;
+}
+
+.node.node-hovered {
+  /* stroke: rgb(1, 97, 1);
+  fill: rgb(1, 97, 1); */
+  stroke: #FC0;
+  fill: #FC0;
+  stroke-width: 4px;
+}
+
+#service-node-hovered-label-background {
+ fill: #FC0;
+}
+
+text.label.node-hovered {  
+  font-weight: 700;
 }
 
 .label {

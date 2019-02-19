@@ -304,10 +304,10 @@
       "https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-as2"
     ],
     "input": [
-      "See Connectors for Azure and <br/> 3rd party services <a href='https://docs.microsoft.com/en-us/azure/connectors/apis-list' target='_blank'>Link</a>"
+      "Connectors for Azure and 3rd party services at https://docs.microsoft.com/en-us/azure/connectors/apis-list"
     ],
     "output": [
-      "See Connectors for Azure and <br/> 3rd party services <a href='https://docs.microsoft.com/en-us/azure/connectors/apis-list' target='_blank'>Link</a>"
+      "Connectors for Azure and 3rd party services at https://docs.microsoft.com/en-us/azure/connectors/apis-list"
     ]
   },
   "time-series-insights": {

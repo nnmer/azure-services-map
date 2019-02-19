@@ -1058,8 +1058,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/storsimple/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/storsimple.svg"
   },
-  "data-lake-storage-gen2": {
-    "id": "data-lake-storage-gen2",
+  "data-lake-storage": {
+    "id": "data-lake-storage",
     "name": "Data Lake Storage Gen2",
     "category": [
       "Storage",

@@ -7,13 +7,10 @@ class ServiceLinking {
 
     this.buildFlatSourceTargetMap();
     this.mergeServicesWithRespectedIOServices()
+    this.deduplicateIOlist()
   }
 
   buildFlatSourceTargetMap() {
-    function onlyUnique(value, index, self) { 
-      return self.indexOf(value) === index;
-    }
-
     for (let key in this.sourceData) {
       let item = this.sourceData[key];
       let that = this
@@ -38,10 +35,7 @@ class ServiceLinking {
           that.flatServiceIOMap[inputElement] = that.flatServiceIOMap[inputElement] || {input:[], output:[]}
           that.flatServiceIOMap[inputElement].output.push(key)
         })        
-      }      
-
-      this.flatServiceIOMap[key].input = (this.flatServiceIOMap[key].input).filter(onlyUnique)
-      this.flatServiceIOMap[key].output = (this.flatServiceIOMap[key].output).filter(onlyUnique)
+      }            
     }
   }
 
@@ -54,6 +48,17 @@ class ServiceLinking {
           ? true 
           : false
       }
+    }
+  }
+
+  deduplicateIOlist() {
+    function onlyUnique(value, index, self) { 
+      return self.indexOf(value) === index;
+    }
+
+    for (let key in this.flatServiceIOMap) {
+      this.flatServiceIOMap[key].input = (this.flatServiceIOMap[key].input).filter(onlyUnique)
+      this.flatServiceIOMap[key].output = (this.flatServiceIOMap[key].output).filter(onlyUnique)
     }
   }
 

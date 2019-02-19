@@ -55,6 +55,11 @@ getHtml()
                         let href = $(sVal).find('a').attr('href')
                         let icon = $(sVal).find('img').attr('src')
                         id = name2Key(name)
+
+                        if (id == 'data-lake-storage-gen2') {
+                          id = 'data-lake-storage'
+                        }
+
                         if (name == '') {
                             return
                         }

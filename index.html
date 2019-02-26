@@ -175,39 +175,25 @@
               </span>            
             </div>            
           </div>   
-        </div>
-        <div>
+
+          <div>
+            <div class="node-notes">
+              <svg width="20" height="20">
+                  <circle cx="10" cy="10" class="node"></circle>
+              </svg> &nbsp;- azure service
+              <svg width="20" height="20">
+                <circle cx="10" cy="10" class="node has-linking-services"></circle>
+              </svg> &nbsp;- a service with input/output connections
+              <svg width="20" height="20">
+                <circle cx="10" cy="10" class="node node-category" style="r: 10"></circle>                        
+              </svg> &nbsp;- a service category                                    
+            </div>       
             <div>
-              Search: <input type="text" onkeydown="setTimeout(function(){ServicesVsGroupsForceDirectedTree.filter = $('#service-vs-group-search').val()}, 300)" name='search' id="service-vs-group-search">
-            </div> 
-            <div class="node-notes pull-right">
-                <dl class="dl-horizontal" >
-                  <dt><svg width="20" height="20">
-                      <circle cx="10" cy="10" class="node"></circle>
-                      <!-- <text x="10" y="10">- Service has input/output connections</text> -->
-                    </svg></dt>
-                  <dd>
-                    &nbsp;- azure service
-                  </dd>
-  
-                  <dt><svg width="20" height="20">
-                      <circle cx="10" cy="10" class="node has-linking-services"></circle>
-                      <!-- <text x="10" y="10">- Service has input/output connections</text> -->
-                    </svg></dt>
-                  <dd>
-                    &nbsp;- a service with input/output connections
-                  </dd>
-  
-                  <dt><svg width="20" height="20">
-                      <circle cx="10" cy="10" class="node node-category" style="r: 10"></circle>
-                      <!-- <text x="10" y="10">- Service has input/output connections</text> -->
-                    </svg></dt>
-                  <dd>
-                    &nbsp;- a service category
-                  </dd>
-                </dl>                    
-              </div>       
+              Search: <input type="text" onkeydown="setTimeout(function(){SvsG.searchValue = $('#service-vs-group-search').val()}, 100)" name='search' id="service-vs-group-search">
+            </div>                 
+          </div>
         </div>
+        
         
         <div class="clearfix"></div>
     </div>

@@ -116,15 +116,35 @@ class ServicesVsGroupsForceDirectedTree {
     this.svg = null
   }
 
-  // set filter(value) {
-  //   console.warn(value)
-  //   this.filter = value
-  //   this.applyFilter()
-  // }
+  set searchValue(value) {
+    this.filter = value
+    this.applyFilter()
+  }
 
-  // applyFilter() {
+  applyFilter() {    
+    if (this.toggle == 1){
+      this.toggle = 0
+    }
 
-  // }
+    if (this.filter) {
+
+      let regex = new RegExp("" + this.filter + "", "i");      
+      this.svgLink.style("opacity", 0.1);
+
+      this.svgNode.style("opacity", function (o) {
+        return -1 !== o.name.search(regex) ? 1 : 0.1 ;
+      }); 
+      this.svgLabel.style("opacity", function (o) {
+        return -1 !== o.name.search(regex) ? 1 : 0.1 ;
+      }); 
+
+    } else {
+      this.svgNode.style("opacity", 1); 
+      this.svgLink.style("opacity", 1);
+      this.svgLabel.style("opacity", 1);
+    }
+    
+  }
 
   services2ServiceCategoryLink(data) {
     let links = []
@@ -374,6 +394,8 @@ class ServicesVsGroupsForceDirectedTree {
       this.svgLink.style("opacity", 1);
       this.svgLabel.style("opacity", 1);
       this.toggle = 0;
+
+      this.applyFilter()
     }
   }
 

@@ -87,283 +87,316 @@ class ServiceLinking {
 }
 
 
+class ServicesVsGroupsForceDirectedTree {
 
+  constructor(services) {
+    this.filter = null;
+    this.width = 1000
+    this.height = 850
+    this.centerX = this.width / 2
+    this.centerY = this.height / 2
 
+    this.services = services
 
-function servicesVsGroupsForceDirectedTree(services) {
-    function services2ServiceCategoryLink(data) {
-      let links = []
-    
-      for (let i in data) {
-        data[i].category.forEach(function(c) {          
-          links.push({
-            id: data[i].id,
-            name: data[i].name,
-            category: c,
-            hasLinkingServices: data[i].hasLinkingServices
-          })
-        })    
-      }
-    
-      return links
-    }
-
-    var width=1000,
-        height=850,
-        centerX = width/2,
-        centerY = height/2,
-        links = services2ServiceCategoryLink(services),
-        nodes = {},
-        categories = {}
-    ;
-
-    links.forEach(function(item) {            
-      item.source = nodes[item.name] || (nodes[item.name] = {name: item.name, id: item.id, hasLinkingServices: item.hasLinkingServices, isCategory: (item.category=='Azure'?true:false)});
-      item.target = nodes[item.category] || (nodes[item.category] = {name: item.category, isCategory: true});
-      if (!categories[item.category]){
-          categories[item.category] = item.category
-      }
-    });
-
-
-    nodes = d3.values(nodes);
-    var n = nodes.length;
-    nodes.forEach(function(d, i) {
-        if (d.name=='Azure') {
-            d.x=centerX;
-            d.y=centerY;
-            d.fixed = true;
-        } else {
-            d.x = width / n * i
-            d.y = height /2;
-        }
-    });
-
-    var zoom = d3.behavior.zoom()
-    .scaleExtent([0.1, 10])
-    .on("zoom", zoomed);
-
-    function zoomed() {
-      svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-    }     
-
-    var svg = d3.select("#service-vs-group-map")
-        .append("svg")
-            .attr("width", '100%')
-            .attr("height", height)
-            .call(zoom)
-            .append('g')
-
-
-
-    var force = d3.layout.force()
-        .nodes(nodes)
-        .links(links)
-        .size([width, height])
-        .charge(-300)
-        .linkDistance(function(d,a){return Math.floor(Math.random()*(150-50+1)+50)})
-        .gravity(0.3)
-        .friction(0.9)
-        .on('tick', forceTick)
-        .start()
-
-
-    var drag = d3.behavior.drag()
-        .on("dragstart", function(d, nodeId){
-            force.stop()
-            d3.event.sourceEvent.stopPropagation();
-            d3.select(this).classed("fixed", d.fixed = true)
-            triggerPopoverOff(d, nodeId)
-        })
-        .on("drag", function(d, nodeId){
-          d.px += d3.event.dx;
-          d.py += d3.event.dy;
-          d.x += d3.event.dx;
-          d.y += d3.event.dy; 
-          forceTick();
-        })
-        .on("dragend", function(d, nodeId){
-          // d3.select(this).classed("fixed", d.fixed = true)
-          triggerPopover(d, nodeId)
-          forceTick();
-          force.resume()
-      })
-
-    var svgLink = svg.append("g").attr('class','container-link').selectAll('.link')
-        .data(force.links())
-        .enter().append('line')
-            .attr('class','link')
-        
-
-    var svgNode = svg.append("g").attr('class','container-node').selectAll('.node')    
-        .data(force.nodes())
-        .enter()
-            .append("circle")
-                .attr('id', function(d,id){return 'service-node-'+id})
-                .attr('class',function(d){
-                  return 'node '
-                        +(d.isCategory? 'node-category ':'')
-                        +(d.hasLinkingServices ? 'has-linking-services ':'')
-                })
-                .call(drag)
-                // .on('click',  onNodeClick)                       
-                .on('dblclick', onNodeDblClick)   
-                .on("mouseover",function(d, nodeId){
-                  d3.select(this).classed('node-hovered', true)
-                  $('#service-node-'+nodeId+'-label').toggleClass('node-hovered')
-
-                  
-
-                  let nx = Math.round($('#service-node-'+nodeId+'-label').attr('x')*1)
-                  let ny = Math.round($('#service-node-'+nodeId+'-label').attr('y')*1)
-                  let ndx = parseFloat($('#service-node-'+nodeId+'-label').attr('dx'))
-                  let ndy = parseFloat($('#service-node-'+nodeId+'-label').attr('dy'))
-                  
-                  svg.append('rect')
-                    .attr('id',"service-node-hovered-label-background")
-                    .attr('x', nx+ndx+12)
-                    .attr("y",ny+ndy-10)
-                    .attr('height', 20)
-                    .attr('width', 250)
-                    .attr('fill','#ff0')
-                  
-                  $('.container-label')
-                    .append($('#service-node-hovered-label-background'))
-                    .append($('#service-node-'+nodeId+'-label'))
-                
-                  
-                })
-                .on("mouseout",function(d, nodeId){
-                  d3.select(this).classed('node-hovered', false)
-                  $('#service-node-'+nodeId+'-label').toggleClass('node-hovered')
-                  $('#service-node-hovered-label-background').remove()
-                })
-
-  var svgLabel = svg.append("g").attr('class','container-label').selectAll('.label')
-    .data(force.nodes())
-    .enter()            
-        .append("text")
-            .attr('id', function(d,id){return 'service-node-'+id+'-label'})
-            .attr('class',function(d){return 'label '+(d.isCategory?'label-category':'')})
-            .attr("dx", "1.4em")
-            .attr("dy", ".35em")
-            .attr('font-size','15px')
-            .text(function(d){return d.name})        
-
-// var svgIcon = svg.append("g").attr('class','container-s-img').selectAll('.s-icon')    
-//   .data(force.nodes())
-//   .enter()
-//     .append('image')
-//       .attr('class','service-icon')
-//       .attr("xlink:href", function(d){return SL && SL.services[d.id] ? SL.services[d.id].icon : ''})
-//       // .attr("width", 16)
-//       // .attr("height", 16)
-        
-
-
-    svg.append("defs").selectAll("marker")
-        .data(d3.values(categories))
-            .enter().append("marker")
-                .attr("id", function(d) { return d; })
-                .attr("viewBox", "0 -5 10 10")
-                .attr("refX", 25)
-                .attr("refY", 0)
-                .attr("markerWidth", 8)
-                .attr("markerHeight", 8)
-                .attr("orient", "auto")
-                    .append("path")
-                        .attr("d", "M0,-5L10,0L0,5 L10,0 L0, -5")
-                        .style("stroke", "#000")
-                        .style("opacity", "0.7")
-        
-        
-    // -----------------
-
-
-    //Toggle stores whether the highlighting is on
-    var toggle = 0;
+    this.links = this.services2ServiceCategoryLink(this.services)
 
     //Create an array logging what is connected to what
-    var linkedByIndex = {};
-    for (i = 0; i < nodes.length; i++) {
-        linkedByIndex[i + "," + i] = 1;
-    };
-    links.forEach(function (d) {
-        linkedByIndex[d.source.index + "," + d.target.index] = 1;
+    this.linkedByIndex = {} 
+
+    this.nodes = {}
+    this.categories = {}
+
+    this.toggle = 0     //Toggle stores whether the highlighting is on
+
+    this.force = null
+    this.svgLabel = null
+    this.svgNode = null
+    this.svgLink = null
+    
+    this.svg = null
+  }
+
+  // set filter(value) {
+  //   console.warn(value)
+  //   this.filter = value
+  //   this.applyFilter()
+  // }
+
+  // applyFilter() {
+
+  // }
+
+  services2ServiceCategoryLink(data) {
+    let links = []
+
+    for (let i in data) {
+      data[i].category.forEach(function (c) {
+        links.push({
+          id: data[i].id,
+          name: data[i].name,
+          category: c,
+          hasLinkingServices: data[i].hasLinkingServices
+        })
+      })
+    }
+
+    return links
+  }
+
+  render() {
+    let that = this
+
+
+    this.links.forEach(function (item) {
+      item.source = that.nodes[item.name] || (that.nodes[item.name] = { name: item.name, id: item.id, hasLinkingServices: item.hasLinkingServices, isCategory: (item.category == 'Azure' ? true : false) });
+      item.target = that.nodes[item.category] || (that.nodes[item.category] = { name: item.category, isCategory: true });
+      if (!that.categories[item.category]) {
+        that.categories[item.category] = item.category
+      }
     });
 
-    //This function looks up whether a pair are neighbours  
-    function neighboring(a, b) {
-        return linkedByIndex[a.index + "," + b.index];
+
+    this.nodes = d3.values(this.nodes);
+
+    var n = this.nodes.length;
+
+    this.nodes.forEach(function (d, i) {
+      if (d.name == 'Azure') {
+        d.x = centerX;
+        d.y = centerY;
+        d.fixed = true;
+      } else {
+        d.x = that.width / n * i
+        d.y = that.height / 2;
+      }
+    });
+    
+
+    var zoomed = function(){
+      that.svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")")
     }
 
-    function triggerPopoverOff(d, nodeId) {
-      $('circle[id^=service-node]')
-        .not("circle[id=service-node-"+nodeId+"]")
-        .popover('hide')
+    var zoom = d3.behavior.zoom()
+      .scaleExtent([0.1, 10])
+      .on("zoom", zoomed)
+
+    this.svg = d3.select("#service-vs-group-map")
+      .append("svg")
+      .attr("width", '100%')
+      .attr("height", this.height)
+      .call(zoom)
+      .on("dblclick.zoom", null)
+      .append('g')
+
+
+
+    this.force = d3.layout.force()
+      .nodes(this.nodes)
+      .links(this.links)
+      .size([this.width, this.height])
+      .charge(-300)
+      .linkDistance(function (d, a) { return Math.floor(Math.random() * (150 - 50 + 1) + 50) })
+      .gravity(0.3)
+      .friction(0.9)      
+      .on('tick', function(d) {that.forceTick(d)})
+      .start()
+
+    var drag = d3.behavior.drag()
+      .on("dragstart", function (d, nodeId) {
+        that.force.stop()
+        d3.event.sourceEvent.stopPropagation();
+        d3.select(this).classed("fixed", d.fixed = true)
+        that.triggerPopoverOff(d, nodeId)
+      })
+      .on("drag", function (d, nodeId) {
+        d.px += d3.event.dx;
+        d.py += d3.event.dy;
+        d.x += d3.event.dx;
+        d.y += d3.event.dy;
+        that.forceTick();
+      })
+      .on("dragend", function (d, nodeId) {
+        // d3.select(this).classed("fixed", d.fixed = true)
+        that.triggerPopover(d, nodeId)
+        that.forceTick();
+        that.force.resume()
+      })
+
+    this.svgLink = this.svg.append("g").attr('class', 'container-link').selectAll('.link')
+      .data(this.force.links())
+      .enter().append('line')
+      .attr('class', 'link')
+
+
+    this.svgNode = this.svg.append("g").attr('class', 'container-node').selectAll('.node')
+      .data(this.force.nodes())
+      .enter()
+      .append("circle")
+      .attr('id', function (d, id) { return 'service-node-' + id })
+      .attr('class', function (d) {
+        return 'node '
+          + (d.isCategory ? 'node-category ' : '')
+          + (d.hasLinkingServices ? 'has-linking-services ' : '')
+      })
+      .call(drag)
+      // .on('click',  onNodeClick)                       
+      .on('dblclick', function(d){that.onNodeDblClick(d)})
+      .on("mouseover", function (d, nodeId) {
+        d3.select(this).classed('node-hovered', true)
+        $('#service-node-' + nodeId + '-label').toggleClass('node-hovered')
+
+
+
+        let nx = Math.round($('#service-node-' + nodeId + '-label').attr('x') * 1)
+        let ny = Math.round($('#service-node-' + nodeId + '-label').attr('y') * 1)
+        let ndx = parseFloat($('#service-node-' + nodeId + '-label').attr('dx'))
+        let ndy = parseFloat($('#service-node-' + nodeId + '-label').attr('dy'))
+
+        that.svg.append('rect')
+          .attr('id', "service-node-hovered-label-background")
+          .attr('x', nx + ndx + 12)
+          .attr("y", ny + ndy - 10)
+          .attr('height', 20)
+          .attr('width', 250)
+          .attr('fill', '#ff0')
+
+        $('.container-label')
+          .append($('#service-node-hovered-label-background'))
+          .append($('#service-node-' + nodeId + '-label'))
+
+
+      })
+      .on("mouseout", function (d, nodeId) {
+        d3.select(this).classed('node-hovered', false)
+        $('#service-node-' + nodeId + '-label').toggleClass('node-hovered')
+        $('#service-node-hovered-label-background').remove()
+      })
+
+    this.svgLabel = this.svg.append("g").attr('class', 'container-label').selectAll('.label')
+      .data(this.force.nodes())
+      .enter()
+      .append("text")
+      .attr('id', function (d, id) { return 'service-node-' + id + '-label' })
+      .attr('class', function (d) { return 'label ' + (d.isCategory ? 'label-category' : '') })
+      .attr("dx", "1.4em")
+      .attr("dy", ".35em")
+      .attr('font-size', '15px')
+      .text(function (d) { return d.name })
+
+    // var svgIcon = svg.append("g").attr('class','container-s-img').selectAll('.s-icon')    
+    //   .data(force.nodes())
+    //   .enter()
+    //     .append('image')
+    //       .attr('class','service-icon')
+    //       .attr("xlink:href", function(d){return SL && SL.services[d.id] ? SL.services[d.id].icon : ''})
+    //       // .attr("width", 16)
+    //       // .attr("height", 16)
+
+
+
+    this.svg.append("defs").selectAll("marker")
+      .data(d3.values(this.categories))
+      .enter().append("marker")
+      .attr("id", function (d) { return d; })
+      .attr("viewBox", "0 -5 10 10")
+      .attr("refX", 25)
+      .attr("refY", 0)
+      .attr("markerWidth", 8)
+      .attr("markerHeight", 8)
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M0,-5L10,0L0,5 L10,0 L0, -5")
+      .style("stroke", "#000")
+      .style("opacity", "0.7")
+
+
+    // .index available after the nodes nad linkes are evaluated by d3
+    this.nodes.forEach(function(d){
+      that.linkedByIndex[d.index + "," + d.index] = 1;
+    })
+  
+    this.links.forEach(function (d) {
+      that.linkedByIndex[d.target.index + "," + d.source.index] = 1;    
+    });
+  }
+
+
+
+
+
+  //This function looks up whether a pair are neighbours  
+  neighboring(a, b) {        
+    return this.linkedByIndex[a.index + "," + b.index];
+  }
+
+  triggerPopoverOff(d, nodeId) {
+    $('circle[id^=service-node]')
+      .not("circle[id=service-node-" + nodeId + "]")
+      .popover('hide')
+  }
+
+  triggerPopover(d, nodeId) {
+    $('#service-node-' + nodeId)
+      .not(".node-category")
+      .popover({
+        title: d.name,
+        content: tmpl("service_node_popover", this.services[d.id]),
+        sanitize: false,
+        trigger: 'manual',
+        html: true
+      })
+      .popover('show')
+  }
+
+  onNodeDblClick(d) {
+    let that = this
+    if (this.toggle == 0) {
+      //Reduce the opacity of all but the neighbouring nodes
+      // d = d3.select(node).node().__data__;
+      this.svgNode.style("opacity", function (o) {
+        return that.neighboring(d, o) | that.neighboring(o, d) ? 1 : 0.1;
+      });
+
+      this.svgLink.style("opacity", function (o) {
+        return d.index == o.source.index | d.index == o.target.index ? 1 : 0.1;
+      });
+
+      this.svgLabel.style("opacity", function (o) {
+        return that.neighboring(d, o) | that.neighboring(o, d) ? 1 : 0.1;
+      })
+
+      //Reduce the op
+
+      this.toggle = 1;
+    } else {
+      //Put them back to opacity=1
+      this.svgNode.style("opacity", 1);
+      this.svgLink.style("opacity", 1);
+      this.svgLabel.style("opacity", 1);
+      this.toggle = 0;
     }
+  }
 
-    function triggerPopover (d,nodeId){      
-       $('#service-node-'+nodeId)
-        .not(".node-category")
-        .popover({
-          title: d.name,
-          content: tmpl("service_node_popover", services[d.id]),
-          sanitize: false,
-          trigger: 'manual',
-          html: true
-        })
-        .popover('show')
-    }
+  forceTick(d) {
+    this.svgLink
+      .attr("x1", function (d) { return d.source.x; })
+      .attr("y1", function (d) { return d.source.y; })
+      .attr("x2", function (d) { return d.target.x; })
+      .attr("y2", function (d) { return d.target.y; })
+      .style("marker-end", function (d) { return `url("#${d.category}")` })
 
-    function onNodeDblClick(a,b,c) {
-        if (toggle == 0) {
-            //Reduce the opacity of all but the neighbouring nodes
-            d = d3.select(this).node().__data__;
-            svgNode.style("opacity", function (o) {
-                return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1;
-            });
-            
-            svgLink.style("opacity", function (o) {
-                return d.index==o.source.index | d.index==o.target.index ? 1 : 0.1;
-            });
+    this.svgNode
+      .attr('cx', function (d) { return d.x })
+      .attr('cy', function (d) { return d.y })
 
-            svgLabel.style("opacity", function(o) {
-                return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1;
-            })
-            
-            //Reduce the op
-            
-            toggle = 1;
-        } else {
-            //Put them back to opacity=1
-            svgNode.style("opacity", 1);
-            svgLink.style("opacity", 1);
-            svgLabel.style("opacity", 1);
-            toggle = 0;
-        }
-    }
+    // svgIcon
+    //     .attr('x', function (d) {return d.x-8})
+    //     .attr('y', function (d) {return d.y-8})
 
-    function forceTick() {
-        svgLink
-            .attr("x1", function (d) {return d.source.x;})
-            .attr("y1", function (d) {return d.source.y;})
-            .attr("x2", function (d) {return d.target.x;})
-            .attr("y2", function (d) {return d.target.y;})
-            .style("marker-end",  function(d){return `url("#${d.category}")`} )
-            
-        svgNode
-            .attr('cx', function (d) {return d.x})
-            .attr('cy', function (d) {return d.y})
-            
-        // svgIcon
-        //     .attr('x', function (d) {return d.x-8})
-        //     .attr('y', function (d) {return d.y-8})
-
-        svgLabel
-            .attr('x', function (d) {return d.x})
-            .attr('y', function (d) {return d.y})        
-    }
+    this.svgLabel
+      .attr('x', function (d) { return d.x })
+      .attr('y', function (d) { return d.y })
+  }
 }
 
 function serviceFlowTree(json) {    
@@ -392,6 +425,7 @@ function serviceFlowTree(json) {
     .attr("width", '100%')
     .attr("height", h)
       .call(zoom)
+      .on("dblclick.zoom", null)
     .append("svg:g")
       .attr("transform", "translate(" + m[3] + "," + m[0] + ")")
     ;

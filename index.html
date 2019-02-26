@@ -9,7 +9,22 @@
 <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
 <script src="js/micro-templating.js"></script>
 <script src="js/servicesVsGroups.js"></script>
+<script>
+  var SL = null;
+  d3.queue()
+    .defer(d3.json, "js/data/azure-services.json")
+    .defer(d3.json, "js/data/azure-services-linking.json")
+    .await(start);
 
+  function start(error, services, serviceLinking) {
+    if(error) {
+      alert('Cannot get data')
+      return false 
+    }
+
+    SL = new ServiceLinking(services, serviceLinking)     
+  } 
+</script>
 <body>
     <script type='text/html' id='service_node_popover'>
       <div>
@@ -162,6 +177,9 @@
           </div>   
         </div>
         <div>
+            <div>
+              Search: <input type="text" onkeydown="setTimeout(function(){ServicesVsGroupsForceDirectedTree.filter = $('#service-vs-group-search').val()}, 300)" name='search' id="service-vs-group-search">
+            </div> 
             <div class="node-notes pull-right">
                 <dl class="dl-horizontal" >
                   <dt><svg width="20" height="20">
@@ -202,23 +220,7 @@
           <div id="service-vs-group-map" ></div>
         </div>
 
-        <script>
-            var SL = null;
-            d3.queue()
-              .defer(d3.json, "js/data/azure-services.json")
-              .defer(d3.json, "js/data/azure-services-linking.json")
-              .await(start);
-
-            function start(error, services, serviceLinking) {
-              if(error) {
-                alert('Cannot get data')
-                return false 
-              }
-
-              SL = new ServiceLinking(services, serviceLinking)            
-              servicesVsGroupsForceDirectedTree(SL.services)
-            }                            
-
+        <script>                         
             function showServiceIntegrationTree(serviceId, services) {
               function buildChildren(id) {
                 // console.warn('Called buildChildren',id)
@@ -271,6 +273,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function(){      
+      SvsG = new ServicesVsGroupsForceDirectedTree(SL.services)
+      SvsG.render()
+
       $.fn.toEm = function(settings){
           settings = jQuery.extend({
               scope: 'body'

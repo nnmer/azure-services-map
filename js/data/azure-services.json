@@ -599,7 +599,7 @@
       "AI + Machine Learning"
     ],
     "servicesIO": [],
-    "url": "https://docs.microsoft.comhttps://docs.microsoft.com/bot-framework/bot-service-overview-introduction",
+    "url": "https://docs.microsoft.com/bot-framework/bot-service-overview-introduction",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/bot-service.svg"
   },
   "microsoft-genomics": {
@@ -1426,9 +1426,9 @@
     "url": "https://docs.microsoft.com/en-us/azure/blockchain-workbench",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/blockchain-workbench.svg"
   },
-  "iot-fundamentals": {
-    "id": "iot-fundamentals",
-    "name": "IoT Fundamentals",
+  "iot": {
+    "id": "iot",
+    "name": "Azure IoT",
     "category": [
       "Internet of Things"
     ],
@@ -1791,7 +1791,7 @@
       "Management Tools"
     ],
     "servicesIO": [],
-    "url": "https://docs.microsoft.comhttps://azure.microsoft.com/",
+    "url": "https://docs.microsoft.com/azure/azure-portal/",
     "icon": "https://docs.microsoft.com/media/logos/logo_azure.svg"
   },
   "resource-manager": {

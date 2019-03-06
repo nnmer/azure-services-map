@@ -59,6 +59,10 @@
         }
       },
       watch: {
+        searchVal: function(val) {
+          $('.service-list-col-service-item').popover('hide')
+          SvsG.searchValue = val
+        },
         currentView: function(val) {
           let that = this
           if (false === this.mapRendered) {
@@ -79,6 +83,18 @@
         },
         clearSearchField: function() {
           this.searchVal = null
+        },
+        showServiceTooltip: function(serviceId, element) {          
+          $('.service-list-col-service-item').popover('hide')          
+          $('#'+element)
+            .popover({
+              title: SL.service[serviceId].name,
+              content: tmpl("service_node_popover", SL.service[serviceId]),
+              sanitize: false,
+              // trigger: 'click',
+              html: true
+            })
+            .popover('show')
         }
       }
     })
@@ -90,10 +106,7 @@
       <div>
         <ul class="list-unstyled">
           <li>
-            <a href="<%=url%>" target="_blank">
-              <% if (icon ) { %>
-                <img class="service-icon" src="<%=icon%>"/> 
-              <% } %>
+            <a href="<%=url%>" target="_blank">              
               Docs
             </a>
           </li>
@@ -230,25 +243,52 @@
             </div>          
           </div>
 
-          <input 
-            class="form-control form-control-dark w-100 search-input" 
-            type="text" placeholder="Search" aria-label="Search"
-            v-model="searchVal"
-            v-on:keydown.esc="clearSearchField"
-          >
+          <div class="row">
+            <div class="col-lg-8 col-sm-6">
+              <input 
+                class="form-control form-control-dark w-100 search-input" 
+                type="text" placeholder="Search" aria-label="Search"
+                v-model="searchVal"
+                v-on:keydown.esc="clearSearchField"
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6" v-if="currentView=='tree'">
+                - services may be placed in several service groups; <br/>
+                - <i class="has-linking-services" style="padding: 0 8px;"></i> &nbsp;&nbsp;a service with input/output connection
+            </div>
+            <div class="col-lg-4 col-sm-6" v-if="currentView=='map'">                
+                <svg width="20" height="20">
+                    <circle cx="10" cy="10" class="node node-category" style="r: 10"></circle>                        
+                  </svg> &nbsp;- a service group   
+                  <br/>
+                <svg width="20" height="20">
+                  <circle cx="10" cy="10" class="node has-linking-services"></circle>
+                </svg> &nbsp;- a service with input/output connections
+            </div>
+        </div>
 
           <div class="data-container">
               <div v-bind:class="{'d-none': currentView!='tree'}" class="data-container-tree">
-    
                 <div class="service-list-container">
                   <div class="service-list row text-center">
-                    <div class="service-list-col" v-for="(services, category) in filteredServicesList" >
+                    <div class="service-list-col" v-for="(services, category, catIdx) in filteredServicesList" >
                       <div class="service-list-col-title">
                         {{category}}
                       </div>
-                      <div v-for="service in filteredServicesList[category]" class="service-list-col-service-item">                <img class="service-icon" v-bind:src="service.icon"/>  
-                        <br/>   
-                        {{service.name}}
+                      <div 
+                          v-for="(service) in filteredServicesList[category]" 
+                          class="service-list-col-service-item"
+                          v-bind:class="{'has-linking-services':service.servicesIO.input && service.servicesIO.input.length >0
+                          || service.servicesIO.output && service.servicesIO.output.length >0}"
+                          v-bind:data-service-id="service.id"                                                    
+                          v-bind:id="catIdx+'-'+service.id"
+                          v-on:click="showServiceTooltip(service.id, catIdx+'-'+service.id)"
+                      >
+                        <div>
+                          <img class="service-icon" v-bind:src="service.icon"/>  
+                          <br/>   
+                          {{service.name}}
+                        </div>
                       </div>
                     </div>                
                   </div>          
@@ -262,15 +302,7 @@
                       <div class="text-center">                
                         <div>
                           <div class="node-notes">
-                            <svg width="20" height="20">
-                                <circle cx="10" cy="10" class="node"></circle>
-                            </svg> &nbsp;- azure service
-                            <svg width="20" height="20">
-                              <circle cx="10" cy="10" class="node has-linking-services"></circle>
-                            </svg> &nbsp;- a service with input/output connections
-                            <svg width="20" height="20">
-                              <circle cx="10" cy="10" class="node node-category" style="r: 10"></circle>                        
-                            </svg> &nbsp;- a service category                                    
+                                                             
                           </div>       
                           <div>
                           </div>                 
@@ -418,7 +450,10 @@
       $('body').click( function(e){
         if (!$(e.target).is("circle[id^=service-node]")) {
           $('circle[id^=service-node]').popover('hide')
-          }
+        }
+        if ($(e.target).closest('.service-list-col-service-item').length == 0) {
+          $('.service-list-col-service-item').popover('hide')          
+        }
       });
 
       $('[data-toggle="tooltip"]').tooltip();

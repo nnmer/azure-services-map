@@ -1,9 +1,10 @@
-class ServiceLinking {
-
+class ServiceLinking {  
+  
   constructor(services, serviceLinks) {
     this.services = Object.assign({}, services)
     this.sourceData = Object.assign({}, serviceLinks)
-    this.flatServiceIOMap = {};
+    this.flatServiceIOMap = {};   
+    this.servicesByCategoryArray = null;
 
     this.buildFlatSourceTargetMap();
     this.mergeServicesWithRespectedIOServices()
@@ -79,6 +80,28 @@ class ServiceLinking {
 
   get service() {
     return this.services
+  }
+
+  get servicesByCategory() {
+    if (null === this.servicesByCategoryArray) {
+      for (let serviceKey in this.services) {
+        let service = this.services[serviceKey]
+        for (let catKey in service.category) {
+
+          if (!this.servicesByCategoryArray){
+            this.servicesByCategoryArray = {}
+          }
+
+          if (!this.servicesByCategoryArray[service.category[catKey]]) {
+            this.servicesByCategoryArray[service.category[catKey]] = []
+          }    
+          
+          this.servicesByCategoryArray[service.category[catKey]].push(service)
+        }
+      }
+    }
+
+    return this.servicesByCategoryArray
   }
 
   get flatSourceTargetMap() {

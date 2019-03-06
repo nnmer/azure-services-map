@@ -78,6 +78,15 @@ class ServiceLinking {
       return key;
   }
 
+  sortObjByKeys(obj) {
+    let ordered = {};
+    let that = this
+    Object.keys(obj).sort().forEach(function(key) {
+      ordered[key] = obj[key];
+    });
+    return ordered
+  }
+
   get service() {
     return this.services
   }
@@ -99,6 +108,7 @@ class ServiceLinking {
           this.servicesByCategoryArray[service.category[catKey]].push(service)
         }
       }
+      this.servicesByCategoryArray = this.sortObjByKeys(this.servicesByCategoryArray)      
     }
 
     return this.servicesByCategoryArray

@@ -60,7 +60,7 @@
       },
       watch: {
         searchVal: function(val) {
-          $('.service-list-col-service-item').popover('hide')
+          $('.service-list-col-service-item').popover('dispose')
           SvsG.searchValue = val
         },
         currentView: function(val) {
@@ -84,8 +84,8 @@
         clearSearchField: function() {
           this.searchVal = null
         },
-        showServiceTooltip: function(serviceId, element) {          
-          $('.service-list-col-service-item').popover('hide')          
+        showServiceTooltip: function(serviceId, element) {       
+          $('.service-list-col-service-item').popover('dispose')          
           $('#'+element)
             .popover({
               title: SL.service[serviceId].name,

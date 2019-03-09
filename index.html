@@ -76,7 +76,8 @@
       },
       methods: {
         renderMap: function() {
-          return SvsG.render()
+          SvsG.render()
+          SvsG.applyFilter()
         },
         changeServicesTreeView: function (newViewValue) {
           this.currentView = newViewValue

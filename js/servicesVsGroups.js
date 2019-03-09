@@ -155,6 +155,10 @@ class ServicesVsGroupsForceDirectedTree {
   }
 
   applyFilter() {    
+    if (null === this.svgNode) {
+      return;
+    }
+    
     if (this.toggle == 1){
       this.toggle = 0
     }

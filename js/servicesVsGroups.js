@@ -70,9 +70,9 @@ class ServiceLinking {
   
     let key = String(name)
       .toLowerCase()
-      .replace(new RegExp('^azure'),'')
+      .replace(/^azure|\(|\)/gi,'')
       .trim()
-      .replace(new RegExp(' ', 'g'),'-')
+      .replace(/ /g,'-')
       ;
   
       return key;
@@ -158,7 +158,7 @@ class ServicesVsGroupsForceDirectedTree {
     if (null === this.svgNode) {
       return;
     }
-    
+
     if (this.toggle == 1){
       this.toggle = 0
     }

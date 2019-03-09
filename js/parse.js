@@ -24,9 +24,9 @@ function name2Key(name) {
 
   let key = String(name)
     .toLowerCase()
-    .replace(new RegExp('^azure'),'')
+    .replace(/^azure|\(|\)/gi,'')
     .trim()
-    .replace(new RegExp(' ', 'g'),'-')
+    .replace(/ /g,'-')
     ;
 
     return key;

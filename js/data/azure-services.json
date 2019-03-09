@@ -84,8 +84,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/availabilitysetold.svg"
   },
-  "kubernetes-service-(aks)": {
-    "id": "kubernetes-service-(aks)",
+  "kubernetes-service-aks": {
+    "id": "kubernetes-service-aks",
     "name": "Azure Kubernetes Service (AKS)",
     "category": [
       "Compute",
@@ -775,8 +775,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-spell-check/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_spell_check.svg"
   },
-  "language-understanding-(luis)": {
-    "id": "language-understanding-(luis)",
+  "language-understanding-luis": {
+    "id": "language-understanding-luis",
     "name": "Language Understanding (LUIS)",
     "category": [
       "AI + Machine Learning"
@@ -855,8 +855,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/recommendations/overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_recommendations.svg"
   },
-  "knowledge-exploration-service-(kes)": {
-    "id": "knowledge-exploration-service-(kes)",
+  "knowledge-exploration-service-kes": {
+    "id": "knowledge-exploration-service-kes",
     "name": "Knowledge Exploration Service (KES)",
     "category": [
       "AI + Machine Learning"
@@ -1037,6 +1037,27 @@
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/migrate/migrate-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-migrate.svg"
+  },
+  "digital-twins": {
+    "id": "digital-twins",
+    "name": "Azure Digital Twins",
+    "category": [
+      "Mixed Reality",
+      "Internet of Things"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/digital-twins/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/digital_twin.svg"
+  },
+  "spatial-anchors": {
+    "id": "spatial-anchors",
+    "name": "Azure Spatial Anchors",
+    "category": [
+      "Mixed Reality"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/spatial-anchors/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/spatial_anchors.png"
   },
   "storage": {
     "id": "storage",
@@ -1476,16 +1497,6 @@
     "url": "https://docs.microsoft.com/en-us/azure/iot-suite/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/iot-solution-accelerators.svg"
   },
-  "digital-twins": {
-    "id": "digital-twins",
-    "name": "Azure Digital Twins",
-    "category": [
-      "Internet of Things"
-    ],
-    "servicesIO": [],
-    "url": "https://docs.microsoft.com/en-us/azure/digital-twins/",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/digital_twin.svg"
-  },
   "iot-hub-device-provisioning-service": {
     "id": "iot-hub-device-provisioning-service",
     "name": "IoT Hub Device Provisioning Service",
@@ -1693,6 +1704,16 @@
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/role-based-access-control/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/personwithfriend.svg"
+  },
+  "sentinel": {
+    "id": "sentinel",
+    "name": "Azure Sentinel",
+    "category": [
+      "Security"
+    ],
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/sentinel/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/sentinel.png"
   },
   "multi-factor-authentication": {
     "id": "multi-factor-authentication",

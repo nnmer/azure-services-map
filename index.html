@@ -402,7 +402,8 @@
               if (!obj.children){
                 obj.children = []
               }
-              obj.children.push(toInject)                    
+              obj.children.push(toInject)        
+              circularRefTrack.pop()            
             }
           }
 

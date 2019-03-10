@@ -461,13 +461,14 @@ class ServicesVsGroupsForceDirectedTree {
 function serviceFlowTree(json) {    
 
   var m = [20, 120, 20, 120],
-  w = 1280 - m[1] - m[3],
-  h = 800 - m[0] - m[2],
   i = 0,
   root;
+  // size of the diagram
+  var viewerWidth = $(document).width();
+  var viewerHeight = $(document).height();
 
   var tree = d3.layout.tree()
-    .size([h, w]);
+    .size([viewerHeight, viewerWidth]);
 
   var diagonal = d3.svg.diagonal()
     .projection(function(d) { return [d.y, d.x]; });
@@ -481,8 +482,8 @@ function serviceFlowTree(json) {
   }  
 
   var vis = d3.select("#service-flow").append("svg:svg")
-    .attr("width", '100%')
-    .attr("height", h)
+    .attr("width", viewerWidth)
+    .attr("height", viewerHeight)
       .call(zoom)
       .on("dblclick.zoom", null)
     .append("svg:g")
@@ -490,12 +491,59 @@ function serviceFlowTree(json) {
     ;
 
   root = json;
-  root.x0 = h / 2;
+  root.x0 = viewerHeight / 2;
   root.y0 = 0;
 
+  root.children.forEach(collapse);
   update(root);
+  centerNode(root);
+
+  function collapse(d) {
+    if (d.children) {
+        d._children = d.children;
+        d._children.forEach(collapse);
+        d.children = null;
+    }
+  }
+
+  function expand(d) {
+      if (d._children) {
+          d.children = d._children;
+          d.children.forEach(expand);
+          d._children = null;
+      }
+  }
+
+  function centerNode(source) {
+    scale = zoom.scale();
+    x = -source.y0;
+    y = -source.x0;
+    x = x * scale + viewerWidth / 2;
+    y = y * scale + viewerHeight / 2;
+    d3.select('#service-flow g').transition()
+        .duration(750)
+        .attr("transform", "translate(" + x + "," + y + ")scale(" + scale + ")");
+    zoom.scale(scale);
+    zoom.translate([x, y]);
+  }
 
   function update(source) {
+    var levelWidth = [1];
+    var childCount = function(level, n) {
+
+        if (n.children && n.children.length > 0) {
+            if (levelWidth.length <= level + 1) levelWidth.push(0);
+
+            levelWidth[level + 1] += n.children.length;
+            n.children.forEach(function(d) {
+                childCount(level + 1, d);
+            });
+        }
+    };
+    childCount(0, root);
+    var newHeight = d3.max(levelWidth) * 25; // 25 pixels per line  
+    tree = tree.size([newHeight, viewerWidth]);
+    
   var duration = d3.event && d3.event.altKey ? 5000 : 500;
 
   // Compute the new tree layout.
@@ -512,7 +560,7 @@ function serviceFlowTree(json) {
   var nodeEnter = node.enter().append("svg:g")
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
-      .on("click", function(d) { toggle(d); update(d); });
+      .on("click", function(d) { toggle(d); update(d); centerNode(d);});
 
   nodeEnter.append("svg:circle")
       .attr("r", 1e-6)
@@ -521,7 +569,7 @@ function serviceFlowTree(json) {
   nodeEnter.append("svg:text")
       .attr('class', function(d) { return d.children || d._children ? 'nodeHasChildren' : ''; })
       .attr("x", function(d) { return d.children || d._children ? -15 : 15; })
-      .attr("dy", ".35em")
+      .attr("dy", ".45em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6);

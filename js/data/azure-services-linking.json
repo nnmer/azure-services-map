@@ -3,14 +3,14 @@
     "linking_source_url": "https://docs.microsoft.com/en-us/azure/data-factory/concepts-datasets-linked-services",
     "input": [
       "Blob Storage",
-      "Cosmos DB (SQL API)",
-      "Cosmos DB (MongoDB API)",
+      "Azure Cosmos DB (SQL API)",
+      "Azure Cosmos DB (MongoDB API)",
       "Data Lake Storage",
-      "Database for MariaDB",
-      "Database for PostgreSQL",
-      "Database for MySQl",
+      "Azure Database for MariaDB",
+      "Azure Database for PostgreSQL",
+      "Azure Database for MySQL",
       "File Storage",
-      "SQL Database",
+      "Azure SQL Database",
       "SQL Data Warehouse",
       "Table Storage",
 
@@ -82,13 +82,13 @@
     ],
     "output": [
       "Blob Storage",
-      "Cosmos DB (SQL API)",
-      "Cosmos DB (MongoDB API)",
+      "Azure Cosmos DB (SQL API)",
+      "Azure Cosmos DB (MongoDB API)",
       "Data Lake Storage",
       "File Storage",
-      "SQL Database",
-      "SQL Database Managed Instance",
-      "Search Index",
+      "Azure SQL Database",
+      "Azure SQL Database Managed Instance",
+      "Azure Search",
       "SQL Data Warehouse",
       "Table Storage",
 
@@ -109,7 +109,7 @@
     "linking_source_url": "https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings",
     "input": [
       "Blob Storage",
-      "Cosmos DB",
+      "Azure Cosmos DB",
       "External File2",
       "External Table2",
       "(external) Microsoft Graph Excel tables",
@@ -117,11 +117,11 @@
       "(external) Microsoft Graph Events",
       "(external) Microsoft Graph Auth tokens",
       "Table storage",
-      "Mobile Apps"
+      "Azure Mobile App"
     ],
     "output": [
       "Blob Storage",
-      "Cosmos DB",
+      "Azure Cosmos DB",
       "Event Hubs",
       "External Table2",
       "External File2",
@@ -130,7 +130,7 @@
       "(external) Microsoft Graph Excel tables",
       "(external) Microsoft Graph Outlook email",
       "(external) Microsoft Graph Events",
-      "Mobile Apps",
+      "Azure Mobile App",
       "Notification Hubs",
       "Queue storage",
       "(external) SendGrid",
@@ -183,27 +183,27 @@
     ],
     "output": [
       "Data Lake Storage",
-      "SQL Database",
+      "Azure SQL Database",
       "Blob Storage",
       "Event Hubs",
       "Power BI",
       "Service Bus Queues",
       "Service Bus Topics",
-      "Cosmos DB",
+      "Azure Cosmos DB",
       "Functions"
     ]
   },  
-  "databricks": {
+  "azure-databricks": {
     "linking_source_url": [
       "https://docs.microsoft.com/en-us/azure/azure-databricks/databricks-connect-to-data-sources",
       "https://docs.azuredatabricks.net/spark/latest/data-sources/index.html#"
     ],
     "input": [
       "Data Factory",
-      "SQL database",
-      "Data Lake Store",
+      "Azure SQL Database",
+      "Data Lake Storage",
       "Blob Storage",
-      "Cosmos DB",
+      "Azure Cosmos DB",
       "Event Hubs",
       "SQL Data Warehouse",
     
@@ -231,11 +231,11 @@
       "(external) 3rd party via connectors"
     ]
   },
-  "search": {
+  "azure-search": {
     "linking_source_url": "https://docs.microsoft.com/en-us/azure/search/search-indexer-overview#supported-data-sources",
     "input": [
       "SQL",
-      "Cosmos DB",
+      "Azure Cosmos DB",
       "Blob Storage",
       "Table Storage"
     ],
@@ -266,15 +266,15 @@
       "Power BI"
     ]
   },
-  "analysis-services": {
+  "azure-analysis-services": {
     "linking_source_url": "https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-datasource",
     "input": [
-      "SQL Database",
+      "Azure SQL Database",
       "SQL Data Warehouse",
       "Blob Storage",
       "Table Storage",
-      "Cosmos DB",
-      "Data Lake Store",
+      "Azure Cosmos DB",
+      "Data Lake Storage",
       "HDInsight HDFS",
       "HDInsight Spark",
       "(external) On premis: SQL Server SQL",
@@ -283,7 +283,7 @@
       "(external) On premis: Teradata"
     ] 
   },
-  "data-explorer": {
+  "azure-data-explorer": {
     "linking_source_url": [
       "https://docs.microsoft.com/en-us/azure/data-explorer/data-explorer-overview"
     ],
@@ -322,7 +322,7 @@
       "Blob Storage"
     ]
   },
-  "digital-twins": {
+  "azure-digital-twins": {
     "linking_source_url": [
       "https://docs.microsoft.com/en-us/azure/digital-twins/tutorial-facilities-events",
       "https://docs.microsoft.com/en-us/azure/digital-twins/tutorial-facilities-analyze"
@@ -346,7 +346,7 @@
     ],
     "output": [
       "HDInsight",
-      "Databricks",
+      "Azure Databricks",
       "Data Factory",
       "Apache DistCp",
       "Power Bi",

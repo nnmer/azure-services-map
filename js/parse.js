@@ -24,7 +24,7 @@ function name2Key(name) {
 
   let key = String(name)
     .toLowerCase()
-    .replace(/^azure|\(|\)/gi,'')
+    .replace(/\(|\)/gi,'')
     .trim()
     .replace(/ /g,'-')
     ;
@@ -58,6 +58,11 @@ getHtml()
 
                         if (id == 'data-lake-storage-gen2') {
                           id = 'data-lake-storage'
+                        }
+
+                        if (id=='container-instances') {
+                          // fix as official list has bug in naming same services
+                          id = 'azure-container-instances'
                         }
 
                         if (name == '') {

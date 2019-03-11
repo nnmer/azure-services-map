@@ -58,8 +58,8 @@ class ServiceLinking {
     }
 
     for (let key in this.flatServiceIOMap) {
-      this.flatServiceIOMap[key].input = (this.flatServiceIOMap[key].input).filter(onlyUnique)
-      this.flatServiceIOMap[key].output = (this.flatServiceIOMap[key].output).filter(onlyUnique)
+      this.flatServiceIOMap[key].input = (this.flatServiceIOMap[key].input).filter(onlyUnique).sort()
+      this.flatServiceIOMap[key].output = (this.flatServiceIOMap[key].output).filter(onlyUnique).sort()
     }
   }
 
@@ -70,7 +70,7 @@ class ServiceLinking {
   
     let key = String(name)
       .toLowerCase()
-      .replace(/^azure|\(|\)/gi,'')
+      .replace(/\(|\)/gi,'')
       .trim()
       .replace(/ /g,'-')
       ;
@@ -102,12 +102,18 @@ class ServiceLinking {
           }
 
           if (!this.servicesByCategoryArray[service.category[catKey]]) {
-            this.servicesByCategoryArray[service.category[catKey]] = []
+            this.servicesByCategoryArray[service.category[catKey]] = {}
           }    
           
-          this.servicesByCategoryArray[service.category[catKey]].push(service)
+          this.servicesByCategoryArray[service.category[catKey]][service.id] = service
         }
       }
+
+      let that = this
+      Object.keys(this.servicesByCategoryArray).forEach(function(key){
+        that.servicesByCategoryArray[key] = Object.values(that.sortObjByKeys(that.servicesByCategoryArray[key]))
+      })
+
       this.servicesByCategoryArray = this.sortObjByKeys(this.servicesByCategoryArray)      
     }
 

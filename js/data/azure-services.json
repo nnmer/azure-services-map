@@ -52,8 +52,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/batch/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/batch.svg"
   },
-  "container-instances": {
-    "id": "container-instances",
+  "azure-container-instances": {
+    "id": "azure-container-instances",
     "name": "Azure Container Instances",
     "category": [
       "Compute",
@@ -84,8 +84,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/availabilitysetold.svg"
   },
-  "kubernetes-service-aks": {
-    "id": "kubernetes-service-aks",
+  "azure-kubernetes-service-aks": {
+    "id": "azure-kubernetes-service-aks",
     "name": "Azure Kubernetes Service (AKS)",
     "category": [
       "Compute",
@@ -136,8 +136,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/cyclecloud/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_cyclecloud.svg"
   },
-  "sql-database": {
-    "id": "sql-database",
+  "azure-sql-database": {
+    "id": "azure-sql-database",
     "name": "Azure SQL Database",
     "category": [
       "Databases"
@@ -146,8 +146,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/sql-database/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg"
   },
-  "cosmos-db": {
-    "id": "cosmos-db",
+  "azure-cosmos-db": {
+    "id": "azure-cosmos-db",
     "name": "Azure Cosmos DB",
     "category": [
       "Databases",
@@ -179,8 +179,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/data-factory/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/datafactory.svg"
   },
-  "cache-for-redis": {
-    "id": "cache-for-redis",
+  "azure-cache-for-redis": {
+    "id": "azure-cache-for-redis",
     "name": "Azure Cache for Redis",
     "category": [
       "Databases"
@@ -209,8 +209,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/cosmos-db/table-storage-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg"
   },
-  "database-for-postgresql": {
-    "id": "database-for-postgresql",
+  "azure-database-for-postgresql": {
+    "id": "azure-database-for-postgresql",
     "name": "Azure Database for PostgreSQL",
     "category": [
       "Databases"
@@ -219,8 +219,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/postgresql/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/postgresql.svg"
   },
-  "database-for-mysql": {
-    "id": "database-for-mysql",
+  "azure-database-for-mysql": {
+    "id": "azure-database-for-mysql",
     "name": "Azure Database for MySQL",
     "category": [
       "Databases"
@@ -229,8 +229,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/mysql/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/mysql.svg"
   },
-  "database-for-mariadb": {
-    "id": "database-for-mariadb",
+  "azure-database-for-mariadb": {
+    "id": "azure-database-for-mariadb",
     "name": "Azure Database for MariaDB",
     "category": [
       "Databases"
@@ -239,8 +239,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/mariadb/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/mariadb.svg"
   },
-  "database-migration-service": {
-    "id": "database-migration-service",
+  "azure-database-migration-service": {
+    "id": "azure-database-migration-service",
     "name": "Azure Database Migration Service",
     "category": [
       "Databases",
@@ -270,8 +270,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/app-service/containers/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/appservice.svg"
   },
-  "dev-spaces": {
-    "id": "dev-spaces",
+  "azure-dev-spaces": {
+    "id": "azure-dev-spaces",
     "name": "Azure Dev Spaces",
     "category": [
       "Containers"
@@ -354,8 +354,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/media-services/media-services-manage-channels-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/media-ondemand.svg"
   },
-  "media-player": {
-    "id": "media-player",
+  "azure-media-player": {
+    "id": "azure-media-player",
     "name": "Azure Media Player",
     "category": [
       "Media"
@@ -395,8 +395,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_videoindexer.svg"
   },
-  "stack-operator": {
-    "id": "stack-operator",
+  "azure-stack-operator": {
+    "id": "azure-stack-operator",
     "name": "Azure Stack Operator",
     "category": [
       "Azure Stack"
@@ -405,8 +405,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/azure-stack/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-stack.svg"
   },
-  "stack-user": {
-    "id": "stack-user",
+  "azure-stack-user": {
+    "id": "azure-stack-user",
     "name": "Azure Stack User",
     "category": [
       "Azure Stack"
@@ -415,8 +415,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/azure-stack/user",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-stack.svg"
   },
-  "us-government": {
-    "id": "us-government",
+  "azure-us-government": {
+    "id": "azure-us-government",
     "name": "Azure US Government",
     "category": [
       "Sovereign Clouds"
@@ -425,8 +425,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/azure-government/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-government.svg"
   },
-  "germany": {
-    "id": "germany",
+  "azure-germany": {
+    "id": "azure-germany",
     "name": "Azure Germany",
     "category": [
       "Sovereign Clouds"
@@ -476,8 +476,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/expressroute/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/expressroute.svg"
   },
-  "dns": {
-    "id": "dns",
+  "azure-dns": {
+    "id": "azure-dns",
     "name": "Azure DNS",
     "category": [
       "Networking"
@@ -539,8 +539,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/application-gateway/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/applicationgateway.svg"
   },
-  "ddos-protection": {
-    "id": "ddos-protection",
+  "azure-ddos-protection": {
+    "id": "azure-ddos-protection",
     "name": "Azure DDoS protection",
     "category": [
       "Networking",
@@ -561,8 +561,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/network-watcher/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/network-watcher.svg"
   },
-  "firewall": {
-    "id": "firewall",
+  "azure-firewall": {
+    "id": "azure-firewall",
     "name": "Azure Firewall",
     "category": [
       "Networking"
@@ -571,8 +571,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/firewall/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure_firewall.svg"
   },
-  "front-door-service": {
-    "id": "front-door-service",
+  "azure-front-door-service": {
+    "id": "azure-front-door-service",
     "name": "Azure Front Door Service",
     "category": [
       "Networking"
@@ -581,8 +581,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/frontdoor/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/frontdoor.svg"
   },
-  "databricks": {
-    "id": "databricks",
+  "azure-databricks": {
+    "id": "azure-databricks",
     "name": "Azure Databricks",
     "category": [
       "AI + Machine Learning",
@@ -592,8 +592,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/azure-databricks/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_databricks.svg"
   },
-  "bot-service": {
-    "id": "bot-service",
+  "azure-bot-service": {
+    "id": "azure-bot-service",
     "name": "Azure Bot Service",
     "category": [
       "AI + Machine Learning"
@@ -644,8 +644,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/welcome",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/machinelearning.svg"
   },
-  "notebooks": {
-    "id": "notebooks",
+  "azure-notebooks": {
+    "id": "azure-notebooks",
     "name": "Azure Notebooks",
     "category": [
       "AI + Machine Learning"
@@ -654,8 +654,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/notebooks",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/notebooks.svg"
   },
-  "search": {
-    "id": "search",
+  "azure-search": {
+    "id": "azure-search",
     "name": "Azure Search",
     "category": [
       "AI + Machine Learning",
@@ -1027,8 +1027,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/cost-management/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/cost-management.svg"
   },
-  "migrate": {
-    "id": "migrate",
+  "azure-migrate": {
+    "id": "azure-migrate",
     "name": "Azure Migrate",
     "category": [
       "Migration",
@@ -1038,8 +1038,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/migrate/migrate-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-migrate.svg"
   },
-  "digital-twins": {
-    "id": "digital-twins",
+  "azure-digital-twins": {
+    "id": "azure-digital-twins",
     "name": "Azure Digital Twins",
     "category": [
       "Mixed Reality",
@@ -1049,8 +1049,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/digital-twins/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/digital_twin.svg"
   },
-  "spatial-anchors": {
-    "id": "spatial-anchors",
+  "azure-spatial-anchors": {
+    "id": "azure-spatial-anchors",
     "name": "Azure Spatial Anchors",
     "category": [
       "Mixed Reality"
@@ -1191,8 +1191,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/storage.svg"
   },
-  "netapp-files": {
-    "id": "netapp-files",
+  "azure-netapp-files": {
+    "id": "azure-netapp-files",
     "name": "Azure NetApp Files",
     "category": [
       "Storage"
@@ -1211,8 +1211,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/hdinsight/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/hdinsight.svg"
   },
-  "data-explorer": {
-    "id": "data-explorer",
+  "azure-data-explorer": {
+    "id": "azure-data-explorer",
     "name": "Azure Data Explorer",
     "category": [
       "Analytics"
@@ -1262,8 +1262,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/power-bi-embedded/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/powerbiembedded.svg"
   },
-  "analysis-services": {
-    "id": "analysis-services",
+  "azure-analysis-services": {
+    "id": "azure-analysis-services",
     "name": "Azure Analysis Services",
     "category": [
       "Analytics"
@@ -1323,8 +1323,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/data-catalog/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/data-catalog.svg"
   },
-  "devops": {
-    "id": "devops",
+  "azure-devops": {
+    "id": "azure-devops",
     "name": "Azure DevOps",
     "category": [
       "DevOps",
@@ -1345,8 +1345,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/application-insights/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/applicationinsights.svg"
   },
-  "lab-services": {
-    "id": "lab-services",
+  "azure-lab-services": {
+    "id": "azure-lab-services",
     "name": "Azure Lab Services",
     "category": [
       "DevOps"
@@ -1387,8 +1387,8 @@
     "url": "https://docs.microsoft.comhttps://support.hockeyapp.net/kb",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/hockeyapp.svg"
   },
-  "devops-projects": {
-    "id": "devops-projects",
+  "azure-devops-projects": {
+    "id": "azure-devops-projects",
     "name": "Azure DevOps Projects",
     "category": [
       "DevOps"
@@ -1447,8 +1447,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/blockchain-workbench",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/blockchain-workbench.svg"
   },
-  "iot": {
-    "id": "iot",
+  "azure-iot": {
+    "id": "azure-iot",
     "name": "Azure IoT",
     "category": [
       "Internet of Things"
@@ -1517,8 +1517,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/time-series-insights/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/time-series-insights.svg"
   },
-  "maps": {
-    "id": "maps",
+  "azure-maps": {
+    "id": "azure-maps",
     "name": "Azure Maps",
     "category": [
       "Internet of Things",
@@ -1550,8 +1550,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/notification-hubs/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/notificationhubs.svg"
   },
-  "sphere": {
-    "id": "sphere",
+  "azure-sphere": {
+    "id": "azure-sphere",
     "name": "Azure Sphere",
     "category": [
       "Internet of Things"
@@ -1581,8 +1581,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/app-service-api/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/app-service-api.svg"
   },
-  "signalr-service": {
-    "id": "signalr-service",
+  "azure-signalr-service": {
+    "id": "azure-signalr-service",
     "name": "Azure SignalR Service",
     "category": [
       "Web"
@@ -1642,8 +1642,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/key-vault/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/keyvault.svg"
   },
-  "dedicated-hsm": {
-    "id": "dedicated-hsm",
+  "azure-dedicated-hsm": {
+    "id": "azure-dedicated-hsm",
     "name": "Azure Dedicated HSM",
     "category": [
       "Security"
@@ -1652,8 +1652,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/dedicated-hsm",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/dedicated-hsm.svg"
   },
-  "advanced-threat-protection": {
-    "id": "advanced-threat-protection",
+  "azure-advanced-threat-protection": {
+    "id": "azure-advanced-threat-protection",
     "name": "Azure Advanced Threat Protection",
     "category": [
       "Security"
@@ -1662,8 +1662,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/security/azure-threat-detection",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/securitycenter.svg"
   },
-  "information-protection": {
-    "id": "information-protection",
+  "azure-information-protection": {
+    "id": "azure-information-protection",
     "name": "Azure Information Protection",
     "category": [
       "Security",
@@ -1673,8 +1673,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/information-protection/",
     "icon": "https://docs.microsoft.com/media/common/i_information-protection.svg"
   },
-  "active-directory": {
-    "id": "active-directory",
+  "azure-active-directory": {
+    "id": "azure-active-directory",
     "name": "Azure Active Directory",
     "category": [
       "Security",
@@ -1684,8 +1684,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/active-directory/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/activedirectory.svg"
   },
-  "active-directory-for-domain-services": {
-    "id": "active-directory-for-domain-services",
+  "azure-active-directory-for-domain-services": {
+    "id": "azure-active-directory-for-domain-services",
     "name": "Azure Active Directory for Domain Services",
     "category": [
       "Security",
@@ -1705,8 +1705,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/role-based-access-control/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/personwithfriend.svg"
   },
-  "sentinel": {
-    "id": "sentinel",
+  "azure-sentinel": {
+    "id": "azure-sentinel",
     "name": "Azure Sentinel",
     "category": [
       "Security"
@@ -1725,8 +1725,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/multi-factor-authentication/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/multifactorauthentication.svg"
   },
-  "active-directory-b2c": {
-    "id": "active-directory-b2c",
+  "azure-active-directory-b2c": {
+    "id": "azure-active-directory-b2c",
     "name": "Azure Active Directory B2C",
     "category": [
       "Identity"
@@ -1745,8 +1745,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/backup/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/backup.svg"
   },
-  "advisor": {
-    "id": "advisor",
+  "azure-advisor": {
+    "id": "azure-advisor",
     "name": "Azure Advisor",
     "category": [
       "Management Tools"
@@ -1775,8 +1775,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/automation/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/automation.svg"
   },
-  "monitor": {
-    "id": "monitor",
+  "azure-monitor": {
+    "id": "azure-monitor",
     "name": "Azure Monitor",
     "category": [
       "Management Tools"
@@ -1795,8 +1795,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/security/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/securitycenter.svg"
   },
-  "service-health": {
-    "id": "service-health",
+  "azure-service-health": {
+    "id": "azure-service-health",
     "name": "Azure Service Health",
     "category": [
       "Management Tools"
@@ -1815,8 +1815,8 @@
     "url": "https://docs.microsoft.com/azure/azure-portal/",
     "icon": "https://docs.microsoft.com/media/logos/logo_azure.svg"
   },
-  "resource-manager": {
-    "id": "resource-manager",
+  "azure-resource-manager": {
+    "id": "azure-resource-manager",
     "name": "Azure Resource Manager",
     "category": [
       "Management Tools"
@@ -1835,8 +1835,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/cloud-shell/overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/cloud-shell.svg"
   },
-  "mobile-app": {
-    "id": "mobile-app",
+  "azure-mobile-app": {
+    "id": "azure-mobile-app",
     "name": "Azure mobile app",
     "category": [
       "Management Tools"
@@ -1845,8 +1845,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/app-service-mobile",
     "icon": "https://docs.microsoft.com/media/common/i_mobile-app-developement.svg"
   },
-  "policy": {
-    "id": "policy",
+  "azure-policy": {
+    "id": "azure-policy",
     "name": "Azure Policy",
     "category": [
       "Management Tools"
@@ -1855,8 +1855,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/governance/policy/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/governance.svg"
   },
-  "blueprints": {
-    "id": "blueprints",
+  "azure-blueprints": {
+    "id": "azure-blueprints",
     "name": "Azure Blueprints",
     "category": [
       "Management Tools"
@@ -1865,8 +1865,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/governance/blueprints/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/blueprints.svg"
   },
-  "resource-graph": {
-    "id": "resource-graph",
+  "azure-resource-graph": {
+    "id": "azure-resource-graph",
     "name": "Azure Resource Graph",
     "category": [
       "Management Tools"
@@ -1875,8 +1875,8 @@
     "url": "https://docs.microsoft.com/en-us/azure/governance/resource-graph/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/resource-graph.svg"
   },
-  "managed-applications": {
-    "id": "managed-applications",
+  "azure-managed-applications": {
+    "id": "azure-managed-applications",
     "name": "Azure Managed Applications",
     "category": [
       "Management Tools"

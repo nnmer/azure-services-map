@@ -151,7 +151,8 @@
       "IoT Hub",
       "Service Bus",
       "Container Registry",
-      "Custom Topics"
+      "Custom Topics",
+      "Azure Maps"
     ],
     "output": [
       "Functions",
@@ -160,7 +161,8 @@
       "HTTP Webhooks",
       "Queue Storage",
       "Hybrid Connections",
-      "Event Hubs"
+      "Event Hubs",
+      "Microsoft Flow"
     ]
   },
   "iot-hub": {
@@ -177,6 +179,7 @@
   "stream-analytics": {
     "linking_source_url": "https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-add-inputs",
     "input": [
+      "Azure SQL Database",
       "Event Hubs",
       "IoT Hub",
       "Blob Storage"

@@ -195,7 +195,7 @@
       "Azure Cosmos DB",
       "Functions"
     ]
-  },  
+  },
   "azure-databricks": {
     "linking_source_url": [
       "https://docs.microsoft.com/en-us/azure/azure-databricks/databricks-connect-to-data-sources",
@@ -209,7 +209,7 @@
       "Azure Cosmos DB",
       "Event Hubs",
       "SQL Data Warehouse",
-    
+
       "(external) Cassandra",
       "(external) Couchbase",
       "(external) ElasticSearch",
@@ -284,7 +284,7 @@
       "(external) On premis: SQL Server Data Warehouse",
       "(external) On premis: Oracle",
       "(external) On premis: Teradata"
-    ] 
+    ]
   },
   "azure-data-explorer": {
     "linking_source_url": [
@@ -357,8 +357,15 @@
     ]
   },
   "event-hubs": {
-    "linking_source_url": ["https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview#what-you-can-do-with-diagnostic-logs"],
-    "input": ["Diagnostic Logs"]
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview#what-you-can-do-with-diagnostic-logs"
+      ,"https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-enable-through-portal"
+    ],
+    "input": ["Diagnostic Logs"],
+    "output": [
+      "Blob Storage",
+      "Data Lake Storage"
+    ]
   },
   "blob-storage": {
     "linking_source_url": ["https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview#what-you-can-do-with-diagnostic-logs"],

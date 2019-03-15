@@ -1,19 +1,31 @@
 {
   "name": "azure-services-map",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A visual representation of Azure services",
-  "main": "index.js",
-  "scripts": {
-    "dev": "./node_modules/.bin/live-server",
-    "get-data": "node ./js/parse.js"
-  },
-  "author": "",
+  "author": "Anton Romanov",
   "license": "MIT",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "get-services-data": "node ./parse-services.js"
+  },
   "dependencies": {
     "axios": "^0.18.0",
-    "cheerio": "^1.0.0-rc.2"
+    "vue": "^2.6.6"
   },
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "cheerio": "^1.0.0-rc.2",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.5.21"
   }
 }

@@ -2,22 +2,22 @@ const axios = require('axios')
 const fs = require('fs')
 const cheerio = require('cheerio')
 
-const htmlDataFile = __dirname+"/data/azure-services.html"
-const serviceDataFile = __dirname+"/data/azure-services.json"
+const htmlDataFile = __dirname+"/azure-services-tmp.html"
+const serviceDataFile = __dirname+"/public/js/azure-services.json"
 var htmlData = "";
 var urlPrefix = "https://docs.microsoft.com"
 var iconPrefix = "https://docs.microsoft.com/en-us/azure/"
 
 function getHtml() {
-    
-    if (!fs.existsSync(htmlDataFile)) {         
+
+    if (!fs.existsSync(htmlDataFile)) {
         return axios.get("https://docs.microsoft.com/en-us/azure/#pivot=products&panel=all")
             .then(function(response){
                 fs.writeFileSync(htmlDataFile, response.data)
             });
     }
     return Promise.resolve()
-    
+
 }
 
 function name2Key(name) {
@@ -73,8 +73,8 @@ getHtml()
                         } else {
                             servicesMap[id] = {
                             id,
-                            name, 
-                            category: [curCategory], 
+                            name,
+                            category: [curCategory],
                             servicesIO: [],
                             url: (href && href.search('docs.microsoft.com') == -1 ? urlPrefix+href : href),
                             icon: (icon && icon.search('docs.microsoft.com') == -1 ? iconPrefix+icon : icon)
@@ -82,9 +82,8 @@ getHtml()
                         }
                     })
                 }
-            })                 
+            })
         })
 
         fs.writeFileSync(serviceDataFile, JSON.stringify(servicesMap))
     })
-

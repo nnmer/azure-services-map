@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <base href="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
+
+
+    <script src="js/micro-templating.js"></script>
+    <script src="js/servicesVsGroups.js"></script>
+    <script>
+     var SL = null;
+     d3.queue()
+       .defer(d3.json, "js/data/azure-services.json")
+       .defer(d3.json, "js/data/azure-services-linking.json")
+       .await(start);
+
+     function start(error, services, serviceLinking) {
+       if(error) {
+         alert('Cannot get data')
+         return false
+       }
+
+       SL = new ServiceLinking(services, serviceLinking)
+       SvsG = new ServicesVsGroupsForceDirectedTree(SL.services)
+     }
+    </script>
+
+    <title>Azure Services Reference Map</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but rewr doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+    <script>
+        function showServiceIntegrationTree(serviceId, services) {
+          function buildChildren(id) {
+            // console.warn('Called buildChildren',id)
+            let service = services[id];
+            let obj = {
+              name: service ? service.name : id
+            }
+            circularRefTrack.push(id)
+
+            if (service && service.servicesIO.output.length > 0){
+              for (let i=0;i<service.servicesIO.output.length;i++){
+                let servId = service.servicesIO.output[i];
+                  // console.warn(i)
+                  // console.warn(servId)
+                  // console.warn(services[servId])
+                  // console.warn(circularRefTrack)
+                  let depService = services[servId]
+                let toInject = null;
+                if (circularRefTrack.indexOf(servId) === -1 && depService) {
+                  toInject = buildChildren(servId)
+                } else {
+                  toInject = {
+                    name: depService ? depService.name : servId
+                  }
+                  circularRefTrack.push(servId)
+                }
+                if (!obj.children){
+                  obj.children = []
+                }
+                obj.children.push(toInject)
+                circularRefTrack.pop()
+              }
+            }
+
+            return obj;
+          }
+
+          var circularRefTrack = [];
+          $('#service-flow').html('');
+          let tree = buildChildren(serviceId)
+          serviceFlowTree(tree)
+        }
+
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+
+        $.fn.toEm = function(settings){
+            settings = jQuery.extend({
+                scope: 'body'
+            }, settings);
+            var that = parseInt(this[0],10),
+                scopeTest = jQuery('<div style="display: none; font-size: 1em; margin: 0; padding:0; height: auto; line-height: 1; border:0;">&nbsp;</div>').appendTo(settings.scope),
+                scopeVal = scopeTest.height();
+            scopeTest.remove();
+            return (that / scopeVal).toFixed(8) + 'em';
+        };
+
+
+        $.fn.toPx = function(settings){
+            settings = jQuery.extend({
+                scope: 'body'
+            }, settings);
+            var that = parseFloat(this[0]),
+                scopeTest = jQuery('<div style="display: none; font-size: 1em; margin: 0; padding:0; height: auto; line-height: 1; border:0;">&nbsp;</div>').appendTo(settings.scope),
+                scopeVal = scopeTest.height();
+            scopeTest.remove();
+            return Math.round(that * scopeVal) + 'px';
+        };
+
+        $('body').click( function(e){
+          if (!$(e.target).is("circle[id^=service-node]")) {
+            $('circle[id^=service-node]').popover('hide')
+          }
+          if ($(e.target).closest('.service-list-col-service-item').length == 0) {
+            $('.service-list-col-service-item').popover('hide')
+          }
+        });
+
+        $('[data-toggle="tooltip"]').tooltip();
+
+        $('#direct-io-out-services-modal').on('shown.bs.modal', function (event) {
+          var button = $(event.relatedTarget)
+          var serviceId = button.data('serviceId')
+          var modal = $(this)
+
+          modal.find('.modal-body').html(
+            tmpl("direct_io_out_services_modal_tpl", SL.services[serviceId])
+          )
+        })
+
+        $('#io-out-service-tree-modal').on('shown.bs.modal', function (event) {
+          var button = $(event.relatedTarget)
+          var serviceId = button.data('serviceId')
+          var modal = $(this)
+          showServiceIntegrationTree(serviceId, SL.services)
+          // modal.find('.modal-body').html(
+          //   tmpl("direct_io_out_services_modal_tpl", SL.services[serviceId])
+          // )
+        })
+      })
+    </script>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134745718-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134745718-1');
+  </script>
+  </body>
+</html>

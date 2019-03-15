@@ -46,8 +46,14 @@
         </div>
 
         <div class="data-container">
-          <ServiceVsGroupsTable v-bind:class="{'d-none': currentView!='tree'}" class="data-container-tree"/>
-          <ServiceVsGroupsForcedTree v-bind:class="{'d-none': currentView!='map'}"/>
+          <ServiceVsGroupsTable
+            v-bind:class="{'d-none': currentView!='tree'}"
+            class="data-container-tree"
+            :filteredServicesList="filteredServicesList"
+          />
+          <ServiceVsGroupsForcedTree
+            v-bind:class="{'d-none': currentView!='map'}"
+          />
         </div>
 
       </main>
@@ -59,6 +65,9 @@
 <script>
 import ServiceVsGroupsForcedTree from './ServiceVsGroupsForcedTree'
 import ServiceVsGroupsTable from './ServiceVsGroupsTable'
+import axios from 'axios'
+import ServiceLinking from 'src/_helpers/ServiceLinking'
+import ServicesVsGroupsForceDirectedTree from 'src/_helpers/ServicesVsGroupsForceDirectedTree'
 
 export default {
   name: 'ServiceVsGroups',
@@ -69,10 +78,21 @@ export default {
   data: function () {
     return {
       searchVal: null,
-      servicesList: [], // SL.servicesByCategory,
+      servicesList: [],
       currentView: 'tree',
       mapRendered: false
     }
+  },
+  created: function () {
+    let that = this
+    axios.all([
+      axios.get('js/data/azure-services.json'),
+      axios.get('js/data/azure-services-linking.json')
+    ]).then(function ([services, serviceLinking]) {
+      SL = new ServiceLinking(services.data, serviceLinking.data)
+      SvsG = new ServicesVsGroupsForceDirectedTree(SL.services)
+      that.servicesList = SL.servicesByCategory
+    })
   },
   computed: {
     filteredServicesList: function () {
@@ -84,7 +104,7 @@ export default {
       let regex = new RegExp('' + this.searchVal + '', 'i')
       for (let category in this.servicesList) {
         let matchedServices = this.servicesList[category].filter(function (service) {
-          return -1 !== service.name.search(regex)
+          return service.name.search(regex) !== -1
         })
         if (matchedServices.length > 0) {
           filteredData[category] = matchedServices
@@ -101,7 +121,7 @@ export default {
     },
     currentView: function (val) {
       let that = this
-      if (false === this.mapRendered) {
+      if (this.mapRendered === false) {
         setTimeout(function () {
           that.renderMap()
           that.mapRendered = true

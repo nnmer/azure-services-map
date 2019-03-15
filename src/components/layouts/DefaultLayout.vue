@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageNavigation/>
-    <spot/>
+    <slot/>
   </div>
 </template>
 

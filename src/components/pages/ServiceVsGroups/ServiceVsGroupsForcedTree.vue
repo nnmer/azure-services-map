@@ -21,4 +21,7 @@
 </template>
 
 <script>
+export default {
+  name: 'ServicesVsGroupsForcedTree'
+}
 </script>

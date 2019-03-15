@@ -2,97 +2,97 @@
   <div id="app">
     <DefaultLayout>
 
-    <script type='text/html' id='service_node_popover'>
-      <div>
-        <ul class="list-unstyled">
-          <li>
-            <a href="<%=url%>" target="_blank">
-              Docs
-            </a>
-          </li>
-          <% if (servicesIO.input && servicesIO.input.length >0
-          || servicesIO.output && servicesIO.output.length >0 ) { %>
+      <script type='text/html' id='service_node_popover'>
+        <div>
+          <ul class="list-unstyled">
             <li>
-              <a href="#"
-                data-toggle="modal"
-                data-target="#direct-io-out-services-modal"
-                data-service-id="<%=id%>"
-                >
-                Show Direct In/Out connections
-              </a></li>
-
-              <% if (servicesIO.output && servicesIO.output.length >0 ) { %>
-            <li>
+              <a href="<%=url%>" target="_blank">
+                Docs
+              </a>
+            </li>
+            <% if (servicesIO.input && servicesIO.input.length >0
+            || servicesIO.output && servicesIO.output.length >0 ) { %>
+              <li>
                 <a href="#"
                   data-toggle="modal"
-                  data-target="#io-out-service-tree-modal"
+                  data-target="#direct-io-out-services-modal"
                   data-service-id="<%=id%>"
                   >
-                  Show IO tree
-              </a></li>
-              <% } %>
-          </ul>
-          <% } %>
-      </div>
-    </script>
+                  Show Direct In/Out connections
+                </a></li>
 
-    <script type='text/html' id="direct_io_out_services_modal_tpl">
-        <div class="container">
-          <div class="row">
-            <% if (servicesIO.input && servicesIO.input.length >0 ) { %>
-              <div class="col">
-                <div class="list-group">
-                  <div class="list-group-item list-group-item-action bg-primary listIOtitle text-center text-bold">
-                    To: <%=name%><br/>
-                    <img src="img/arrow-down.png" width="35px" style="transform: rotate(180deg);">
-                  </div>
-
-                    <% for (var i =0; i < servicesIO.input.length; i++) { %>
-                      <span class="list-group-item list-group-item-action">
-                          <% if (SL.services[servicesIO.input[i]]) { %>
-                            <% if (SL.services[servicesIO.input[i]].icon) { %>
-                              <img class="service-icon" src="<%=SL.services[servicesIO.input[i]].icon%>"/>
-                            <% } %>
-                            <%=SL.services[servicesIO.input[i]].name%>
-                            (<a href="<%=SL.services[servicesIO.input[i]].url%>" target="_blank">docs</a>)
-                          <% } else { %>
-                            <%=servicesIO.input[i]%>
-                          <% } %>
-                      </span>
-                    <% } %>
-                  </div>
-              </div>
+                <% if (servicesIO.output && servicesIO.output.length >0 ) { %>
+              <li>
+                  <a href="#"
+                    data-toggle="modal"
+                    data-target="#io-out-service-tree-modal"
+                    data-service-id="<%=id%>"
+                    >
+                    Show IO tree
+                </a></li>
+                <% } %>
+            </ul>
             <% } %>
-
-            <% if (servicesIO.output && servicesIO.output.length >0 ) { %>
-              <div class="col">
-                <div class="list-group">
-                    <div class="list-group-item list-group-item-action bg-success listIOtitle text-center text-bold">
-                        From: <%=name%><br/>
-                        <img src="img/arrow-down.png" width="35px">
-                      </div>
-
-                    <% for (var i =0; i < servicesIO.output.length; i++) { %>
-                      <span class="list-group-item list-group-item-action">
-                        <% if (SL.services[servicesIO.output[i]]) { %>
-                          <% if (SL.services[servicesIO.output[i]].icon) { %>
-                            <img class="service-icon" src="<%=SL.services[servicesIO.output[i]].icon%>"/>
-                          <% } %>
-                          <%=SL.services[servicesIO.output[i]].name%>
-                          (<a href="<%=SL.services[servicesIO.output[i]].url%>" target="_blank">docs</a>)
-                        <% } else { %>
-                          <%=servicesIO.output[i]%>
-                        <% } %>
-                      </span>
-                    <% } %>
-                </div>
-              </div>
-            <% } %>
-          </div>
         </div>
       </script>
 
-    <div class="modal" id="direct-io-out-services-modal" tabindex="-1" aria-labelledby="direct-io-out-services-modal" role="dialog"  aria-hidden="true">
+      <script type='text/html' id="direct_io_out_services_modal_tpl">
+          <div class="container">
+            <div class="row">
+              <% if (servicesIO.input && servicesIO.input.length >0 ) { %>
+                <div class="col">
+                  <div class="list-group">
+                    <div class="list-group-item list-group-item-action bg-primary listIOtitle text-center text-bold">
+                      To: <%=name%><br/>
+                      <img src="img/arrow-down.png" width="35px" style="transform: rotate(180deg);">
+                    </div>
+
+                      <% for (var i =0; i < servicesIO.input.length; i++) { %>
+                        <span class="list-group-item list-group-item-action">
+                            <% if (SL.services[servicesIO.input[i]]) { %>
+                              <% if (SL.services[servicesIO.input[i]].icon) { %>
+                                <img class="service-icon" src="<%=SL.services[servicesIO.input[i]].icon%>"/>
+                              <% } %>
+                              <%=SL.services[servicesIO.input[i]].name%>
+                              (<a href="<%=SL.services[servicesIO.input[i]].url%>" target="_blank">docs</a>)
+                            <% } else { %>
+                              <%=servicesIO.input[i]%>
+                            <% } %>
+                        </span>
+                      <% } %>
+                    </div>
+                </div>
+              <% } %>
+
+              <% if (servicesIO.output && servicesIO.output.length >0 ) { %>
+                <div class="col">
+                  <div class="list-group">
+                      <div class="list-group-item list-group-item-action bg-success listIOtitle text-center text-bold">
+                          From: <%=name%><br/>
+                          <img src="img/arrow-down.png" width="35px">
+                        </div>
+
+                      <% for (var i =0; i < servicesIO.output.length; i++) { %>
+                        <span class="list-group-item list-group-item-action">
+                          <% if (SL.services[servicesIO.output[i]]) { %>
+                            <% if (SL.services[servicesIO.output[i]].icon) { %>
+                              <img class="service-icon" src="<%=SL.services[servicesIO.output[i]].icon%>"/>
+                            <% } %>
+                            <%=SL.services[servicesIO.output[i]].name%>
+                            (<a href="<%=SL.services[servicesIO.output[i]].url%>" target="_blank">docs</a>)
+                          <% } else { %>
+                            <%=servicesIO.output[i]%>
+                          <% } %>
+                        </span>
+                      <% } %>
+                  </div>
+                </div>
+              <% } %>
+            </div>
+          </div>
+        </script>
+
+      <div class="modal" id="direct-io-out-services-modal" tabindex="-1" aria-labelledby="direct-io-out-services-modal" role="dialog"  aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -101,8 +101,7 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                </div>
+                <div class="modal-body"> </div>
             </div>
         </div>
       </div>

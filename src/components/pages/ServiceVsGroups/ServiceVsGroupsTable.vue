@@ -1,11 +1,13 @@
 <template>
   <div class="service-list-container">
     <div class="service-list row text-center">
-      <div class="service-list-col" v-for="(services, category, catIdx) in filteredServicesList" >
+      <div
+        :key="catIdx"
+        class="service-list-col" v-for="(services, category, catIdx) in filteredServicesList" >
         <div class="service-list-col-title">
           {{category}}
         </div>
-        <div
+        <div :key="service.id"
             v-for="(service) in filteredServicesList[category]"
             class="service-list-col-service-item"
             v-bind:class="{'has-linking-services':service.servicesIO.input && service.servicesIO.input.length >0
@@ -26,4 +28,10 @@
 </template>
 
 <script>
+export default {
+  name: 'ServicesVsGroupsTable',
+  props: [
+    'filteredServicesList'
+  ]
+}
 </script>

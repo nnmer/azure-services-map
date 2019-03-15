@@ -7,31 +7,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 
     <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
     <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
 
 
     <script src="js/micro-templating.js"></script>
-    <script src="js/servicesVsGroups.js"></script>
+
     <script>
-     var SL = null;
-     d3.queue()
-       .defer(d3.json, "js/data/azure-services.json")
-       .defer(d3.json, "js/data/azure-services-linking.json")
-       .await(start);
-
-     function start(error, services, serviceLinking) {
-       if(error) {
-         alert('Cannot get data')
-         return false
-       }
-
-       SL = new ServiceLinking(services, serviceLinking)
-       SvsG = new ServicesVsGroupsForceDirectedTree(SL.services)
-     }
+      var SL = null;
+      var SvsG = null;
     </script>
 
     <title>Azure Services Reference Map</title>

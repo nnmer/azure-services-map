@@ -14,14 +14,21 @@
             || service.servicesIO.output && service.servicesIO.output.length >0}"
             v-bind:data-service-id="service.id"
             v-bind:id="catIdx+'-'+service.id"
-            v-on:click="showServiceTooltip(service.id, catIdx+'-'+service.id)"
+
         >
+        <!-- v-on:click="showServiceTooltip(service.id, catIdx+'-'+service.id)" -->
           <div>
             <img class="service-icon" v-bind:src="service.icon"/>
             <br/>
             {{service.name}}
           </div>
         </div>
+        <b-popover
+          target="catIdx+'-'+service.id"
+          title="Prop Examples"
+          triggers="hover focus"
+          content="Embedding content using properties is easy"
+        />
       </div>
     </div>
   </div>

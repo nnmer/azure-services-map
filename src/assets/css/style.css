@@ -419,10 +419,15 @@ body {
   border-radius: 0px;
   border-color: #343a40
 }
-.popover-header {
+.popover-header, .modal-header {
   background-color: #343a40;
   border-radius: 0px;
   color: #fff;
+}
+
+.modal-header button, .modal-header button:hover {
+  color: white;
+  opacity: 1
 }
 
 .bs-popover-auto[x-placement^=bottom] .popover-header::before,

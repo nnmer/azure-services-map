@@ -37,18 +37,13 @@
             <li v-if="(service.servicesIO.input && service.servicesIO.input.length > 0
                 || service.servicesIO.output && service.servicesIO.output.length > 0 )">
               <a href="#"
-                data-toggle="modal"
-                data-target="#direct-io-out-services-modal"
-                v-bind:data-service-id="service.id"
-                >
+                v-b-modal="catIdx+'-'+service.id+'direct-io-modal'">
                 Show Direct In/Out connections
               </a>
             </li>
 
             <li v-if="(service.servicesIO.output && service.servicesIO.output.length > 0)">
               <a href="#"
-                data-toggle="modal"
-                data-target="#io-out-service-tree-modal"
                 v-bind:data-service-id="service.id"
                 >
                 Show IO tree
@@ -56,6 +51,17 @@
             </li>
           </ul>
           </b-popover>
+
+          <b-modal
+            :id="catIdx+'-'+service.id+'direct-io-modal'"
+            :title="service.name"
+            size="lg"
+            :hide-footer="true"
+            >
+            <ServiceDirectIOModalContent
+              v-bind:service="service"
+            />
+          </b-modal>
         </div>
       </div>
     </div>
@@ -63,11 +69,16 @@
 </template>
 
 <script>
+import ServiceDirectIOModalContent from './ServiceDirectIOModalContent'
+
 export default {
   name: 'ServicesVsGroupsTable',
   props: [
     'filteredServicesList'
   ],
+  components: {
+    ServiceDirectIOModalContent
+  },
   methods: {
     clickOnServiceBox: function (serviceId) {
       console.warn('clicked clickOnServiceBox')

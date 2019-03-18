@@ -1,11 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
-import BootstrapVue from 'bootstrap-vue'
+import Modal from 'bootstrap-vue/es/components/modal'
+import Popover from 'bootstrap-vue/es/components/popover'
+import Tooltip from 'bootstrap-vue/es/components/tooltip'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './assets/css/style.css'
 
-Vue.use(BootstrapVue)
+Vue.use(Modal)
+Vue.use(Popover)
+Vue.use(Tooltip)
 Vue.config.productionTip = false
 Vue.config.debug = true
 

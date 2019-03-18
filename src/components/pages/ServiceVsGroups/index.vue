@@ -32,7 +32,7 @@
           </div>
           <div class="col-lg-4 col-sm-6" v-if="currentView=='tree'">
             - services may be placed in several service groups; <br/>
-            - <i class="has-linking-services" style="padding: 0 8px;"></i> &nbsp;&nbsp;a service with input/output connection
+            - <i class="has-linking-services help-note" style="padding: 0 8px;"></i> &nbsp;&nbsp;a service with input/output connection
           </div>
           <div class="col-lg-4 col-sm-6" v-if="currentView=='map'">
             <svg width="20" height="20">

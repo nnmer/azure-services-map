@@ -9,18 +9,19 @@
         </div>
         <div :key="service.id"
             v-for="(service) in filteredServicesList[category]"
-            class="service-list-col-service-item"
-            v-bind:class="{'has-linking-services':service.servicesIO.input && service.servicesIO.input.length >0
-            || service.servicesIO.output && service.servicesIO.output.length >0}"
             v-bind:data-service-id="service.id"
             v-bind:id="catIdx+'-'+service.id"
             v-on:click.stop="clickOnServiceBox(service.id)"
 
         >
-          <div>
+          <div class="service-list-col-service-item">
             <img class="service-icon" v-bind:src="service.icon"/>
-            <br/>
+            <div
+              v-bind:class="{'has-linking-services':service.servicesIO.input && service.servicesIO.input.length >0
+              || service.servicesIO.output && service.servicesIO.output.length >0}"
+            >
             {{service.name}}
+            </div>
           </div>
           <b-popover
             v-bind:target="catIdx+'-'+service.id"
@@ -53,8 +54,10 @@
 
           <b-modal
             :id="catIdx+'-'+service.id+'direct-io-modal'"
-            :title="service.name"
+            title="Direct Input/Output connections"
             size="lg"
+            :no-fade="true"
+            :lazy="true"
             :hide-footer="true"
             >
             <ServiceDirectIOModalContent

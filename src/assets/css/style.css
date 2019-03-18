@@ -157,8 +157,10 @@ text.label.node-hovered {
 .has-linking-services {
   fill: rgb(2, 2, 121);
   color: rgb(2, 2, 121);
-  background-color: rgb(2, 2, 121);
   font-weight: 700;
+}
+.has-linking-services.help-note {
+  background-color: rgb(2, 2, 121);
 }
 
 text {
@@ -407,6 +409,10 @@ body {
 
 .modal-content {
   border-radius: 0px;
+}
+
+.services-direct-io-list .list-group-item {
+  text-align: left
 }
 
 .list-group-item:first-child,

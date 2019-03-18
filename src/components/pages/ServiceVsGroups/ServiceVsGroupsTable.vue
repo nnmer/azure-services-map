@@ -14,6 +14,7 @@
             || service.servicesIO.output && service.servicesIO.output.length >0}"
             v-bind:data-service-id="service.id"
             v-bind:id="catIdx+'-'+service.id"
+            v-on:click.stop="clickOnServiceBox(service.id)"
 
         >
         <!-- v-on:click="showServiceTooltip(service.id, catIdx+'-'+service.id)" -->
@@ -22,13 +23,40 @@
             <br/>
             {{service.name}}
           </div>
+          <b-popover
+            v-bind:target="catIdx+'-'+service.id"
+            v-bind:title="service.name"
+            triggers="click focus"
+          >
+          <ul class="list-unstyled">
+            <li>
+              <a v-bind:href="service.url" target="_blank">
+                Docs
+              </a>
+            </li>
+            <li v-if="(service.servicesIO.input && service.servicesIO.input.length > 0
+                || service.servicesIO.output && service.servicesIO.output.length > 0 )">
+              <a href="#"
+                data-toggle="modal"
+                data-target="#direct-io-out-services-modal"
+                v-bind:data-service-id="service.id"
+                >
+                Show Direct In/Out connections
+              </a>
+            </li>
+
+            <li v-if="(service.servicesIO.output && service.servicesIO.output.length > 0)">
+              <a href="#"
+                data-toggle="modal"
+                data-target="#io-out-service-tree-modal"
+                v-bind:data-service-id="service.id"
+                >
+                Show IO tree
+              </a>
+            </li>
+          </ul>
+          </b-popover>
         </div>
-        <b-popover
-          target="catIdx+'-'+service.id"
-          title="Prop Examples"
-          triggers="hover focus"
-          content="Embedding content using properties is easy"
-        />
       </div>
     </div>
   </div>
@@ -39,6 +67,12 @@ export default {
   name: 'ServicesVsGroupsTable',
   props: [
     'filteredServicesList'
-  ]
+  ],
+  methods: {
+    clickOnServiceBox: function (serviceId) {
+      console.warn('clicked clickOnServiceBox')
+      this.$root.$emit('click::at::page', serviceId)
+    }
+  }
 }
 </script>

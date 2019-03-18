@@ -1,40 +1,6 @@
 <template>
-  <div id="app">
+  <div id="app" @click="$root.$emit('click::at::page')">
     <DefaultLayout>
-
-      <script type='text/html' id='service_node_popover'>
-        <div>
-          <ul class="list-unstyled">
-            <li>
-              <a href="<%=url%>" target="_blank">
-                Docs
-              </a>
-            </li>
-            <% if (servicesIO.input && servicesIO.input.length >0
-            || servicesIO.output && servicesIO.output.length >0 ) { %>
-              <li>
-                <a href="#"
-                  data-toggle="modal"
-                  data-target="#direct-io-out-services-modal"
-                  data-service-id="<%=id%>"
-                  >
-                  Show Direct In/Out connections
-                </a></li>
-
-                <% if (servicesIO.output && servicesIO.output.length >0 ) { %>
-              <li>
-                  <a href="#"
-                    data-toggle="modal"
-                    data-target="#io-out-service-tree-modal"
-                    data-service-id="<%=id%>"
-                    >
-                    Show IO tree
-                </a></li>
-                <% } %>
-            </ul>
-            <% } %>
-        </div>
-      </script>
 
       <script type='text/html' id="direct_io_out_services_modal_tpl">
           <div class="container">
@@ -139,11 +105,18 @@ import DefaultLayout from 'src/components/layouts/DefaultLayout'
 import ServiceVsGroups from 'src/components/pages/ServiceVsGroups'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     DefaultLayout,
     ServiceVsGroups
   }
+  // mounted: function() {
+  //   let that = this;
+  //   console.log(EventBus);
+  //   EventBus.$on('click-at-page', function(data){
+  //       alert('person deleted!!');
+  //   });
+  // },
 }
 </script>
 

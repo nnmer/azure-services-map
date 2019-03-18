@@ -116,7 +116,7 @@ export default {
   },
   watch: {
     searchVal: function (val) {
-      // $('.service-list-col-service-item').popover('dispose')
+      this.clearAllPopups()
       SvsG.searchValue = val
     },
     currentView: function (val) {
@@ -130,6 +130,9 @@ export default {
     }
   },
   methods: {
+    clearAllPopups: function() {
+      this.$root.$emit('click::at::page')
+    },
     renderMap: function () {
       // SvsG.render()
       // SvsG.applyFilter()

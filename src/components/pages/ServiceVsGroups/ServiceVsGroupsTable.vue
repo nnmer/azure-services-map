@@ -17,7 +17,6 @@
             v-on:click.stop="clickOnServiceBox(service.id)"
 
         >
-        <!-- v-on:click="showServiceTooltip(service.id, catIdx+'-'+service.id)" -->
           <div>
             <img class="service-icon" v-bind:src="service.icon"/>
             <br/>

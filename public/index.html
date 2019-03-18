@@ -100,17 +100,6 @@
             return Math.round(that * scopeVal) + 'px';
         };
 
-        // $('body').click( function(e){
-        //   if (!$(e.target).is("circle[id^=service-node]")) {
-        //     $('circle[id^=service-node]').popover('hide')
-        //   }
-        //   if ($(e.target).closest('.service-list-col-service-item').length == 0) {
-        //     $('.service-list-col-service-item').popover('hide')
-        //   }
-        // });
-        //
-        // $('[data-toggle="tooltip"]').tooltip();
-
         $('#direct-io-out-services-modal').on('shown.bs.modal', function (event) {
           var button = $(event.relatedTarget)
           var serviceId = button.data('serviceId')

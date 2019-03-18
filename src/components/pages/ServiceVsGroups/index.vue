@@ -142,18 +142,6 @@ export default {
     },
     clearSearchField: function () {
       this.searchVal = null
-    },
-    showServiceTooltip: function (serviceId, element) {
-      // $('.service-list-col-service-item').popover('dispose')
-      // $('#'+element)
-      //   .popover({
-      //     title: SL.service[serviceId].name,
-      //     content: tmpl("service_node_popover", SL.service[serviceId]),
-      //     sanitize: false,
-      //     // trigger: 'click',
-      //     html: true
-      //   })
-      //   .popover('show')
     }
   }
 }

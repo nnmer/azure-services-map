@@ -100,24 +100,11 @@
             return Math.round(that * scopeVal) + 'px';
         };
 
-        $('#direct-io-out-services-modal').on('shown.bs.modal', function (event) {
-          var button = $(event.relatedTarget)
-          var serviceId = button.data('serviceId')
-          var modal = $(this)
-
-          modal.find('.modal-body').html(
-            tmpl("direct_io_out_services_modal_tpl", SL.services[serviceId])
-          )
-        })
-
         $('#io-out-service-tree-modal').on('shown.bs.modal', function (event) {
           var button = $(event.relatedTarget)
           var serviceId = button.data('serviceId')
           var modal = $(this)
           showServiceIntegrationTree(serviceId, SL.services)
-          // modal.find('.modal-body').html(
-          //   tmpl("direct_io_out_services_modal_tpl", SL.services[serviceId])
-          // )
         })
       })
     </script>

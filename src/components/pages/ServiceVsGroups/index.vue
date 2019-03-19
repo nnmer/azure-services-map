@@ -99,7 +99,7 @@ export default {
     this.$root.$on('click::at::page', function(event){
       if ( (that.currentView === 'table' && !event.srcElement.closest('.service-list-col-service-item'))
         || (that.currentView === 'map' && !event.srcElement.id.match(/service-node*/i)) ) {
-        console.warn('call ALL popover hide')
+        //console.warn('call ALL popover hide')
         that.$root.$emit('bv::hide::popover')
       }
     })

@@ -52,6 +52,7 @@
           />
           <ServiceVsGroupsForcedTree
             v-bind:class="{'d-none': currentView!='map'}"
+            :selectorId="mapSelectorId"
           />
         </div>
 
@@ -79,7 +80,9 @@ export default {
       searchVal: null,
       servicesList: [],
       currentView: 'tree',
-      mapRendered: false
+      mapRendered: false,
+      mapSelector: '#service-vs-group-map',
+      mapSelectorId: 'service-vs-group-map'
     }
   },
   created: function () {
@@ -89,7 +92,7 @@ export default {
       axios.get('js/data/azure-services-linking.json')
     ]).then(function ([services, serviceLinking]) {
       SL = new ServiceLinking(services.data, serviceLinking.data)
-      SvsG = new ServicesVsGroupsForceDirectedTree(SL.services)
+      SvsG = new ServicesVsGroupsForceDirectedTree(that.mapSelector,SL.services)
       that.servicesList = SL.servicesByCategory
     })
   },
@@ -133,8 +136,8 @@ export default {
       this.$root.$emit('click::at::page')
     },
     renderMap: function () {
-      // SvsG.render()
-      // SvsG.applyFilter()
+      SvsG.render()
+      SvsG.applyFilter()
     },
     changeServicesTreeView: function (newViewValue) {
       this.currentView = newViewValue

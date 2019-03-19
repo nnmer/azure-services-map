@@ -63,8 +63,8 @@ body {
 }
 
 .service-flow-action-icons {
-  position: absolute;
-  right: 0;
+  position: fixed;
+  right: 20px;
   bottom: 0;
 }
 .service-flow-action-icons img {

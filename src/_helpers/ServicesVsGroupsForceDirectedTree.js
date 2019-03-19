@@ -1,7 +1,8 @@
 export default class ServicesVsGroupsForceDirectedTree {
-  constructor (services) {
+  constructor (visSelector, services) {
+    this.visSelector = visSelector
     this.filter = null
-    this.width = 1000
+    this.width = $(document).width()
     this.height = 850
     this.centerX = this.width / 2
     this.centerY = this.height / 2
@@ -108,9 +109,9 @@ export default class ServicesVsGroupsForceDirectedTree {
       .scaleExtent([0.1, 10])
       .on('zoom', zoomed)
 
-    this.svg = d3.select('#service-vs-group-map')
+    this.svg = d3.select(this.visSelector)
       .append('svg')
-      .attr('width', '100%')
+      .attr('width', this.width - 60)
       .attr('height', this.height)
       .call(zoom)
       .on('dblclick.zoom', null)

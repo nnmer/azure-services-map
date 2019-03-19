@@ -48,7 +48,6 @@
         <div class="data-container">
           <ServiceVsGroupsTable
             v-bind:class="{'d-none': currentView!='tree'}"
-            class="data-container-tree"
             :filteredServicesList="filteredServicesList"
           />
           <ServiceVsGroupsForcedTree

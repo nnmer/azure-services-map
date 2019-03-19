@@ -21,8 +21,8 @@ export default function serviceFlowTree (selector, json) {
   }
 
   var vis = d3.select(selector).append('svg:svg')
-    .attr('width', viewerWidth)
-    .attr('height', viewerHeight)
+    .attr('width', viewerWidth-m[0]*2)
+    .attr('height', viewerHeight-m[1]+m[0])
     .call(zoom)
     .on('dblclick.zoom', null)
     .append('svg:g')
@@ -53,11 +53,11 @@ export default function serviceFlowTree (selector, json) {
   }
 
   function centerNode (source) {
-    scale = zoom.scale()
-    x = -source.y0
-    y = -source.x0
+    let scale = zoom.scale()
+    let x = -source.y0
+    let y = -source.x0
     x = x * scale + viewerWidth / 2
-    y = y * scale + viewerHeight / 2
+    y = y * scale + viewerHeight / 2 - m[0]*3
     d3.select(selector+' g').transition()
       .duration(750)
       .attr('transform', 'translate(' + x + ',' + y + ')scale(' + scale + ')')

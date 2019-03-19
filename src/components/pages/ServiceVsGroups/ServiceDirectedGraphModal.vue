@@ -2,13 +2,14 @@
   <b-modal
     id="services-io-directed-graph-modal"
     title="Services Input/Output flow"
+    class="modal-fullscreen"
     :no-fade="true"
     :hide-footer="true"
   >
     <div class="svg-container">
-      <D3LayoutHelpBox/>
       <div :id="visualizationContainerId"></div>
     </div>
+    <D3LayoutHelpBox/>
   </b-modal>
 </template>
 

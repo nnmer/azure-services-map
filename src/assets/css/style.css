@@ -18,7 +18,7 @@ body {
 .modal-fullscreen .modal-dialog,
 .modal-fullscreen .modal-dialog .modal-dialog-scrollable  {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin: 0;
   padding: 0;
   max-width: initial;
@@ -84,6 +84,10 @@ body {
 
 .service-icon {
   width: 24px;
+}
+
+.m-none {
+  margin: auto;
 }
 
 .pull-right {
@@ -343,13 +347,17 @@ body {
 }
 
 
-.data-container-tree {
+.data-container {
+  margin: 15px
+}
+
+.data-container-table {
   background-color: rgba(0, 0, 0, .1);
 }
 
-
 .service-list-container {
-  margin: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .service-list-col-title {
@@ -400,10 +408,6 @@ body {
 
 .service-list-col-service-item > div {
   cursor: pointer;
-}
-
-.data-container {
-
 }
 
 

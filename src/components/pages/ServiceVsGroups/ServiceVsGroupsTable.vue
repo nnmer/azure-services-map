@@ -1,6 +1,6 @@
 <template>
-  <div class="service-list-container">
-    <div class="service-list row text-center">
+  <div class="service-list-container data-container-table">
+    <div class="service-list row text-center m-none">
       <div
         :key="catIdx"
         class="service-list-col" v-for="(services, category, catIdx) in filteredServicesList" >

@@ -8,13 +8,13 @@
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
               <button type="button" class="btn btn-sm btn-outline-secondary"
-                v-bind:class="{active: currentView=='tree'}"
-                v-on:click="changeServicesTreeView('tree')">
+                v-bind:class="{active: currentView=='table'}"
+                v-on:click="changeServicesView('table')">
                 Table view
               </button>
               <button type="button" class="btn btn-sm btn-outline-secondary"
               v-bind:class="{active: currentView=='map'}"
-                v-on:click="changeServicesTreeView('map');">
+                v-on:click="changeServicesView('map');">
                 Map view
               </button>
             </div>
@@ -30,7 +30,7 @@
               v-on:keydown.esc="clearSearchField"
             >
           </div>
-          <div class="col-lg-4 col-sm-6" v-if="currentView=='tree'">
+          <div class="col-lg-4 col-sm-6" v-if="currentView=='table'">
             - services may be placed in several service groups; <br/>
             - <i class="has-linking-services help-note" style="padding: 0 8px;"></i> &nbsp;&nbsp;a service with input/output connection
           </div>
@@ -47,7 +47,7 @@
 
         <div class="data-container">
           <ServiceVsGroupsTable
-            v-bind:class="{'d-none': currentView!='tree'}"
+            v-bind:class="{'d-none': currentView!='table'}"
             :filteredServicesList="filteredServicesList"
           />
           <ServiceVsGroupsForcedTree
@@ -79,7 +79,7 @@ export default {
     return {
       searchVal: null,
       servicesList: [],
-      currentView: 'tree',
+      currentView: 'table',
       mapRendered: false,
       mapSelector: '#service-vs-group-map',
       mapSelectorId: 'service-vs-group-map'
@@ -97,7 +97,7 @@ export default {
     })
 
     this.$root.$on('click::at::page', function(event){
-      if ( (that.currentView === 'tree' && !event.srcElement.closest('.service-list-col-service-item'))
+      if ( (that.currentView === 'table' && !event.srcElement.closest('.service-list-col-service-item'))
         || (that.currentView === 'map' && !event.srcElement.id.match(/service-node*/i)) ) {
         console.warn('call ALL popover hide')
         that.$root.$emit('bv::hide::popover')
@@ -148,7 +148,7 @@ export default {
       SvsG.render()
       SvsG.applyFilter()
     },
-    changeServicesTreeView: function (newViewValue) {
+    changeServicesView: function (newViewValue) {
       this.currentView = newViewValue
     },
     clearSearchField: function () {

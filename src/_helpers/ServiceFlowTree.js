@@ -1,4 +1,4 @@
-function serviceFlowTree (json) {
+export default function serviceFlowTree (json) {
   var m = [20, 120, 20, 120]
   var i = 0
   var root

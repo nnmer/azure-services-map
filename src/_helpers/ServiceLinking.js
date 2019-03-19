@@ -1,9 +1,9 @@
 export default class ServiceLinking {
   constructor (services, serviceLinks) {
-    this.services = Object.assign({}, services)
-    this.sourceData = Object.assign({}, serviceLinks)
-    this.flatServiceIOMap = {}
-    this.servicesByCategoryArray = null
+    this._services = Object.assign({}, services)
+    this._sourceData = Object.assign({}, serviceLinks)
+    this._flatServiceIOMap = {}
+    this._servicesByCategoryArray = null
 
     this.buildFlatSourceTargetMap()
     this.mergeServicesWithRespectedIOServices()
@@ -11,28 +11,28 @@ export default class ServiceLinking {
   }
 
   buildFlatSourceTargetMap () {
-    for (let key in this.sourceData) {
-      let item = this.sourceData[key]
+    for (let key in this._sourceData) {
+      let item = this._sourceData[key]
       let that = this
 
-      this.flatServiceIOMap[key] = this.flatServiceIOMap[key] || { input: [], output: [] }
+      this._flatServiceIOMap[key] = this._flatServiceIOMap[key] || { input: [], output: [] }
 
       if (undefined !== item.output && typeof item.output === 'object') {
         let out = item.output.map(function (i) { return that.name2Key(i) })
-        Array.prototype.push.apply(this.flatServiceIOMap[key].output, out)
+        Array.prototype.push.apply(this._flatServiceIOMap[key].output, out)
 
         out.map(function (outputElement) {
-          that.flatServiceIOMap[outputElement] = that.flatServiceIOMap[outputElement] || { input: [], output: [] }
-          that.flatServiceIOMap[outputElement].input.push(key)
+          that._flatServiceIOMap[outputElement] = that._flatServiceIOMap[outputElement] || { input: [], output: [] }
+          that._flatServiceIOMap[outputElement].input.push(key)
         })
       }
 
       if (undefined !== item.input && typeof item.input === 'object') {
         let inputs = item.input.map(function (i) { return that.name2Key(i) })
-        Array.prototype.push.apply(this.flatServiceIOMap[key].input, inputs)
+        Array.prototype.push.apply(this._flatServiceIOMap[key].input, inputs)
         inputs.map(function (inputElement) {
-          that.flatServiceIOMap[inputElement] = that.flatServiceIOMap[inputElement] || { input: [], output: [] }
-          that.flatServiceIOMap[inputElement].output.push(key)
+          that._flatServiceIOMap[inputElement] = that._flatServiceIOMap[inputElement] || { input: [], output: [] }
+          that._flatServiceIOMap[inputElement].output.push(key)
         })
       }
     }
@@ -40,10 +40,10 @@ export default class ServiceLinking {
 
   mergeServicesWithRespectedIOServices () {
     for (let key in this.flatSourceTargetMap) {
-      if (this.services[key]) {
-        this.services[key].servicesIO = this.flatSourceTargetMap[key]
-        this.services[key].hasLinkingServices =
-        !!(((this.services[key].servicesIO.input || this.services[key].servicesIO.output)))
+      if (this._services[key]) {
+        this._services[key].servicesIO = this.flatSourceTargetMap[key]
+        this._services[key].hasLinkingServices =
+        !!(((this._services[key].servicesIO.input || this._services[key].servicesIO.output)))
       }
     }
   }
@@ -53,9 +53,9 @@ export default class ServiceLinking {
       return self.indexOf(value) === index
     }
 
-    for (let key in this.flatServiceIOMap) {
-      this.flatServiceIOMap[key].input = (this.flatServiceIOMap[key].input).filter(onlyUnique).sort()
-      this.flatServiceIOMap[key].output = (this.flatServiceIOMap[key].output).filter(onlyUnique).sort()
+    for (let key in this._flatServiceIOMap) {
+      this._flatServiceIOMap[key].input = (this._flatServiceIOMap[key].input).filter(onlyUnique).sort()
+      this._flatServiceIOMap[key].output = (this._flatServiceIOMap[key].output).filter(onlyUnique).sort()
     }
   }
 
@@ -82,39 +82,44 @@ export default class ServiceLinking {
     return ordered
   }
 
+  // @deprecated
   get service () {
-    return this.services
+    return this._services
+  }
+
+  get services () {
+    return this._services
   }
 
   get servicesByCategory () {
-    if (this.servicesByCategoryArray === null) {
-      for (let serviceKey in this.services) {
-        let service = this.services[serviceKey]
+    if (this._servicesByCategoryArray === null) {
+      for (let serviceKey in this._services) {
+        let service = this._services[serviceKey]
         for (let catKey in service.category) {
-          if (!this.servicesByCategoryArray) {
-            this.servicesByCategoryArray = {}
+          if (!this._servicesByCategoryArray) {
+            this._servicesByCategoryArray = {}
           }
 
-          if (!this.servicesByCategoryArray[service.category[catKey]]) {
-            this.servicesByCategoryArray[service.category[catKey]] = {}
+          if (!this._servicesByCategoryArray[service.category[catKey]]) {
+            this._servicesByCategoryArray[service.category[catKey]] = {}
           }
 
-          this.servicesByCategoryArray[service.category[catKey]][service.id] = service
+          this._servicesByCategoryArray[service.category[catKey]][service.id] = service
         }
       }
 
       let that = this
-      Object.keys(this.servicesByCategoryArray).forEach(function (key) {
-        that.servicesByCategoryArray[key] = Object.values(that.sortObjByKeys(that.servicesByCategoryArray[key]))
+      Object.keys(this._servicesByCategoryArray).forEach(function (key) {
+        that._servicesByCategoryArray[key] = Object.values(that.sortObjByKeys(that._servicesByCategoryArray[key]))
       })
 
-      this.servicesByCategoryArray = this.sortObjByKeys(this.servicesByCategoryArray)
+      this._servicesByCategoryArray = this.sortObjByKeys(this._servicesByCategoryArray)
     }
 
-    return this.servicesByCategoryArray
+    return this._servicesByCategoryArray
   }
 
   get flatSourceTargetMap () {
-    return this.flatServiceIOMap
+    return this._flatServiceIOMap
   }
 }

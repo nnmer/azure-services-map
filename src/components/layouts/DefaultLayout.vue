@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @click="$root.$emit('click::at::page')">
     <PageNavigation/>
     <slot/>
   </div>

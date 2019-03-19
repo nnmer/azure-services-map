@@ -1,9 +1,10 @@
 <template>
-  <div id="app" @click="$root.$emit('click::at::page')">
+  <div id="app">
     <DefaultLayout>
       <ServiceVsGroups/>
     </DefaultLayout>
 
+    <ServicePopover/>
     <ServiceDirectIOModal/>
     <ServiceDirectedGraphModal/>
   </div>
@@ -12,6 +13,7 @@
 <script>
 import DefaultLayout from 'src/components/layouts/DefaultLayout'
 import ServiceVsGroups from 'src/components/pages/ServiceVsGroups'
+import ServicePopover from 'src/components/pages/ServiceVsGroups/ServicePopover'
 import ServiceDirectIOModal from 'src/components/pages/ServiceVsGroups/ServiceDirectIOModal'
 import ServiceDirectedGraphModal from 'src/components/pages/ServiceVsGroups/ServiceDirectedGraphModal'
 
@@ -20,6 +22,7 @@ export default {
   components: {
     DefaultLayout,
     ServiceVsGroups,
+    ServicePopover,
     ServiceDirectIOModal,
     ServiceDirectedGraphModal
   },

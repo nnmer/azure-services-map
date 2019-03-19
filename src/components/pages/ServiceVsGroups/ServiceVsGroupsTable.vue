@@ -14,7 +14,9 @@
             v-on:click.stop="clickOnServiceBox(service.id)"
 
         >
-          <div class="service-list-col-service-item">
+          <div class="service-list-col-service-item"
+            @click="$root.$emit('app::services::popover::show', $event, service.id, catIdx+'-'+service.id)"
+          >
             <img class="service-icon" v-bind:src="service.icon"/>
             <div
               v-bind:class="{'has-linking-services':service.servicesIO.input && service.servicesIO.input.length >0
@@ -23,35 +25,6 @@
             {{service.name}}
             </div>
           </div>
-          <b-popover
-            v-bind:target="catIdx+'-'+service.id"
-            v-bind:title="service.name"
-            triggers="click focus"
-          >
-          <ul class="list-unstyled">
-            <li>
-              <a v-bind:href="service.url" target="_blank">
-                Docs
-              </a>
-            </li>
-            <li v-if="(service.servicesIO.input && service.servicesIO.input.length > 0
-                || service.servicesIO.output && service.servicesIO.output.length > 0 )">
-              <a href="#"
-                @click="$root.$emit('app::services::direct-io-modal::show', $event, service.id)"
-                >
-                Show Direct In/Out connections
-              </a>
-            </li>
-
-            <li v-if="(service.servicesIO.output && service.servicesIO.output.length > 0)">
-              <a href="#"
-                @click="$root.$emit('app::services::io-directed-graph-modal::show', $event, service.id)"
-                >
-                Show IO tree
-              </a>
-            </li>
-          </ul>
-          </b-popover>
         </div>
       </div>
     </div>

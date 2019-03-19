@@ -1,0 +1,378 @@
+{
+  "data-factory": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/data-factory/concepts-datasets-linked-services",
+    "input": [
+      "Blob Storage",
+      "Azure Cosmos DB (SQL API)",
+      "Azure Cosmos DB (MongoDB API)",
+      "Data Lake Storage",
+      "Azure Database for MariaDB",
+      "Azure Database for PostgreSQL",
+      "Azure Database for MySQL",
+      "File Storage",
+      "Azure SQL Database",
+      "SQL Data Warehouse",
+      "Table Storage",
+
+      "(external) Amazon Redshift",
+      "(external) DB2",
+      "(external) Drill (Preview)",
+      "(external) Google BigQuery",
+      "(external) Greenplum",
+      "(external) HBase",
+      "(external) Hive",
+      "(external) Apache Impala (Preview)",
+      "(external) Informix",
+      "(external) MariaDB",
+      "(external) Microsoft Access",
+      "(external) MySQL",
+      "(external) Netezza",
+      "(external) Oracle",
+      "(external) Phoenix",
+      "(external) PostgreSQL",
+      "(external) Presto (Preview)",
+      "(external) SAP Business Warehouse",
+      "(external) SAP HANA",
+      "(external) Spark",
+      "(external) SQL Server",
+      "(external) Sybase",
+      "(external) Teradata",
+      "(external) Vertica",
+      "(external) Cassandra",
+      "(external) Couchbase (Preview)",
+      "(external) MongoDB",
+      "(external) Amazon S3",
+      "(external) File System",
+      "(external) FTP",
+      "(external) Google Cloud Storage",
+      "(external) HDFS",
+      "(external) SFTP",
+      "(external) Generic HTTP",
+      "(external) Generic OData",
+      "(external) Generic ODBC",
+      "(external) Generic REST",
+      "(external) Amazon Marketplace Web Service (Preview)",
+      "(external) Common Data Service for Apps",
+      "(external) Concur (Preview)",
+      "(external) Dynamics 365",
+      "(external) Dynamics AX (Preview)",
+      "(external) Dynamics CRM",
+      "(external) Google AdWords (Preview)",
+      "(external) HubSpot (Preview)",
+      "(external) Jira (Preview)",
+      "(external) Magento (Preview)",
+      "(external) Marketo (Preview)",
+      "(external) Office 365 (Preview)",
+      "(external) Oracle Eloqua (Preview)",
+      "(external) Oracle Responsys (Preview)",
+      "(external) Oracle Service Cloud (Preview)",
+      "(external) Paypal (Preview)",
+      "(external) QuickBooks (Preview)",
+      "(external) Salesforce",
+      "(external) Salesforce Service Cloud",
+      "(external) Salesforce Marketing Cloud (Preview)",
+      "(external) SAP Cloud for Customer (C4C)",
+      "(external) SAP ECC",
+      "(external) ServiceNow",
+      "(external) Shopify (Preview)",
+      "(external) Square (Preview)",
+      "(external) Web Table (HTML table)",
+      "(external) Xero (Preview)",
+      "(external) Zoho (Preview)"
+    ],
+    "output": [
+      "Blob Storage",
+      "Azure Cosmos DB (SQL API)",
+      "Azure Cosmos DB (MongoDB API)",
+      "Data Lake Storage",
+      "File Storage",
+      "Azure SQL Database",
+      "Azure SQL Database Managed Instance",
+      "Azure Search",
+      "SQL Data Warehouse",
+      "Table Storage",
+
+      "(external) Oracle",
+      "(external) SAP HANA",
+      "(external) SQL Server",
+      "(external) File System",
+      "(external) Generic ODBC",
+      "(external) Common Data Service for Apps",
+      "(external) Dynamics 365",
+      "(external) Dynamics CRM",
+      "(external) Salesforce",
+      "(external) Salesforce Service Cloud",
+      "(external) SAP Cloud for Customer (C4C)"
+    ]
+  },
+  "functions": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings",
+    "input": [
+      "Blob Storage",
+      "Azure Cosmos DB",
+      "External File2",
+      "External Table2",
+      "(external) Microsoft Graph Excel tables",
+      "(external) Microsoft Graph OneDrive files",
+      "(external) Microsoft Graph Events",
+      "(external) Microsoft Graph Auth tokens",
+      "Table storage",
+      "Azure Mobile App"
+    ],
+    "output": [
+      "Blob Storage",
+      "Azure Cosmos DB",
+      "Event Hubs",
+      "External Table2",
+      "External File2",
+      "(external) HTTP",
+      "(external) Microsoft Graph OneDrive files",
+      "(external) Microsoft Graph Excel tables",
+      "(external) Microsoft Graph Outlook email",
+      "(external) Microsoft Graph Events",
+      "Azure Mobile App",
+      "Notification Hubs",
+      "Queue storage",
+      "(external) SendGrid",
+      "Service Bus",
+      "Table storage",
+      "(external) Twilio",
+      "Webhooks"
+    ]
+  },
+  "event-grid": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/event-grid/overview",
+    "input": [
+      "Blob Storage",
+      "Media Services",
+      "Subscriptions",
+      "Resource groups",
+      "Event Hubs",
+      "IoT Hub",
+      "Service Bus",
+      "Container Registry",
+      "Custom Topics",
+      "Azure Maps"
+    ],
+    "output": [
+      "Functions",
+      "Logic Apps",
+      "Automation",
+      "HTTP Webhooks",
+      "Queue Storage",
+      "Hybrid Connections",
+      "Event Hubs",
+      "Microsoft Flow"
+    ]
+  },
+  "iot-hub": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints",
+    "input": [],
+    "output": [
+      "Storage containers",
+      "Event Hubs",
+      "Service Bus Queues",
+      "Service Bus Topics",
+      "Stream Analytics"
+    ]
+  },
+  "stream-analytics": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-add-inputs",
+    "input": [
+      "Azure SQL Database",
+      "Event Hubs",
+      "IoT Hub",
+      "Blob Storage"
+    ],
+    "output": [
+      "Data Lake Storage",
+      "Azure SQL Database",
+      "Blob Storage",
+      "Event Hubs",
+      "Power BI",
+      "Service Bus Queues",
+      "Service Bus Topics",
+      "Azure Cosmos DB",
+      "Functions"
+    ]
+  },
+  "azure-databricks": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/azure-databricks/databricks-connect-to-data-sources",
+      "https://docs.azuredatabricks.net/spark/latest/data-sources/index.html#"
+    ],
+    "input": [
+      "Data Factory",
+      "Azure SQL Database",
+      "Data Lake Storage",
+      "Blob Storage",
+      "Azure Cosmos DB",
+      "Event Hubs",
+      "SQL Data Warehouse",
+
+      "(external) Cassandra",
+      "(external) Couchbase",
+      "(external) ElasticSearch",
+      "(external) Images",
+      "(external) Import Hive Tables",
+      "(external) MongoDB",
+      "(external) Neo4j",
+      "(external) Avro Files",
+      "(external) CSV Files",
+      "(external) JSON Files",
+      "(external) LZO Compressed Files",
+      "(external) Parquet Files",
+      "(external) Redis",
+      "(external) Riak Time Series",
+      "(external) Snowflake",
+      "(external) Zip Files"
+    ],
+    "output": [
+      "SQL Data Warehouse",
+      "Event Hubs",
+      "(external) Apache Kafka",
+      "(external) 3rd party via connectors"
+    ]
+  },
+  "azure-search": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/search/search-indexer-overview#supported-data-sources",
+    "input": [
+      "SQL",
+      "Azure Cosmos DB",
+      "Blob Storage",
+      "Table Storage"
+    ],
+    "output": []
+  },
+  "sql-data-warehouse": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-overview-integrate",
+    "input": [
+      "Data Factory",
+      "Machine Learning",
+      "Stream Analytics"
+    ],
+    "output": [
+      "Power BI",
+      "Machine Learning"
+    ]
+  },
+  "hdinsight": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-use-blob-storage",
+      "https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-streaming-at-scale-overview"],
+    "input": [
+      "Storage",
+      "Data Lake Storage"
+    ],
+    "output": [
+      "Excel",
+      "Power BI"
+    ]
+  },
+  "azure-analysis-services": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-datasource",
+    "input": [
+      "Azure SQL Database",
+      "SQL Data Warehouse",
+      "Blob Storage",
+      "Table Storage",
+      "Azure Cosmos DB",
+      "Data Lake Storage",
+      "HDInsight HDFS",
+      "HDInsight Spark",
+      "(external) On premis: SQL Server SQL",
+      "(external) On premis: SQL Server Data Warehouse",
+      "(external) On premis: Oracle",
+      "(external) On premis: Teradata"
+    ]
+  },
+  "azure-data-explorer": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/data-explorer/data-explorer-overview"
+    ],
+    "input": [
+      "Event Hubs",
+      "Kafka",
+      "SDKs"
+    ],
+    "output": [
+      "Power BI",
+      "Grafana",
+      "Azure Databricks"
+    ]
+  },
+  "logic-apps": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/connectors/apis-list",
+      "https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-as2"
+    ],
+    "input": [
+      "Connectors for Azure and 3rd party services at https://docs.microsoft.com/en-us/azure/connectors/apis-list"
+    ],
+    "output": [
+      "Connectors for Azure and 3rd party services at https://docs.microsoft.com/en-us/azure/connectors/apis-list"
+    ]
+  },
+  "time-series-insights": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/time-series-insights/time-series-insights-update-storage-ingress"
+    ],
+    "input": [
+      "IoT Hub",
+      "Event Hubs"
+    ],
+    "output": [
+      "Blob Storage"
+    ]
+  },
+  "azure-digital-twins": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/digital-twins/tutorial-facilities-events",
+      "https://docs.microsoft.com/en-us/azure/digital-twins/tutorial-facilities-analyze"
+    ],
+    "input": [
+      "Event Grid",
+      "Logic Apps"
+    ],
+    "output": [
+      "Event Hubs"
+    ]
+  },
+  "data-lake-storage": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-data-scenarios",
+    "input": [
+      "Data Factory",
+      "AzCopy tool",
+      "Apache DistCp",
+      "HDInsight Storm",
+      "Data Factory"
+    ],
+    "output": [
+      "HDInsight",
+      "Azure Databricks",
+      "Data Factory",
+      "Apache DistCp",
+      "Power Bi",
+      "SQL Data Warehouse"
+    ]
+  },
+  "event-hubs": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview#what-you-can-do-with-diagnostic-logs"
+      ,"https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-enable-through-portal"
+    ],
+    "input": ["Diagnostic Logs"],
+    "output": [
+      "Blob Storage",
+      "Data Lake Storage"
+    ]
+  },
+  "blob-storage": {
+    "linking_source_url": ["https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview#what-you-can-do-with-diagnostic-logs"],
+    "input": ["Diagnostic Logs"]
+  },
+  "log-analytics": {
+    "linking_source_url": ["https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview#what-you-can-do-with-diagnostic-logs"],
+    "input": ["Diagnostic Logs"]
+  }
+}

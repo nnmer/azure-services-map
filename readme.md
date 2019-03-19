@@ -9,7 +9,7 @@ Data pulled from [Azure Docs](https://docs.microsoft.com/en-us/azure/)
 Follow updates after [February 2019](https://azure.microsoft.com/en-in/updates/)
 
 TODOs:
-  - rewrite code with Vue.js only
+  + rewrite code with Vue.js only
   - metadata structure update to keep more related important url's for services
 
 ## Project setup
@@ -25,14 +25,4 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```

@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><base href=""><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=favicon.png><script src=https://d3js.org/d3.v3.min.js></script><script src=https://d3js.org/d3-hierarchy.v1.min.js></script><script>var SL = null;
+      var SvsG = null;</script><title>Azure Services Reference Map</title><link href=css/app.dc47dea4.css rel=preload as=style><link href=css/chunk-vendors.e00a3e23.css rel=preload as=style><link href=js/app.f58ce555.js rel=preload as=script><link href=js/chunk-vendors.444f5fc1.js rel=preload as=script><link href=css/chunk-vendors.e00a3e23.css rel=stylesheet><link href=css/app.dc47dea4.css rel=stylesheet></head><body><noscript><strong>We're sorry but rewr doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=https://code.jquery.com/jquery-3.3.1.slim.min.js integrity=sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo crossorigin=anonymous></script><script>$(document).ready(function(){
+
+        $.fn.toEm = function(settings){
+            settings = jQuery.extend({
+                scope: 'body'
+            }, settings);
+            var that = parseInt(this[0],10),
+                scopeTest = jQuery('<div style="display: none; font-size: 1em; margin: 0; padding:0; height: auto; line-height: 1; border:0;">&nbsp;</div>').appendTo(settings.scope),
+                scopeVal = scopeTest.height();
+            scopeTest.remove();
+            return (that / scopeVal).toFixed(8) + 'em';
+        };
+
+
+        $.fn.toPx = function(settings){
+            settings = jQuery.extend({
+                scope: 'body'
+            }, settings);
+            var that = parseFloat(this[0]),
+                scopeTest = jQuery('<div style="display: none; font-size: 1em; margin: 0; padding:0; height: auto; line-height: 1; border:0;">&nbsp;</div>').appendTo(settings.scope),
+                scopeVal = scopeTest.height();
+            scopeTest.remove();
+            return Math.round(that * scopeVal) + 'px';
+        };
+
+      })
+
+      // @link https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
+      if (window.Element && !Element.prototype.closest) {
+        Element.prototype.closest =
+        function(s) {
+          var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+            i,
+            el = this;
+          do {
+            i = matches.length;
+            while (--i >= 0 && matches.item(i) !== el) {};
+          } while ((i < 0) && (el = el.parentElement));
+          return el;
+        };
+      }</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-134745718-1"></script><script>window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134745718-1');</script><script src=js/chunk-vendors.444f5fc1.js></script><script src=js/app.f58ce555.js></script></body></html>

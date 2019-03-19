@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+  publicPath: '', // as we host at github pages
   configureWebpack: {
     resolve: {
       extensions: ['.js', '.vue', '.json'],

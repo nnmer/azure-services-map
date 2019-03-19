@@ -7,7 +7,7 @@
   >
     <div class="svg-container">
       <D3LayoutHelpBox/>
-      <div id="service-flow"></div>
+      <div :id="visualizationContainerId"></div>
     </div>
   </b-modal>
 </template>
@@ -20,6 +20,12 @@ export default {
   name: 'ServiceDirectedGraphModal',
   components: {
     D3LayoutHelpBox
+  },
+  data: function () {
+    return {
+      visualizationContainerId: 'service-flow',
+      visualizationContainerSelector: '#service-flow',
+    }
   },
   mounted: function() {
     this.$root.$on('app::services::io-directed-graph-modal::show', this.showIOFlowGraph)
@@ -63,9 +69,9 @@ export default {
       }
 
       var circularRefTrack = [];
-      $('#service-flow').html('');
+      $(this.visualizationContainerSelector).html('');
       let tree = buildChildren(serviceId)
-      serviceFlowTree(tree)
+      serviceFlowTree(this.visualizationContainerSelector, tree)
     }
   }
 }

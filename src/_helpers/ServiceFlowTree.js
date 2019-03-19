@@ -1,4 +1,4 @@
-export default function serviceFlowTree (json) {
+export default function serviceFlowTree (selector, json) {
   var m = [20, 120, 20, 120]
   var i = 0
   var root
@@ -20,7 +20,7 @@ export default function serviceFlowTree (json) {
     vis.attr('transform', 'translate(' + d3.event.translate + ')scale(' + d3.event.scale + ')')
   }
 
-  var vis = d3.select('#service-flow').append('svg:svg')
+  var vis = d3.select(selector).append('svg:svg')
     .attr('width', viewerWidth)
     .attr('height', viewerHeight)
     .call(zoom)
@@ -58,7 +58,7 @@ export default function serviceFlowTree (json) {
     y = -source.x0
     x = x * scale + viewerWidth / 2
     y = y * scale + viewerHeight / 2
-    d3.select('#service-flow g').transition()
+    d3.select(selector+' g').transition()
       .duration(750)
       .attr('transform', 'translate(' + x + ',' + y + ')scale(' + scale + ')')
     zoom.scale(scale)

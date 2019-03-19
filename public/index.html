@@ -24,48 +24,6 @@
     </noscript>
     <div id="app"></div>
 
-    <script>
-        function showServiceIntegrationTree(serviceId, services) {
-          function buildChildren(id) {
-            // console.warn('Called buildChildren',id)
-            let service = services[id];
-            let obj = {
-              name: service ? service.name : id
-            }
-            circularRefTrack.push(id)
-
-            if (service && service.servicesIO.output.length > 0){
-              for (let i=0;i<service.servicesIO.output.length;i++){
-                let servId = service.servicesIO.output[i];
-                let depService = services[servId]
-                let toInject = null;
-                if (circularRefTrack.indexOf(servId) === -1 && depService) {
-                  toInject = buildChildren(servId)
-                } else {
-                  toInject = {
-                    name: depService ? depService.name : servId
-                  }
-                  circularRefTrack.push(servId)
-                }
-                if (!obj.children){
-                  obj.children = []
-                }
-                obj.children.push(toInject)
-                circularRefTrack.pop()
-              }
-            }
-
-            return obj;
-          }
-
-          var circularRefTrack = [];
-          $('#service-flow').html('');
-          let tree = buildChildren(serviceId)
-          serviceFlowTree(tree)
-        }
-
-    </script>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>
       $(document).ready(function(){

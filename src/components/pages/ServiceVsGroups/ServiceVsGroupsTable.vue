@@ -44,7 +44,7 @@
 
             <li v-if="(service.servicesIO.output && service.servicesIO.output.length > 0)">
               <a href="#"
-                v-bind:data-service-id="service.id"
+                @click="$root.$emit('app::services::io-directed-graph::show', $event, service.id)"
                 >
                 Show IO tree
               </a>

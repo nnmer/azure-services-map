@@ -1,6 +1,6 @@
 <template>
   <b-modal
-    id="services-io-directed-graph"
+    id="services-io-directed-graph-modal"
     title="Services Input/Output flow"
     :no-fade="true"
     :hide-footer="true"
@@ -22,11 +22,11 @@ export default {
     D3LayoutHelpBox
   },
   mounted: function() {
-    this.$root.$on('app::services::io-directed-graph::show', this.showIOFlowGraph)
+    this.$root.$on('app::services::io-directed-graph-modal::show', this.showIOFlowGraph)
   },
   methods: {
     showIOFlowGraph: function (event, serviceId) {
-      this.$root.$emit('bv::show::modal', 'services-io-directed-graph', event)
+      this.$root.$emit('bv::show::modal', 'services-io-directed-graph-modal', event)
       this.showServiceIntegrationTree(serviceId, SL.services)
     },
     showServiceIntegrationTree: function(serviceId, services) {

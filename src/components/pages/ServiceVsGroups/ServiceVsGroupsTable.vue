@@ -37,33 +37,21 @@
             <li v-if="(service.servicesIO.input && service.servicesIO.input.length > 0
                 || service.servicesIO.output && service.servicesIO.output.length > 0 )">
               <a href="#"
-                v-b-modal="catIdx+'-'+service.id+'direct-io-modal'">
+                @click="$root.$emit('app::services::direct-io-modal::show', $event, service.id)"
+                >
                 Show Direct In/Out connections
               </a>
             </li>
 
             <li v-if="(service.servicesIO.output && service.servicesIO.output.length > 0)">
               <a href="#"
-                @click="$root.$emit('app::services::io-directed-graph::show', $event, service.id)"
+                @click="$root.$emit('app::services::io-directed-graph-modal::show', $event, service.id)"
                 >
                 Show IO tree
               </a>
             </li>
           </ul>
           </b-popover>
-
-          <b-modal
-            :id="catIdx+'-'+service.id+'direct-io-modal'"
-            title="Direct Input/Output connections"
-            size="lg"
-            :no-fade="true"
-            :lazy="true"
-            :hide-footer="true"
-            >
-            <ServiceDirectIOModalContent
-              v-bind:service="service"
-            />
-          </b-modal>
         </div>
       </div>
     </div>
@@ -71,16 +59,11 @@
 </template>
 
 <script>
-import ServiceDirectIOModalContent from './ServiceDirectIOModalContent'
-
 export default {
   name: 'ServicesVsGroupsTable',
   props: [
     'filteredServicesList'
   ],
-  components: {
-    ServiceDirectIOModalContent
-  },
   methods: {
     clickOnServiceBox: function (serviceId) {
       console.warn('clicked clickOnServiceBox')

@@ -16,8 +16,3 @@ Vue.config.debug = true
 const vm = new Vue({
   render: h => h(App)
 }).$mount('#app')
-
-vm.$on('click::at::page', function(event){
-  console.warn(event)
-  vm.$root.$emit('bv::hide::popover')
-})

@@ -92,8 +92,20 @@ export default {
       axios.get('js/data/azure-services-linking.json')
     ]).then(function ([services, serviceLinking]) {
       SL = new ServiceLinking(services.data, serviceLinking.data)
-      SvsG = new ServicesVsGroupsForceDirectedTree(that.mapSelector,SL.services)
+      SvsG = new ServicesVsGroupsForceDirectedTree(that.mapSelector,SL.services, that)
       that.servicesList = SL.servicesByCategory
+    })
+
+    this.$root.$on('click::at::page', function(event){
+      if ( (that.currentView === 'tree' && !event.srcElement.closest('.service-list-col-service-item'))
+        || (that.currentView === 'map' && !event.srcElement.id.match(/service-node*/i)) ) {
+        console.warn('call ALL popover hide')
+        that.$root.$emit('bv::hide::popover')
+      }
+    })
+
+    this.$root.$on('app::hide::popover::all', function(event) {
+      that.$root.$emit('bv::hide::popover')
     })
   },
   computed: {
@@ -118,7 +130,7 @@ export default {
   },
   watch: {
     searchVal: function (val) {
-      this.clearAllPopups()
+      this.$root.$emit('app::hide::popover::all')
       SvsG.searchValue = val
     },
     currentView: function (val) {
@@ -132,9 +144,6 @@ export default {
     }
   },
   methods: {
-    clearAllPopups: function() {
-      this.$root.$emit('click::at::page')
-    },
     renderMap: function () {
       SvsG.render()
       SvsG.applyFilter()

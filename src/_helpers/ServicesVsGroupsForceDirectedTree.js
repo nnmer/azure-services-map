@@ -1,5 +1,6 @@
 export default class ServicesVsGroupsForceDirectedTree {
-  constructor (visSelector, services) {
+  constructor (visSelector, services, vue) {
+    this._vue = vue
     this.visSelector = visSelector
     this.filter = null
     this.width = $(document).width()
@@ -133,7 +134,7 @@ export default class ServicesVsGroupsForceDirectedTree {
         that.force.stop()
         d3.event.sourceEvent.stopPropagation()
         d3.select(this).classed('fixed', d.fixed = true)
-        that.triggerPopoverOff(d, nodeId)
+        // that.triggerPopoverOff(d, nodeId)
       })
       .on('drag', function (d, nodeId) {
         d.px += d3.event.dx
@@ -244,23 +245,27 @@ export default class ServicesVsGroupsForceDirectedTree {
     return this.linkedByIndex[a.index + ',' + b.index]
   }
 
-  triggerPopoverOff (d, nodeId) {
-    $('circle[id^=service-node]')
-      .not('circle[id=service-node-' + nodeId + ']')
-      .popover('hide')
-  }
+  // triggerPopoverOff (d, nodeId) {
+  //   $('circle[id^=service-node]')
+  //     .not('circle[id=service-node-' + nodeId + ']')
+  //     .popover('hide')
+  // }
 
   triggerPopover (d, nodeId) {
-    $('#service-node-' + nodeId)
-      .not('.node-category')
-      .popover({
-        title: d.name,
-        content: tmpl('service_node_popover', this.services[d.id]),
-        sanitize: false,
-        trigger: 'manual',
-        html: true
-      })
-      .popover('show')
+    let service = this.services[d.id];
+    if (service) {
+      this._vue.$root.$emit('app::services::popover::show', d3.event, service.id, 'service-node-' + nodeId)
+    }
+    // $('#service-node-' + nodeId)
+    //   .not('.node-category')
+    //   .popover({
+    //     title: d.name,
+    //     content: 'aaa',//tmpl('service_node_popover', this.services[d.id]),
+    //     sanitize: false,
+    //     trigger: 'manual',
+    //     html: true
+    //   })
+    //   .popover('show')
   }
 
   onNodeDblClick (d) {

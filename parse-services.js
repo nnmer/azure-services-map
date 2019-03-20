@@ -70,6 +70,7 @@ getHtml()
                 id,
                 name,
                 category: [curCategory],
+                isAzureProduct: true,
                 servicesIO: [],
                 url: (href && href.search('docs.microsoft.com') === -1 ? urlPrefix + href : href),
                 icon: (icon && icon.search('docs.microsoft.com') === -1 ? iconPrefix + icon : icon)

@@ -3,7 +3,7 @@ const fs = require('fs')
 const cheerio = require('cheerio')
 
 const htmlDataFile = __dirname + '/azure-services-tmp.html'
-const serviceDataFile = __dirname + '/public/js/azure-services.json'
+const serviceDataFile = __dirname + '/public/js/data/azure-services.json'
 var htmlData = ''
 var urlPrefix = 'https://docs.microsoft.com'
 var iconPrefix = 'https://docs.microsoft.com/en-us/azure/'

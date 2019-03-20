@@ -22,7 +22,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-8 col-sm-6">
+          <div class="col-lg-6 col-sm-6">
             <input
               class="form-control form-control-dark w-100 search-input"
               type="text" placeholder="Search" aria-label="Search"
@@ -30,11 +30,16 @@
               v-on:keydown.esc="clearSearchField"
             >
           </div>
-          <div class="col-lg-4 col-sm-6" v-if="currentView=='table'">
-            - services may be placed in several service groups; <br/>
-            - <i class="has-linking-services help-note" style="padding: 0 8px;"></i> &nbsp;&nbsp;a service with input/output connection
+          <div class="col-lg-6 col-sm-6" v-if="currentView=='table'">
+            <div class="row">
+              <div class="col-2"><strong>Note:</strong></div>
+              <div class="col-10">
+              - services may be placed in several service groups; <br/>
+              - <i class="has-linking-services help-note" style="padding: 0 8px;"></i> &nbsp;&nbsp;a service with input/output connection
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4 col-sm-6" v-if="currentView=='map'">
+          <div class="col-lg-6 col-sm-6" v-if="currentView=='map'">
             <svg width="20" height="20">
                 <circle cx="10" cy="10" class="node node-category" r="10" style="r: 10"></circle>
               </svg> &nbsp;- a service group

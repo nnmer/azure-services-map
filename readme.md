@@ -9,10 +9,11 @@ Map view and IO connection tree based on [D3](https://github.com/d3/d3) js frame
 
 Follow updates after [February 2019](https://azure.microsoft.com/en-in/updates/)
 
+*Note: IE is not supported*
+
 TODOs:
   - &#10003; rewrite code with Vue.js only
   - &#9744; metadata structure update to keep more related important url's for services
-  - &#9744; fix UI to better support Edge and IE  
 
 ## Project setup
 ```

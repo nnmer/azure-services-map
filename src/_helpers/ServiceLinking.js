@@ -1,6 +1,6 @@
 export default class ServiceLinking {
-  constructor (services, serviceLinks) {
-    this._services = Object.assign({}, services)
+  constructor (services, serviceLinks, refServices = {}) {
+    this._services = Object.assign({}, services, refServices)
     this._sourceData = Object.assign({}, serviceLinks)
     this._flatServiceIOMap = {}
     this._servicesByCategoryArray = null
@@ -75,7 +75,6 @@ export default class ServiceLinking {
 
   sortObjByKeys (obj) {
     let ordered = {}
-    let that = this
     Object.keys(obj).sort().forEach(function (key) {
       ordered[key] = obj[key]
     })
@@ -89,6 +88,16 @@ export default class ServiceLinking {
 
   get services () {
     return this._services
+  }
+
+  get azureServicesOnly () {
+    let azureOnly = {}
+    Object.keys(this._services).map((key)=> {
+      if (this._services[key].isAzureProduct) {
+        azureOnly[key] = this._services[key]
+      }
+    })
+    return azureOnly
   }
 
   get servicesByCategory () {

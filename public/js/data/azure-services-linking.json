@@ -169,7 +169,7 @@
     "linking_source_url": "https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints",
     "input": [],
     "output": [
-      "Storage containers",
+      "Blob Storage",
       "Event Hubs",
       "Service Bus Queues",
       "Service Bus Topics",

@@ -89,10 +89,11 @@ export default {
     let that = this
     axios.all([
       axios.get('js/data/azure-services.json'),
-      axios.get('js/data/azure-services-linking.json')
-    ]).then(function ([services, serviceLinking]) {
-      SL = new ServiceLinking(services.data, serviceLinking.data)
-      SvsG = new ServicesVsGroupsForceDirectedTree(that.mapSelector,SL.services, that)
+      axios.get('js/data/azure-services-linking.json'),
+      axios.get('js/data/ref-services.json')
+    ]).then(function ([services, serviceLinking, refServices]) {
+      SL = new ServiceLinking(services.data, serviceLinking.data, refServices.data)
+      SvsG = new ServicesVsGroupsForceDirectedTree(that.mapSelector,SL.azureServicesOnly, that)
       that.servicesList = SL.servicesByCategory
     })
 

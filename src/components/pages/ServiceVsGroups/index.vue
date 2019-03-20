@@ -87,6 +87,7 @@ export default {
   },
   created: function () {
     let that = this
+    axios.defaults.headers.get['Cache-Control'] = 'no-cache';
     axios.all([
       axios.get('js/data/azure-services.json'),
       axios.get('js/data/azure-services-linking.json'),

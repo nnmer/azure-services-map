@@ -5,6 +5,7 @@
     "category": [
       "Compute"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/virtualmachine.svg"
@@ -15,6 +16,7 @@
     "category": [
       "Compute"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/virtualmachine.svg"
@@ -26,6 +28,7 @@
       "Compute",
       "Containers"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/app-service/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/appservice.svg"
@@ -37,6 +40,7 @@
       "Compute",
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/azure-functions/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg"
@@ -48,6 +52,7 @@
       "Compute",
       "Containers"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/batch/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/batch.svg"
@@ -59,6 +64,7 @@
       "Compute",
       "Containers"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/container-instances/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/containerinstances.svg"
@@ -70,6 +76,7 @@
       "Compute",
       "Containers"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/service-fabric/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/fabric.svg"
@@ -80,6 +87,7 @@
     "category": [
       "Compute"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/availabilitysetold.svg"
@@ -91,6 +99,7 @@
       "Compute",
       "Containers"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/aks/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/containerservice.svg"
@@ -101,6 +110,7 @@
     "category": [
       "Compute"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cloud-services/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/cloudservice.svg"
@@ -112,6 +122,7 @@
       "Compute",
       "Databases"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview?toc=%2Fazure%2Fvirtual-machines%2Fwindows%2Ftoc.json",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/virtualmachine.svg"
@@ -122,6 +133,7 @@
     "category": [
       "Compute"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/hana-overview-architecture",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/virtualmachine.svg"
@@ -132,6 +144,7 @@
     "category": [
       "Compute"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cyclecloud/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_cyclecloud.svg"
@@ -142,6 +155,7 @@
     "category": [
       "Databases"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/sql-database/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg"
@@ -153,6 +167,7 @@
       "Databases",
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cosmos-db/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg"
@@ -164,6 +179,7 @@
       "Databases",
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/sql-data-warehouse/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/sqldatawarehouse.svg"
@@ -175,6 +191,7 @@
       "Databases",
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/data-factory/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/datafactory.svg"
@@ -185,6 +202,7 @@
     "category": [
       "Databases"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/rediscache.svg"
@@ -195,6 +213,7 @@
     "category": [
       "Databases"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/sql-server-stretch-database/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg"
@@ -205,6 +224,7 @@
     "category": [
       "Databases"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cosmos-db/table-storage-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg"
@@ -215,6 +235,7 @@
     "category": [
       "Databases"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/postgresql/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/postgresql.svg"
@@ -225,6 +246,7 @@
     "category": [
       "Databases"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/mysql/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/mysql.svg"
@@ -235,6 +257,7 @@
     "category": [
       "Databases"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/mariadb/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/mariadb.svg"
@@ -246,6 +269,7 @@
       "Databases",
       "Migration"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/dms/dms-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/database-migration.svg"
@@ -256,6 +280,7 @@
     "category": [
       "Containers"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/container-registry/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/container-registry.svg"
@@ -266,6 +291,7 @@
     "category": [
       "Containers"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/app-service/containers/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/appservice.svg"
@@ -276,6 +302,7 @@
     "category": [
       "Containers"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/dev-spaces/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azuredevspacecontroller_50x.svg"
@@ -288,6 +315,7 @@
       "Internet of Things",
       "Web"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/api-management/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/apimanagement.svg"
@@ -298,6 +326,7 @@
     "category": [
       "Integration"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/service-bus/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/servicebus.svg"
@@ -309,6 +338,7 @@
       "Integration",
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/logic-apps/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/logicapp.svg"
@@ -320,6 +350,7 @@
       "Integration",
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/event-grid/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure_event_grid.svg"
@@ -330,6 +361,7 @@
     "category": [
       "Media"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/media-services/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/media-services.svg"
@@ -340,6 +372,7 @@
     "category": [
       "Media"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/media-services/media-services-encode-asset",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/media-encoding.svg"
@@ -350,6 +383,7 @@
     "category": [
       "Media"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/media-services/media-services-manage-channels-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/media-ondemand.svg"
@@ -360,6 +394,7 @@
     "category": [
       "Media"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/media-services/media-services-playback-content-with-existing-players",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/media-player.svg"
@@ -370,6 +405,7 @@
     "category": [
       "Media"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/media-services/media-services-content-protection-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/media-protection.svg"
@@ -380,6 +416,7 @@
     "category": [
       "Media"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/media-services/media-services-analytics-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/mediaservices.svg"
@@ -391,6 +428,7 @@
       "Media",
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_videoindexer.svg"
@@ -401,6 +439,7 @@
     "category": [
       "Azure Stack"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/azure-stack/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-stack.svg"
@@ -411,6 +450,7 @@
     "category": [
       "Azure Stack"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/azure-stack/user",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-stack.svg"
@@ -421,6 +461,7 @@
     "category": [
       "Sovereign Clouds"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/azure-government/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-government.svg"
@@ -431,6 +472,7 @@
     "category": [
       "Sovereign Clouds"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/germany/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-germany.svg"
@@ -441,6 +483,7 @@
     "category": [
       "Sovereign Clouds"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/china/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-germany.svg"
@@ -451,6 +494,7 @@
     "category": [
       "Networking"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/networking/networking-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/networking-overview.svg"
@@ -462,6 +506,7 @@
       "Networking",
       "Web"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cdn/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/contentdeliverynetwork.svg"
@@ -472,6 +517,7 @@
     "category": [
       "Networking"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/expressroute/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/expressroute.svg"
@@ -482,6 +528,7 @@
     "category": [
       "Networking"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/dns/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/dns.svg"
@@ -492,6 +539,7 @@
     "category": [
       "Networking"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/virtual-network/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/virtualnetwork.svg"
@@ -503,6 +551,7 @@
       "Networking",
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/traffic-manager/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/trafficmanager.svg"
@@ -513,6 +562,7 @@
     "category": [
       "Networking"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/load-balancer/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/loadbalancer.svg"
@@ -524,6 +574,7 @@
       "Networking",
       "Security"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/vpn-gateway/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/vpngateway.svg"
@@ -535,6 +586,7 @@
       "Networking",
       "Security"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/application-gateway/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/applicationgateway.svg"
@@ -546,6 +598,7 @@
       "Networking",
       "Security"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/ddos.svg"
@@ -557,6 +610,7 @@
       "Networking",
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/network-watcher/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/network-watcher.svg"
@@ -567,6 +621,7 @@
     "category": [
       "Networking"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/firewall/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure_firewall.svg"
@@ -577,6 +632,7 @@
     "category": [
       "Networking"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/frontdoor/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/frontdoor.svg"
@@ -588,6 +644,7 @@
       "AI + Machine Learning",
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/azure-databricks/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_databricks.svg"
@@ -598,6 +655,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/bot-framework/bot-service-overview-introduction",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/bot-service.svg"
@@ -608,6 +666,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/genomics/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/genomics.svg"
@@ -619,6 +678,7 @@
       "AI + Machine Learning",
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/machine-learning/service",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/machinelearning.svg"
@@ -630,6 +690,7 @@
       "AI + Machine Learning",
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/machine-learning/studio",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/machinelearning.svg"
@@ -640,6 +701,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/welcome",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/machinelearning.svg"
@@ -650,6 +712,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/notebooks",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/notebooks.svg"
@@ -661,6 +724,7 @@
       "AI + Machine Learning",
       "Web"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/search/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/search.svg"
@@ -671,6 +735,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_computer_vision.svg"
@@ -681,6 +746,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/content-moderator/overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_content_moderator.svg"
@@ -691,6 +757,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/Custom-Vision-Service/home",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_custom_vision.svg"
@@ -701,6 +768,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/emotion/home",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_emotion.svg"
@@ -711,6 +779,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/face/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_face.svg"
@@ -721,6 +790,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_speech_service.svg"
@@ -731,6 +801,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/speech/home",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_speech.svg"
@@ -741,6 +812,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/custom-speech-service/cognitive-services-custom-speech-home",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_custom_speech.svg"
@@ -751,6 +823,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/speaker-recognition/home",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_speaker_recognition.svg"
@@ -761,6 +834,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator-speech/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_translatorspeech.svg"
@@ -771,6 +845,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-spell-check/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_spell_check.svg"
@@ -781,6 +856,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/luis/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_luis.svg"
@@ -791,6 +867,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/linguisticanalysisapi/home",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_linguisticanalysis.svg"
@@ -801,6 +878,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_textanalytics.svg"
@@ -811,6 +889,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_translatortext.svg"
@@ -821,6 +900,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/web-language-model/home",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_weblanguagemodel.svg"
@@ -831,6 +911,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/custom-decision-service/custom-decision-service-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_custom_decision_service.svg"
@@ -841,6 +922,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/home",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_qnamaker.svg"
@@ -851,6 +933,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/recommendations/overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_recommendations.svg"
@@ -861,6 +944,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/kes/overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_knowledgeexploration.svg"
@@ -871,6 +955,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/academic-knowledge/home",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_know_academic.svg"
@@ -881,6 +966,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/entitylinking/home",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_entity_linkingintelligence.svg"
@@ -891,6 +977,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/labs/url-preview/overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_url_preview.svg"
@@ -901,6 +988,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/labs/answer-search/overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_answer_search.svg"
@@ -911,6 +999,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/labs/anomaly-finder/overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_anomaly_finder.svg"
@@ -921,6 +1010,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/labs/conversation-learner/overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_conversation_learner.svg"
@@ -931,6 +1021,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-news-search/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_news_search.svg"
@@ -941,6 +1032,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/Bing-Video-Search/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_video_search.svg"
@@ -951,6 +1043,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-web-search/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_web_search.svg"
@@ -961,6 +1054,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-visual-search/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_visual_search.svg"
@@ -971,6 +1065,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/Bing-Autosuggest/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_autosuggest.svg"
@@ -981,6 +1076,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-custom-search/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_custom_search.svg"
@@ -991,6 +1087,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-entities-search/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_entity_search.svg"
@@ -1001,6 +1098,7 @@
     "category": [
       "AI + Machine Learning"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/bing-image-search/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_bing_image_search.svg"
@@ -1012,6 +1110,7 @@
       "Migration",
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/site-recovery/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/siterecovery.svg"
@@ -1023,6 +1122,7 @@
       "Migration",
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cost-management/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/cost-management.svg"
@@ -1034,6 +1134,7 @@
       "Migration",
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/migrate/migrate-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-migrate.svg"
@@ -1045,6 +1146,7 @@
       "Mixed Reality",
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/digital-twins/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/digital_twin.svg"
@@ -1055,6 +1157,7 @@
     "category": [
       "Mixed Reality"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/spatial-anchors/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/spatial_anchors.png"
@@ -1065,6 +1168,7 @@
     "category": [
       "Storage"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/storage/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/storage.svg"
@@ -1075,6 +1179,7 @@
     "category": [
       "Storage"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/storsimple/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/storsimple.svg"
@@ -1086,6 +1191,7 @@
       "Storage",
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-data-lake-store-color.svg"
@@ -1097,6 +1203,7 @@
       "Storage",
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/data-lake-store/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-data-lake-store-color.svg"
@@ -1107,6 +1214,7 @@
     "category": [
       "Storage"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_azure-blob-storage.svg"
@@ -1117,6 +1225,7 @@
     "category": [
       "Storage"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/disks-color.svg"
@@ -1127,6 +1236,7 @@
     "category": [
       "Storage"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/managed-disks.svg"
@@ -1137,6 +1247,7 @@
     "category": [
       "Storage"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/storage/queues/storage-queues-introduction",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_azure-storage-q.svg"
@@ -1147,6 +1258,7 @@
     "category": [
       "Storage"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_azure-storage-file.svg"
@@ -1157,6 +1269,7 @@
     "category": [
       "Storage"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/databox-family/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/service-icon.png"
@@ -1167,6 +1280,7 @@
     "category": [
       "Storage"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/avere-vfxt/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/avere.svg"
@@ -1177,6 +1291,7 @@
     "category": [
       "Storage"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/storage.svg"
@@ -1187,6 +1302,7 @@
     "category": [
       "Storage"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/storage.svg"
@@ -1197,6 +1313,7 @@
     "category": [
       "Storage"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/azure-netapp-files/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/netappstorage.svg"
@@ -1207,6 +1324,7 @@
     "category": [
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/hdinsight/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/hdinsight.svg"
@@ -1217,6 +1335,7 @@
     "category": [
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/data-explorer/",
     "icon": "https://docs.microsoft.com/media/logos/logo_azure.svg"
@@ -1228,6 +1347,7 @@
       "Analytics",
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/stream-analytics/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/streamanalytics.svg"
@@ -1238,6 +1358,7 @@
     "category": [
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/data-lake-analytics/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-data-lake-analytics-color.svg"
@@ -1248,6 +1369,7 @@
     "category": [
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/event-hubs/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/eventhubs.svg"
@@ -1258,6 +1380,7 @@
     "category": [
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/power-bi-embedded/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/powerbiembedded.svg"
@@ -1268,6 +1391,7 @@
     "category": [
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/analysis-services/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/analysisservices.svg"
@@ -1278,6 +1402,7 @@
     "category": [
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/hdinsight.svg"
@@ -1288,6 +1413,7 @@
     "category": [
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/hdinsight/storm/apache-storm-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/hdinsight.svg"
@@ -1298,6 +1424,7 @@
     "category": [
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/hdinsight/r-server/r-server-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/hdinsight.svg"
@@ -1309,6 +1436,7 @@
       "Analytics",
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/log-analytics/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/operationsmanagementsuite.svg"
@@ -1319,6 +1447,7 @@
     "category": [
       "Analytics"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/data-catalog/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/data-catalog.svg"
@@ -1330,6 +1459,7 @@
       "DevOps",
       "Developer Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/devops/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_vs-team-services.svg"
@@ -1341,6 +1471,7 @@
       "DevOps",
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/application-insights/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/applicationinsights.svg"
@@ -1351,6 +1482,7 @@
     "category": [
       "DevOps"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/lab-services/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/devtestlabs.svg"
@@ -1362,6 +1494,7 @@
       "DevOps",
       "Mobile"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/appcenter/",
     "icon": "https://docs.microsoft.com/media/logos/logo_vs-mobile-center.svg"
@@ -1373,6 +1506,7 @@
       "DevOps",
       "Developer Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/integrations",
     "icon": "https://docs.microsoft.com/media/common/i_extensions.svg"
@@ -1383,6 +1517,7 @@
     "category": [
       "DevOps"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.comhttps://support.hockeyapp.net/kb",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/hockeyapp.svg"
@@ -1393,6 +1528,7 @@
     "category": [
       "DevOps"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/devops-project",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_vs-team-services.svg"
@@ -1403,6 +1539,7 @@
     "category": [
       "Developer Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/visualstudio/products",
     "icon": "https://docs.microsoft.com/media/logos/logo_visual-studio.svg"
@@ -1413,6 +1550,7 @@
     "category": [
       "Developer Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.comhttps://code.visualstudio.com/docs",
     "icon": "https://docs.microsoft.com/media/logos/logo_vs-code.svg"
@@ -1423,6 +1561,7 @@
     "category": [
       "Developer Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/sdks",
     "icon": "https://docs.microsoft.com/media/common/i_tools.svg"
@@ -1433,6 +1572,7 @@
     "category": [
       "Developer Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cli",
     "icon": "https://docs.microsoft.com/media/common/i_cligeneric.svg"
@@ -1443,6 +1583,7 @@
     "category": [
       "Developer Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/blockchain-workbench",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/blockchain-workbench.svg"
@@ -1453,6 +1594,7 @@
     "category": [
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/iot-fundamentals",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/iothub.svg"
@@ -1463,6 +1605,7 @@
     "category": [
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/iot-central/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/iot-central.svg"
@@ -1473,6 +1616,7 @@
     "category": [
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/iot-hub/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/iothub.svg"
@@ -1483,6 +1627,7 @@
     "category": [
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/iot-edge/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/iot-edge-alt.svg"
@@ -1493,6 +1638,7 @@
     "category": [
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/iot-suite/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/iot-solution-accelerators.svg"
@@ -1503,6 +1649,7 @@
     "category": [
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/iot-dps/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/dps.svg"
@@ -1513,6 +1660,7 @@
     "category": [
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/time-series-insights/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/time-series-insights.svg"
@@ -1524,6 +1672,7 @@
       "Internet of Things",
       "Mobile"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/azure-maps/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-maps-icon-portal.svg"
@@ -1534,6 +1683,7 @@
     "category": [
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/machine-learning/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/machinelearning.svg"
@@ -1546,6 +1696,7 @@
       "Web",
       "Mobile"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/notification-hubs/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/notificationhubs.svg"
@@ -1556,6 +1707,7 @@
     "category": [
       "Internet of Things"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure-sphere/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure_sphere.svg"
@@ -1566,6 +1718,7 @@
     "category": [
       "Web"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/app-service-web/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg"
@@ -1577,6 +1730,7 @@
       "Web",
       "Mobile"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/app-service-api/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/app-service-api.svg"
@@ -1587,6 +1741,7 @@
     "category": [
       "Web"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/azure-signalr/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-signalr.svg"
@@ -1597,6 +1752,7 @@
     "category": [
       "Mobile"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/app-service-mobile/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/app-service-mobile.svg"
@@ -1607,6 +1763,7 @@
     "category": [
       "Mobile"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.comhttps://azure.microsoft.com/features/xamarin",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_xamarin.svg"
@@ -1618,6 +1775,7 @@
       "Security",
       "Identity"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/security/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/securitycenter.svg"
@@ -1628,6 +1786,7 @@
     "category": [
       "Security"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/security-center",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/securitycenter.svg"
@@ -1638,6 +1797,7 @@
     "category": [
       "Security"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/key-vault/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/keyvault.svg"
@@ -1648,6 +1808,7 @@
     "category": [
       "Security"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/dedicated-hsm",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/dedicated-hsm.svg"
@@ -1658,6 +1819,7 @@
     "category": [
       "Security"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/security/azure-threat-detection",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/securitycenter.svg"
@@ -1669,6 +1831,7 @@
       "Security",
       "Identity"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/information-protection/",
     "icon": "https://docs.microsoft.com/media/common/i_information-protection.svg"
@@ -1680,6 +1843,7 @@
       "Security",
       "Identity"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/active-directory/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/activedirectory.svg"
@@ -1691,6 +1855,7 @@
       "Security",
       "Identity"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/active-directory-domain-services",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/activedirectory.svg"
@@ -1701,6 +1866,7 @@
     "category": [
       "Security"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/role-based-access-control/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/personwithfriend.svg"
@@ -1711,6 +1877,7 @@
     "category": [
       "Security"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/sentinel/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/sentinel.png"
@@ -1721,6 +1888,7 @@
     "category": [
       "Identity"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/multi-factor-authentication/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/multifactorauthentication.svg"
@@ -1731,6 +1899,7 @@
     "category": [
       "Identity"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/active-directory-b2c",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/activedirectory.svg"
@@ -1741,6 +1910,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/backup/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/backup.svg"
@@ -1751,6 +1921,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/advisor",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/advisor.svg"
@@ -1761,6 +1932,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/scheduler/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/scheduler.svg"
@@ -1771,6 +1943,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/automation/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/automation.svg"
@@ -1781,6 +1954,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azuremonitoring.svg"
@@ -1791,6 +1965,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/security/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/securitycenter.svg"
@@ -1801,6 +1976,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/service-health",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/resource-health.svg"
@@ -1811,6 +1987,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/azure/azure-portal/",
     "icon": "https://docs.microsoft.com/media/logos/logo_azure.svg"
@@ -1821,6 +1998,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/azure-resource-manager/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-resource-manager.svg"
@@ -1831,6 +2009,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cloud-shell/overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/cloud-shell.svg"
@@ -1841,6 +2020,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/app-service-mobile",
     "icon": "https://docs.microsoft.com/media/common/i_mobile-app-developement.svg"
@@ -1851,6 +2031,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/governance/policy/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/governance.svg"
@@ -1861,6 +2042,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/governance/blueprints/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/blueprints.svg"
@@ -1871,6 +2053,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/governance/resource-graph/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/resource-graph.svg"
@@ -1881,6 +2064,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/managed-applications",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/i_managed-application.svg"
@@ -1891,6 +2075,7 @@
     "category": [
       "Management Tools"
     ],
+    "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/billing/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/billing.svg"

@@ -36,11 +36,11 @@
           </div>
           <div class="col-lg-4 col-sm-6" v-if="currentView=='map'">
             <svg width="20" height="20">
-                <circle cx="10" cy="10" class="node node-category" style="r: 10"></circle>
+                <circle cx="10" cy="10" class="node node-category" r="10" style="r: 10"></circle>
               </svg> &nbsp;- a service group
               <br/>
             <svg width="20" height="20">
-              <circle cx="10" cy="10" class="node has-linking-services"></circle>
+              <circle cx="10" cy="10" class="node has-linking-services" r="10"></circle>
             </svg> &nbsp;- a service with input/output connections
           </div>
         </div>

@@ -100,7 +100,7 @@ export default function serviceFlowTree (selector, json) {
       .on('click', function (d) { toggle(d); update(d); centerNode(d) })
 
     nodeEnter.append('svg:circle')
-      .attr('r', 1e-6)
+      .attr('r', 10)
       .style('fill', function (d) { return d._children ? 'lightsteelblue' : '#fff' })
 
     nodeEnter.append('svg:text')
@@ -117,7 +117,7 @@ export default function serviceFlowTree (selector, json) {
       .attr('transform', function (d) { return 'translate(' + d.y + ',' + d.x + ')' })
 
     nodeUpdate.select('circle')
-      .attr('r', 4.5)
+      .attr('r', 10)
       .style('fill', function (d) { return d._children ? 'lightsteelblue' : '#fff' })
 
     nodeUpdate.select('text')
@@ -130,7 +130,7 @@ export default function serviceFlowTree (selector, json) {
       .remove()
 
     nodeExit.select('circle')
-      .attr('r', 1e-6)
+      .attr('r', 10)
 
     nodeExit.select('text')
       .style('fill-opacity', 1e-6)

@@ -165,6 +165,9 @@ export default class ServicesVsGroupsForceDirectedTree {
           (d.isCategory ? 'node-category ' : '') +
           (d.hasLinkingServices ? 'has-linking-services ' : '')
       })
+      .attr('r', function (d) {
+        return d.isCategory ? 13 : 10
+      })
       .call(drag)
       // .on('click',  onNodeClick)
       .on('dblclick', function (d) { that.onNodeDblClick(d) })

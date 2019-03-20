@@ -25,17 +25,7 @@ export default {
     ServicePopover,
     ServiceDirectIOModal,
     ServiceDirectedGraphModal
-  },
-  mounted: function() {
-    // this.$root.$on('app::services::io-directed-graph::show', this.showIOFlowGraph)
-  },
-  // mounted: function() {
-  //   let that = this;
-  //   console.log(EventBus);
-  //   EventBus.$on('click-at-page', function(data){
-  //       alert('person deleted!!');
-  //   });
-  // },
+  }
 }
 </script>
 

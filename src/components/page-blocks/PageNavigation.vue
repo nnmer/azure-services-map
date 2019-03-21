@@ -10,6 +10,13 @@
       </ul>
     </div>
     <div class="pull-right">
+      <iframe src="https://ghbtns.com/github-btn.html?user=nnmer&repo=azure-services-map&type=star&count=true"
+        style="vertical-align: middle"
+        frameborder="0"
+        scrolling="0"
+        width="95px"
+        height="20px">
+      </iframe>
       <a href="https://github.com/nnmer/azure-services-map" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg svg-github" viewBox="0 0 512 499.36" role="img" focusable="false">
           <title>GitHub</title>

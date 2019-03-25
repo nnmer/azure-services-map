@@ -1,0 +1,1355 @@
+{
+  "data-factory": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/data-factory/concepts-datasets-linked-services",
+    "input": [
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-cosmos-db",
+        "aliasTitle": "Azure Cosmos DB (SQL API)",
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-cosmos-db",
+        "aliasTitle": "Azure Cosmos DB (MongoDB API)",
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "data-lake-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-database-for-mariadb",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-database-for-mysql",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-database-for-postgresql",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "file-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-sql-database",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "sql-data-warehouse",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "table-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Amazon Redshift",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) DB2",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Drill (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Google BigQuery",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Greenplum",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) HBase",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Hive",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Apache Impala (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Informix",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) MariaDB",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Microsoft Access",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) MySQL",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Netezza",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Oracle",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Phoenix",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) PostgreSQL",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Presto (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) SAP Business Warehouse",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) SAP HANA",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Spark",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) SQL Server",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Sybase",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Teradata",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Vertica",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Cassandra",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Couchbase (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) MongoDB",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Amazon S3",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) File System",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) FTP",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Google Cloud Storage",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) HDFS",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) SFTP",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Generic HTTP",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Generic OData",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Generic ODBC",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Generic REST",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Amazon Marketplace Web Service (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Common Data Service for Apps",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Concur (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Dynamics 365",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Dynamics AX (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Dynamics CRM",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Google AdWords (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) HubSpot (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Jira (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Magento (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Marketo (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Office 365 (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Oracle Eloqua (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Oracle Responsys (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Oracle Service Cloud (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Paypal (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) QuickBooks (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Salesforce",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Salesforce Service Cloud",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Salesforce Marketing Cloud (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) SAP Cloud for Customer (C4C)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) SAP ECC",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) ServiceNow",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Shopify (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Square (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Web Table (HTML table)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Xero (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Zoho (Preview)",
+         "connectionDecriptionUrl": ""
+       },
+    ],
+    "output": [
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-cosmos-db",
+        "aliasTitle": "Azure Cosmos DB (SQL API)",
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-cosmos-db",
+        "aliasTitle": "Azure Cosmos DB (MongoDB API)",
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "data-lake-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "file-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-sql-database",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-sql-database",
+        "aliasTitle": "Azure SQL Database Managed Instance",
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-search",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "sql-data-warehouse",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "table-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Oracle",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) SAP HANA",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) SQL Server",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) File System",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Generic ODBC",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Common Data Service for Apps",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Dynamics 365",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Dynamics CRM",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Salesforce",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Salesforce Service Cloud",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) SAP Cloud for Customer (C4C)",
+         "connectionDecriptionUrl": ""
+       },
+    ]
+  },
+  "functions": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings",
+    "input": [
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-cosmos-db",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "External File2",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "External Table2",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Microsoft Graph Excel tables",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Microsoft Graph OneDrive files",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Microsoft Graph Events",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Microsoft Graph Auth tokens",
+         "connectionDecriptionUrl": ""
+       },
+      {
+        "serviceId": "table-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-mobile-app",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ],
+    "output": [
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-cosmos-db",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "event-hubs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "External Table2",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "External File2",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) HTTP",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Microsoft Graph OneDrive files",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Microsoft Graph Excel tables",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Microsoft Graph Outlook email",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Microsoft Graph Events",
+         "connectionDecriptionUrl": ""
+       },
+      {
+        "serviceId": "azure-mobile-app",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "notification-hubs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "queue-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) SendGrid",
+         "connectionDecriptionUrl": ""
+       },
+      {
+        "serviceId": "service-bus",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "table-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Twilio",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "Webhooks",
+         "connectionDecriptionUrl": ""
+       },
+    ]
+  },
+  "event-grid": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/event-grid/overview",
+    "input": [
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "media-services",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "Subscriptions",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "Resource groups",
+         "connectionDecriptionUrl": ""
+       },
+      {
+        "serviceId": "event-hubs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "iot-hub",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "service-bus",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "container-registry",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "Custom Topics",
+         "connectionDecriptionUrl": ""
+       },
+      {
+        "serviceId": "azure-maps",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ],
+    "output": [
+      {
+        "serviceId": "functions",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "logic-apps",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "automation",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "HTTP Webhooks",
+         "connectionDecriptionUrl": ""
+       },
+      {
+        "serviceId": "queue-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "Hybrid Connections",
+         "connectionDecriptionUrl": ""
+       },
+      {
+        "serviceId": "event-hubs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "Microsoft Flow",
+         "connectionDecriptionUrl": ""
+       }
+    ]
+  },
+  "iot-hub": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints",
+    "input": [],
+    "output": [
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "event-hubs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "service-bus",
+        "aliasTitle": "Service Bus Queues",
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "service-bus",
+        "aliasTitle": "Service Bus Topics",
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "stream-analytics",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ]
+  },
+  "stream-analytics": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-add-inputs",
+    "input": [
+      {
+        "serviceId": "azure-sql-database",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "event-hubs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "iot-hub",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ],
+    "output": [
+      {
+        "serviceId": "data-lake-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-sql-database",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "event-hubs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "power-bi",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "service-bus",
+        "aliasTitle": "Service Bus Queues",
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "service-bus",
+        "aliasTitle": "Service Bus Topics",
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-cosmos-db",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "functions",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ]
+  },
+  "azure-databricks": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/azure-databricks/databricks-connect-to-data-sources",
+      "https://docs.azuredatabricks.net/spark/latest/data-sources/index.html"
+    ],
+    "input": [
+      {
+        "serviceId": "data-factory",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-sql-database",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "data-lake-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-cosmos-db",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "event-hubs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "sql-data-warehouse",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Cassandra",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Couchbase",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) ElasticSearch",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Images",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Import Hive Tables",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) MongoDB",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Neo4j",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Avro Files",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) CSV Files",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) JSON Files",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) LZO Compressed Files",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Parquet Files",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Redis",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Riak Time Series",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Snowflake",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Zip Files",
+         "connectionDecriptionUrl": ""
+       },
+    ],
+    "output": [
+      {
+        "serviceId": "sql-data-warehouse",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "event-hubs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) Apache Kafka",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) 3rd party via connectors",
+         "connectionDecriptionUrl": ""
+       },
+    ]
+  },
+  "azure-search": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/search/search-indexer-overview#supported-data-sources",
+    "input": [
+      "SQL",
+      {
+        "serviceId": "azure-cosmos-db",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "table-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ],
+    "output": []
+  },
+  "sql-data-warehouse": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-overview-integrate",
+    "input": [
+      {
+        "serviceId": "data-factory",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "machine-learning",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "stream-analytics",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ],
+    "output": [
+      {
+        "serviceId": "power-bi",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "machine-learning",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ]
+  },
+  "hdinsight": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-use-blob-storage",
+      "https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-streaming-at-scale-overview"
+    ],
+    "input": [
+      {
+        "serviceId": "storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "data-lake-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ],
+    "output": [
+      {
+         "serviceId": "",
+         "aliasTitle": "Excel",
+         "connectionDecriptionUrl": ""
+       },
+      {
+        "serviceId": "power-bi",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ]
+  },
+  "azure-analysis-services": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-datasource",
+    "input": [
+      {
+        "serviceId": "azure-sql-database",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "sql-data-warehouse",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "table-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-cosmos-db",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "data-lake-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "hdinsight-hdfs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "hdinsight-spark",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) On premis: SQL Server SQL",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) On premis: SQL Server Data Warehouse",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) On premis: Oracle",
+         "connectionDecriptionUrl": ""
+       },
+      {
+         "serviceId": "",
+         "aliasTitle": "(external) On premis: Teradata",
+         "connectionDecriptionUrl": ""
+       }
+    ]
+  },
+  "azure-data-explorer": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/data-explorer/data-explorer-overview"
+    ],
+    "input": [
+      {
+        "serviceId": "event-hubs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "Kafka",
+         "connectionDecriptionUrl": ""
+       },
+      {
+        "serviceId": "sdks",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ],
+    "output": [
+      {
+        "serviceId": "power-bi",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+         "serviceId": "",
+         "aliasTitle": "Grafana",
+         "connectionDecriptionUrl": ""
+       },
+      {
+        "serviceId": "azure-databricks",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ]
+  },
+  "logic-apps": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/connectors/apis-list",
+      "https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-as2"
+    ],
+    "input": [
+      {
+         "serviceId": "",
+         "aliasTitle": "Connectors for Azure and 3rd party services at",
+         "connectionDecriptionUrl": "https://docs.microsoft.com/en-us/azure/connectors/apis-list"
+       },
+    ],
+    "output": [
+      {
+         "serviceId": "",
+         "aliasTitle": "Connectors for Azure and 3rd party services at",
+         "connectionDecriptionUrl": "https://docs.microsoft.com/en-us/azure/connectors/apis-list"
+       },
+    ]
+  },
+  "time-series-insights": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/time-series-insights/time-series-insights-update-storage-ingress"
+    ],
+    "input": [
+      {
+        "serviceId": "iot-hub",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "event-hubs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ],
+    "output": [
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ]
+  },
+  "azure-digital-twins": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/digital-twins/tutorial-facilities-events",
+      "https://docs.microsoft.com/en-us/azure/digital-twins/tutorial-facilities-analyze"
+    ],
+    "input": [
+      {
+        "serviceId": "event-grid",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "logic-apps",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ],
+    "output": [
+      {
+        "serviceId": "event-hubs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ]
+  },
+  "data-lake-storage": {
+    "linking_source_url": "https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-data-scenarios",
+    "input": [
+      {
+        "serviceId": "data-factory",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azcopy-tool",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "apache-distcp",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "hdinsight-storm",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "data-factory",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ],
+    "output": [
+      {
+        "serviceId": "hdinsight",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "azure-databricks",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "data-factory",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "apache-distcp",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "power-bi",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "sql-data-warehouse",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ]
+  },
+  "event-hubs": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview#what-you-can-do-with-diagnostic-logs",
+      "https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-enable-through-portal"
+    ],
+    "input": [
+      {
+        "serviceId": "diagnostic-logs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ],
+    "output": [
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      },
+      {
+        "serviceId": "data-lake-storage",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ]
+  },
+  "blob-storage": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview#what-you-can-do-with-diagnostic-logs"
+    ],
+    "input": [
+      {
+        "serviceId": "diagnostic-logs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ]
+  },
+  "log-analytics": {
+    "linking_source_url": [
+      "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview#what-you-can-do-with-diagnostic-logs"
+    ],
+    "input": [
+      {
+        "serviceId": "diagnostic-logs",
+        "aliasTitle": null,
+        "connectionDecriptionUrl": ""
+      }
+    ]
+  }
+}

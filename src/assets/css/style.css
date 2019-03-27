@@ -6,6 +6,10 @@ body {
   background: url(~src/assets/img/texture-noise.png);
 }
 
+a{
+  color: #005dc1;
+}
+
 .listIOtitle, .listIOtitle:hover {
   color: #fff;
 }
@@ -84,6 +88,10 @@ body {
 
 .service-icon {
   width: 24px;
+}
+
+.m-r-5 {
+  margin-right: 5px;
 }
 
 .m-none {
@@ -352,7 +360,7 @@ body {
 
 
 .data-container {
-  margin: 5px 15px 5px 15px;  
+  margin: 5px 15px 5px 15px;
 }
 
 .data-container-table {
@@ -426,6 +434,11 @@ body {
 .list-group-item:first-child,
 .list-group-item:last-child {
   border-radius: 0px;
+}
+
+.service-item-doc-links{
+  font-size: 0.8em;
+  line-height: 2;
 }
 
 /* Popover */

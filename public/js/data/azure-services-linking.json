@@ -716,7 +716,7 @@
       {
         "serviceId": "functions",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-hubs/store-captured-data-data-warehouse#create-an-event-grid-subscription-from-the-functions-app"
       },
       {
         "serviceId": "logic-apps",
@@ -1381,12 +1381,12 @@
       {
         "serviceId": "blob-storage",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-overview"
       },
       {
         "serviceId": "data-lake-storage",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-overview"
       }
     ]
   },

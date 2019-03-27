@@ -87,7 +87,11 @@ body {
 }
 
 .m-none {
-  margin: auto;
+  margin: 0;
+}
+
+.p-none {
+  padding: 0;
 }
 
 .pull-right {

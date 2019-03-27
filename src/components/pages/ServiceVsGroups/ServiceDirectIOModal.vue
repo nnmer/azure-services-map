@@ -2,7 +2,7 @@
   <b-modal
     id="service-direct-io-modal"
     title="Direct Input/Output connections"
-    size="lg"
+    size="xl"
     :no-fade="true"
     :lazy="true"
     :hide-footer="true"

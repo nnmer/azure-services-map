@@ -11,37 +11,40 @@ export default class ServiceLinking {
   }
 
   buildFlatSourceTargetMap () {
-    for (let key in this._sourceData) {
-      let item = this._sourceData[key]
+    for (let serviceId in this._sourceData) {
+      let item = this._sourceData[serviceId]
       let that = this
 
-      this._flatServiceIOMap[key] = this._flatServiceIOMap[key] || { input: [], output: [] }
+      this._flatServiceIOMap[serviceId] = this._flatServiceIOMap[serviceId] || { input: [], output: [] }
 
       if (undefined !== item.output && typeof item.output === 'object') {
-        let out = item.output.map(function (i) { return that.name2Key(i) })
-        Array.prototype.push.apply(this._flatServiceIOMap[key].output, out)
+        Array.prototype.push.apply(this._flatServiceIOMap[serviceId].output, item.output)
 
-        out.map(function (outputElement) {
-          that._flatServiceIOMap[outputElement] = that._flatServiceIOMap[outputElement] || { input: [], output: [] }
-          that._flatServiceIOMap[outputElement].input.push(key)
+        item.output.map(function (outputElement) {
+          if (null !== outputElement.serviceId){
+            that._flatServiceIOMap[outputElement.serviceId] = that._flatServiceIOMap[outputElement.serviceId] || { input: [], output: [] }
+            that._flatServiceIOMap[outputElement.serviceId].input.push({serviceId})
+          }
         })
       }
 
       if (undefined !== item.input && typeof item.input === 'object') {
-        let inputs = item.input.map(function (i) { return that.name2Key(i) })
-        Array.prototype.push.apply(this._flatServiceIOMap[key].input, inputs)
-        inputs.map(function (inputElement) {
-          that._flatServiceIOMap[inputElement] = that._flatServiceIOMap[inputElement] || { input: [], output: [] }
-          that._flatServiceIOMap[inputElement].output.push(key)
+        Array.prototype.push.apply(this._flatServiceIOMap[serviceId].input, item.input)
+
+        item.input.map(function (inputElement) {
+          if (null !== inputElement.serviceId) {
+            that._flatServiceIOMap[inputElement.serviceId] = that._flatServiceIOMap[inputElement.serviceId] || { input: [], output: [] }
+            that._flatServiceIOMap[inputElement.serviceId].output.push({serviceId})
+          }
         })
       }
     }
   }
 
   mergeServicesWithRespectedIOServices () {
-    for (let key in this.flatSourceTargetMap) {
+    for (let key in this._flatServiceIOMap) {
       if (this._services[key]) {
-        this._services[key].servicesIO = this.flatSourceTargetMap[key]
+        this._services[key].servicesIO = this._flatServiceIOMap[key]
         this._services[key].hasLinkingServices =
         !!(((this._services[key].servicesIO.input || this._services[key].servicesIO.output)))
       }
@@ -57,20 +60,6 @@ export default class ServiceLinking {
       this._flatServiceIOMap[key].input = (this._flatServiceIOMap[key].input).filter(onlyUnique).sort()
       this._flatServiceIOMap[key].output = (this._flatServiceIOMap[key].output).filter(onlyUnique).sort()
     }
-  }
-
-  name2Key (name) {
-    if (name.search(/^\(external\)/) !== -1) {
-      return name
-    }
-
-    let key = String(name)
-      .toLowerCase()
-      .replace(/\(|\)/gi, '')
-      .trim()
-      .replace(/ /g, '-')
-
-    return key
   }
 
   sortObjByKeys (obj) {
@@ -126,9 +115,5 @@ export default class ServiceLinking {
     }
 
     return this._servicesByCategoryArray
-  }
-
-  get flatSourceTargetMap () {
-    return this._flatServiceIOMap
   }
 }

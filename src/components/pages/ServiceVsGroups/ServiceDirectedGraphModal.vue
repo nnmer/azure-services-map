@@ -47,7 +47,7 @@ export default {
 
         if (service && service.servicesIO.output.length > 0){
           for (let i=0;i<service.servicesIO.output.length;i++){
-            let servId = service.servicesIO.output[i];
+            let servId = service.servicesIO.output[i].aliasTitle || service.servicesIO.output[i].serviceId;
             let depService = services[servId]
             let toInject = null;
             if (circularRefTrack.indexOf(servId) === -1 && depService) {

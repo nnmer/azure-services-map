@@ -7,19 +7,19 @@
   },
   "hdinsight-hdfs": {
     "id": "hdinsight-hdfs",
-    "name": "HSInsight Hadoop",
+    "name": "HDInsight Hadoop",
     "url": "https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-introduction",
     "icon": "https://docs.microsoft.com/en-us/azure/hdinsight/media/index/hadoop_r.svg"
   },
   "hdinsight-spark": {
     "id": "hdinsight-spark",
-    "name": "HSInsight Spark",
+    "name": "HDInsight Spark",
     "url": "https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/hdinsight/media/index/spark_r.svg"
   },
   "hdinsight-storm": {
     "id": "hdinsight-storm",
-    "name": "HSInsight Storm",
+    "name": "HDInsight Storm",
     "url": "https://docs.microsoft.com/en-us/azure/hdinsight/storm/apache-storm-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/hdinsight/media/index/storm_r.svg"
   },

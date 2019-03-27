@@ -13,7 +13,8 @@ Follow updates after [February 2019](https://azure.microsoft.com/en-in/updates/)
 
 TODOs:
   - &#10003; rewrite code with Vue.js only
-  - &#9744; metadata structure update to keep more related important url's for services
+  - &#10003; metadata structure update to keep more related important url's for services
+  - &#9744; tacking of source doc pages changes for content maintenance purpose
 
 ## Project setup
 ```

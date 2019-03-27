@@ -10,7 +10,7 @@
             :src="SL(item.serviceId).icon"
           />
 
-          {{item.aliasTitle || SL(item.serviceId).name}}
+          {{item.aliasTitle || (SL(item.serviceId) ? SL(item.serviceId).name : item.serviceId)}}
           <a :href="SL(item.serviceId).url" target="_blank">Service doc</a>
           <span v-if="item.connectionDescriptionUrl">
             |

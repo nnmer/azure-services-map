@@ -7,7 +7,6 @@ export default class ServiceLinking {
 
     this.buildFlatSourceTargetMap()
     this.mergeServicesWithRespectedIOServices()
-    this.deduplicateIOlist()
   }
 
   buildFlatSourceTargetMap () {
@@ -25,6 +24,30 @@ export default class ServiceLinking {
         return 1
       }
       return 0
+    }
+
+    function deduplicateIOlist(listData) {
+      let newData = []
+      listData.forEach((item)=>{
+        var idx = newData.findIndex(i => i.serviceId == item.serviceId && i.aliasTitle == item.aliasTitle);
+        if(idx == -1){
+          newData.push(item);
+        } else {
+          if (item.connectionDescriptionUrl) {
+
+            if (!newData[idx].connectionDescriptionUrl) {
+              newData[idx].connectionDescriptionUrl= []
+            }
+            if (typeof newData[idx].connectionDescriptionUrl === 'string') {
+              newData[idx].connectionDescriptionUrl = [newData[idx].connectionDescriptionUrl]
+            }
+
+            newData[idx].connectionDescriptionUrl.push(item.connectionDescriptionUrl)
+          }
+        }
+      })
+
+      return newData
     }
 
     for (let serviceId in this._sourceData) {
@@ -57,10 +80,11 @@ export default class ServiceLinking {
     }
 
     for (let serviceId in this._flatServiceIOMap) {
-      this._flatServiceIOMap[serviceId].input
-        .sort(sortByServiceName)
-      this._flatServiceIOMap[serviceId].output
-        .sort(sortByServiceName)
+      this._flatServiceIOMap[serviceId].input = deduplicateIOlist(this._flatServiceIOMap[serviceId].input)
+      this._flatServiceIOMap[serviceId].output = deduplicateIOlist(this._flatServiceIOMap[serviceId].output)
+
+      this._flatServiceIOMap[serviceId].input.sort(sortByServiceName)
+      this._flatServiceIOMap[serviceId].output.sort(sortByServiceName)
     }
   }
 
@@ -71,17 +95,6 @@ export default class ServiceLinking {
         this._services[key].hasLinkingServices =
         !!(((this._services[key].servicesIO.input || this._services[key].servicesIO.output)))
       }
-    }
-  }
-
-  deduplicateIOlist () {
-    function onlyUnique (value, index, self) {
-      return self.indexOf(value) === index
-    }
-
-    for (let key in this._flatServiceIOMap) {
-      this._flatServiceIOMap[key].input = (this._flatServiceIOMap[key].input).filter(onlyUnique).sort()
-      this._flatServiceIOMap[key].output = (this._flatServiceIOMap[key].output).filter(onlyUnique).sort()
     }
   }
 

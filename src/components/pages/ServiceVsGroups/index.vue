@@ -35,18 +35,24 @@
               <div class="col-2"><strong>Note:</strong></div>
               <div class="col-10">
               - services may be placed in several service groups; <br/>
+              <span style="color:red">- services may have direct links to how-to connect docs;</span> <br/>
               - <i class="has-linking-services help-note" style="padding: 0 8px;"></i> &nbsp;&nbsp;a service with input/output connection
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-sm-6" v-if="currentView=='map'">
-            <svg width="20" height="20">
-                <circle cx="10" cy="10" class="node node-category" r="10" style="r: 10"></circle>
-              </svg> &nbsp;- a service group
-              <br/>
-            <svg width="20" height="20">
-              <circle cx="10" cy="10" class="node has-linking-services" r="10"></circle>
-            </svg> &nbsp;- a service with input/output connections
+            <div class="row">
+              <div class="col-2">&nbsp;</div>
+              <div class="col-10">
+                <svg width="20" height="20">
+                    <circle cx="10" cy="10" class="node node-category" r="10" style="r: 10"></circle>
+                  </svg> &nbsp;- a service group
+                  <br/>
+                <svg width="20" height="20">
+                  <circle cx="10" cy="10" class="node has-linking-services" r="10"></circle>
+                </svg> &nbsp;- a service with input/output connections
+              </div>
+            </div>
           </div>
         </div>
 

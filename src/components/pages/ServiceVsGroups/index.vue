@@ -41,6 +41,13 @@
               </div>
             </div>
 
+            <b-form-checkbox
+              v-if="currentView=='table'"
+              v-model="searchShowWithIOOnly"
+            >
+              Show services with In/Out connections only
+            </b-form-checkbox>
+
           </div>
           <div class="col-lg-6 col-sm-6" v-if="currentView=='table'">
             <div class="row">
@@ -101,6 +108,7 @@ export default {
   data: function () {
     return {
       searchVal: null,
+      searchShowWithIOOnly: false,
       servicesList: [],
       currentView: 'table',
       mapRendered: false,
@@ -135,22 +143,41 @@ export default {
   },
   computed: {
     filteredServicesList: function () {
-      if (!this.searchVal) {
+      if (!this.searchVal && !this.searchShowWithIOOnly) {
         return this.servicesList
       }
 
-      let filteredData = {}
-      let regex = new RegExp('' + this.searchVal + '', 'i')
-      for (let category in this.servicesList) {
-        let matchedServices = this.servicesList[category].filter(function (service) {
-          return service.name.search(regex) !== -1
-        })
-        if (matchedServices.length > 0) {
-          filteredData[category] = matchedServices
+      let operationalData = this.servicesList
+
+      if (this.searchVal) {
+        let filteredData = {}
+        let regex = new RegExp('' + this.searchVal + '', 'i')
+        for (let category in operationalData) {
+          let matchedServices = operationalData[category].filter(function (service) {
+            return service.name.search(regex) !== -1
+          })
+          if (matchedServices.length > 0) {
+            filteredData[category] = matchedServices
+          }
         }
+        operationalData = filteredData
       }
 
-      return filteredData
+      if (this.searchShowWithIOOnly) {
+        let ioOnly = {}
+        for (let category in operationalData) {
+          let matchedServices = operationalData[category].filter(function (service) {
+            return (service.servicesIO.input && service.servicesIO.input.length > 0 )
+                || (service.servicesIO.output &&service.servicesIO.output.length > 0)
+          })
+          if (matchedServices.length > 0) {
+            ioOnly[category] = matchedServices
+          }
+        }
+        operationalData = ioOnly
+      }
+
+      return operationalData
     }
   },
   watch: {

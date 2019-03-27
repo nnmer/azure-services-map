@@ -42,12 +42,53 @@ export default class ServiceLinking {
               newData[idx].connectionDescriptionUrl = [newData[idx].connectionDescriptionUrl]
             }
 
-            newData[idx].connectionDescriptionUrl.push(item.connectionDescriptionUrl)
+            if (typeof item.connectionDescriptionUrl === 'string') {
+              newData[idx].connectionDescriptionUrl.push(item.connectionDescriptionUrl)
+            }else {
+              Array.prototype.push.apply(newData[idx].connectionDescriptionUrl, item.connectionDescriptionUrl)
+            }
           }
         }
       })
 
       return newData
+    }
+
+    function mergeInputWithRespectedOutputConnectionUrls (serviceId, direction) {
+      let reverseDirection = direction === 'input' ? 'output' : 'input'
+      if (that._flatServiceIOMap[serviceId][direction]) {
+        that._flatServiceIOMap[serviceId][direction].map((iItem, iIdx)=>{
+          if (iItem.serviceId && that._flatServiceIOMap[iItem.serviceId].output) {
+            
+            that._flatServiceIOMap[iItem.serviceId][reverseDirection].map((oItem, oIdx)=>{
+              if (oItem.serviceId == serviceId) {
+                let newConnUrlArray = []
+                if (iItem.connectionDescriptionUrl) {
+                  if (typeof iItem.connectionDescriptionUrl === 'string') {
+                    newConnUrlArray.push(iItem.connectionDescriptionUrl)
+                  } else if (typeof iItem.connectionDescriptionUrl === 'object') {
+                    iItem.connectionDescriptionUrl.map((i)=>newConnUrlArray.push(i))
+                  }
+                }
+                if (oItem.connectionDescriptionUrl) {
+                  if (typeof oItem.connectionDescriptionUrl === 'string') {
+                    newConnUrlArray.push(oItem.connectionDescriptionUrl)
+                  } else if (typeof oItem.connectionDescriptionUrl === 'object') {
+                    oItem.connectionDescriptionUrl.map((i)=>newConnUrlArray.push(i))
+                  }
+                }
+
+                newConnUrlArray = newConnUrlArray.filter(function(value, index, self) {
+                  return self.indexOf(value) === index
+                })
+
+                that._flatServiceIOMap[serviceId][direction][iIdx].connectionDescriptionUrl = Object.assign([],newConnUrlArray)
+                that._flatServiceIOMap[iItem.serviceId][reverseDirection][oIdx].connectionDescriptionUrl = Object.assign([],newConnUrlArray)
+              }
+            })
+          }
+        })
+      }
     }
 
     for (let serviceId in this._sourceData) {
@@ -82,6 +123,9 @@ export default class ServiceLinking {
     for (let serviceId in this._flatServiceIOMap) {
       this._flatServiceIOMap[serviceId].input = deduplicateIOlist(this._flatServiceIOMap[serviceId].input)
       this._flatServiceIOMap[serviceId].output = deduplicateIOlist(this._flatServiceIOMap[serviceId].output)
+
+      mergeInputWithRespectedOutputConnectionUrls(serviceId,'input')
+      mergeInputWithRespectedOutputConnectionUrls(serviceId,'output')
 
       this._flatServiceIOMap[serviceId].input.sort(sortByServiceName)
       this._flatServiceIOMap[serviceId].output.sort(sortByServiceName)

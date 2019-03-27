@@ -3,7 +3,7 @@
     <span v-if="typeof dataSource === 'string'">
       <a :href="dataSource" target="_blank">Connect doc</a>
     </span>
-    <span v-else-if="typeof dataSource === 'object'">
+    <span v-else-if="typeof dataSource === 'object' && dataSource.length >= 1">
       <span v-if="dataSource.length == 1">
         <a :href="dataSource[0]" target="_blank">Connect doc</a>
       </span>
@@ -16,7 +16,7 @@
           </span>
         </span>
       </span>
-    </span> 
+    </span>
     <span v-else>
 
     </span>

@@ -22,7 +22,7 @@
           </div>
           <div class="pull-right service-item-doc-links">
             <a :href="getServiceData(ioItem.serviceId).url" target="_blank">Service doc</a>
-            <span v-if="ioItem.connectionDescriptionUrl">
+            <span v-if="ioItem.connectionDescriptionUrl && ioItem.connectionDescriptionUrl.length >= 1">
               |
               <ConnectionDescriptionLinks
                 :dataSource="ioItem.connectionDescriptionUrl"

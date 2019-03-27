@@ -150,6 +150,13 @@ circle {
   r: 10;
 }
 
+.text-darkred {
+  color: #7b0003;/*#b90000;*/
+}
+a.text-darkred:hover {
+  color: #7b0003;
+}
+
 .node.node-hovered {
   /* stroke: rgb(1, 97, 1);
   fill: rgb(1, 97, 1); */

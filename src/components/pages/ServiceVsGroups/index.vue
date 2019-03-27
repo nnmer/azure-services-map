@@ -54,7 +54,7 @@
               <div class="col-2"><strong>Note:</strong></div>
               <div class="col-10">
               - services may be placed in several service groups; <br/>
-              <span style="color:#b90000">- services may have direct links to how-to connect docs;</span> <br/>
+              <span class="text-darkred">- services may have direct links to how-to connect docs;</span> <br/>
               - <i class="has-linking-services help-note" style="padding: 0 8px;"></i> &nbsp;&nbsp;a service with input/output connection
               </div>
             </div>

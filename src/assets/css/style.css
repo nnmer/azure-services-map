@@ -10,6 +10,15 @@ a{
   color: #005dc1;
 }
 
+.clear-search-x .input-group-text{
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search-input:focus {
+  border: 1px solid #ced4da !important;
+}
+
 .listIOtitle, .listIOtitle:hover {
   color: #fff;
 }

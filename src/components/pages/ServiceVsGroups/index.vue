@@ -23,12 +23,24 @@
 
         <div class="row">
           <div class="col-lg-6 col-sm-6">
-            <input
-              class="form-control form-control-dark w-100 search-input"
-              type="text" placeholder="Search" aria-label="Search"
-              v-model="searchVal"
-              v-on:keydown.esc="clearSearchField"
-            >
+            <div class="input-group">
+
+              <input
+                class="form-control form-control-dark  search-input"
+                type="text" placeholder="Search" aria-label="Search"
+                v-model="searchVal"
+                v-on:keydown.esc="clearSearchField"
+              >
+              <div class="input-group-append clear-search-x"
+                v-if="searchVal"
+                @click="clearSearchField"
+                >
+                <div class="input-group-text">
+                  <img src="img/x.png" width="10px"/>
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="col-lg-6 col-sm-6" v-if="currentView=='table'">
             <div class="row">

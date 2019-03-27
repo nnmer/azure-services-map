@@ -11,6 +11,22 @@ export default class ServiceLinking {
   }
 
   buildFlatSourceTargetMap () {
+    let that = this
+
+    function sortByServiceName(a,b) {
+      // a hack to have not Azure services on the bottom
+      let nA = (a.serviceId ? '' : 'z') + (a.aliasTitle || that._services[a.serviceId].name).toUpperCase()
+      let nB = (b.serviceId ? '' : 'z') + (b.aliasTitle || that._services[b.serviceId].name).toUpperCase()
+
+      if (nA < nB) {
+        return -1
+      }
+      if (nA > nB) {
+        return 1
+      }
+      return 0
+    }
+
     for (let serviceId in this._sourceData) {
       let item = this._sourceData[serviceId]
       let that = this
@@ -38,6 +54,13 @@ export default class ServiceLinking {
           }
         })
       }
+    }
+
+    for (let serviceId in this._flatServiceIOMap) {
+      this._flatServiceIOMap[serviceId].input
+        .sort(sortByServiceName)
+      this._flatServiceIOMap[serviceId].output
+        .sort(sortByServiceName)
     }
   }
 

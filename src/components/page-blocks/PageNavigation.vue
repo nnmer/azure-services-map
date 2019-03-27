@@ -10,6 +10,11 @@
       </ul>
     </div>
     <div class="pull-right">
+      <a href="https://github.com/nnmer/azure-services-map/issues"
+        style="color: white; float: left; line-height: 49px;"
+        class="d-none d-sm-block m-r-15"
+        target="_blank">Found an issue or have a suggestion?
+      </a>
       <iframe src="https://ghbtns.com/github-btn.html?user=nnmer&repo=azure-services-map&type=star&count=true"
         style="vertical-align: middle"
         frameborder="0"

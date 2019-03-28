@@ -40,29 +40,5 @@
     "name": "Apache DistCp",
     "url": "https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-use-distcp",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure_dev-7.svg"
-  },
-  "azure-cosmos-db-mongodb-api": {
-    "id": "azure-cosmos-db-mongodb-api",
-    "name": "Azure Cosmos DB (MongoDB API)",
-    "url": "https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-introduction#cosmos-dbs-api-for-mongodb",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg"
-  },
-  "azure-cosmos-db-sql-api": {
-    "id": "azure-cosmos-db-sql-api",
-    "name": "Azure Cosmos DB (SQL API)",
-    "url": "https://docs.microsoft.com/en-us/azure/cosmos-db/create-sql-api-dotnet",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg"
-  },
-  "service-bus-queues": {
-    "id": "service-bus-queues",
-    "name": "Service Bus Queues",
-    "url": "https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview#queues",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/servicebus.svg"
-  },
-  "service-bus-topics": {
-    "id": "service-bus-topics",
-    "name": "Service Bus Topics",
-    "url": "https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview#topics",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/servicebus.svg"
   }
 }

@@ -1356,7 +1356,7 @@
       {
         "serviceId": "power-bi",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/power-bi/service-dataflows-connect-azure-data-lake-storage-gen2#connect-your-azure-data-lake-storage-gen2-to-power-bi"
       },
       {
         "serviceId": "sql-data-warehouse",

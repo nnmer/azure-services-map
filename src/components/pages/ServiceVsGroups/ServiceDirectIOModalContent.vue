@@ -4,7 +4,7 @@
       <div class="col" v-if="service.servicesIO.input && service.servicesIO.input.length > 0">
         <div class="list-group">
           <div class="list-group-item bg-primary listIOtitle text-center text-bold">
-            To: {{service.name}}<br/>
+            <h5>To: {{service.name}}</h5>
             <img src="img/arrow-down.png" width="35px" style="transform: rotate(180deg);">
           </div>
 
@@ -17,8 +17,8 @@
 
       <div class="col" v-if="service.servicesIO.output && service.servicesIO.output.length > 0">
         <div class="list-group">
-            <div class="list-group-item bg-success listIOtitle text-center text-bold">
-              From: {{service.name}}<br/>
+            <div class="list-group-item bg-success listIOtitle text-center">
+              <h5>From: {{service.name}}</h5>
               <img src="img/arrow-down.png" width="35px">
             </div>
 

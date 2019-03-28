@@ -1,0 +1,44 @@
+{
+  "power-bi": {
+    "id": "power-bi",
+    "name": "Power Bi",
+    "url": "https://docs.microsoft.com/en-us/power-bi/",
+    "icon": "https://docs.microsoft.com/en-us/power-bi/guided-learning/media/logo_power-bi.svg"
+  },
+  "hdinsight-hdfs": {
+    "id": "hdinsight-hdfs",
+    "name": "HDInsight Hadoop",
+    "url": "https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-introduction",
+    "icon": "https://docs.microsoft.com/en-us/azure/hdinsight/media/index/hadoop_r.svg"
+  },
+  "hdinsight-spark": {
+    "id": "hdinsight-spark",
+    "name": "HDInsight Spark",
+    "url": "https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/hdinsight/media/index/spark_r.svg"
+  },
+  "hdinsight-storm": {
+    "id": "hdinsight-storm",
+    "name": "HDInsight Storm",
+    "url": "https://docs.microsoft.com/en-us/azure/hdinsight/storm/apache-storm-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/hdinsight/media/index/storm_r.svg"
+  },
+  "diagnostic-logs": {
+    "id": "diagnostic-logs",
+    "name": "Azure Monitor (Diagnostic Logs)",
+    "url": "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azuremonitoring.svg"
+  },
+  "azcopy-tool": {
+    "id": "azcopy-tool",
+    "name": "AzCopy tool",
+    "url": "https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure_dev-7.svg"
+  },
+  "apache-distcp": {
+    "id": "apache-distcp",
+    "name": "Apache DistCp",
+    "url": "https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-use-distcp",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure_dev-7.svg"
+  }
+}

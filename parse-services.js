@@ -28,6 +28,21 @@ function name2Key (name) {
   return key
 }
 
+function buildUrl (str, prefix) {
+  str = String(str || '').trim()
+  prefix = String(prefix || '').trim()
+
+  if (!str) {
+    return null
+  }
+
+  if (-1 !== str.search(/^https?:\/\//i)) {
+    return str
+  }
+
+  return (str.search('docs.microsoft.com') === -1 ? prefix + str : str)
+}
+
 getHtml()
   .then(function () {
     htmlData = fs.readFileSync(htmlDataFile, 'utf-8')
@@ -72,8 +87,8 @@ getHtml()
                 category: [curCategory],
                 isAzureProduct: true,
                 servicesIO: [],
-                url: (href && href.search('docs.microsoft.com') === -1 ? urlPrefix + href : href),
-                icon: (icon && icon.search('docs.microsoft.com') === -1 ? iconPrefix + icon : icon)
+                url: buildUrl(href, urlPrefix),
+                icon: buildUrl(icon, iconPrefix)
               }
             }
           })

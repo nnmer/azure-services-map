@@ -1519,7 +1519,7 @@
     ],
     "isAzureProduct": true,
     "servicesIO": [],
-    "url": "https://docs.microsoft.comhttps://support.hockeyapp.net/kb",
+    "url": "https://support.hockeyapp.net/kb",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/hockeyapp.svg"
   },
   "azure-devops-projects": {
@@ -1552,7 +1552,7 @@
     ],
     "isAzureProduct": true,
     "servicesIO": [],
-    "url": "https://docs.microsoft.comhttps://code.visualstudio.com/docs",
+    "url": "https://code.visualstudio.com/docs",
     "icon": "https://docs.microsoft.com/media/logos/logo_vs-code.svg"
   },
   "sdks": {
@@ -1765,7 +1765,7 @@
     ],
     "isAzureProduct": true,
     "servicesIO": [],
-    "url": "https://docs.microsoft.comhttps://azure.microsoft.com/features/xamarin",
+    "url": "https://azure.microsoft.com/features/xamarin",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/logo_xamarin.svg"
   },
   "security-information": {

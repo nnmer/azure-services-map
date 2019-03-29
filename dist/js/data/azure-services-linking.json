@@ -1374,7 +1374,7 @@
       {
         "serviceId": "diagnostic-logs",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-stream-event-hubs"
       }
     ],
     "output": [
@@ -1398,7 +1398,7 @@
       {
         "serviceId": "diagnostic-logs",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/archive-diagnostic-logs"
       }
     ]
   },

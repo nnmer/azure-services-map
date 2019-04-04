@@ -1413,5 +1413,19 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-stream-log-store"
       }
     ]
+  },
+  "data-lake-analytics": {
+    "input": [
+      {
+        "serviceId": "data-lake-storage-gen1",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-manage-use-portal#manage-data-sources"
+      },
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-manage-use-portal#manage-data-sources"
+      }
+    ]
   }
 }

@@ -1372,8 +1372,8 @@
     ],
     "input": [
       {
-        "serviceId": "diagnostic-logs",
-        "aliasTitle": null,
+        "serviceId": "azure-monitor",
+        "aliasTitle": "Azure Monitor (Diagnostic Logs)",
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-stream-event-hubs"
       }
     ],
@@ -1396,8 +1396,8 @@
     ],
     "input": [
       {
-        "serviceId": "diagnostic-logs",
-        "aliasTitle": null,
+        "serviceId": "azure-monitor",
+        "aliasTitle": "Azure Monitor (Diagnostic Logs)",
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/archive-diagnostic-logs"
       }
     ]
@@ -1408,9 +1408,9 @@
     ],
     "input": [
       {
-        "serviceId": "diagnostic-logs",
-        "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "serviceId": "azure-monitor",
+        "aliasTitle": "Azure Monitor (Diagnostic Logs)",
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-stream-log-store"
       }
     ]
   }

@@ -880,9 +880,14 @@
         "connectionDescriptionUrl": "https://docs.azuredatabricks.net/spark/latest/data-sources/sql-databases.html"
       },
       {
-        "serviceId": "data-lake-storage",
+        "serviceId": "data-lake-storage-gen1",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.azuredatabricks.net/spark/latest/data-sources/azure/azure-datalake.html"
+      },
+      {
+        "serviceId": "data-lake-storage",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.azuredatabricks.net/spark/latest/data-sources/azure/azure-datalake-gen2.html"
       },
       {
         "serviceId": "blob-storage",
@@ -1372,8 +1377,8 @@
     ],
     "input": [
       {
-        "serviceId": "diagnostic-logs",
-        "aliasTitle": null,
+        "serviceId": "azure-monitor",
+        "aliasTitle": "Azure Monitor (Diagnostic Logs)",
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-stream-event-hubs"
       }
     ],
@@ -1396,8 +1401,8 @@
     ],
     "input": [
       {
-        "serviceId": "diagnostic-logs",
-        "aliasTitle": null,
+        "serviceId": "azure-monitor",
+        "aliasTitle": "Azure Monitor (Diagnostic Logs)",
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/archive-diagnostic-logs"
       }
     ]
@@ -1408,9 +1413,23 @@
     ],
     "input": [
       {
-        "serviceId": "diagnostic-logs",
+        "serviceId": "azure-monitor",
+        "aliasTitle": "Azure Monitor (Diagnostic Logs)",
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-stream-log-store"
+      }
+    ]
+  },
+  "data-lake-analytics": {
+    "input": [
+      {
+        "serviceId": "data-lake-storage-gen1",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-manage-use-portal#manage-data-sources"
+      },
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-manage-use-portal#manage-data-sources"
       }
     ]
   }

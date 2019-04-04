@@ -23,12 +23,6 @@
     "url": "https://docs.microsoft.com/en-us/azure/hdinsight/storm/apache-storm-overview",
     "icon": "https://docs.microsoft.com/en-us/azure/hdinsight/media/index/storm_r.svg"
   },
-  "diagnostic-logs": {
-    "id": "diagnostic-logs",
-    "name": "Azure Monitor (Diagnostic Logs)",
-    "url": "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azuremonitoring.svg"
-  },
   "azcopy-tool": {
     "id": "azcopy-tool",
     "name": "AzCopy tool",

@@ -880,9 +880,14 @@
         "connectionDescriptionUrl": "https://docs.azuredatabricks.net/spark/latest/data-sources/sql-databases.html"
       },
       {
-        "serviceId": "data-lake-storage",
+        "serviceId": "data-lake-storage-gen1",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.azuredatabricks.net/spark/latest/data-sources/azure/azure-datalake.html"
+      },
+      {
+        "serviceId": "data-lake-storage",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.azuredatabricks.net/spark/latest/data-sources/azure/azure-datalake-gen2.html"
       },
       {
         "serviceId": "blob-storage",

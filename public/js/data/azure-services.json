@@ -1333,12 +1333,13 @@
     "id": "azure-data-explorer",
     "name": "Azure Data Explorer",
     "category": [
+      "Databases",
       "Analytics"
     ],
     "isAzureProduct": true,
     "servicesIO": [],
-    "url": "https://docs.microsoft.com/en-us/azure/data-explorer/",
-    "icon": "https://docs.microsoft.com/media/logos/logo_azure.svg"
+    "url": "https://docs.microsoft.com/en-us/azure/data-explorer",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure_data_explorer.svg"
   },
   "stream-analytics": {
     "id": "stream-analytics",
@@ -1881,6 +1882,17 @@
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/sentinel/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/sentinel.png"
+  },
+  "azure-security-center-for-iot": {
+    "id": "azure-security-center-for-iot",
+    "name": "Azure Security Center for IoT",
+    "category": [
+      "Security"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/asc-for-iot/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/asc-for-iot.svg"
   },
   "multi-factor-authentication": {
     "id": "multi-factor-authentication",

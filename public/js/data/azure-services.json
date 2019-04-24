@@ -1993,15 +1993,15 @@
     "url": "https://docs.microsoft.com/en-us/azure/service-health",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/resource-health.svg"
   },
-  "microsoft-azure-portal": {
-    "id": "microsoft-azure-portal",
-    "name": "Microsoft Azure Portal",
+  "azure-portal": {
+    "id": "azure-portal",
+    "name": "Azure portal",
     "category": [
       "Management Tools"
     ],
     "isAzureProduct": true,
     "servicesIO": [],
-    "url": "https://docs.microsoft.com/azure/azure-portal/",
+    "url": "https://docs.microsoft.com/en-us/azure/azure-portal/",
     "icon": "https://docs.microsoft.com/media/logos/logo_azure.svg"
   },
   "azure-resource-manager": {
@@ -2034,7 +2034,7 @@
     ],
     "isAzureProduct": true,
     "servicesIO": [],
-    "url": "https://docs.microsoft.com/en-us/azure/app-service-mobile",
+    "url": "https://azure.microsoft.com/features/azure-portal/mobile-app/",
     "icon": "https://docs.microsoft.com/media/common/i_mobile-app-developement.svg"
   },
   "azure-policy": {

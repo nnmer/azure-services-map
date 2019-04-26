@@ -1053,9 +1053,9 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/load-azure-sql-data-warehouse"
       },
       {
-        "serviceId": "machine-learning",
+        "serviceId": "machine-learning-studio",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/export-to-azure-sql-database"
       },
       {
         "serviceId": "stream-analytics",
@@ -1070,7 +1070,7 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-get-started-visualize-with-power-bi"
       },
       {
-        "serviceId": "machine-learning",
+        "serviceId": "machine-learning-studio",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-get-started-analyze-with-azure-machine-learning"
       }

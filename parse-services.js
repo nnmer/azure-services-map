@@ -66,6 +66,12 @@ getHtml()
             let icon = $(sVal).find('img').attr('src')
             id = name2Key(name)
 
+            switch(id) {
+              case 'machine-learning': // bug at azure product list; is a group name
+                return
+                break
+            }
+
             if (id === 'data-lake-storage-gen2') {
               id = 'data-lake-storage'
             }

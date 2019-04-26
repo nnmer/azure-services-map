@@ -1678,17 +1678,6 @@
     "url": "https://docs.microsoft.com/en-us/azure/azure-maps/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-maps-icon-portal.svg"
   },
-  "machine-learning": {
-    "id": "machine-learning",
-    "name": "Machine Learning",
-    "category": [
-      "Internet of Things"
-    ],
-    "isAzureProduct": true,
-    "servicesIO": [],
-    "url": "https://docs.microsoft.com/en-us/azure/machine-learning/",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/machinelearning.svg"
-  },
   "notification-hubs": {
     "id": "notification-hubs",
     "name": "Notification Hubs",

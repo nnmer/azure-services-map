@@ -68,6 +68,7 @@ getHtml()
 
             switch(id) {
               case 'machine-learning': // bug at azure product list; is a group name
+              case 'anomaly-finder':   // discontinued, anomaly-detector instead
                 return
                 break
             }
@@ -101,6 +102,17 @@ getHtml()
         }
       })
     })
+
+    // add manually services which are not present at azure product list
+    servicesMap['anomaly-detector'] = {
+      id: 'anomaly-detector',
+      name: 'Anomaly Detector API',
+      category: ["AI + Machine Learning"],
+      isAzureProduct: true,
+      servicesIO: [],
+      url: buildUrl('/en-us/azure/cognitive-services/anomaly-detector/', urlPrefix),
+      icon: buildUrl('media/index/api_anomaly_finder.svg', iconPrefix)
+    }
 
     fs.writeFileSync(serviceDataFile, JSON.stringify(servicesMap))
   })

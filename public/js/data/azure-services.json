@@ -993,17 +993,6 @@
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/labs/answer-search/overview",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_answer_search.svg"
   },
-  "anomaly-finder": {
-    "id": "anomaly-finder",
-    "name": "Anomaly Finder",
-    "category": [
-      "AI + Machine Learning"
-    ],
-    "isAzureProduct": true,
-    "servicesIO": [],
-    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/labs/anomaly-finder/overview",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_anomaly_finder.svg"
-  },
   "conversation-learner": {
     "id": "conversation-learner",
     "name": "Conversation Learner",
@@ -2080,5 +2069,16 @@
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/billing/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/billing.svg"
+  },
+  "anomaly-detector": {
+    "id": "anomaly-detector",
+    "name": "Anomaly Detector API",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_anomaly_finder.svg"
   }
 }

@@ -69,6 +69,11 @@ getHtml()
             switch(id) {
               case 'machine-learning': // bug at azure product list; is a group name
               case 'anomaly-finder':   // discontinued, anomaly-detector instead
+              case 'emotion-api':      // replaced by dace api
+              case 'recommendations-api': // discontinued  https://docs.microsoft.com/en-us/azure/cognitive-services/recommendations/overview
+              case 'web-language-model-api': // discontinued https://docs.microsoft.com/en-us/azure/cognitive-services/web-language-model/home
+              case 'linguistic-analysis-api': // discontinued https://docs.microsoft.com/en-us/azure/cognitive-services/linguisticanalysisapi/home
+              case 'security-information': // not a service, but a guide
                 return
                 break
             }

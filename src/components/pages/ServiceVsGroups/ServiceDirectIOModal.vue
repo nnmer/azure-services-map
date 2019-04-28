@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     showModal: function (event, serviceId) {
-      this.service = SL.services[serviceId] || null
+      this.service = SL.servicesUnfiltered[serviceId] || null
       if (!this.service) {
         //console.warn('Service is NULL, skip init modal')
         return

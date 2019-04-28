@@ -59,10 +59,10 @@ export default {
   },
   methods: {
     getServiceData: function(serviceId) {
-      return SL.services[serviceId]
+      return SL.servicesUnfiltered[serviceId]
     },
     hasService: function (serviceId) {
-      return SL.services[serviceId] || null
+      return SL.servicesUnfiltered[serviceId] || null
     },
     serviceRenderName: function(ioItem) {
       return ioItem.aliasTitle || (this.hasService(ioItem.serviceId) ? this.getServiceData(ioItem.serviceId).name : ioItem.serviceId)

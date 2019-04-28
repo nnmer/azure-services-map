@@ -1,6 +1,7 @@
 export default class ServiceLinking {
   constructor (services, serviceLinks, refServices = {}) {
     this._services = Object.assign({}, services, refServices)
+    this._filteredServices = this._services
     this._sourceData = Object.assign({}, serviceLinks)
     this._flatServiceIOMap = {}
     this._servicesByCategoryArray = null
@@ -14,8 +15,8 @@ export default class ServiceLinking {
 
     function sortByServiceName(a,b) {
       // a hack to have not Azure services on the bottom
-      let nA = (a.serviceId ? '' : 'z') + (a.aliasTitle || that._services[a.serviceId].name).toUpperCase()
-      let nB = (b.serviceId ? '' : 'z') + (b.aliasTitle || that._services[b.serviceId].name).toUpperCase()
+      let nA = (a.serviceId ? '' : 'z') + (a.aliasTitle || that.services[a.serviceId].name).toUpperCase()
+      let nB = (b.serviceId ? '' : 'z') + (b.aliasTitle || that.services[b.serviceId].name).toUpperCase()
 
       if (nA < nB) {
         return -1
@@ -57,32 +58,32 @@ export default class ServiceLinking {
     function mergeInputWithRespectedOutputConnectionUrls (serviceId, direction) {
       let reverseDirection = direction === 'input' ? 'output' : 'input'
       if (that._flatServiceIOMap[serviceId][direction]) {
-        that._flatServiceIOMap[serviceId][direction].map((iItem, iIdx)=>{
+        that._flatServiceIOMap[serviceId][direction].map((iItem, iIdx) => {
           if (iItem.serviceId && that._flatServiceIOMap[iItem.serviceId].output) {
-            
-            that._flatServiceIOMap[iItem.serviceId][reverseDirection].map((oItem, oIdx)=>{
+
+            that._flatServiceIOMap[iItem.serviceId][reverseDirection].map((oItem, oIdx) => {
               if (oItem.serviceId == serviceId) {
                 let newConnUrlArray = []
                 if (iItem.connectionDescriptionUrl) {
                   if (typeof iItem.connectionDescriptionUrl === 'string') {
                     newConnUrlArray.push(iItem.connectionDescriptionUrl)
                   } else if (typeof iItem.connectionDescriptionUrl === 'object') {
-                    iItem.connectionDescriptionUrl.map((i)=>newConnUrlArray.push(i))
+                    iItem.connectionDescriptionUrl.map((i) => newConnUrlArray.push(i))
                   }
                 }
                 if (oItem.connectionDescriptionUrl) {
                   if (typeof oItem.connectionDescriptionUrl === 'string') {
                     newConnUrlArray.push(oItem.connectionDescriptionUrl)
                   } else if (typeof oItem.connectionDescriptionUrl === 'object') {
-                    oItem.connectionDescriptionUrl.map((i)=>newConnUrlArray.push(i))
+                    oItem.connectionDescriptionUrl.map((i) => newConnUrlArray.push(i))
                   }
                 }
 
-                newConnUrlArray = newConnUrlArray.filter(function(value, index, self) {
+                newConnUrlArray = newConnUrlArray.filter(function (value, index, self) {
                   return self.indexOf(value) === index
                 })
 
-                that._flatServiceIOMap[serviceId][direction][iIdx].connectionDescriptionUrl = Object.assign([],newConnUrlArray)
+                that._flatServiceIOMap[serviceId][direction][iIdx].connectionDescriptionUrl = Object.assign([], newConnUrlArray)
                 that._flatServiceIOMap[iItem.serviceId][reverseDirection][oIdx].connectionDescriptionUrl = Object.assign([],newConnUrlArray)
               }
             })
@@ -134,10 +135,10 @@ export default class ServiceLinking {
 
   mergeServicesWithRespectedIOServices () {
     for (let key in this._flatServiceIOMap) {
-      if (this._services[key]) {
-        this._services[key].servicesIO = this._flatServiceIOMap[key]
-        this._services[key].hasLinkingServices =
-        !!(((this._services[key].servicesIO.input || this._services[key].servicesIO.output)))
+      if (this.services[key]) {
+        this.services[key].servicesIO = this._flatServiceIOMap[key]
+        this.services[key].hasLinkingServices =
+        !!(((this.services[key].servicesIO.input || this.services[key].servicesIO.output)))
       }
     }
   }
@@ -150,20 +151,19 @@ export default class ServiceLinking {
     return ordered
   }
 
-  // @deprecated
-  get service () {
+  get servicesUnfiltered () {
     return this._services
   }
 
   get services () {
-    return this._services
+    return this._filteredServices
   }
 
   get azureServicesOnly () {
     let azureOnly = {}
-    Object.keys(this._services).map((key)=> {
-      if (this._services[key].isAzureProduct) {
-        azureOnly[key] = this._services[key]
+    Object.keys(this.services).map((key)=> {
+      if (this.services[key].isAzureProduct) {
+        azureOnly[key] = this.services[key]
       }
     })
     return azureOnly
@@ -171,12 +171,10 @@ export default class ServiceLinking {
 
   get servicesByCategory () {
     if (this._servicesByCategoryArray === null) {
-      for (let serviceKey in this._services) {
-        let service = this._services[serviceKey]
+      this._servicesByCategoryArray = {}
+      for (let serviceKey in this.services) {
+        let service = this.services[serviceKey]
         for (let catKey in service.category) {
-          if (!this._servicesByCategoryArray) {
-            this._servicesByCategoryArray = {}
-          }
 
           if (!this._servicesByCategoryArray[service.category[catKey]]) {
             this._servicesByCategoryArray[service.category[catKey]] = {}
@@ -195,5 +193,72 @@ export default class ServiceLinking {
     }
 
     return this._servicesByCategoryArray
+  }
+
+  resetFilter () {
+    return this.applyFilter()
+  }
+
+  applyFilter (searchRegionValue, searchVal, searchShowWithIOOnly) {
+    let operationalData = Object.keys(this._services).map(id => this._services[id])
+
+    if (searchRegionValue && searchRegionValue.length > 0) {
+      // console.warn(this.searchRegionValue)
+      let filteredData = []
+
+      let matchedServices = operationalData.filter(function (service) {
+        if (service.availability && Object.keys(service.availability).length > 0) {
+          let availableRegsForService = Object.keys(service.availability).filter(key => service.availability[key].available === true)
+          let matchedRegions = availableRegsForService.filter(item => {
+            // console.warn(item, that.searchRegionValue.indexOf(item))
+            return -1 !== searchRegionValue.indexOf(item)
+          })
+          // console.warn(service.id)
+          // console.warn(availableRegsForService)
+          // console.warn(matchedRegions)
+          // console.warn('-----------')
+          return matchedRegions && (matchedRegions).length > 0
+        }
+        return false
+      })
+      if (matchedServices.length > 0) {
+        filteredData = matchedServices
+      }
+
+      operationalData = Object.assign([], filteredData)
+    }
+
+    if (searchVal) {
+      let filteredData = []
+      let regex = new RegExp('' + searchVal + '', 'igm')
+
+      let matchedServices = operationalData.filter(function (service) {
+        return service.name.search(regex) !== -1
+      })
+      if (matchedServices.length > 0) {
+        filteredData = matchedServices
+      }
+      operationalData = Object.assign([], filteredData)
+    }
+
+    if (searchShowWithIOOnly) {
+      let ioOnly = []
+      let matchedServices = operationalData.filter(function (service) {
+        return (service.servicesIO.input && service.servicesIO.input.length > 0)
+          || (service.servicesIO.output && service.servicesIO.output.length > 0)
+      })
+      if (matchedServices.length > 0) {
+        ioOnly = matchedServices
+      }
+      operationalData = Object.assign([], ioOnly)
+    }
+
+    this._filteredServices = {}
+    operationalData.map(item => {
+      this._filteredServices[item.id] = item
+    })
+    this._servicesByCategoryArray = null
+
+    return this.services
   }
 }

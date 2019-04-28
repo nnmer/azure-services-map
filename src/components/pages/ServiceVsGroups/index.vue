@@ -124,12 +124,12 @@ export default {
   },
   data: function () {
     return {
+      dataInitialized: false,
       searchVal: null,
       searchShowWithIOOnly: false,
       searchRegionValue: null,
       azureRegionsSelectOptions: [],
       azureRegions: {},
-      servicesList: [],
       currentView: 'table',
       mapRendered: false,
       mapSelector: '#service-vs-group-map',
@@ -147,7 +147,7 @@ export default {
     ]).then(function ([services, serviceLinking, refServices, azureRegions]) {
       SL = new ServiceLinking(services.data, serviceLinking.data, refServices.data)
       SvsG = new ServicesVsGroupsForceDirectedTree(that.mapSelector,SL.azureServicesOnly, that)
-      that.servicesList = SL.servicesByCategory
+      that.dataInitialized = true
       that.azureRegions = azureRegions.data
 
       Object.keys(that.azureRegions).map( key => {
@@ -173,69 +173,16 @@ export default {
   },
   computed: {
     filteredServicesList: function () {
-      let that = this
-
-      if ((!this.searchRegionValue || this.searchRegionValue.length === 0) && !this.searchVal && !this.searchShowWithIOOnly) {
-        return this.servicesList
+      if (this.dataInitialized) {
+        SL.applyFilter(
+          this.searchRegionValue,
+          this.searchVal,
+          this.searchShowWithIOOnly
+        )
+        return SL.servicesByCategory
       }
 
-      let operationalData = this.servicesList
-
-      if (this.searchRegionValue && this.searchRegionValue.length > 0) {
-        // console.warn(this.searchRegionValue)
-        let filteredData = {}
-        for (let category in operationalData) {
-          let matchedServices = operationalData[category].filter(function (service) {
-            if (service.availability && Object.keys(service.availability).length > 0) {
-              let availableRegsForService = Object.keys(service.availability).filter(key => service.availability[key].available === true)
-              let matchedRegions = availableRegsForService.filter(item => {
-                // console.warn(item, that.searchRegionValue.indexOf(item))
-                return -1 !== that.searchRegionValue.indexOf(item)
-              })
-              // console.warn(service.id)
-              // console.warn(availableRegsForService)
-              // console.warn(matchedRegions)
-              // console.warn('-----------')
-              return matchedRegions && (matchedRegions).length > 0
-            }
-            return false
-          })
-          if (matchedServices.length > 0) {
-            filteredData[category] = matchedServices
-          }
-        }
-        operationalData = filteredData
-      }
-
-      if (this.searchVal) {
-        let filteredData = {}
-        let regex = new RegExp('' + this.searchVal + '', 'igm')
-        for (let category in operationalData) {
-          let matchedServices = operationalData[category].filter(function (service) {
-            return service.name.search(regex) !== -1
-          })
-          if (matchedServices.length > 0) {
-            filteredData[category] = matchedServices
-          }
-        }
-        operationalData = filteredData
-      }
-
-      if (this.searchShowWithIOOnly) {
-        let ioOnly = {}
-        for (let category in operationalData) {
-          let matchedServices = operationalData[category].filter(function (service) {
-            return (service.servicesIO.input && service.servicesIO.input.length > 0 )
-                || (service.servicesIO.output &&service.servicesIO.output.length > 0)
-          })
-          if (matchedServices.length > 0) {
-            ioOnly[category] = matchedServices
-          }
-        }
-        operationalData = ioOnly
-      }
-
-      return operationalData
+      return []
     }
   },
   watch: {

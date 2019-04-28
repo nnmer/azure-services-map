@@ -51,12 +51,26 @@
           </div>
           <div class="col-lg-6 col-sm-6" v-if="currentView=='table'">
             <div class="row">
-              <div class="col-2"><strong>Note:</strong></div>
+              <div class="col-12">
+                <treeselect
+                  v-model="searchRegionValue"
+                  :multiple="true"
+                  :options="azureRegionsSelectOptions"
+                  value-consists-of="LEAF_PRIORITY"
+                  placeholder="Filter by Region. By default all services are listed"
+                >
+                  <label slot="option-label" slot-scope="{ node, shouldShowCount, count, labelClassName, countClassName }" :class="labelClassName">
+                    {{ node.label }}
+                    <span v-if="!node.isBranch" class="text-black-50">({{node.raw.slug}})</span>
+                  </label>
+                </treeselect>
+              </div>
+              <!--<div class="col-2"><strong>Note:</strong></div>
               <div class="col-10">
               - services may be placed in several service groups; <br/>
               <span class="text-darkred">- services may have direct links to how-to connect docs;</span> <br/>
               - <i class="has-linking-services help-note" style="padding: 0 8px;"></i> &nbsp;&nbsp;a service with input/output connection
-              </div>
+              </div>-->
             </div>
           </div>
           <div class="col-lg-6 col-sm-6" v-if="currentView=='map'">
@@ -98,17 +112,23 @@ import ServiceVsGroupsTable from './ServiceVsGroupsTable'
 import axios from 'axios'
 import ServiceLinking from 'src/_helpers/ServiceLinking'
 import ServicesVsGroupsForceDirectedTree from 'src/_helpers/ServicesVsGroupsForceDirectedTree'
+import Treeselect from '@riophae/vue-treeselect'
+import '@riophae/vue-treeselect/dist/vue-treeselect.css'
 
 export default {
   name: 'ServiceVsGroups',
   components: {
     ServiceVsGroupsForcedTree,
-    ServiceVsGroupsTable
+    ServiceVsGroupsTable,
+    Treeselect
   },
   data: function () {
     return {
       searchVal: null,
       searchShowWithIOOnly: false,
+      searchRegionValue: null,
+      azureRegionsSelectOptions: [],
+      azureRegions: {},
       servicesList: [],
       currentView: 'table',
       mapRendered: false,
@@ -122,11 +142,21 @@ export default {
     axios.all([
       axios.get('js/data/azure-services.json'),
       axios.get('js/data/azure-services-linking.json'),
-      axios.get('js/data/ref-services.json')
-    ]).then(function ([services, serviceLinking, refServices]) {
+      axios.get('js/data/ref-services.json'),
+      axios.get('js/data/azure-regions.json')
+    ]).then(function ([services, serviceLinking, refServices, azureRegions]) {
       SL = new ServiceLinking(services.data, serviceLinking.data, refServices.data)
       SvsG = new ServicesVsGroupsForceDirectedTree(that.mapSelector,SL.azureServicesOnly, that)
       that.servicesList = SL.servicesByCategory
+      that.azureRegions = azureRegions.data
+
+      Object.keys(that.azureRegions).map( key => {
+        that.azureRegionsSelectOptions.push({
+          id: key,
+          label: key,
+          children: that.azureRegions[key].map(item => { return { id: item.slug, label: item.title, slug: item.slug } })
+        })
+      })
     })
 
     this.$root.$on('click::at::page', function(event){
@@ -143,15 +173,43 @@ export default {
   },
   computed: {
     filteredServicesList: function () {
-      if (!this.searchVal && !this.searchShowWithIOOnly) {
+      let that = this
+
+      if ((!this.searchRegionValue || this.searchRegionValue.length === 0) && !this.searchVal && !this.searchShowWithIOOnly) {
         return this.servicesList
       }
 
       let operationalData = this.servicesList
 
+      if (this.searchRegionValue && this.searchRegionValue.length > 0) {
+        // console.warn(this.searchRegionValue)
+        let filteredData = {}
+        for (let category in operationalData) {
+          let matchedServices = operationalData[category].filter(function (service) {
+            if (service.availability && Object.keys(service.availability).length > 0) {
+              let availableRegsForService = Object.keys(service.availability).filter(key => service.availability[key].available === true)
+              let matchedRegions = availableRegsForService.filter(item => {
+                // console.warn(item, that.searchRegionValue.indexOf(item))
+                return -1 !== that.searchRegionValue.indexOf(item)
+              })
+              // console.warn(service.id)
+              // console.warn(availableRegsForService)
+              // console.warn(matchedRegions)
+              // console.warn('-----------')
+              return matchedRegions && (matchedRegions).length > 0
+            }
+            return false
+          })
+          if (matchedServices.length > 0) {
+            filteredData[category] = matchedServices
+          }
+        }
+        operationalData = filteredData
+      }
+
       if (this.searchVal) {
         let filteredData = {}
-        let regex = new RegExp('' + this.searchVal + '', 'i')
+        let regex = new RegExp('' + this.searchVal + '', 'igm')
         for (let category in operationalData) {
           let matchedServices = operationalData[category].filter(function (service) {
             return service.name.search(regex) !== -1

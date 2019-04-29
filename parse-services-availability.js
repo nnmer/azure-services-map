@@ -101,7 +101,7 @@ getHtml()
               available: isAvailable,
               inPreview: !!img ? !!String(img.attr('src')).match(/preview\.svg/) : false,
               inGA: !!img ? !!String(img.attr('src')).match(/ga\.svg/) : false,
-              expectation: !!img && !!String(img.attr('src')).match(/planned-active\.svg/) ? $(tdItem).find('.qs-table-tooltip').text().trim().replace(/\n\s+/, ': ') : false
+              expectation: !!img && !!String(img.attr('src')).match(/(planned-active|preview-active)\.svg/) ? $(tdItem).find('.qs-table-tooltip').text().trim().replace(/\n\s+/, ': ') : false
             }
           }
         })

@@ -220,6 +220,21 @@ export default class ServiceLinking {
     return this._filter
   }
 
+  getServiceAvailabilityFilteredByRegionFilter (serviceAvailability) {
+    let newAvailability = {}
+    if (this._filter.regions && this._filter.regions.length > 0) {
+      Object.keys(serviceAvailability).map(key => {
+        if (-1 !== this._filter.regions.indexOf(key)) {
+          newAvailability[key] = serviceAvailability[key]
+        }
+      })
+    } else {
+      newAvailability = Object.assign({}, serviceAvailability)
+    }
+
+    return newAvailability
+  }
+
   applyFilter (searchRegionValue, searchVal, searchShowWithIOOnly) {
 
     this._filter = {

@@ -8,7 +8,7 @@
     scrollable
   >
     <table class="table table-sm" v-if="service">
-      <tr v-for="(idx,key) in service.availability">
+      <tr v-for="(idx,key) in serviceAvailability">
         <th>
           {{regionTitle(key)}}
         </th>
@@ -32,6 +32,11 @@ export default {
   },
   mounted: function () {
     this.$root.$on('app::services::region-availability-modal::show', this.showModal)
+  },
+  computed: {
+    serviceAvailability: function () {
+      return SL.getServiceAvailabilityFilteredByRegionFilter(this.service.availability)
+    }
   },
   methods: {
     regionTitle: function(key) {

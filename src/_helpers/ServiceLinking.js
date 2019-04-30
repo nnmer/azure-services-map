@@ -1,10 +1,23 @@
 export default class ServiceLinking {
-  constructor (services, serviceLinks, refServices = {}) {
+  constructor (services, serviceLinks, refServices = {}, regions) {
     this._services = Object.assign({}, services, refServices)
+    this._regionsByGeo = Object.assign({}, regions)
+    this._regionsDic = {}
     this._filteredServices = this._services
+    this._filter = {
+      regions: [],
+      searchVal: null,
+      searchShowWithIOOnly: null
+    }
     this._sourceData = Object.assign({}, serviceLinks)
     this._flatServiceIOMap = {}
     this._servicesByCategoryArray = null
+
+    for (let regionGroup in this._regionsByGeo) {
+      this._regionsByGeo[regionGroup].map(item => {
+        this._regionsDic[item.slug] = item.title
+      })
+    }
 
     this.buildFlatSourceTargetMap()
     this.mergeServicesWithRespectedIOServices()
@@ -151,6 +164,10 @@ export default class ServiceLinking {
     return ordered
   }
 
+  get regionsDic () {
+    return this._regionsDic
+  }
+
   get servicesUnfiltered () {
     return this._services
   }
@@ -199,7 +216,18 @@ export default class ServiceLinking {
     return this.applyFilter()
   }
 
+  get filter () {
+    return this._filter
+  }
+
   applyFilter (searchRegionValue, searchVal, searchShowWithIOOnly) {
+
+    this._filter = {
+      regions: searchRegionValue,
+      searchVal: searchVal,
+      searchShowWithIOOnly: searchShowWithIOOnly
+    }
+
     let operationalData = Object.keys(this._services).map(id => this._services[id])
 
     if (searchRegionValue && searchRegionValue.length > 0) {

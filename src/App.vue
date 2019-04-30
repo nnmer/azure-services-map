@@ -7,6 +7,7 @@
     <ServicePopover/>
     <ServiceDirectIOModal/>
     <ServiceDirectedGraphModal/>
+    <ServiceRegionAvailabilityModal/>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import ServiceVsGroups from 'src/components/pages/ServiceVsGroups'
 import ServicePopover from 'src/components/pages/ServiceVsGroups/ServicePopover'
 import ServiceDirectIOModal from 'src/components/pages/ServiceVsGroups/ServiceDirectIOModal'
 import ServiceDirectedGraphModal from 'src/components/pages/ServiceVsGroups/ServiceDirectedGraphModal'
+import ServiceRegionAvailabilityModal from 'src/components/pages/ServiceVsGroups/ServiceRegionAvailabilityModal'
 
 export default {
   name: 'App',
@@ -24,7 +26,8 @@ export default {
     ServiceVsGroups,
     ServicePopover,
     ServiceDirectIOModal,
-    ServiceDirectedGraphModal
+    ServiceDirectedGraphModal,
+    ServiceRegionAvailabilityModal
   }
 }
 </script>

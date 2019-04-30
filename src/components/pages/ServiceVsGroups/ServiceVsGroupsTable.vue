@@ -13,7 +13,24 @@
             v-bind:id="catIdx+'-'+service.id"
             @click.capture="$root.$emit('app::services::popover::show', $event, service.id, catIdx+'-'+service.id)"
         >
-          <div class="service-list-col-service-item">
+          <div class="service-list-col-service-item" :class="!service.hasOwnProperty('availability') ? 'no-region-availability' :''">
+            <div
+              class="pull-right"
+            >
+              <a v-if="service.hasOwnProperty('availability')"
+                 href="#"
+                 style="
+                  right: 10px;
+                  margin-top: 15px;
+                  position: relative;"
+                 @click.stop="$root.$emit('app::services::region-availability-modal::show', $event, service.id)"
+              >
+                <img src="img/globe.png" class="opacity07" width="14px"/>
+              </a>
+            </div>
+            <div class="clearfix"/>
+
+
             <img class="service-icon" v-bind:src="service.icon"/>
             <div
               v-bind:class="{'has-linking-services':service.servicesIO.input && service.servicesIO.input.length >0

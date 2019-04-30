@@ -145,7 +145,7 @@ export default {
       axios.get('js/data/ref-services.json'),
       axios.get('js/data/azure-regions.json')
     ]).then(function ([services, serviceLinking, refServices, azureRegions]) {
-      SL = new ServiceLinking(services.data, serviceLinking.data, refServices.data)
+      SL = new ServiceLinking(services.data, serviceLinking.data, refServices.data, azureRegions.data)
       SvsG = new ServicesVsGroupsForceDirectedTree(that.mapSelector,SL.azureServicesOnly, that)
       that.dataInitialized = true
       that.azureRegions = azureRegions.data

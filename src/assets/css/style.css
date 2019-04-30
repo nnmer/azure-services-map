@@ -373,7 +373,14 @@ body {
   border-radius: 0;
 }
 
-.form-control-dark {
+.vue-treeselect__multi-value-item,
+.vue-treeselect__value-remove {
+    color: #007bff;
+    background: #f0f8fd;
+}
+
+.form-control-dark,
+.treeselect-no-focus-greyed .vue-treeselect__control {
   /* color: #fff; */
   background-color: rgba(255, 255, 255, .1);
   /* border-color: rgba(255, 255, 255, .1); */

@@ -53,11 +53,15 @@
             <div class="row">
               <div class="col-12">
                 <treeselect
+                  :class="!treeSelectFocused ? 'treeselect-no-focus-greyed' : ''"
                   v-model="searchRegionValue"
                   :multiple="true"
                   :options="azureRegionsSelectOptions"
                   value-consists-of="LEAF_PRIORITY"
                   placeholder="Filter by Region. By default all services are listed"
+                  v-on:open="toggleTreeSelectGreyed"
+                  v-on:close="toggleTreeSelectGreyed"
+                  v-on:input="toggleTreeSelectGreyed"
                 >
                   <label slot="option-label" slot-scope="{ node, shouldShowCount, count, labelClassName, countClassName }" :class="labelClassName">
                     {{ node.label }}
@@ -125,6 +129,7 @@ export default {
   data: function () {
     return {
       dataInitialized: false,
+      treeSelectFocused: false,
       searchVal: null,
       searchShowWithIOOnly: false,
       searchRegionValue: null,
@@ -201,6 +206,9 @@ export default {
     }
   },
   methods: {
+    toggleTreeSelectGreyed: function (event) {
+      this.treeSelectFocused = (event && event.length !== 0)
+    },
     renderMap: function () {
       SvsG.render()
       SvsG.applyFilter()

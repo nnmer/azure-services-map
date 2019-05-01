@@ -75,6 +75,7 @@
                     v-model="searchRegionAvailabilityValue"
                     :multiple="true"
                     :options="azureRegionsAvailabilitySelectOptions"
+                    :clearable="false"
                     value-consists-of="LEAF_PRIORITY"
                     placeholder="Region availability"
                   >

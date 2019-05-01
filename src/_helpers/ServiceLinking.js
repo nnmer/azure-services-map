@@ -6,6 +6,7 @@ export default class ServiceLinking {
     this._servicesByRegionFilter = null
     this._filter = {
       regions: [],
+      regionsAvailability: [],
       searchVal: null,
       searchShowWithIOOnly: null
     }
@@ -265,7 +266,14 @@ export default class ServiceLinking {
       let filteredData = operationalData.filter(function (service) {
         if (service.availability && Object.keys(service.availability).length > 0) {
           let matchedRegions = Object.keys(service.availability).filter(
-            key => service.availability[key].available === true && -1 !== that._filter.regions.indexOf(key)
+            key => {
+              return service.availability[key].available === true && -1 !== that._filter.regions.indexOf(key)
+              && that._filter.regionsAvailability.filter(i => {
+                return (i === 'ga' && service.availability[key].inGA)
+                || (i === 'preview' && service.availability[key].inPreview)
+                || (i === 'expected' && service.availability[key].expectation.length > 0)
+              }).length > 0
+            }
           )
           return matchedRegions && (matchedRegions).length > 0
         }
@@ -300,10 +308,11 @@ export default class ServiceLinking {
     return newAvailability
   }
 
-  applyFilter (searchRegionValue, searchVal, searchShowWithIOOnly) {
+  applyFilter (searchVal, searchShowWithIOOnly, searchRegionValue, searchRegionAvailabilityValue) {
 
     this._filter = {
       regions: searchRegionValue,
+      regionsAvailability: searchRegionAvailabilityValue,
       searchVal: searchVal,
       searchShowWithIOOnly: searchShowWithIOOnly
     }

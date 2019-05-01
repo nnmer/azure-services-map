@@ -53,6 +53,7 @@
           <div class="col-lg-6 col-sm-6" v-if="currentView=='table'">
             <div class="row">
               <div class="col-12">
+                <div>
                 <treeselect
                   :class="!treeSelectFocused ? 'treeselect-no-focus-greyed' : ''"
                   v-model="searchRegionValue"
@@ -69,6 +70,16 @@
                     <span v-if="!node.isBranch" class="text-black-50">({{node.raw.slug}})</span>
                   </label>
                 </treeselect>
+                  <treeselect
+                    v-if="searchRegionValue && searchRegionValue.length > 0"
+                    v-model="searchRegionAvailabilityValue"
+                    :multiple="true"
+                    :options="azureRegionsAvailabilitySelectOptions"
+                    value-consists-of="LEAF_PRIORITY"
+                    placeholder="Region availability"
+                  >
+                  </treeselect>
+                </div>
               </div>
               <!--<div class="col-2"><strong>Note:</strong></div>
               <div class="col-10">
@@ -134,6 +145,12 @@ export default {
       searchVal: null,
       searchShowWithIOOnly: false,
       searchRegionValue: null,
+      searchRegionAvailabilityValue: ['ga', 'preview', 'expected'],
+      azureRegionsAvailabilitySelectOptions: [
+        {id: 'ga', label: 'GA'},
+        {id: 'preview', label: 'Preview'},
+        {id: 'expected', label: 'Expected'},
+      ],
       azureRegionsSelectOptions: [],
       azureRegions: {},
       currentView: 'table',
@@ -181,9 +198,10 @@ export default {
     filteredServicesList: function () {
       if (this.dataInitialized) {
         let filteredServices = SL.applyFilter(
-          this.searchRegionValue,
           this.searchVal,
-          this.searchShowWithIOOnly
+          this.searchShowWithIOOnly,
+          this.searchRegionValue,
+          this.searchRegionAvailabilityValue
         )
         return SL.groupServicesByCategory(filteredServices, true)
       }

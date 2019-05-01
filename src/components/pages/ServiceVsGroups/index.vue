@@ -26,7 +26,8 @@
             <div class="input-group">
 
               <input
-                class="form-control form-control-dark  search-input"
+                class="form-control search-input"
+                :class="searchVal ? '' : 'form-control-dark'"
                 type="text" placeholder="Search" aria-label="Search"
                 v-model="searchVal"
                 v-on:keydown.esc="clearSearchField"

@@ -49,6 +49,31 @@ a{
 }
 
 
+.region-availability{
+  height: 8px;
+  width: 8px;
+  line-height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.region-availability-ga {
+  background-color: #00ae00;
+}
+
+.region-availability-preview {
+  background-color: #ffa500;
+}
+
+.region-availability-expected {
+  background-color: #00f;
+}
+
+.glob-link {
+    padding: 0 7px 7px 7px;
+}
+
+
 #service-flow .node {
   stroke: initial
 }

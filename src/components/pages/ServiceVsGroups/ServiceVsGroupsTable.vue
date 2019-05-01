@@ -19,10 +19,7 @@
             >
               <a v-if="service.hasOwnProperty('availability')"
                  href="#"
-                 style="
-                  right: 10px;
-                  margin-top: 15px;
-                  position: relative;"
+                 class="glob-link"
                  @click.stop="$root.$emit('app::services::region-availability-modal::show', $event, service.id)"
               >
                 <img src="img/globe.png" class="opacity07" width="14px"/>

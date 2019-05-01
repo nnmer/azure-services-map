@@ -5,13 +5,20 @@
     :no-fade="true"
     :hide-footer="true"
     scrollable
+    :body-class="'p-none'"
   >
-    <table class="table table-sm" v-if="service">
+    <table class="table" v-if="service">
       <tr v-for="(idx,key) in serviceAvailability">
         <th>
           {{regionTitle(key)}}
+          <span class="text-black-50">
+            ({{key}})
+          </span>
         </th>
         <td>
+          <span class="region-availability"
+                :class="computeAvailabilityClass(service.availability[key])"
+          >&nbsp;</span>
           {{service.availability[key].inGA ? 'GA' : ''}}
           {{service.availability[key].inPreview ? 'Preview' : ''}}
           {{service.availability[key].expectation ? service.availability[key].expectation : ''}}
@@ -40,6 +47,16 @@ export default {
   methods: {
     regionTitle: function(key) {
       return SL.regionsDic[key]
+    },
+    computeAvailabilityClass: function(av) {
+      if (av.inGA) {
+        return 'region-availability-ga'
+      } else if (av.inPreview) {
+        return 'region-availability-preview'
+      } else if (av.expectation) {
+        return 'region-availability-expected'
+      }
+      return ''
     },
     showModal: function (event, serviceId) {
       let that = this

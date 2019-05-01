@@ -430,6 +430,8 @@ body {
   background-color: #343a40;
   color: #fff;
   line-height: 15px;
+  border-right: 1px solid rgba(229, 229, 229, .2);
+  border-left: 1px solid rgba(229, 229, 229, .2);
 }
 
 .service-list-container > .row {

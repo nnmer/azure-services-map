@@ -1,8 +1,5 @@
 <template>
   <div class="container services-direct-io-list p-none">
-    <div class="text-center mb-3">
-      <i>Connections are listed regardless selected Azure region</i>
-    </div>
     <div class="row no-gutters">
       <div class="col" v-if="service.servicesIO.input && service.servicesIO.input.length > 0">
         <div class="list-group">

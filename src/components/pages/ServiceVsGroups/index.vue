@@ -179,12 +179,12 @@ export default {
   computed: {
     filteredServicesList: function () {
       if (this.dataInitialized) {
-        SL.applyFilter(
+        let filteredServices = SL.applyFilter(
           this.searchRegionValue,
           this.searchVal,
           this.searchShowWithIOOnly
         )
-        return SL.servicesByCategory
+        return SL.groupServicesByCategory(filteredServices, true)
       }
 
       return []

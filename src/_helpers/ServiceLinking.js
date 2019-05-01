@@ -1,9 +1,9 @@
 export default class ServiceLinking {
   constructor (services, serviceLinks, refServices = {}, regions) {
-    this._services = Object.assign({}, services, refServices)
-    this._regionsByGeo = Object.assign({}, regions)
+    this._services = JSON.parse(JSON.stringify({ ...services, ...refServices }))
+    this._regionsByGeo = JSON.parse(JSON.stringify({ ...regions }))
     this._regionsDic = {}
-    this._filteredServices = this._services
+    this._servicesByRegionFilter = null
     this._filter = {
       regions: [],
       searchVal: null,
@@ -21,6 +21,7 @@ export default class ServiceLinking {
 
     this.buildFlatSourceTargetMap()
     this.mergeServicesWithRespectedIOServices()
+    this._services = JSON.parse(JSON.stringify(this._services))
   }
 
   buildFlatSourceTargetMap () {
@@ -28,8 +29,8 @@ export default class ServiceLinking {
 
     function sortByServiceName(a,b) {
       // a hack to have not Azure services on the bottom
-      let nA = (a.serviceId ? '' : 'z') + (a.aliasTitle || that.services[a.serviceId].name).toUpperCase()
-      let nB = (b.serviceId ? '' : 'z') + (b.aliasTitle || that.services[b.serviceId].name).toUpperCase()
+      let nA = (a.serviceId ? '' : 'z') + (a.aliasTitle || that._services[a.serviceId].name).toUpperCase()
+      let nB = (b.serviceId ? '' : 'z') + (b.aliasTitle || that._services[b.serviceId].name).toUpperCase()
 
       if (nA < nB) {
         return -1
@@ -148,10 +149,10 @@ export default class ServiceLinking {
 
   mergeServicesWithRespectedIOServices () {
     for (let key in this._flatServiceIOMap) {
-      if (this.services[key]) {
-        this.services[key].servicesIO = this._flatServiceIOMap[key]
-        this.services[key].hasLinkingServices =
-        !!(((this.services[key].servicesIO.input || this.services[key].servicesIO.output)))
+      if (this._services[key]) {
+        this._services[key].servicesIO = { ...this._flatServiceIOMap[key] }
+        this._services[key].hasLinkingServices =
+        !!(((this._services[key].servicesIO.input || this._services[key].servicesIO.output)))
       }
     }
   }
@@ -173,24 +174,27 @@ export default class ServiceLinking {
   }
 
   get services () {
-    return this._filteredServices
+    if (!this._servicesByRegionFilter) {
+      this.sourceServicesFilteredByRegionFilter()
+    }
+    return this._servicesByRegionFilter
   }
 
   get azureServicesOnly () {
     let azureOnly = {}
-    Object.keys(this.services).map((key)=> {
-      if (this.services[key].isAzureProduct) {
-        azureOnly[key] = this.services[key]
+    Object.keys(this.servicesUnfiltered).map((key) => {
+      if (this.servicesUnfiltered[key].isAzureProduct) {
+        azureOnly[key] = this.servicesUnfiltered[key]
       }
     })
-    return azureOnly
+    return JSON.parse(JSON.stringify(azureOnly))
   }
 
-  get servicesByCategory () {
-    if (this._servicesByCategoryArray === null) {
+  groupServicesByCategory (servicesList, forceBuild = false) {
+    if (this._servicesByCategoryArray === null || forceBuild) {
       this._servicesByCategoryArray = {}
-      for (let serviceKey in this.services) {
-        let service = this.services[serviceKey]
+      for (let serviceKey in servicesList) {
+        let service = servicesList[serviceKey]
         for (let catKey in service.category) {
 
           if (!this._servicesByCategoryArray[service.category[catKey]]) {
@@ -207,6 +211,7 @@ export default class ServiceLinking {
       })
 
       this._servicesByCategoryArray = this.sortObjByKeys(this._servicesByCategoryArray)
+      this._servicesByCategoryArray = JSON.parse(JSON.stringify(this._servicesByCategoryArray))
     }
 
     return this._servicesByCategoryArray
@@ -220,7 +225,67 @@ export default class ServiceLinking {
     return this._filter
   }
 
-  getServiceAvailabilityFilteredByRegionFilter (serviceAvailability) {
+  /**
+   * Services available (which are NOT not available) in specified regions
+   */
+  sourceServicesFilteredByRegionFilter () {
+    let that = this
+    let operationalData = Object.values(this._services)
+    operationalData = JSON.parse(JSON.stringify(operationalData))
+
+    function filterServicesIOByRegionFilter (servicesList) {
+      servicesList.map((item, idx) => {
+        let service = JSON.parse(JSON.stringify(item))
+
+        if (that._filter.regions && that._filter.regions.length > 0) {
+          if (service.servicesIO.input && service.servicesIO.input.length > 0) {
+            let newList = service.servicesIO.input.filter(item => {
+              return !!(!item.serviceId || servicesList.filter(i => i.id === item.serviceId).length > 0)
+            })
+
+            service.servicesIO.input = newList
+          }
+
+          if (service.servicesIO.output && service.servicesIO.output.length > 0) {
+            let newList = service.servicesIO.output.filter(item => {
+              return !!(!item.serviceId || servicesList.filter(i => i.id === item.serviceId).length > 0)
+            })
+
+            service.servicesIO.output = newList
+          }
+        }
+
+        servicesList[idx] = service
+      })
+
+      return servicesList
+    }
+
+    if (this._filter.regions && this._filter.regions.length > 0) {
+      let filteredData = operationalData.filter(function (service) {
+        if (service.availability && Object.keys(service.availability).length > 0) {
+          let matchedRegions = Object.keys(service.availability).filter(
+            key => service.availability[key].available === true && -1 !== that._filter.regions.indexOf(key)
+          )
+          return matchedRegions && (matchedRegions).length > 0
+        }
+        return false
+      })
+
+      operationalData = [...filteredData]
+    }
+
+    operationalData = filterServicesIOByRegionFilter(operationalData)
+    this._servicesByRegionFilter = {}
+    operationalData.map(item => {
+      this._servicesByRegionFilter[item.id] = item
+    })
+    this._servicesByRegionFilter = JSON.parse(JSON.stringify(this._servicesByRegionFilter))
+
+    return operationalData
+  }
+
+  filterServiceAvailabilityByRegionFilter (serviceAvailability) {
     let newAvailability = {}
     if (this._filter.regions && this._filter.regions.length > 0) {
       Object.keys(serviceAvailability).map(key => {
@@ -243,65 +308,32 @@ export default class ServiceLinking {
       searchShowWithIOOnly: searchShowWithIOOnly
     }
 
-    let operationalData = Object.keys(this._services).map(id => this._services[id])
-
-    if (searchRegionValue && searchRegionValue.length > 0) {
-      // console.warn(this.searchRegionValue)
-      let filteredData = []
-
-      let matchedServices = operationalData.filter(function (service) {
-        if (service.availability && Object.keys(service.availability).length > 0) {
-          let availableRegsForService = Object.keys(service.availability).filter(key => service.availability[key].available === true)
-          let matchedRegions = availableRegsForService.filter(item => {
-            // console.warn(item, that.searchRegionValue.indexOf(item))
-            return -1 !== searchRegionValue.indexOf(item)
-          })
-          // console.warn(service.id)
-          // console.warn(availableRegsForService)
-          // console.warn(matchedRegions)
-          // console.warn('-----------')
-          return matchedRegions && (matchedRegions).length > 0
-        }
-        return false
-      })
-      if (matchedServices.length > 0) {
-        filteredData = matchedServices
-      }
-
-      operationalData = Object.assign([], filteredData)
-    }
+    let operationalData = this.sourceServicesFilteredByRegionFilter()
 
     if (searchVal) {
-      let filteredData = []
       let regex = new RegExp('' + searchVal + '', 'igm')
 
-      let matchedServices = operationalData.filter(function (service) {
+      let filteredData = operationalData.filter(function (service) {
         return service.name.search(regex) !== -1
       })
-      if (matchedServices.length > 0) {
-        filteredData = matchedServices
-      }
       operationalData = Object.assign([], filteredData)
     }
 
     if (searchShowWithIOOnly) {
-      let ioOnly = []
-      let matchedServices = operationalData.filter(function (service) {
+      let ioOnly = operationalData.filter(function (service) {
         return (service.servicesIO.input && service.servicesIO.input.length > 0)
           || (service.servicesIO.output && service.servicesIO.output.length > 0)
       })
-      if (matchedServices.length > 0) {
-        ioOnly = matchedServices
-      }
       operationalData = Object.assign([], ioOnly)
     }
 
-    this._filteredServices = {}
+    let filteredServices = {}
     operationalData.map(item => {
-      this._filteredServices[item.id] = item
+      filteredServices[item.id] = item
     })
-    this._servicesByCategoryArray = null
 
-    return this.services
+    filteredServices = JSON.parse(JSON.stringify(filteredServices))
+
+    return filteredServices
   }
 }

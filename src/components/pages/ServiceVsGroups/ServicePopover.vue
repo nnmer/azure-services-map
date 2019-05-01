@@ -12,8 +12,8 @@
         Docs
       </a>
     </li>
-    <li v-if="(service.servicesIO.input && service.servicesIO.input.length > 0
-        || service.servicesIO.output && service.servicesIO.output.length > 0 )">
+    <li v-if="((service.servicesIO.input && service.servicesIO.input.length > 0)
+        || (service.servicesIO.output && service.servicesIO.output.length > 0) )">
       <a href="#"
         @click="$root.$emit('app::services::direct-io-modal::show', $event, service.id)"
         >

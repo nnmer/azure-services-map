@@ -32,13 +32,18 @@ export default {
   },
   methods: {
     showModal: function (event, serviceId) {
-      this.service = SL.servicesUnfiltered[serviceId] || null
-      if (!this.service) {
-        //console.warn('Service is NULL, skip init modal')
-        return
-      }
-      this.$root.$emit('bv::show::modal', 'service-direct-io-modal', event)
-    },
+      let that = this
+      this.service = null
+
+      this.$nextTick(function () {
+        that.service = SL.services[serviceId] || null
+        if (!this.service) {
+          //console.warn('Service is NULL, skip init modal')
+          return
+        }
+        that.$root.$emit('bv::show::modal', 'service-direct-io-modal', event)
+      })
+    }
   }
 }
 </script>

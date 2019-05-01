@@ -180,7 +180,7 @@ a.text-darkred:hover {
 }
 
 #service-node-hovered-label-background {
- fill: #FC0;
+ fill: transparent;
 }
 
 text.label.node-hovered {

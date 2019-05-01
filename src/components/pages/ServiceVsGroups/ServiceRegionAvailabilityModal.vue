@@ -3,7 +3,6 @@
     id="service-region-availability-modal"
     :title="service ? `'${service.name}' is available at:` : ''"
     :no-fade="true"
-    :lazy="true"
     :hide-footer="true"
     scrollable
   >
@@ -35,7 +34,7 @@ export default {
   },
   computed: {
     serviceAvailability: function () {
-      return SL.getServiceAvailabilityFilteredByRegionFilter(this.service.availability)
+      return SL.filterServiceAvailabilityByRegionFilter(this.service.availability)
     }
   },
   methods: {
@@ -43,13 +42,18 @@ export default {
       return SL.regionsDic[key]
     },
     showModal: function (event, serviceId) {
-      this.service = SL.services[serviceId] || null
-      if (!this.service) {
-        //console.warn('Service is NULL, skip init modal')
-        return
-      }
-      this.$root.$emit('bv::show::modal', 'service-region-availability-modal', event)
-    },
+      let that = this
+      this.service = null
+
+      this.$nextTick( function(){
+        that.service = SL.services[serviceId] || null
+        if (!this.service) {
+          //console.warn('Service is NULL, skip init modal')
+          return
+        }
+        that.$root.$emit('bv::show::modal', 'service-region-availability-modal', event)
+      })
+    }
   }
 }
 </script>

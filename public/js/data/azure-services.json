@@ -2175,8 +2175,8 @@
       "japan-west": {
         "available": true,
         "inPreview": false,
-        "inGA": false,
-        "expectation": "GA expected: Q2 2019"
+        "inGA": true,
+        "expectation": false
       },
       "korea-central": {
         "available": true,
@@ -2223,8 +2223,8 @@
       "us-north-central": {
         "available": true,
         "inPreview": false,
-        "inGA": false,
-        "expectation": "GA expected: Q2 2019"
+        "inGA": true,
+        "expectation": false
       },
       "us-south-central": {
         "available": true,
@@ -12543,6 +12543,12 @@
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/home",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_qnamaker.svg",
     "availability": {
+      "south-africa-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
       "asia-pacific-east": {
         "available": true,
         "inPreview": false,
@@ -12616,6 +12622,12 @@
         "expectation": false
       },
       "japan-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "korea-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -17143,8 +17155,8 @@
       "us-central": {
         "available": true,
         "inPreview": false,
-        "inGA": false,
-        "expectation": "GA expected: Q2 2019"
+        "inGA": true,
+        "expectation": false
       },
       "us-east": {
         "available": true,
@@ -17155,8 +17167,8 @@
       "us-east-2": {
         "available": true,
         "inPreview": false,
-        "inGA": false,
-        "expectation": "GA expected: Q2 2019"
+        "inGA": true,
+        "expectation": false
       },
       "us-north-central": {
         "available": true,
@@ -17167,8 +17179,8 @@
       "us-south-central": {
         "available": true,
         "inPreview": false,
-        "inGA": false,
-        "expectation": "GA expected: Q2 2019"
+        "inGA": true,
+        "expectation": false
       },
       "us-west-central": {
         "available": true,
@@ -17179,8 +17191,8 @@
       "us-west": {
         "available": true,
         "inPreview": false,
-        "inGA": false,
-        "expectation": "GA expected: Q2 2019"
+        "inGA": true,
+        "expectation": false
       },
       "us-west-2": {
         "available": true,
@@ -17277,25 +17289,103 @@
     "url": "https://docs.microsoft.com/en-us/azure/application-insights/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/applicationinsights.svg",
     "availability": {
-      "non-regional": {
+      "asia-pacific-east": {
         "available": true,
         "inPreview": false,
         "inGA": true,
         "expectation": false
       },
-      "usgov-non-regional": {
+      "asia-pacific-southeast": {
         "available": true,
         "inPreview": false,
         "inGA": true,
         "expectation": false
       },
-      "china-non-regional": {
+      "australia-east": {
         "available": true,
         "inPreview": false,
         "inGA": true,
         "expectation": false
       },
-      "germany-non-regional": {
+      "usgov-virginia": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "canada-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "china-east-2": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q2 2019"
+      },
+      "europe-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "europe-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "france-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "central-india": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "japan-east": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "korea-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "united-kingdom-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "us-east": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "us-east-2": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "us-south-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "us-west-2": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -20349,7 +20439,7 @@
         "inGA": true,
         "expectation": false
       },
-      "usgov-arizona": {
+      "usgov-texas": {
         "available": true,
         "inPreview": false,
         "inGA": false,

@@ -1,0 +1,226 @@
+{
+  "Non-regional": [
+    {
+      "slug": "non-regional",
+      "title": "Non-regional"
+    }
+  ],
+  "Africa": [
+    {
+      "slug": "south-africa-north",
+      "title": "South Africa North"
+    },
+    {
+      "slug": "south-africa-west",
+      "title": "South Africa West"
+    }
+  ],
+  "Asia Pacific": [
+    {
+      "slug": "asia-pacific-east",
+      "title": "East Asia"
+    },
+    {
+      "slug": "asia-pacific-southeast",
+      "title": "Southeast Asia"
+    }
+  ],
+  "Australia": [
+    {
+      "slug": "australia-central",
+      "title": "Australia Central"
+    },
+    {
+      "slug": "australia-central-2",
+      "title": "Australia Central 2"
+    },
+    {
+      "slug": "australia-east",
+      "title": "Australia East"
+    },
+    {
+      "slug": "australia-southeast",
+      "title": "Australia Southeast"
+    }
+  ],
+  "Azure Government": [
+    {
+      "slug": "usgov-non-regional",
+      "title": "US Gov Non-Regional"
+    },
+    {
+      "slug": "us-dod-central",
+      "title": "US DoD Central"
+    },
+    {
+      "slug": "us-dod-east",
+      "title": "US DoD East"
+    },
+    {
+      "slug": "usgov-arizona",
+      "title": "US Gov Arizona"
+    },
+    {
+      "slug": "usgov-iowa",
+      "title": "US Gov Iowa"
+    },
+    {
+      "slug": "usgov-texas",
+      "title": "US Gov Texas"
+    },
+    {
+      "slug": "usgov-virginia",
+      "title": "US Gov Virginia"
+    }
+  ],
+  "Brazil": [
+    {
+      "slug": "brazil-south",
+      "title": "Brazil South"
+    }
+  ],
+  "Canada": [
+    {
+      "slug": "canada-central",
+      "title": "Canada Central"
+    },
+    {
+      "slug": "canada-east",
+      "title": "Canada East"
+    }
+  ],
+  "China": [
+    {
+      "slug": "china-non-regional",
+      "title": "China Non-Regional"
+    },
+    {
+      "slug": "china-east",
+      "title": "China East"
+    },
+    {
+      "slug": "china-east-2",
+      "title": "China East 2"
+    },
+    {
+      "slug": "china-north",
+      "title": "China North"
+    },
+    {
+      "slug": "china-north-2",
+      "title": "China North 2"
+    }
+  ],
+  "Europe": [
+    {
+      "slug": "europe-north",
+      "title": "North Europe"
+    },
+    {
+      "slug": "europe-west",
+      "title": "West Europe"
+    }
+  ],
+  "France": [
+    {
+      "slug": "france-central",
+      "title": "France Central"
+    },
+    {
+      "slug": "france-south",
+      "title": "France South"
+    }
+  ],
+  "Germany": [
+    {
+      "slug": "germany-non-regional",
+      "title": "Germany Non-Regional"
+    },
+    {
+      "slug": "germany-central",
+      "title": "Germany Central"
+    },
+    {
+      "slug": "germany-northeast",
+      "title": "Germany Northeast"
+    }
+  ],
+  "India": [
+    {
+      "slug": "central-india",
+      "title": "Central India"
+    },
+    {
+      "slug": "south-india",
+      "title": "South India"
+    },
+    {
+      "slug": "west-india",
+      "title": "West India"
+    }
+  ],
+  "Japan": [
+    {
+      "slug": "japan-east",
+      "title": "Japan East"
+    },
+    {
+      "slug": "japan-west",
+      "title": "Japan West"
+    }
+  ],
+  "Korea": [
+    {
+      "slug": "korea-central",
+      "title": "Korea Central"
+    },
+    {
+      "slug": "korea-south",
+      "title": "Korea South"
+    }
+  ],
+  "United Kingdom": [
+    {
+      "slug": "united-kingdom-south",
+      "title": "UK South"
+    },
+    {
+      "slug": "united-kingdom-west",
+      "title": "UK West"
+    }
+  ],
+  "United States": [
+    {
+      "slug": "us-central",
+      "title": "Central US"
+    },
+    {
+      "slug": "us-east",
+      "title": "East US"
+    },
+    {
+      "slug": "us-east-2",
+      "title": "East US 2"
+    },
+    {
+      "slug": "us-north-central",
+      "title": "North Central US"
+    },
+    {
+      "slug": "us-south-central",
+      "title": "South Central US"
+    },
+    {
+      "slug": "us-west-central",
+      "title": "West Central US"
+    },
+    {
+      "slug": "us-west",
+      "title": "West US"
+    },
+    {
+      "slug": "us-west-2",
+      "title": "West US 2"
+    }
+  ]
+}

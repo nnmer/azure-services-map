@@ -297,7 +297,12 @@ export default class ServiceLinking {
     let newAvailability = {}
     if (this._filter.regions && this._filter.regions.length > 0) {
       Object.keys(serviceAvailability).map(key => {
-        if (-1 !== this._filter.regions.indexOf(key)) {
+        if (-1 !== this._filter.regions.indexOf(key)
+          && this._filter.regionsAvailability.filter(i => {
+            return (i === 'ga' && serviceAvailability[key].inGA)
+              || (i === 'preview' && serviceAvailability[key].inPreview)
+              || (i === 'expected' && serviceAvailability[key].expectation.length > 0)
+          }).length > 0) {
           newAvailability[key] = serviceAvailability[key]
         }
       })

@@ -664,12 +664,12 @@
       {
         "serviceId": "blob-storage",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/scripts/event-grid-cli-blob"
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/event-grid/event-sources#storage", "https://docs.microsoft.com/en-us/azure/event-grid/scripts/event-grid-cli-blob"]
       },
       {
         "serviceId": "media-services",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#media-services"
       },
       {
          "serviceId": null,
@@ -679,27 +679,27 @@
       {
          "serviceId": null,
          "aliasTitle": "Resource groups",
-         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/scripts/event-grid-cli-resource-group"
+         "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/event-grid/event-sources#resource-groups","https://docs.microsoft.com/en-us/azure/event-grid/scripts/event-grid-cli-resource-group"]
        },
       {
         "serviceId": "event-hubs",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#event-hubs"
       },
       {
         "serviceId": "iot-hub",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#iot-hub"
       },
       {
         "serviceId": "service-bus",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#service-bus"
       },
       {
         "serviceId": "container-registry",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#container-registry"
       },
       {
          "serviceId": null,
@@ -709,44 +709,49 @@
       {
         "serviceId": "azure-maps",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#maps"
       }
     ],
     "output": [
       {
+        "serviceId": "service-bus",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#service-bus-queue-preview"
+      },
+      {
         "serviceId": "functions",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-hubs/store-captured-data-data-warehouse#create-an-event-grid-subscription-from-the-functions-app"
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#azure-functions", "https://docs.microsoft.com/en-us/azure/event-hubs/store-captured-data-data-warehouse#create-an-event-grid-subscription-from-the-functions-app"]
       },
       {
         "serviceId": "logic-apps",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#logic-apps"
       },
       {
         "serviceId": "automation",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#azure-automation"
       },
       {
          "serviceId": null,
          "aliasTitle": "HTTP Webhooks",
-         "connectionDescriptionUrl": null
+         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#webhooks"
        },
       {
         "serviceId": "queue-storage",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#queue-storage"
       },
       {
          "serviceId": null,
          "aliasTitle": "Hybrid Connections",
-         "connectionDescriptionUrl": null
+         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#hybrid-connections"
        },
       {
         "serviceId": "event-hubs",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#event-hubs"
       },
       {
          "serviceId": null,

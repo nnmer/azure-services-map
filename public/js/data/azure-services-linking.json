@@ -664,12 +664,12 @@
       {
         "serviceId": "blob-storage",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/scripts/event-grid-cli-blob"
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/event-grid/event-sources#storage", "https://docs.microsoft.com/en-us/azure/event-grid/scripts/event-grid-cli-blob"]
       },
       {
         "serviceId": "media-services",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#media-services"
       },
       {
          "serviceId": null,
@@ -679,27 +679,27 @@
       {
          "serviceId": null,
          "aliasTitle": "Resource groups",
-         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/scripts/event-grid-cli-resource-group"
+         "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/event-grid/event-sources#resource-groups","https://docs.microsoft.com/en-us/azure/event-grid/scripts/event-grid-cli-resource-group"]
        },
       {
         "serviceId": "event-hubs",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#event-hubs"
       },
       {
         "serviceId": "iot-hub",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#iot-hub"
       },
       {
         "serviceId": "service-bus",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#service-bus"
       },
       {
         "serviceId": "container-registry",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#container-registry"
       },
       {
          "serviceId": null,
@@ -709,7 +709,7 @@
       {
         "serviceId": "azure-maps",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#maps"
       }
     ],
     "output": [

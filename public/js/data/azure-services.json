@@ -22284,6 +22284,17 @@
     }
   },
   "azure-blockchain-service": {
+    "id": "azure-blockchain-service",
+    "name": "Azure Blockchain Service",
+    "category": [
+      "Blockchain"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://azure.microsoft.com/en-us/services/blockchain-service/",
+    "icon": "img/icon-azure-blockchain-service.png"
+  },
+  "azure-red-hat-openshift": {
     "id": "azure-red-hat-openshift",
     "name": "Azure Red Hat OpenShift",
     "category": [

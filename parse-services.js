@@ -129,7 +129,7 @@ getHtml()
       icon: "img/icon-azure-blockchain-service.png"
     }
 
-    servicesMap["azure-blockchain-service"] = {
+    servicesMap["azure-red-hat-openshift"] = {
       id: "azure-red-hat-openshift",
       name: "Azure Red Hat OpenShift",
       category: ["Containers"],

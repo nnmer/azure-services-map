@@ -714,6 +714,11 @@
     ],
     "output": [
       {
+        "serviceId": "service-bus",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#service-bus-queue-preview"
+      },
+      {
         "serviceId": "functions",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-hubs/store-captured-data-data-warehouse#create-an-event-grid-subscription-from-the-functions-app"

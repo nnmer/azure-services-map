@@ -119,5 +119,25 @@ getHtml()
       icon: buildUrl('media/index/api_anomaly_finder.svg', iconPrefix)
     }
 
+    servicesMap["azure-blockchain-service"] = {
+      id: "azure-blockchain-service",
+      name: "Azure Blockchain Service",
+      category: ["Blockchain"],
+      isAzureProduct: true,
+      servicesIO: [],
+      url: 'https://azure.microsoft.com/en-us/services/blockchain-service/',
+      icon: "img/icon-azure-blockchain-service.png"
+    }
+
+    servicesMap["azure-blockchain-service"] = {
+      id: "azure-red-hat-openshift",
+      name: "Azure Red Hat OpenShift",
+      category: ["Containers"],
+      isAzureProduct: true,
+      servicesIO: [],
+      url: buildUrl('/en-us/azure/openshift/', urlPrefix),
+      icon: "img/icon-azure-openshift-service.png"
+    }
+
     fs.writeFileSync(serviceDataFile, JSON.stringify(servicesMap))
   })

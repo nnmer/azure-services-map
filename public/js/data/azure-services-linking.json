@@ -721,37 +721,37 @@
       {
         "serviceId": "functions",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-hubs/store-captured-data-data-warehouse#create-an-event-grid-subscription-from-the-functions-app"
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#azure-functions", "https://docs.microsoft.com/en-us/azure/event-hubs/store-captured-data-data-warehouse#create-an-event-grid-subscription-from-the-functions-app"]
       },
       {
         "serviceId": "logic-apps",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#logic-apps"
       },
       {
         "serviceId": "automation",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#azure-automation"
       },
       {
          "serviceId": null,
          "aliasTitle": "HTTP Webhooks",
-         "connectionDescriptionUrl": null
+         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#webhooks"
        },
       {
         "serviceId": "queue-storage",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#queue-storage"
       },
       {
          "serviceId": null,
          "aliasTitle": "Hybrid Connections",
-         "connectionDescriptionUrl": null
+         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#hybrid-connections"
        },
       {
         "serviceId": "event-hubs",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-handlers#event-hubs"
       },
       {
          "serviceId": null,

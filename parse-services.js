@@ -139,5 +139,10 @@ getHtml()
       icon: "img/icon-azure-openshift-service.png"
     }
 
-    fs.writeFileSync(serviceDataFile, JSON.stringify(servicesMap))
+    let ordered = {}
+    Object.keys(servicesMap).sort().forEach(function (key) {
+      ordered[key] = servicesMap[key]
+    })
+
+    fs.writeFileSync(serviceDataFile, JSON.stringify(ordered))
   })

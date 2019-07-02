@@ -179,6 +179,16 @@
       "title": "Korea South"
     }
   ],
+  "United Arab Emirates": [
+    {
+      "slug": "uae-central",
+      "title": "UAE Central"
+    },
+    {
+      "slug": "uae-north",
+      "title": "UAE North"
+    }
+  ],
   "United Kingdom": [
     {
       "slug": "united-kingdom-south",

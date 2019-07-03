@@ -1480,6 +1480,11 @@
         "serviceId": "sql-data-warehouse",
         "aliasTitle": null,
         "connectionDescriptionUrl": null
+      },
+      {
+        "serviceId": "event-grid",
+        "aliasTitle": "Event Grid Notifications",
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-schema-blob-storage#list-of-the-events-for-azure-data-lake-storage-gen-2-rest-apis"
       }
     ]
   },

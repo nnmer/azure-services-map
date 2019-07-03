@@ -139,6 +139,16 @@ getHtml()
       icon: "img/icon-azure-openshift-service.png"
     }
 
+    servicesMap["immersive-reader"] = {
+      id: "immersive-reader",
+      name: "Immersive Reader",
+      category: ["AI + Machine Learning"],
+      isAzureProduct: true,
+      servicesIO: [],
+      url: buildUrl('/en-us/azure/cognitive-services/immersive-reader/', urlPrefix),
+      icon: "img/azure-cog-immersive-reader.png"
+    }
+
     let ordered = {}
     Object.keys(servicesMap).sort().forEach(function (key) {
       ordered[key] = servicesMap[key]

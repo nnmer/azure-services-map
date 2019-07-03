@@ -13616,6 +13616,67 @@
       }
     }
   },
+  "immersive-reader": {
+    "id": "immersive-reader",
+    "name": "Immersive Reader",
+    "category": [
+      "AI + Machine Learning"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/immersive-reader/",
+    "icon": "img/azure-cog-immersive-reader.png",
+    "availability": {
+      "australia-east": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "europe-north": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "europe-west": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "central-india": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "japan-east": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "japan-west": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "us-east": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "us-west": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      }
+    }
+  },
   "iot-central": {
     "id": "iot-central",
     "name": "IoT Central",

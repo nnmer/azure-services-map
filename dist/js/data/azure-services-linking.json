@@ -23,6 +23,11 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-data-explorer"
       },
       {
+        "serviceId": "data-lake-storage-gen1",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-store"
+      },
+      {
         "serviceId": "data-lake-storage",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-storage"
@@ -166,6 +171,11 @@
          "serviceId": null,
          "aliasTitle": "(external) SAP HANA",
          "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-sap-hana"
+       },
+      {
+         "serviceId": null,
+         "aliasTitle": "(external) SAP Table",
+         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-sap-table"
        },
       {
          "serviceId": null,
@@ -415,9 +425,14 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-cosmos-db-mongodb-api"
       },
       {
+        "serviceId": "data-lake-storage-gen1",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-store", "https://docs.microsoft.com/en-us/azure/data-factory/load-azure-data-lake-store"]
+      },
+      {
         "serviceId": "data-lake-storage",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-storage"
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-storage", "https://docs.microsoft.com/en-us/azure/data-factory/load-azure-data-lake-storage-gen2"]
       },
       {
         "serviceId": "file-storage",
@@ -1086,7 +1101,7 @@
       }
     ]
   },
-  "machine-learning-services": {
+  "machine-learning-service": {
     "input": [
 
     ],
@@ -1465,6 +1480,11 @@
         "serviceId": "sql-data-warehouse",
         "aliasTitle": null,
         "connectionDescriptionUrl": null
+      },
+      {
+        "serviceId": "event-grid",
+        "aliasTitle": "Event Grid Notifications",
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-schema-blob-storage#list-of-the-events-for-azure-data-lake-storage-gen-2-rest-apis"
       }
     ]
   },

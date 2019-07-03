@@ -9352,17 +9352,6 @@
       }
     }
   },
-  "blockchain-workbench": {
-    "id": "blockchain-workbench",
-    "name": "Blockchain Workbench",
-    "category": [
-      "Developer Tools"
-    ],
-    "isAzureProduct": true,
-    "servicesIO": [],
-    "url": "https://docs.microsoft.com/en-us/azure/blockchain-workbench",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/blockchain-workbench.svg"
-  },
   "cli": {
     "id": "cli",
     "name": "CLI",

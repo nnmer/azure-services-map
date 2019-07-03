@@ -122,7 +122,6 @@ getHtml()
         'cosmos-db': 'azure-cosmos-db',
         'sql-database': 'azure-sql-database',
         'kubernetes-service': 'azure-kubernetes-service-aks',
-        'machine-learning-service': 'machine-learning-services',
         'bot-service': 'azure-bot-service',
         'genomics': 'microsoft-genomics',
         'computer-vision': 'computer-vision-api',
@@ -172,7 +171,8 @@ getHtml()
         'data-lake-store': 'data-lake-storage-gen1',
         'active-directory-ds': 'azure-active-directory-for-domain-services',
         'active-directory-b2c': 'azure-active-directory-b2c',
-        'app-center': 'visual-studio-app-center'
+        'app-center': 'visual-studio-app-center',
+        'blockchain-service': 'azure-blockchain-service'
       }
       let serviceId = servicesIdMapping[serviceIdFromServicesAvailability] || serviceIdFromServicesAvailability
       // console.warn(serviceIdFromServicesAvailability)

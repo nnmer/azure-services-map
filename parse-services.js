@@ -74,6 +74,7 @@ getHtml()
               case 'web-language-model-api': // discontinued https://docs.microsoft.com/en-us/azure/cognitive-services/web-language-model/home
               case 'linguistic-analysis-api': // discontinued https://docs.microsoft.com/en-us/azure/cognitive-services/linguisticanalysisapi/home
               case 'security-information': // not a service, but a guide
+              case 'machine-learning-services': // is a duplicate for machine-learning-service
                 return
                 break
             }
@@ -108,6 +109,8 @@ getHtml()
       })
     })
 
+    servicesMap['machine-learning-service'].category.push("Internet of Things")
+
     // add manually services which are not present at azure product list
     servicesMap['anomaly-detector'] = {
       id: 'anomaly-detector',
@@ -117,16 +120,6 @@ getHtml()
       servicesIO: [],
       url: buildUrl('/en-us/azure/cognitive-services/anomaly-detector/', urlPrefix),
       icon: buildUrl('media/index/api_anomaly_finder.svg', iconPrefix)
-    }
-
-    servicesMap["azure-blockchain-service"] = {
-      id: "azure-blockchain-service",
-      name: "Azure Blockchain Service",
-      category: ["Blockchain"],
-      isAzureProduct: true,
-      servicesIO: [],
-      url: 'https://azure.microsoft.com/en-us/services/blockchain-service/',
-      icon: "img/icon-azure-blockchain-service.png"
     }
 
     servicesMap["azure-red-hat-openshift"] = {

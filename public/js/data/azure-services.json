@@ -5917,6 +5917,17 @@
       }
     }
   },
+  "azure-fxt-edge-filer": {
+    "id": "azure-fxt-edge-filer",
+    "name": "Azure FXT Edge Filer",
+    "category": [
+      "Storage"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/fxt-edge-filer/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-fxt-edge-filer.svg"
+  },
   "azure-germany": {
     "id": "azure-germany",
     "name": "Azure Germany",
@@ -21426,6 +21437,18 @@
         "expectation": false
       },
       "australia-southeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "usgov-arizona": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "usgov-texas": {
         "available": true,
         "inPreview": false,
         "inGA": true,

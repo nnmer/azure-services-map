@@ -4095,6 +4095,17 @@
       }
     }
   },
+  "azure-data-share": {
+    "id": "azure-data-share",
+    "name": "Azure Data Share",
+    "category": [
+      "Analytics"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/data-share/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/data-share.svg"
+  },
   "azure-database-for-mariadb": {
     "id": "azure-database-for-mariadb",
     "name": "Azure Database for MariaDB",

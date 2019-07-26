@@ -8,6 +8,18 @@ var htmlData = ''
 var urlPrefix = 'https://docs.microsoft.com'
 var iconPrefix = 'https://docs.microsoft.com/en-us/azure/'
 
+let excludeItems = [
+  'machine-learning', // bug at azure product list; is a group name
+  'anomaly-finder',   // discontinued, anomaly-detector instead
+  'emotion-api',      // replaced by face api
+  'recommendations-api', // discontinued  https://docs.microsoft.com/en-us/azure/cognitive-services/recommendations/overview
+  'web-language-model-api', // discontinued https://docs.microsoft.com/en-us/azure/cognitive-services/web-language-model/home
+  'linguistic-analysis-api', // discontinued https://docs.microsoft.com/en-us/azure/cognitive-services/linguisticanalysisapi/home
+  'security-information', // not a service, but a guide
+  'machine-learning-services', // is a duplicate for machine-learning-service
+  'blockchain-workbench', // is a duplicate for azure-blockchain-workbench
+]
+
 function getHtml () {
   if (!fs.existsSync(htmlDataFile)) {
     return axios.get('https://docs.microsoft.com/en-us/azure/#pivot=products&panel=all')
@@ -66,18 +78,8 @@ getHtml()
             let icon = $(sVal).find('img').attr('src')
             id = name2Key(name)
 
-            switch(id) {
-              case 'machine-learning': // bug at azure product list; is a group name
-              case 'anomaly-finder':   // discontinued, anomaly-detector instead
-              case 'emotion-api':      // replaced by face api
-              case 'recommendations-api': // discontinued  https://docs.microsoft.com/en-us/azure/cognitive-services/recommendations/overview
-              case 'web-language-model-api': // discontinued https://docs.microsoft.com/en-us/azure/cognitive-services/web-language-model/home
-              case 'linguistic-analysis-api': // discontinued https://docs.microsoft.com/en-us/azure/cognitive-services/linguisticanalysisapi/home
-              case 'security-information': // not a service, but a guide
-              case 'machine-learning-services': // is a duplicate for machine-learning-service
-              case 'blockchain-workbench': // is a duplicate for azure-blockchain-workbench
-                return
-                break
+            if (excludeItems.hasOwnProperty(id)) {
+              return
             }
 
             if (id === 'data-lake-storage-gen2') {

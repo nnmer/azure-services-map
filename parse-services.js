@@ -115,35 +115,45 @@ getHtml()
     servicesMap['machine-learning-service'].category.push("Internet of Things")
 
     // add manually services which are not present at azure product list
-    servicesMap['anomaly-detector'] = {
-      id: 'anomaly-detector',
-      name: 'Anomaly Detector API',
-      category: ["AI + Machine Learning"],
-      isAzureProduct: true,
-      servicesIO: [],
-      url: buildUrl('/en-us/azure/cognitive-services/anomaly-detector/', urlPrefix),
-      icon: buildUrl('media/index/api_anomaly_finder.svg', iconPrefix)
-    }
 
-    servicesMap["azure-red-hat-openshift"] = {
-      id: "azure-red-hat-openshift",
-      name: "Azure Red Hat OpenShift",
-      category: ["Containers"],
-      isAzureProduct: true,
-      servicesIO: [],
-      url: buildUrl('/en-us/azure/openshift/', urlPrefix),
-      icon: "img/icon-azure-openshift-service.png"
-    }
-
-    servicesMap["immersive-reader"] = {
-      id: "immersive-reader",
-      name: "Immersive Reader",
-      category: ["AI + Machine Learning"],
-      isAzureProduct: true,
-      servicesIO: [],
-      url: buildUrl('/en-us/azure/cognitive-services/immersive-reader/', urlPrefix),
-      icon: "img/azure-cog-immersive-reader.png"
-    }
+    servicesMap = { ...servicesMap, ...{
+      // '<ID>': {
+      //   id: '',
+      //   name:'',
+      //   category: [],
+      //   isAzureProduct: true,
+      //   servicesIO: [],
+      //   url: '',
+      //   icon: '',
+      // },
+      'anomaly-detector': {
+        id: 'anomaly-detector',
+        name: 'Anomaly Detector API',
+        category: ["AI + Machine Learning"],
+        isAzureProduct: true,
+        servicesIO: [],
+        url: buildUrl('/en-us/azure/cognitive-services/anomaly-detector/', urlPrefix),
+        icon: buildUrl('media/index/api_anomaly_finder.svg', iconPrefix)
+      },
+      'azure-red-hat-openshift': {
+        id: "azure-red-hat-openshift",
+        name: "Azure Red Hat OpenShift",
+        category: ["Containers"],
+        isAzureProduct: true,
+        servicesIO: [],
+        url: buildUrl('/en-us/azure/openshift/', urlPrefix),
+        icon: "img/icon-azure-openshift-service.png"
+      },
+      'immersive-reader': {
+        id: "immersive-reader",
+        name: "Immersive Reader",
+        category: ["AI + Machine Learning"],
+        isAzureProduct: true,
+        servicesIO: [],
+        url: buildUrl('/en-us/azure/cognitive-services/immersive-reader/', urlPrefix),
+        icon: "img/azure-cog-immersive-reader.png"
+      },
+    }}
 
     let ordered = {}
     Object.keys(servicesMap).sort().forEach(function (key) {

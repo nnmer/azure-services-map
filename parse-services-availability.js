@@ -117,6 +117,7 @@ getHtml()
     Object.keys(servicesAvailability).map(function (serviceIdFromServicesAvailability) {
 
       let servicesIdMapping = {
+        'azure-vmware-cloudsimple': 'azure-vmware-solution-by-cloudsimple',
         'redis-cache': 'azure-cache-for-redis',
         'mariadb': 'azure-database-for-mariadb',
         'mysql': 'azure-database-for-mysql',

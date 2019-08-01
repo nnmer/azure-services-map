@@ -8649,7 +8649,69 @@
     "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/vmware-cloudsimple/",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/cs_dedicatedcloudnode.svg"
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/cs_dedicatedcloudnode.svg",
+    "availability": {
+      "asia-pacific-southeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
+      "australia-east": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
+      "canada-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
+      "europe-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
+      "europe-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
+      "japan-east": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
+      "us-east": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "us-south-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
+      "us-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "us-west-2": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      }
+    }
   },
   "backup": {
     "id": "backup",

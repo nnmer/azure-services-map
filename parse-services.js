@@ -232,6 +232,15 @@ getHtml()
         url: buildUrl('/en-us/azure/virtual-desktop/overview', urlPrefix),
         icon: '',
       },
+      'windows-10-iot-core-services': {
+        id: 'windows-10-iot-core-services',
+        name: 'Windows 10 IoT Core Services',
+        category: ['Internet of Things'],
+        isAzureProduct: true,
+        servicesIO: [],
+        url: buildUrl('/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview', urlPrefix),
+        icon: '',
+      },
       // 'azure-pipelines': {
       //   id: 'azure-pipelines',
       //   name:'Azure Pipelines',

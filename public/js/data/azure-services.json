@@ -24091,6 +24091,25 @@
       }
     }
   },
+  "windows-10-iot-core-services": {
+    "id": "windows-10-iot-core-services",
+    "name": "Windows 10 IoT Core Services",
+    "category": [
+      "Internet of Things"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iotcoreservicesoverview",
+    "icon": "",
+    "availability": {
+      "non-regional": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      }
+    }
+  },
   "windows-virtual-desktop": {
     "id": "windows-virtual-desktop",
     "name": "Windows Virtual Desktop",

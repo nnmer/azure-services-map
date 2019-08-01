@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 
-azure-services-*tmp.html
+azure-*tmp.html
 
 # local env files
 .env.local

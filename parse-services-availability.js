@@ -132,6 +132,7 @@ getHtml()
         'monitor': 'azure-monitor',
         'digital-twins': 'azure-digital-twins',
         'databox': 'data-box',
+        'data-share': 'azure-data-share',
         'spatial-anchors': 'azure-spatial-anchors',
         'dns': 'azure-dns',
         'cdn': 'content-delivery-network',

@@ -4212,7 +4212,27 @@
     "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/data-share/",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/data-share.svg"
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/data-share.svg",
+    "availability": {
+      "asia-pacific-southeast": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "europe-west": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "us-east-2": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      }
+    }
   },
   "azure-database-for-mariadb": {
     "id": "azure-database-for-mariadb",

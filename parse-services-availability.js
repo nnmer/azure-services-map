@@ -111,6 +111,9 @@ getHtml()
   })
   .then(function (servicesAvailability) {
     let servicesData = JSON.parse(fs.readFileSync(serviceDataFile, 'utf-8'))
+
+    console.log('\x1b[32m%s\x1b[0m', 'Checking the fetched services from MS availability page whether they are exist in the prepared services list')
+
     Object.keys(servicesAvailability).map(function (serviceIdFromServicesAvailability) {
 
       let servicesIdMapping = {
@@ -245,7 +248,7 @@ getHtml()
     console.log()
     console.log()
 
-    console.log('\x1b[32m%s\x1b[0m', 'Checking the services for missing \'availability\' property')
+    console.log('\x1b[32m%s\x1b[0m', 'Checking the prepared services list for missing \'availability\' property')
     let skipCheckForServices = [
       'billing', 'azure-portal', 'cli', 'sdks', 'visual-studio', 'visual-studio-code', 'xamarin',
       'azure-us-government', 'azure-germany', 'microsoft-azure-china-21vianet', 'azure-resource-graph',

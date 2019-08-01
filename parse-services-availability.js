@@ -180,7 +180,8 @@ getHtml()
         'active-directory-b2c': 'azure-active-directory-b2c',
         'app-center': 'visual-studio-app-center',
         'blockchain-service': 'azure-blockchain-service',
-        'openshift': 'azure-red-hat-openshift'
+        'openshift': 'azure-red-hat-openshift',
+        'virtual-desktop': 'windows-virtual-desktop'
       }
       let serviceId = servicesIdMapping[serviceIdFromServicesAvailability] || serviceIdFromServicesAvailability
       // console.warn(serviceIdFromServicesAvailability)

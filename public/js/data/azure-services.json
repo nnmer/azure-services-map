@@ -24029,6 +24029,37 @@
       }
     }
   },
+  "windows-virtual-desktop": {
+    "id": "windows-virtual-desktop",
+    "name": "Windows Virtual Desktop",
+    "category": [
+      "Windows Virtual Desktop"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/virtual-desktop/overview",
+    "icon": "",
+    "availability": {
+      "non-regional": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "usgov-non-regional": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q1 2020"
+      },
+      "china-non-regional": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "Preview expected: H1 2020"
+      }
+    }
+  },
   "windows-virtual-machines": {
     "id": "windows-virtual-machines",
     "name": "Windows Virtual Machines",

@@ -198,7 +198,7 @@ getHtml()
       },
       'form-recognizer': {
         id: 'form-recognizer',
-        name:'Form Recognizer',
+        name: 'Form Recognizer',
         category: ['AI + Machine Learning'],
         isAzureProduct: true,
         servicesIO: [],
@@ -207,7 +207,7 @@ getHtml()
       },
       'ink-recognizer': {
         id: 'ink-recognizer',
-        name:'Ink Recognizer',
+        name: 'Ink Recognizer',
         category: ['AI + Machine Learning'],
         isAzureProduct: true,
         servicesIO: [],
@@ -216,11 +216,20 @@ getHtml()
       },
       'personalizer': {
         id: 'personalizer',
-        name:'Personalizer',
+        name: 'Personalizer',
         category: ['AI + Machine Learning'],
         isAzureProduct: true,
         servicesIO: [],
         url: buildUrl('/en-us/azure/cognitive-services/personalizer/', urlPrefix),
+        icon: '',
+      },
+      'windows-virtual-desktop': {
+        id: 'windows-virtual-desktop',
+        name: 'Windows Virtual Desktop',
+        category: ['Windows Virtual Desktop'],
+        isAzureProduct: true,
+        servicesIO: [],
+        url: buildUrl('/en-us/azure/virtual-desktop/overview', urlPrefix),
         icon: '',
       },
       // 'azure-pipelines': {

@@ -817,7 +817,7 @@
       {
         "serviceId": "event-hubs",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs#stream-data-from-event-hubs"
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs#stream-data-from-event-hubs", "https://docs.microsoft.com/en-us/azure/event-hubs/process-data-azure-stream-analytics"]
       },
       {
         "serviceId": "iot-hub",

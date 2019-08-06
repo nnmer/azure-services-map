@@ -9020,6 +9020,12 @@
         "inGA": true,
         "expectation": false
       },
+      "south-africa-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "asia-pacific-east": {
         "available": true,
         "inPreview": false,
@@ -9207,6 +9213,12 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "uae-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -14030,6 +14042,12 @@
         "expectation": false
       },
       "asia-pacific-southeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "australia-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,

@@ -528,7 +528,12 @@ body {
 .popover {
   border-radius: 0px;
   border-color: #343a40;
-  z-index: 1040;
+  z-index: 1030;
+  /*
+  z-index - is just a hack, because we want to keep popover open when trigger modal to open.
+  and modal should be on top of the popover.
+  Yes, it potentially prevents popover to show on top of the modal
+  */
 }
 .popover-header, .modal-header {
   background-color: #343a40;

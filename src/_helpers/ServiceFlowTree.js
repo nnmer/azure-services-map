@@ -28,9 +28,7 @@ export default function serviceFlowTree (selector, json) {
     .append('svg:g')
     .attr('transform', 'translate(' + m[3] + ',' + m[0] + ')')
 
-  root = json
-  root.x0 = viewerHeight / 2
-  root.y0 = 0
+  root = { ...json, ...{ x0: viewerHeight / 2, y0: 0 } }
 
   root.children.forEach(collapse)
   update(root)

@@ -5,7 +5,17 @@
     class="modal-fullscreen"
     :no-fade="true"
     :hide-footer="true"
+    :static="true"
   >
+    <!--
+        CHANGED in 2.0.0-rc.20 Modals will not render their content in the document
+        until they are shown (lazily rendered). Modals, when visible, are rendered
+        appended to the <body> element. The placement of the <b-modal> component
+        will not affect layout, as it always renders as a placeholder comment node
+        (< !-- -- >). You can revert to the behaviour of previous BootstrapVue versions
+        via the use of the static prop.
+     -->
+
     <div class="svg-container">
       <div :id="visualizationContainerId"></div>
     </div>

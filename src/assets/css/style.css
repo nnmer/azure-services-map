@@ -527,7 +527,8 @@ body {
 /* Popover */
 .popover {
   border-radius: 0px;
-  border-color: #343a40
+  border-color: #343a40;
+  z-index: 1040;
 }
 .popover-header, .modal-header {
   background-color: #343a40;

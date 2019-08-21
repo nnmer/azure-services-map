@@ -782,22 +782,22 @@
       {
         "serviceId": "blob-storage",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints#custom-endpoints"
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-d2c#azure-blob-storage","https://docs.microsoft.com/en-us/azure/iot-hub/tutorial-routing#route-to-a-storage-account"]
       },
       {
         "serviceId": "event-hubs",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints#custom-endpoints"
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints#custom-endpoints", "https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-d2c#event-hubs"]
       },
       {
         "serviceId": "service-bus",
         "aliasTitle": "Service Bus Queues",
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints#custom-endpoints"
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints#custom-endpoints", "https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-d2c#service-bus-queues-and-service-bus-topics", "https://docs.microsoft.com/en-us/azure/iot-hub/tutorial-routing#route-to-a-service-bus-queue"]
       },
       {
         "serviceId": "service-bus",
         "aliasTitle": "Service Bus Topics",
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints#custom-endpoints"
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints#custom-endpoints","https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-d2c#service-bus-queues-and-service-bus-topics"]
       },
       {
         "serviceId": "stream-analytics",
@@ -828,6 +828,11 @@
         "serviceId": "blob-storage",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs#stream-data-from-blob-storage"
+      },
+      {
+        "serviceId": "machine-learning-studio",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-integration-tutorial"
       }
     ],
     "output": [

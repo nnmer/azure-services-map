@@ -141,8 +141,16 @@
       "title": "Germany Central"
     },
     {
+      "slug": "germany-north",
+      "title": "Germany North"
+    },
+    {
       "slug": "germany-northeast",
       "title": "Germany Northeast"
+    },
+    {
+      "slug": "germany-west-central",
+      "title": "Germany West Central"
     }
   ],
   "India": [
@@ -177,6 +185,16 @@
     {
       "slug": "korea-south",
       "title": "Korea South"
+    }
+  ],
+  "Switzerland": [
+    {
+      "slug": "switzerland-north",
+      "title": "Switzerland North"
+    },
+    {
+      "slug": "switzerland-west",
+      "title": "Switzerland West"
     }
   ],
   "United Arab Emirates": [

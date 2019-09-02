@@ -572,7 +572,7 @@
       {
         "serviceId": "azure-signalr-service",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-signalr-service"
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-signalr-service","https://docs.microsoft.com/en-us/azure/azure-signalr/signalr-concept-serverless-development-config"]
       },
       {
         "serviceId": "azure-mobile-app",
@@ -664,7 +664,7 @@
       {
         "serviceId": "azure-signalr-service",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-signalr-service"
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-signalr-service","https://docs.microsoft.com/en-us/learn/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/5-exercise-enable-automatic-updates-in-a-web-app-using-signalr"]
       },
       {
          "serviceId": null,
@@ -725,6 +725,11 @@
         "serviceId": "azure-maps",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/event-grid/event-sources#maps"
+      },
+      {
+        "serviceId": "azure-signalr-service",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/azure-signalr/signalr-howto-event-grid-integration", "https://devblogs.microsoft.com/aspnet/azure-signalr-service-now-supports-event-grid/"]
       }
     ],
     "output": [

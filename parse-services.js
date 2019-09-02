@@ -288,7 +288,8 @@ getHtml()
 
             let services = $('a[data-event-property]',val)
             services.each(function(i,v){
-              let name = $('h2',v).html()
+              $('.wa-previewTag', v).remove();
+              let name = $('h2 > span',v).html()
               // let description =$(v).next().html()
               if (name != curCategory) {
 

@@ -1372,14 +1372,29 @@
          "serviceId": null,
          "aliasTitle": "Connectors for Azure and 3rd party services at",
          "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/connectors/apis-list"
-       }
+      },
+      {
+        "serviceId": null,
+        "aliasTitle": "HTTP(S) endpoint",
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/connectors/connectors-native-http"
+      }
     ],
     "output": [
       {
          "serviceId": null,
          "aliasTitle": "Connectors for Azure and 3rd party services at",
          "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/connectors/apis-list"
-       }
+      },
+      {
+        "serviceId": null,
+        "aliasTitle": "HTTP(S) endpoint",
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/connectors/connectors-native-http"
+      },
+      {
+        "serviceId": "functions",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-azure-functions"
+      }
     ]
   },
   "time-series-insights": {

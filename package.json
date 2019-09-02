@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "rm -f azure-services-tmp.html && rm -f azure-services-availability-tmp.html && npm run prebuild; vue-cli-service build",
+    "build": "rm -f azure-services*tmp.html && rm -f azure-products*tmp.html && npm run prebuild; vue-cli-service build",
     "prebuild": "npm run get-services-data && npm run get-services-data-availability",
     "lint": "vue-cli-service lint",
     "get-services-data": "node ./parse-services.js",

@@ -532,6 +532,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -573,6 +579,18 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
+      "switzerland-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
       },
       "uae-central": {
         "available": true,
@@ -810,6 +828,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "central-india": {
         "available": true,
@@ -1258,6 +1282,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -1299,6 +1329,18 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
+      "switzerland-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
       },
       "uae-central": {
         "available": true,
@@ -1558,6 +1600,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -1599,6 +1647,18 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
+      "switzerland-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
       },
       "uae-central": {
         "available": true,
@@ -1842,7 +1902,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -1885,6 +1957,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -2059,6 +2143,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
       },
       "uae-north": {
         "available": true,
@@ -2458,6 +2548,12 @@
         "inGA": true,
         "expectation": false
       },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "Preview expected: Q3 2019"
+      },
       "uae-north": {
         "available": true,
         "inPreview": false,
@@ -2808,7 +2904,7 @@
     ],
     "isAzureProduct": true,
     "servicesIO": [],
-    "url": "https://docs.microsoft.com/en-us/azure/security/azure-threat-detection",
+    "url": "https://docs.microsoft.com/en-us/azure/security/fundamentals/threat-detection",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/securitycenter.svg"
   },
   "azure-advisor": {
@@ -3397,6 +3493,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -3434,6 +3536,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -3614,6 +3728,12 @@
         "inPreview": false,
         "inGA": false,
         "expectation": "GA expected: Q3 2019"
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "uae-north": {
         "available": true,
@@ -3833,7 +3953,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -3876,6 +4008,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -4473,6 +4617,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -4780,6 +4930,18 @@
         "inGA": true,
         "expectation": false
       },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
+      "switzerland-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
       "uae-north": {
         "available": true,
         "inPreview": false,
@@ -5003,6 +5165,18 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -5044,6 +5218,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
       },
       "uae-north": {
         "available": true,
@@ -5444,6 +5624,12 @@
         "inGA": true,
         "expectation": false
       },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "uae-north": {
         "available": true,
         "inPreview": false,
@@ -5679,6 +5865,18 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "Preview expected: Q4 2019"
+      },
+      "switzerland-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "uae-central": {
         "available": true,
@@ -6221,6 +6419,18 @@
         "inGA": true,
         "expectation": false
       },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
+      "switzerland-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
       "uae-north": {
         "available": true,
         "inPreview": false,
@@ -6505,6 +6715,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -6728,6 +6944,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -6763,6 +6985,18 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
+      "switzerland-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
       },
       "uae-north": {
         "available": true,
@@ -7029,7 +7263,7 @@
     "id": "azure-lighthouse",
     "name": "Azure Lighthouse",
     "category": [
-      "Web"
+      "Management and Governance"
     ],
     "isAzureProduct": true,
     "servicesIO": [],
@@ -7280,11 +7514,23 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "germany-northeast": {
         "available": true,
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "central-india": {
         "available": true,
@@ -7647,6 +7893,12 @@
         "inPreview": false,
         "inGA": false,
         "expectation": "GA expected: Q3 2019"
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "Preview expected: Q4 2019"
       },
       "uae-north": {
         "available": true,
@@ -8038,6 +8290,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "central-india": {
         "available": true,
@@ -8571,7 +8829,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -8614,6 +8884,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -9048,7 +9330,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -9091,6 +9385,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -9343,6 +9649,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
       },
       "central-india": {
         "available": true,
@@ -9791,7 +10103,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -9834,6 +10158,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -10091,7 +10427,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -10134,6 +10482,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -10707,6 +11067,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "Preview expected: Q4 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -10736,6 +11102,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "Preview expected: Q4 2019"
       },
       "uae-north": {
         "available": true,
@@ -11068,15 +11440,7 @@
     "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/custom-speech-service/cognitive-services-custom-speech-home",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_custom_speech.svg",
-    "availability": {
-      "us-west": {
-        "available": true,
-        "inPreview": true,
-        "inGA": false,
-        "expectation": false
-      }
-    }
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_custom_speech.svg"
   },
   "custom-vision-service": {
     "id": "custom-vision-service",
@@ -11857,6 +12221,18 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -11894,6 +12270,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -12195,7 +12583,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -12238,6 +12638,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -12472,11 +12884,23 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "germany-northeast": {
         "available": true,
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "central-india": {
         "available": true,
@@ -13038,7 +13462,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -13081,6 +13517,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -13327,7 +13775,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -13370,6 +13830,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -13791,7 +14263,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -13834,6 +14318,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -14094,6 +14590,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -14129,6 +14631,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "Preview expected: Q4 2019"
       },
       "uae-north": {
         "available": true,
@@ -14382,6 +14890,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "uae-north": {
         "available": true,
@@ -14814,6 +15328,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -15066,6 +15586,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "central-india": {
         "available": true,
@@ -15400,6 +15926,17 @@
       }
     }
   },
+  "iot-plug-and-play": {
+    "id": "iot-plug-and-play",
+    "name": "IoT Plug and Play",
+    "category": [
+      "Internet of Things"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/iot-pnp/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/cloud-check.svg"
+  },
   "iot-solution-accelerators": {
     "id": "iot-solution-accelerators",
     "name": "IoT solution accelerators",
@@ -15542,6 +16079,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "central-india": {
         "available": true,
@@ -15820,7 +16363,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -15863,6 +16418,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -16289,7 +16856,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -16332,6 +16911,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -16566,11 +17157,23 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "germany-northeast": {
         "available": true,
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "central-india": {
         "available": true,
@@ -16855,7 +17458,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -16898,6 +17513,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -17084,6 +17711,18 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
+      "switzerland-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
       },
       "uae-north": {
         "available": true,
@@ -17770,7 +18409,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -17813,6 +18464,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -18047,11 +18710,23 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "germany-northeast": {
         "available": true,
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "central-india": {
         "available": true,
@@ -18324,11 +18999,23 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "germany-northeast": {
         "available": true,
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "central-india": {
         "available": true,
@@ -18741,6 +19428,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -18782,6 +19475,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
       },
       "uae-north": {
         "available": true,
@@ -18964,6 +19663,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
       },
       "central-india": {
         "available": true,
@@ -19243,6 +19948,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "uae-north": {
         "available": true,
@@ -19624,7 +20335,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -19667,6 +20390,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -20272,7 +21007,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -20315,6 +21062,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -20562,7 +21321,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -20605,6 +21376,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -20852,7 +21635,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -20895,6 +21690,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -21343,6 +22150,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -21384,6 +22197,18 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
+      "switzerland-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "uae-north": {
         "available": true,
@@ -21897,7 +22722,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -21940,6 +22777,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -22253,6 +23102,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -22276,6 +23131,12 @@
         "inPreview": false,
         "inGA": false,
         "expectation": "Preview expected: Q3 2019"
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q4 2019"
       },
       "uae-north": {
         "available": true,
@@ -23088,7 +23949,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -23131,6 +24004,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -23377,7 +24262,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -23420,6 +24317,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -23654,6 +24563,18 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -23691,6 +24612,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -23980,7 +24913,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -24023,6 +24968,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -24185,6 +25142,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -24226,6 +25189,18 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
+      },
+      "switzerland-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q3 2019"
       },
       "uae-central": {
         "available": true,
@@ -24518,7 +25493,19 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-west-central": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -24561,6 +25548,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,

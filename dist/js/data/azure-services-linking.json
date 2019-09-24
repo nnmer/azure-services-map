@@ -450,6 +450,16 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database-managed-insance"
       },
       {
+        "serviceId": "azure-database-for-mysql",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-mysql"
+      },
+      {
+        "serviceId": "azure-database-for-postgresql",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-postgresql"
+      },
+      {
         "serviceId": "azure-search",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-search"

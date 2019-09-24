@@ -7922,7 +7922,45 @@
     "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://go.microsoft.com/fwlink/?linkid=2097091",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/private-link.svg"
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/private-link.svg",
+    "availability": {
+      "us-east": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "us-north-central": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "us-south-central": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "us-west-central": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "us-west": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "us-west-2": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      }
+    }
   },
   "azure-red-hat-openshift": {
     "id": "azure-red-hat-openshift",

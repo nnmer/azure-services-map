@@ -172,6 +172,7 @@ getHtml()
         'cognitive-search': 'answer-search',
         'sap-hana-large': 'sap-hana-on-azure-large-instances',
         'premium-storage': 'disk-storage',
+        'private-link': 'azure-private-link',
         'advisor': 'azure-advisor',
         'hot-cool-storage': 'blob-storage',
         'app-service\\containers': 'web-app-for-containers',

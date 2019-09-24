@@ -15314,6 +15314,55 @@
       }
     }
   },
+  "hpc-cache": {
+    "id": "hpc-cache",
+    "name": "Azure HPC Cache",
+    "category": [
+      "Storage"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/hpc-cache/",
+    "icon": "",
+    "availability": {
+      "asia-pacific-southeast": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "europe-north": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "europe-west": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "us-east": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "us-east-2": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      },
+      "us-west-2": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      }
+    }
+  },
   "immersive-reader": {
     "id": "immersive-reader",
     "name": "Immersive Reader",

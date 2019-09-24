@@ -15323,7 +15323,7 @@
     "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/hpc-cache/",
-    "icon": "",
+    "icon": "img/icon-azure-black-default.png",
     "availability": {
       "asia-pacific-southeast": {
         "available": true,

@@ -266,7 +266,7 @@ getHtml()
         isAzureProduct: true,
         servicesIO: [],
         url: buildUrl('/en-us/azure/hpc-cache/', urlPrefix),
-        icon: '',
+        icon: 'img/icon-azure-black-default.png',
       }
     }}
 

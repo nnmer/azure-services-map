@@ -26197,6 +26197,17 @@
       }
     }
   },
+  "web-application-firewall": {
+    "id": "web-application-firewall",
+    "name": "Web Application Firewall",
+    "category": [
+      "Networking"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/web-application-firewall/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/web-app-firewall.svg"
+  },
   "windows-10-iot-core-services": {
     "id": "windows-10-iot-core-services",
     "name": "Windows 10 IoT Core Services",

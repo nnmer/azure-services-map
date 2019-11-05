@@ -827,7 +827,7 @@
       {
         "serviceId": "azure-sql-database",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-use-reference-data#azure-sql-database"
       },
       {
         "serviceId": "event-hubs",
@@ -851,6 +851,11 @@
       }
     ],
     "output": [
+      {
+        "serviceId": "data-lake-storage-gen1",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-outputs#azure-data-lake-storage-gen-1"
+      },
       {
         "serviceId": "data-lake-storage",
         "aliasTitle": null,
@@ -1476,11 +1481,6 @@
       },
       {
         "serviceId": "hdinsight-storm",
-        "aliasTitle": null,
-        "connectionDescriptionUrl": null
-      },
-      {
-        "serviceId": "data-factory",
         "aliasTitle": null,
         "connectionDescriptionUrl": null
       }

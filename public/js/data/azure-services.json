@@ -3084,38 +3084,38 @@
     "availability": {
       "australia-east": {
         "available": true,
-        "inPreview": true,
-        "inGA": false,
+        "inPreview": false,
+        "inGA": true,
         "expectation": false
       },
       "europe-west": {
         "available": true,
-        "inPreview": true,
-        "inGA": false,
+        "inPreview": false,
+        "inGA": true,
         "expectation": false
       },
       "japan-east": {
         "available": true,
-        "inPreview": true,
-        "inGA": false,
+        "inPreview": false,
+        "inGA": true,
         "expectation": false
       },
       "us-east": {
         "available": true,
-        "inPreview": true,
-        "inGA": false,
+        "inPreview": false,
+        "inGA": true,
         "expectation": false
       },
       "us-south-central": {
         "available": true,
-        "inPreview": true,
-        "inGA": false,
+        "inPreview": false,
+        "inGA": true,
         "expectation": false
       },
       "us-west": {
         "available": true,
-        "inPreview": true,
-        "inGA": false,
+        "inPreview": false,
+        "inGA": true,
         "expectation": false
       }
     }

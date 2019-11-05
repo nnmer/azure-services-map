@@ -186,7 +186,8 @@ getHtml()
         'virtual-desktop': 'windows-virtual-desktop',
         'windows-10-iot-core': 'windows-10-iot-core-services',
         'hpc-cache': 'azure-hpc-cache',
-        'internet-analyzer': 'azure-internet-analyzer'
+        'internet-analyzer': 'azure-internet-analyzer',
+        'firewall-manager': 'azure-firewall-manager'
       }
       let serviceId = servicesIdMapping[serviceIdFromServicesAvailability] || serviceIdFromServicesAvailability
       // console.warn(serviceIdFromServicesAvailability)

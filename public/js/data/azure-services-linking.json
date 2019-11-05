@@ -63,7 +63,7 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database-managed-insance"
       },
       {
-        "serviceId": "sql-data-warehouse",
+        "serviceId": "azure-synapse-analytics",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse"
       },
@@ -465,7 +465,7 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-search"
       },
       {
-        "serviceId": "sql-data-warehouse",
+        "serviceId": "azure-synapse-analytics",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse"
       },
@@ -950,7 +950,7 @@
         "connectionDescriptionUrl": "https://docs.azuredatabricks.net/spark/latest/data-sources/azure/eventhubs-connector.html"
       },
       {
-        "serviceId": "sql-data-warehouse",
+        "serviceId": "azure-synapse-analytics",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.azuredatabricks.net/spark/latest/data-sources/azure/sql-data-warehouse.html"
       },
@@ -1037,7 +1037,7 @@
     ],
     "output": [
       {
-        "serviceId": "sql-data-warehouse",
+        "serviceId": "azure-synapse-analytics",
         "aliasTitle": null,
         "connectionDescriptionUrl": null
       },
@@ -1089,7 +1089,7 @@
     ],
     "output": []
   },
-  "sql-data-warehouse": {
+  "azure-synapse-analytics": {
     "linking_source_url": "https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-overview-integrate",
     "input": [
       {
@@ -1256,7 +1256,7 @@
         "connectionDescriptionUrl": null
       },
       {
-        "serviceId": "sql-data-warehouse",
+        "serviceId": "azure-synapse-analytics",
         "aliasTitle": null,
         "connectionDescriptionUrl": null
       },
@@ -1512,7 +1512,7 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/power-bi/service-dataflows-connect-azure-data-lake-storage-gen2#connect-your-azure-data-lake-storage-gen2-to-power-bi"
       },
       {
-        "serviceId": "sql-data-warehouse",
+        "serviceId": "azure-synapse-analytics",
         "aliasTitle": null,
         "connectionDescriptionUrl": null
       },

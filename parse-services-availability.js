@@ -187,7 +187,8 @@ getHtml()
         'windows-10-iot-core': 'windows-10-iot-core-services',
         'hpc-cache': 'azure-hpc-cache',
         'internet-analyzer': 'azure-internet-analyzer',
-        'firewall-manager': 'azure-firewall-manager'
+        'firewall-manager': 'azure-firewall-manager',
+        'synapse-analytics': 'azure-synapse-analytics'
       }
       let serviceId = servicesIdMapping[serviceIdFromServicesAvailability] || serviceIdFromServicesAvailability
       // console.warn(serviceIdFromServicesAvailability)

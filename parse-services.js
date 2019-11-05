@@ -116,6 +116,10 @@ getHtml()
               id = 'azure-container-instances'
             }
 
+            if (id === 'azure-synapse-analytics-formerly-sql-dw') {
+              id = 'azure-synapse-analytics'
+            }
+
             if (name === '') {
               return
             }

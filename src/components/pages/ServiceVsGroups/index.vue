@@ -4,7 +4,12 @@
 
       <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Azure services</h1>
+          <div>
+            <h1 class="h2">Azure services</h1>
+            <div id="last-update-block" class="text-muted pull-left">
+              <small>Data was last updated: 2019.11.05</small>
+            </div>
+          </div>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
               <button type="button" class="btn btn-sm btn-outline-secondary"

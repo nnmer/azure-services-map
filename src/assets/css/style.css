@@ -572,3 +572,7 @@ body {
 .bs-popover-bottom>.arrow::after {
   border-bottom-color: #343a40;
 }
+
+#last-update-block {
+  margin-top: -10px;
+}

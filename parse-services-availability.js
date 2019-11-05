@@ -185,7 +185,8 @@ getHtml()
         'openshift': 'azure-red-hat-openshift',
         'virtual-desktop': 'windows-virtual-desktop',
         'windows-10-iot-core': 'windows-10-iot-core-services',
-        'hpc-cache': 'azure-hpc-cache'
+        'hpc-cache': 'azure-hpc-cache',
+        'internet-analyzer': 'azure-internet-analyzer'
       }
       let serviceId = servicesIdMapping[serviceIdFromServicesAvailability] || serviceIdFromServicesAvailability
       // console.warn(serviceIdFromServicesAvailability)

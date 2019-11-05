@@ -6735,6 +6735,25 @@
       }
     }
   },
+  "azure-internet-analyzer": {
+    "id": "azure-internet-analyzer",
+    "name": "Azure Internet Analyzer",
+    "category": [
+      "Networking"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/internet-analyzer/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/internet-analyzer.svg",
+    "availability": {
+      "us-west-2": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      }
+    }
+  },
   "azure-iot": {
     "id": "azure-iot",
     "name": "Azure IoT",

@@ -9561,6 +9561,17 @@
       }
     }
   },
+  "azure-sql-database-edge": {
+    "id": "azure-sql-database-edge",
+    "name": "Azure SQL Database Edge",
+    "category": [
+      "Databases"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/sql-database-edge/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/sqldatabaseedge.svg"
+  },
   "azure-stack": {
     "id": "azure-stack",
     "name": "Azure Stack",
@@ -20950,8 +20961,8 @@
     "availability": {
       "non-regional": {
         "available": true,
-        "inPreview": true,
-        "inGA": false,
+        "inPreview": false,
+        "inGA": true,
         "expectation": false
       }
     }

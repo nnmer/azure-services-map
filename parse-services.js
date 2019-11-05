@@ -258,15 +258,6 @@ getHtml()
         servicesIO: [],
         url: buildUrl('/en-us/azure/virtual-wan/', urlPrefix),
         icon: 'img/virtual-wan.png',
-      },
-      'hpc-cache': {
-        id: 'hpc-cache',
-        name: 'Azure HPC Cache',
-        category: ['Storage'],
-        isAzureProduct: true,
-        servicesIO: [],
-        url: buildUrl('/en-us/azure/hpc-cache/', urlPrefix),
-        icon: 'img/icon-azure-black-default.png',
       }
     }}
 

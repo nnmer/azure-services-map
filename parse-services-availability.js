@@ -184,7 +184,8 @@ getHtml()
         'blockchain-service': 'azure-blockchain-service',
         'openshift': 'azure-red-hat-openshift',
         'virtual-desktop': 'windows-virtual-desktop',
-        'windows-10-iot-core': 'windows-10-iot-core-services'
+        'windows-10-iot-core': 'windows-10-iot-core-services',
+        'hpc-cache': 'azure-hpc-cache'
       }
       let serviceId = servicesIdMapping[serviceIdFromServicesAvailability] || serviceIdFromServicesAvailability
       // console.warn(serviceIdFromServicesAvailability)

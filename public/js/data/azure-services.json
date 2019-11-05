@@ -6648,6 +6648,67 @@
     "url": "https://docs.microsoft.com/en-us/azure/germany/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/azure-germany.svg"
   },
+  "azure-hpc-cache": {
+    "id": "azure-hpc-cache",
+    "name": "Azure HPC Cache",
+    "category": [
+      "Storage"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/hpc-cache/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/hpc-cache.svg",
+    "availability": {
+      "asia-pacific-southeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "australia-east": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "europe-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "europe-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "korea-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "us-east": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "us-east-2": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "us-west-2": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      }
+    }
+  },
   "azure-information-protection": {
     "id": "azure-information-protection",
     "name": "Azure Information Protection",
@@ -15384,55 +15445,6 @@
         "available": true,
         "inPreview": false,
         "inGA": true,
-        "expectation": false
-      }
-    }
-  },
-  "hpc-cache": {
-    "id": "hpc-cache",
-    "name": "Azure HPC Cache",
-    "category": [
-      "Storage"
-    ],
-    "isAzureProduct": true,
-    "servicesIO": [],
-    "url": "https://docs.microsoft.com/en-us/azure/hpc-cache/",
-    "icon": "img/icon-azure-black-default.png",
-    "availability": {
-      "asia-pacific-southeast": {
-        "available": true,
-        "inPreview": true,
-        "inGA": false,
-        "expectation": false
-      },
-      "europe-north": {
-        "available": true,
-        "inPreview": true,
-        "inGA": false,
-        "expectation": false
-      },
-      "europe-west": {
-        "available": true,
-        "inPreview": true,
-        "inGA": false,
-        "expectation": false
-      },
-      "us-east": {
-        "available": true,
-        "inPreview": true,
-        "inGA": false,
-        "expectation": false
-      },
-      "us-east-2": {
-        "available": true,
-        "inPreview": true,
-        "inGA": false,
-        "expectation": false
-      },
-      "us-west-2": {
-        "available": true,
-        "inPreview": true,
-        "inGA": false,
         "expectation": false
       }
     }

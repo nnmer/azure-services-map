@@ -155,6 +155,15 @@ getHtml()
       //   url: '',
       //   icon: '',
       // },
+      'azure-arc': {
+        id: 'azure-arc',
+        name: 'Azure Arc',
+        category: ['Hybrid'],
+        isAzureProduct: true,
+        servicesIO: [],
+        url: 'https://azure.microsoft.com/en-us/services/azure-arc/',
+        icon: '',
+      },
       'anomaly-detector': {
         id: 'anomaly-detector',
         name: 'Anomaly Detector API',

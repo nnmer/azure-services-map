@@ -146,7 +146,7 @@ function queryParameters () {
 
     for (let i = 0; i < vars.length; i++) {
       let pairs = vars[i].split('=')
-      varPairs[pairs[0]] = decodeURIComponent(pairs[1]).replace('+',' ')
+      varPairs[pairs[0]] = decodeURIComponent(pairs[1]).replace(/\+/g,' ')
     }
   }
 

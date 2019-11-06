@@ -1,3 +1,4 @@
+/* global $ d3 */
 export default function serviceFlowTree (selector, json) {
   var m = [20, 120, 20, 120]
   var i = 0
@@ -21,8 +22,8 @@ export default function serviceFlowTree (selector, json) {
   }
 
   var vis = d3.select(selector).append('svg:svg')
-    .attr('width', viewerWidth-m[0]*2)
-    .attr('height', viewerHeight-m[1]+m[0])
+    .attr('width', viewerWidth - m[0] * 2)
+    .attr('height', viewerHeight - m[1] + m[0])
     .call(zoom)
     .on('dblclick.zoom', null)
     .append('svg:g')
@@ -42,21 +43,21 @@ export default function serviceFlowTree (selector, json) {
     }
   }
 
-  function expand (d) {
-    if (d._children) {
-      d.children = d._children
-      d.children.forEach(expand)
-      d._children = null
-    }
-  }
+  // function expand (d) {
+  //   if (d._children) {
+  //     d.children = d._children
+  //     d.children.forEach(expand)
+  //     d._children = null
+  //   }
+  // }
 
   function centerNode (source) {
     let scale = zoom.scale()
     let x = -source.y0
     let y = -source.x0
     x = x * scale + viewerWidth / 2
-    y = y * scale + viewerHeight / 2 - m[0]*3
-    d3.select(selector+' g').transition()
+    y = y * scale + viewerHeight / 2 - m[0] * 3
+    d3.select(selector + ' g').transition()
       .duration(750)
       .attr('transform', 'translate(' + x + ',' + y + ')scale(' + scale + ')')
     zoom.scale(scale)

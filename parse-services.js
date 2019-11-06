@@ -9,33 +9,39 @@ var htmlData = ''
 var urlPrefix = 'https://docs.microsoft.com'
 var iconPrefix = 'https://docs.microsoft.com/en-us/azure/'
 
-var excludeItems = Array(
-  'machine-learning', // bug at azure product list; is a group name
-  'anomaly-finder',   // discontinued, anomaly-detector instead
-  'emotion-api',      // replaced by face api
-  'recommendations-api', // discontinued  https://docs.microsoft.com/en-us/azure/cognitive-services/recommendations/overview
-  'web-language-model-api', // discontinued https://docs.microsoft.com/en-us/azure/cognitive-services/web-language-model/home
-  'linguistic-analysis-api', // discontinued https://docs.microsoft.com/en-us/azure/cognitive-services/linguisticanalysisapi/home
-  'linguistic-analysis', // alias to linguistic-analysis-api
-  'security-information', // not a service, but a guide
-  'machine-learning-services', // is a duplicate for machine-learning-service
-  'blockchain-workbench', // is a duplicate for azure-blockchain-workbench,
-  'clis', //synonym to cli,
-  'azure-devtest-labs', // is a part of azure-lab-services
-  'language-understanding', // is an alias to language-understanding-luis
-  'speech-to-text', // part of speech-services
-  'text-to-speech', // part of speech-services
-  'speech-translation', // part of speech-services,
-  'microsoft-azure-portal',
-  'web-apps', // alias to app-service---web-apps
-  'mobile-apps', // alias to app-service---mobile-apps,
-  'azure-active-directory-domain-services', // alias to azure-active-directory-for-domain-services,
-  'virtual-machines' // alias to linux and windows virtual machines
-)
+var excludeItems = {
+  // 'id': 'reason to skip'
+  'machine-learning': 'bug at azure product list; is a group name',
+  'anomaly-finder': 'discontinued, anomaly-detector instead',
+  'emotion-api': 'replaced by face api',
+  'recommendations-api': 'discontinued  https://docs.microsoft.com/en-us/azure/cognitive-services/recommendations/overview',
+  'web-language-model-api': 'discontinued https://docs.microsoft.com/en-us/azure/cognitive-services/web-language-model/home',
+  'linguistic-analysis-api': 'discontinued https://docs.microsoft.com/en-us/azure/cognitive-services/linguisticanalysisapi/home',
+  'linguistic-analysis': 'alias to linguistic-analysis-api',
+  'security-information': 'not a service, but a guide',
+  'machine-learning-services': 'is a duplicate for machine-learning-service',
+  'blockchain-workbench': 'is a duplicate for azure-blockchain-workbench',
+  'clis': 'synonym to cli',
+  'azure-devtest-labs': 'is a part of azure-lab-services',
+  'language-understanding': 'is an alias to language-understanding-luis',
+  'speech-to-text': 'part of speech-services',
+  'text-to-speech': 'part of speech-services',
+  'speech-translation': 'part of speech-services',
+  'microsoft-azure-portal': '',
+  'web-apps': 'alias to app-service---web-apps',
+  'mobile-apps': 'alias to app-service---mobile-apps',
+  'azure-active-directory-domain-services': 'alias to azure-active-directory-for-domain-services',
+  'virtual-machines': 'alias to linux and windows virtual machines',
+  'azure-pipelines': 'a part of Azure DevOps',
+  'azure-boards': 'a part of Azure DevOps',
+  'azure-repos': 'a part of Azure DevOps',
+  'azure-artifacts': 'a part of Azure DevOps',
+  'azure-active-directory-ad': 'alias to azure-active-directory id'
+}
 
 function getHtml () {
   if (!fs.existsSync(htmlDataFile)) {
-    return axios.get('https://docs.microsoft.com/en-us/azure/#pivot=products&panel=all')
+    return axios.get('https://docs.microsoft.com/en-us/azure/#pivot=products')
       .then(function (response) {
         fs.writeFileSync(htmlDataFile, response.data)
       })
@@ -89,9 +95,11 @@ getHtml()
     var curCategory = null
     var servicesMap = {}
 
+    console.log('\x1b[32m%s\x1b[0m', 'Fetching https://docs.microsoft.com/en-us/azure/#pivot=products product list')
+
     const divArr = $('ul.directory .group')
     divArr.each(function (idx, val) {
-      $children = $(val).children()
+      let $children = $(val).children()
 
       $children.each(function (i, v) {
         if ($(v).is('h3')) {
@@ -101,9 +109,10 @@ getHtml()
             let name = $(sVal).find('p').text()
             let href = $(sVal).find('a').attr('href')
             let icon = $(sVal).find('img').attr('src')
-            id = name2Key(name)
+            let id = name2Key(name)
 
-            if (excludeItems.indexOf(id) !== -1) {
+            if (undefined !== excludeItems[id]) {
+              console.log('\x1b[33m%s\x1b[0m Service "%s" was skipped when were processing the azure **products** list"', id, name)
               return
             }
 
@@ -283,14 +292,15 @@ getHtml()
   })
   .then( servicesMap => {
     // console.warn(servicesMap);exit(1)
+    console.log()
+    console.log('\x1b[32m%s\x1b[0m', 'Fetching https://azure.microsoft.com/en-us/services/ services list to check what is missing')
+
     return getHtmlFromAzureServicesList()
       .then( res => {
         htmlData = fs.readFileSync(htmlDataFileAzureServicesList, 'utf-8');
         const $ = cheerio.load(htmlData);
 
         var curCategory = null;
-
-        console.log('\x1b[32m%s\x1b[0m', 'Fetching https://azure.microsoft.com/en-us/services/ product list to check what is missing')
 
         const divArr = $('#products-list').children();
         divArr.each(function (idx,val){
@@ -308,7 +318,8 @@ getHtml()
 
 
                 let id = name2Key(name)
-                if (excludeItems.indexOf(id) !== -1) {
+                if (undefined !== excludeItems[id]) {
+                  console.log('\x1b[33m%s\x1b[0m Service "%s" was skipped when were processing the azure **services** list"', id, name)
                   return
                 }
 

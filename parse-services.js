@@ -164,6 +164,15 @@ getHtml()
         url: 'https://azure.microsoft.com/en-us/services/azure-arc/',
         icon: '',
       },
+      'azure-spring-cloud': {
+        id: 'azure-spring-cloud',
+        name: 'Azure Spring Cloud',
+        category: ['Compute', 'Web'],
+        isAzureProduct: true,
+        servicesIO: [],
+        url: 'https://azure.microsoft.com/en-us/services/spring-cloud/',
+        icon: 'img/icon-azure-black-default.png',
+      },
       'anomaly-detector': {
         id: 'anomaly-detector',
         name: 'Anomaly Detector API',

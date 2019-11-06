@@ -188,7 +188,8 @@ getHtml()
         'hpc-cache': 'azure-hpc-cache',
         'internet-analyzer': 'azure-internet-analyzer',
         'firewall-manager': 'azure-firewall-manager',
-        'synapse-analytics': 'azure-synapse-analytics'
+        'synapse-analytics': 'azure-synapse-analytics',
+        'spring-cloud': 'azure-spring-cloud'
       }
       let serviceId = servicesIdMapping[serviceIdFromServicesAvailability] || serviceIdFromServicesAvailability
       // console.warn(serviceIdFromServicesAvailability)

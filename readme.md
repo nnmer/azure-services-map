@@ -7,7 +7,7 @@ Map view and IO connection tree based on [D3](https://github.com/d3/d3) js frame
 
 ![Readme picture](public/img/gif.gif)
 
-Follow updates after [Nov 1 2019](https://azure.microsoft.com/en-in/updates/)
+Follow updates after [Nov 4 2019](https://azure.microsoft.com/en-in/updates/)
 
 *Note: IE is not supported*
 

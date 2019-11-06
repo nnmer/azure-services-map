@@ -7,7 +7,7 @@
           <div>
             <h1 class="h2">Azure services</h1>
             <div id="last-update-block" class="text-muted pull-left">
-              <small>Data was last updated: 2019.11.05</small>
+              <small>Data was last updated: 2019.11.04</small>
             </div>
           </div>
           <div class="btn-toolbar mb-2 mb-md-0">
@@ -137,6 +137,26 @@ import ServicesVsGroupsForceDirectedTree from 'src/_helpers/ServicesVsGroupsForc
 import Treeselect from '@riophae/vue-treeselect'
 import '@riophae/vue-treeselect/dist/vue-treeselect.css'
 
+function queryParameters () {
+  let varPairs = []
+  let query = window.location.search.substring(1)
+
+  if (query.length > 0) {
+    let vars = query.split('&')
+
+    for (let i = 0; i < vars.length; i++) {
+      let pairs = vars[i].split('=')
+      varPairs[pairs[0]] = decodeURIComponent(pairs[1])
+    }
+  }
+
+  return varPairs
+}
+
+function queryParameter (key) {
+  return queryParameters()[key] || null
+}
+
 export default {
   name: 'ServiceVsGroups',
   components: {
@@ -186,6 +206,8 @@ export default {
           children: that.azureRegions[key].map(item => { return { id: item.slug, label: item.title, slug: item.slug } })
         })
       })
+
+      that.searchVal = queryParameter('search')
     })
 
     this.$root.$on('click::at::page', function(event){

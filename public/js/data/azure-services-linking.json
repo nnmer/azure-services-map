@@ -740,6 +740,11 @@
         "serviceId": "azure-signalr-service",
         "aliasTitle": null,
         "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/azure-signalr/signalr-howto-event-grid-integration", "https://devblogs.microsoft.com/aspnet/azure-signalr-service-now-supports-event-grid/"]
+      },
+      {
+        "serviceId": "machine-learning-service",
+        "aliasTitle": "Azure Machine Learning (Events)",
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-event-grid-integration"
       }
     ],
     "output": [
@@ -1126,25 +1131,63 @@
       }
     ]
   },
+  "azure-sql-database": {
+    "input": [
+      {
+        "serviceId": "stream-analytics",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-in/azure/sql-database/sql-database-stream-analytics"
+      }
+    ]
+  },
+  "azure-data-share": {
+    "input": [
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/data-share/supported-data-stores", "https://docs.microsoft.com/en-us/azure/data-share/share-your-data"]
+      },
+      {
+        "serviceId": "azure-sql-database",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/data-share/supported-data-stores", "https://docs.microsoft.com/en-us/azure/data-share/share-your-data"]
+      },
+      {
+        "serviceId": "data-lake-storage-gen1",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/data-share/supported-data-stores", "https://docs.microsoft.com/en-us/azure/data-share/share-your-data"]
+      },
+      {
+        "serviceId": "data-lake-storage",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/data-share/supported-data-stores", "https://docs.microsoft.com/en-us/azure/data-share/share-your-data"]
+      },
+      {
+        "serviceId": "azure-synapse-analytics",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/data-share/supported-data-stores", "https://docs.microsoft.com/en-us/azure/data-share/share-your-data"]
+      }
+    ]
+  },
   "machine-learning-service": {
     "input": [
 
     ],
     "output": [
       {
-        "serviceId": null,
-        "aliasTitle": "local file system",
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-write-data#supported-data-types-and-location"
-      },
-      {
         "serviceId": "blob-storage",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-write-data#supported-data-types-and-location"
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/export-data"
+      },
+      {
+        "serviceId": "data-lake-storage-gen1",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/export-data"
       },
       {
         "serviceId": "data-lake-storage",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-write-data#supported-data-types-and-location"
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/export-data"
       }
     ]
   },

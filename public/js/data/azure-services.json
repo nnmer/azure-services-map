@@ -26257,8 +26257,8 @@
     ],
     "isAzureProduct": true,
     "servicesIO": [],
-    "url": "https://docs.microsoft.com/en-us/azure/virtual-desktop/overview",
-    "icon": "",
+    "url": "https://docs.microsoft.com/en-us/azure/virtual-desktop/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/windows-virtual-desktop.svg",
     "availability": {
       "non-regional": {
         "available": true,

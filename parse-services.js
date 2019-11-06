@@ -227,15 +227,6 @@ getHtml()
         url: buildUrl('/en-us/azure/cognitive-services/personalizer/', urlPrefix),
         icon: '',
       },
-      'windows-virtual-desktop': {
-        id: 'windows-virtual-desktop',
-        name: 'Windows Virtual Desktop',
-        category: ['Windows Virtual Desktop'],
-        isAzureProduct: true,
-        servicesIO: [],
-        url: buildUrl('/en-us/azure/virtual-desktop/overview', urlPrefix),
-        icon: '',
-      },
       'windows-10-iot-core-services': {
         id: 'windows-10-iot-core-services',
         name: 'Windows 10 IoT Core Services',

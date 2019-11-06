@@ -2,6 +2,7 @@
 node_modules
 
 azure-*tmp.html
+*.bak
 
 # local env files
 .env.local

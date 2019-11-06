@@ -63,7 +63,7 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database-managed-insance"
       },
       {
-        "serviceId": "sql-data-warehouse",
+        "serviceId": "azure-synapse-analytics",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse"
       },
@@ -465,7 +465,7 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-search"
       },
       {
-        "serviceId": "sql-data-warehouse",
+        "serviceId": "azure-synapse-analytics",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse"
       },
@@ -740,6 +740,11 @@
         "serviceId": "azure-signalr-service",
         "aliasTitle": null,
         "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/azure-signalr/signalr-howto-event-grid-integration", "https://devblogs.microsoft.com/aspnet/azure-signalr-service-now-supports-event-grid/"]
+      },
+      {
+        "serviceId": "machine-learning-service",
+        "aliasTitle": "Azure Machine Learning (Events)",
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-event-grid-integration"
       }
     ],
     "output": [
@@ -827,7 +832,7 @@
       {
         "serviceId": "azure-sql-database",
         "aliasTitle": null,
-        "connectionDescriptionUrl": null
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-use-reference-data#azure-sql-database"
       },
       {
         "serviceId": "event-hubs",
@@ -851,6 +856,11 @@
       }
     ],
     "output": [
+      {
+        "serviceId": "data-lake-storage-gen1",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-outputs#azure-data-lake-storage-gen-1"
+      },
       {
         "serviceId": "data-lake-storage",
         "aliasTitle": null,
@@ -945,7 +955,7 @@
         "connectionDescriptionUrl": "https://docs.azuredatabricks.net/spark/latest/data-sources/azure/eventhubs-connector.html"
       },
       {
-        "serviceId": "sql-data-warehouse",
+        "serviceId": "azure-synapse-analytics",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.azuredatabricks.net/spark/latest/data-sources/azure/sql-data-warehouse.html"
       },
@@ -1032,7 +1042,7 @@
     ],
     "output": [
       {
-        "serviceId": "sql-data-warehouse",
+        "serviceId": "azure-synapse-analytics",
         "aliasTitle": null,
         "connectionDescriptionUrl": null
       },
@@ -1084,7 +1094,7 @@
     ],
     "output": []
   },
-  "sql-data-warehouse": {
+  "azure-synapse-analytics": {
     "linking_source_url": "https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-overview-integrate",
     "input": [
       {
@@ -1121,25 +1131,63 @@
       }
     ]
   },
+  "azure-sql-database": {
+    "input": [
+      {
+        "serviceId": "stream-analytics",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-in/azure/sql-database/sql-database-stream-analytics"
+      }
+    ]
+  },
+  "azure-data-share": {
+    "input": [
+      {
+        "serviceId": "blob-storage",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/data-share/supported-data-stores", "https://docs.microsoft.com/en-us/azure/data-share/share-your-data"]
+      },
+      {
+        "serviceId": "azure-sql-database",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/data-share/supported-data-stores", "https://docs.microsoft.com/en-us/azure/data-share/share-your-data"]
+      },
+      {
+        "serviceId": "data-lake-storage-gen1",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/data-share/supported-data-stores", "https://docs.microsoft.com/en-us/azure/data-share/share-your-data"]
+      },
+      {
+        "serviceId": "data-lake-storage",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/data-share/supported-data-stores", "https://docs.microsoft.com/en-us/azure/data-share/share-your-data"]
+      },
+      {
+        "serviceId": "azure-synapse-analytics",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": ["https://docs.microsoft.com/en-us/azure/data-share/supported-data-stores", "https://docs.microsoft.com/en-us/azure/data-share/share-your-data"]
+      }
+    ]
+  },
   "machine-learning-service": {
     "input": [
 
     ],
     "output": [
       {
-        "serviceId": null,
-        "aliasTitle": "local file system",
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-write-data#supported-data-types-and-location"
-      },
-      {
         "serviceId": "blob-storage",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-write-data#supported-data-types-and-location"
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/export-data"
+      },
+      {
+        "serviceId": "data-lake-storage-gen1",
+        "aliasTitle": null,
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/export-data"
       },
       {
         "serviceId": "data-lake-storage",
         "aliasTitle": null,
-        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-write-data#supported-data-types-and-location"
+        "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/export-data"
       }
     ]
   },
@@ -1251,7 +1299,7 @@
         "connectionDescriptionUrl": null
       },
       {
-        "serviceId": "sql-data-warehouse",
+        "serviceId": "azure-synapse-analytics",
         "aliasTitle": null,
         "connectionDescriptionUrl": null
       },
@@ -1478,11 +1526,6 @@
         "serviceId": "hdinsight-storm",
         "aliasTitle": null,
         "connectionDescriptionUrl": null
-      },
-      {
-        "serviceId": "data-factory",
-        "aliasTitle": null,
-        "connectionDescriptionUrl": null
       }
     ],
     "output": [
@@ -1512,7 +1555,7 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/power-bi/service-dataflows-connect-azure-data-lake-storage-gen2#connect-your-azure-data-lake-storage-gen2-to-power-bi"
       },
       {
-        "serviceId": "sql-data-warehouse",
+        "serviceId": "azure-synapse-analytics",
         "aliasTitle": null,
         "connectionDescriptionUrl": null
       },

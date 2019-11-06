@@ -20967,6 +20967,17 @@
       }
     }
   },
+  "peering-service": {
+    "id": "peering-service",
+    "name": "Peering Service",
+    "category": [
+      "Networking"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/peering-service/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/peering-service.svg"
+  },
   "personalizer": {
     "id": "personalizer",
     "name": "Personalizer",

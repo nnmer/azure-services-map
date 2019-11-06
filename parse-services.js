@@ -30,8 +30,7 @@ var excludeItems = Array(
   'web-apps', // alias to app-service---web-apps
   'mobile-apps', // alias to app-service---mobile-apps,
   'azure-active-directory-domain-services', // alias to azure-active-directory-for-domain-services,
-  'virtual-machines', // alias to linux and windows virtual machines
-  'peering-service' // this is not a real service directly from Azure
+  'virtual-machines' // alias to linux and windows virtual machines
 )
 
 function getHtml () {

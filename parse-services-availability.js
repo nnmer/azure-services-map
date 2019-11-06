@@ -212,6 +212,7 @@ getHtml()
         case 'storage':
           servicesData['queue-storage'].availability = servicesAvailability[serviceIdFromServicesAvailability]
           servicesData['file-storage'].availability = servicesAvailability[serviceIdFromServicesAvailability]
+          servicesData['table-storage'].availability = servicesAvailability[serviceIdFromServicesAvailability]
           return
           break
         case 'media-services':

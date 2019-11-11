@@ -168,7 +168,7 @@ getHtml()
         'spellcheck-api': 'bing-spell-check-api',
         'cognitive-services\\qna-maker': 'qna-maker-api',
         'storage\\netapp': 'azure-netapp-files',
-        'search': 'azure-search',
+        'search': 'azure-cognitive-search',
         'cognitive-search': 'answer-search',
         'sap-hana-large': 'sap-hana-on-azure-large-instances',
         'premium-storage': 'disk-storage',

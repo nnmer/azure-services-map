@@ -460,7 +460,7 @@
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-postgresql"
       },
       {
-        "serviceId": "azure-search",
+        "serviceId": "azure-cognitive-search",
         "aliasTitle": null,
         "connectionDescriptionUrl": "https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-search"
       },
@@ -1063,7 +1063,7 @@
        }
     ]
   },
-  "azure-search": {
+  "azure-cognitive-search": {
     "linking_source_url": "https://docs.microsoft.com/en-us/azure/search/search-indexer-overview#supported-data-sources",
     "input": [
       {

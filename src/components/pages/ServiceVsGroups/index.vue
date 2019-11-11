@@ -7,7 +7,7 @@
           <div>
             <h1 class="h2">Azure services</h1>
             <div id="last-update-block" class="text-muted pull-left">
-              <small>Data was last updated: 2019.11.04</small>
+              <small>Data was last updated: 2019.11.11</small>
             </div>
           </div>
           <div class="btn-toolbar mb-2 mb-md-0">

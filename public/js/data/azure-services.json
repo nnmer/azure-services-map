@@ -230,7 +230,7 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q4 2019"
+        "expectation": "Preview expected: Q4 2019"
       },
       "europe-north": {
         "available": true,
@@ -2606,7 +2606,7 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "Preview expected: Q4 2019"
+        "expectation": "Preview expected: Q1 2020"
       },
       "united-kingdom-south": {
         "available": true,
@@ -5098,6 +5098,18 @@
         "inGA": true,
         "expectation": false
       },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "uae-central": {
         "available": true,
         "inPreview": false,
@@ -5381,6 +5393,18 @@
         "inGA": true,
         "expectation": false
       },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "uae-central": {
         "available": true,
         "inPreview": false,
@@ -5659,6 +5683,18 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-west": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -6225,7 +6261,7 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "Preview expected: Q4 2019"
+        "expectation": "Preview expected: Q1 2020"
       },
       "brazil-south": {
         "available": true,
@@ -7221,8 +7257,8 @@
       "asia-pacific-southeast": {
         "available": true,
         "inPreview": false,
-        "inGA": false,
-        "expectation": "GA expected: Q4 2019"
+        "inGA": true,
+        "expectation": false
       },
       "australia-east": {
         "available": true,
@@ -7233,8 +7269,8 @@
       "europe-north": {
         "available": true,
         "inPreview": false,
-        "inGA": false,
-        "expectation": "GA expected: Q4 2019"
+        "inGA": true,
+        "expectation": false
       },
       "europe-west": {
         "available": true,
@@ -7275,8 +7311,8 @@
       "us-west-2": {
         "available": true,
         "inPreview": false,
-        "inGA": false,
-        "expectation": "GA expected: Q4 2019"
+        "inGA": true,
+        "expectation": false
       }
     }
   },
@@ -7865,6 +7901,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -7896,6 +7938,12 @@
         "expectation": false
       },
       "korea-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "switzerland-north": {
         "available": true,
         "inPreview": false,
         "inGA": true,
@@ -11029,6 +11077,12 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-west-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "central-india": {
         "available": true,
         "inPreview": false,
@@ -12457,7 +12511,7 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "Preview expected: Q4 2019"
+        "expectation": "Preview expected: Q1 2020"
       },
       "central-india": {
         "available": true,
@@ -12493,7 +12547,7 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "Preview expected: Q4 2019"
+        "expectation": "Preview expected: Q1 2020"
       },
       "uae-north": {
         "available": true,
@@ -16373,6 +16427,18 @@
         "inGA": true,
         "expectation": false
       },
+      "germany-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
+      "germany-northeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
+      },
       "germany-west-central": {
         "available": true,
         "inPreview": false,
@@ -16525,23 +16591,29 @@
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/immersive-reader/",
     "icon": "img/azure-cog-immersive-reader.png",
     "availability": {
+      "asia-pacific-southeast": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q1 2020"
+      },
       "australia-east": {
         "available": true,
-        "inPreview": true,
+        "inPreview": false,
         "inGA": false,
-        "expectation": false
+        "expectation": "GA expected: Q1 2020"
       },
       "europe-north": {
         "available": true,
-        "inPreview": true,
+        "inPreview": false,
         "inGA": false,
-        "expectation": false
+        "expectation": "GA expected: Q1 2020"
       },
       "europe-west": {
         "available": true,
-        "inPreview": true,
+        "inPreview": false,
         "inGA": false,
-        "expectation": false
+        "expectation": "GA expected: Q1 2020"
       },
       "central-india": {
         "available": true,
@@ -16555,17 +16627,41 @@
         "inGA": false,
         "expectation": false
       },
+      "united-kingdom-south": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q1 2020"
+      },
       "us-east": {
         "available": true,
-        "inPreview": true,
+        "inPreview": false,
         "inGA": false,
-        "expectation": false
+        "expectation": "GA expected: Q1 2020"
+      },
+      "us-east-2": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q1 2020"
+      },
+      "us-south-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q1 2020"
       },
       "us-west": {
         "available": true,
         "inPreview": true,
         "inGA": false,
         "expectation": false
+      },
+      "us-west-2": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q1 2020"
       }
     }
   },
@@ -17422,7 +17518,7 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q2 2020"
+        "expectation": "GA expected: Q1 2020"
       },
       "us-west": {
         "available": true,
@@ -17434,7 +17530,7 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q2 2020"
+        "expectation": "GA expected: Q1 2020"
       }
     }
   },

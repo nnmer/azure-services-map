@@ -187,6 +187,16 @@
       "title": "Korea South"
     }
   ],
+  "Norway": [
+    {
+      "slug": "norway-east",
+      "title": "Norway East"
+    },
+    {
+      "slug": "norway-west",
+      "title": "Norway West"
+    }
+  ],
   "Switzerland": [
     {
       "slug": "switzerland-north",

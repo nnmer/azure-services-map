@@ -2129,7 +2129,7 @@
     ],
     "isAzureProduct": true,
     "servicesIO": [],
-    "url": "https://docs.microsoft.com/en-us/azure/application-insights/",
+    "url": "https://docs.microsoft.com/en-us/azure/azure-monitor/azure-monitor-app-hub/",
     "icon": "https://docs.microsoft.com/en-us/azure/media/index/applicationinsights.svg",
     "availability": {
       "south-africa-north": {

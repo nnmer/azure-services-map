@@ -6633,8 +6633,8 @@
       "south-india": {
         "available": true,
         "inPreview": false,
-        "inGA": false,
-        "expectation": "GA expected: Q4 2019"
+        "inGA": true,
+        "expectation": false
       },
       "japan-east": {
         "available": true,

@@ -3468,6 +3468,25 @@
       }
     }
   },
+  "azure-blockchain-tokens": {
+    "id": "azure-blockchain-tokens",
+    "name": "Azure Blockchain Tokens",
+    "category": [
+      "Blockchain"
+    ],
+    "isAzureProduct": true,
+    "servicesIO": [],
+    "url": "https://docs.microsoft.com/en-us/azure/blockchain/tokens/",
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/blockchain-tokens.svg",
+    "availability": {
+      "us-west-2": {
+        "available": true,
+        "inPreview": true,
+        "inGA": false,
+        "expectation": false
+      }
+    }
+  },
   "azure-blockchain-workbench": {
     "id": "azure-blockchain-workbench",
     "name": "Azure Blockchain Workbench",
@@ -3477,7 +3496,7 @@
     "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/blockchain/workbench/",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/blockchain-workbench.svg"
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/blockchain-workbench-alt.svg"
   },
   "azure-blueprints": {
     "id": "azure-blueprints",
@@ -26083,15 +26102,7 @@
     "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator-speech/",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_translatorspeech.svg",
-    "availability": {
-      "non-regional": {
-        "available": true,
-        "inPreview": false,
-        "inGA": true,
-        "expectation": false
-      }
-    }
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/api_translatorspeech.svg"
   },
   "translator-text-api": {
     "id": "translator-text-api",

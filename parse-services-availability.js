@@ -182,6 +182,7 @@ getHtml()
         'active-directory-b2c': 'azure-active-directory-b2c',
         'app-center': 'visual-studio-app-center',
         'blockchain-service': 'azure-blockchain-service',
+        'blockchain-tokens': 'azure-blockchain-tokens',
         'openshift': 'azure-red-hat-openshift',
         'virtual-desktop': 'windows-virtual-desktop',
         'windows-10-iot-core': 'windows-10-iot-core-services',

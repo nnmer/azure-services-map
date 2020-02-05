@@ -5,6 +5,12 @@
       "title": "Non-regional"
     }
   ],
+  "Azure Stack Hub": [
+    {
+      "slug": "azure-stack-hub",
+      "title": "Azure Stack Hub"
+    }
+  ],
   "Africa": [
     {
       "slug": "south-africa-north",

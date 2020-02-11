@@ -218,7 +218,7 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q1 2020"
+        "expectation": "Preview expected: Q1 2020"
       },
       "usgov-virginia": {
         "available": true,
@@ -266,7 +266,7 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q1 2020"
+        "expectation": "GA expected: H2 2020"
       },
       "central-india": {
         "available": true,
@@ -291,6 +291,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "norway-east": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: H2 2020"
       },
       "switzerland-north": {
         "available": true,
@@ -9134,6 +9140,12 @@
         "inGA": false,
         "expectation": "GA expected: Q1 2020"
       },
+      "usgov-arizona": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q1 2020"
+      },
       "usgov-virginia": {
         "available": true,
         "inPreview": false,
@@ -9422,6 +9434,12 @@
         "inPreview": false,
         "inGA": false,
         "expectation": "GA expected: Q1 2020"
+      },
+      "central-india": {
+        "available": true,
+        "inPreview": false,
+        "inGA": true,
+        "expectation": false
       },
       "japan-east": {
         "available": true,
@@ -10034,55 +10052,55 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q1 2020"
+        "expectation": "GA expected: Q2 2020"
       },
       "australia-east": {
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q1 2020"
+        "expectation": "GA expected: Q2 2020"
       },
       "europe-north": {
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q1 2020"
+        "expectation": "GA expected: Q2 2020"
       },
       "europe-west": {
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q1 2020"
+        "expectation": "GA expected: Q2 2020"
       },
       "united-kingdom-south": {
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q1 2020"
+        "expectation": "GA expected: Q2 2020"
       },
       "us-east": {
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q1 2020"
+        "expectation": "GA expected: Q2 2020"
       },
       "us-east-2": {
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q1 2020"
+        "expectation": "GA expected: Q2 2020"
       },
       "us-south-central": {
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q1 2020"
+        "expectation": "GA expected: Q2 2020"
       },
       "us-west-2": {
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q1 2020"
+        "expectation": "GA expected: Q2 2020"
       }
     }
   },
@@ -16742,8 +16760,8 @@
       "china-east-2": {
         "available": true,
         "inPreview": false,
-        "inGA": false,
-        "expectation": "Preview expected: Q1 2020"
+        "inGA": true,
+        "expectation": false
       },
       "china-north": {
         "available": true,
@@ -17189,15 +17207,7 @@
     "isAzureProduct": true,
     "servicesIO": [],
     "url": "https://support.hockeyapp.net/kb",
-    "icon": "https://docs.microsoft.com/en-us/azure/media/index/hockeyapp.svg",
-    "availability": {
-      "non-regional": {
-        "available": true,
-        "inPreview": false,
-        "inGA": true,
-        "expectation": false
-      }
-    }
+    "icon": "https://docs.microsoft.com/en-us/azure/media/index/hockeyapp.svg"
   },
   "immersive-reader": {
     "id": "immersive-reader",
@@ -17915,7 +17925,7 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q3 2020"
+        "expectation": "GA expected: Q1 2020"
       },
       "usgov-virginia": {
         "available": true,
@@ -22226,6 +22236,12 @@
         "inGA": true,
         "expectation": false
       },
+      "us-south-central": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q1 2020"
+      },
       "us-west-2": {
         "available": true,
         "inPreview": false,
@@ -25346,7 +25362,7 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q1 2020"
+        "expectation": "GA expected: Q2 2020"
       },
       "switzerland-north": {
         "available": true,
@@ -26151,6 +26167,12 @@
         "inPreview": false,
         "inGA": true,
         "expectation": false
+      },
+      "usgov-virginia": {
+        "available": true,
+        "inPreview": false,
+        "inGA": false,
+        "expectation": "GA expected: Q2 2020"
       },
       "europe-north": {
         "available": true,
@@ -27077,7 +27099,7 @@
         "available": true,
         "inPreview": false,
         "inGA": false,
-        "expectation": "GA expected: Q2 2020"
+        "expectation": "GA expected: H2 2020"
       },
       "norway-west": {
         "available": true,

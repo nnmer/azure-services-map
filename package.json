@@ -7,11 +7,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "dobuild": "rm -f azure-services*tmp.html && rm -f azure-products*tmp.html && npm run prebuild; vue-cli-service build",
-    "prebuild": "npm run get-services-data && npm run get-services-data-availability",
-    "lint": "vue-cli-service lint",
-    "get-services-data": "node ./parse-services.js",
-    "get-services-data-availability": "node ./parse-services-availability.js"
+    "dobuild": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@riophae/vue-treeselect": "^0.4.0",
@@ -26,10 +23,8 @@
     "@vue/cli-service": "^4.0.5",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.3",
-    "cheerio": "^1.0.0-rc.3",
     "eslint": "^6.6.0",
     "eslint-plugin-vue": "^5.2.3",
-    "puppeteer": "^2.0.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.6.10"

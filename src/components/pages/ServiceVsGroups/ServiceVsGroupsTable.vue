@@ -28,7 +28,7 @@
             <div class="clearfix"/>
 
 
-            <img class="service-icon" v-bind:src="service.icon"/>
+            <img class="service-icon" v-bind:src="service.icon || 'img/icon-azure-black-default.png'"/>
             <div
               v-bind:class="{'has-linking-services':service.servicesIO.input && service.servicesIO.input.length >0
               || service.servicesIO.output && service.servicesIO.output.length >0}"

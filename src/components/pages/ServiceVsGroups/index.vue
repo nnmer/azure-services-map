@@ -7,7 +7,7 @@
           <div>
             <h1 class="h2">Azure services</h1>
             <div id="last-update-block" class="text-muted pull-left">
-              <small>Services connections last updated on 2019.11.11 | Availability last updated on 2020.02.11</small>
+              <small>Services connections last updated on {{lastConnectionsUpdate}} | Availability updates each day (last update on {{lastAvailabilityUpdate}})</small>
             </div>
           </div>
           <div class="btn-toolbar mb-2 mb-md-0">
@@ -182,22 +182,25 @@ export default {
       currentView: 'table',
       mapRendered: false,
       mapSelector: '#service-vs-group-map',
-      mapSelectorId: 'service-vs-group-map'
+      mapSelectorId: 'service-vs-group-map',
+      lastConnectionsUpdate: null,
+      lastAvailabilityUpdate: null
     }
   },
   created: function () {
     let that = this
-    axios.defaults.headers.get['Cache-Control'] = 'no-cache';
-    axios.all([
-      axios.get('js/data/azure-services.json'),
-      axios.get('js/data/azure-services-linking.json'),
-      axios.get('js/data/ref-services.json'),
-      axios.get('js/data/azure-regions.json')
-    ]).then(function ([services, serviceLinking, refServices, azureRegions]) {
-      SL = new ServiceLinking(services.data, serviceLinking.data, refServices.data, azureRegions.data)
+    const api = axios.create({
+      baseURL: process.env.VUE_APP_BASE_API,
+    });
+    api.get('/bootstrap')
+    .then(function (response) {
+      let {services, serviceLinking, refServices, azureRegions} = response.data
+      that.lastConnectionsUpdate = response.data.lastConnectionsUpdate
+      that.lastAvailabilityUpdate = response.data.lastAvailabilityUpdate
+      SL = new ServiceLinking(services, serviceLinking, refServices, azureRegions)
       SvsG = new ServicesVsGroupsForceDirectedTree(that.mapSelector,SL.azureServicesOnly, that)
       that.dataInitialized = true
-      that.azureRegions = azureRegions.data
+      that.azureRegions = azureRegions
 
       Object.keys(that.azureRegions).map( key => {
         that.azureRegionsSelectOptions.push({

@@ -267,7 +267,7 @@ export default class ServiceLinking {
         if (service.availability && Object.keys(service.availability).length > 0) {
           let matchedRegions = Object.keys(service.availability).filter(
             key => {
-              return service.availability[key].available === true && -1 !== that._filter.regions.indexOf(key)
+              return /* service.availability[key].available === true && */ -1 !== that._filter.regions.indexOf(key)
               && that._filter.regionsAvailability.filter(i => {
                 return (i === 'ga' && service.availability[key].inGA)
                 || (i === 'preview' && service.availability[key].inPreview)

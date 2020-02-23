@@ -11,12 +11,6 @@ Follow updates after [Nov 4 2019](https://azure.microsoft.com/en-in/updates/)
 
 *Note: IE is not supported*
 
-TODOs:
-  - &#10003; rewrite code with Vue.js only
-  - &#10003; metadata structure update to keep more related important url's for services
-  - &#10003; filter for availability of services in different regions
-  - &#9744; tracking of source doc pages changes for content maintenance purpose
-
 ## Project setup
 ```
 npm install

@@ -5,7 +5,7 @@
         <div class="list-group">
           <div class="list-group-item bg-primary listIOtitle text-center text-bold">
             <h5>To: {{service.name}}</h5>
-            <img src="img/arrow-down.png" width="35px" style="transform: rotate(180deg);">
+            <img src="/img/arrow-down.png" width="35px" style="transform: rotate(180deg);">
           </div>
 
           <ListServicesForDirectIO
@@ -19,7 +19,7 @@
         <div class="list-group">
             <div class="list-group-item bg-success listIOtitle text-center">
               <h5>From: {{service.name}}</h5>
-              <img src="img/arrow-down.png" width="35px">
+              <img src="/img/arrow-down.png" width="35px">
             </div>
 
             <ListServicesForDirectIO

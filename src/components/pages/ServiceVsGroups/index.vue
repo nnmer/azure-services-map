@@ -25,7 +25,6 @@
               <!-- <div style="min-width: 500px"> -->
               <small>Services connections last update was on {{lastConnectionsUpdate}}</small>
               <br/>
-              <br/>
               <small>Availability updates daily (last update was on {{lastAvailabilityUpdate}})</small>
               <!-- </div> -->
             </b-popover>
@@ -62,7 +61,7 @@
                 @click="clearSearchField"
                 >
                 <div class="input-group-text">
-                  <img src="img/x.png" width="10px"/>
+                  <img src="/img/x.png" width="10px"/>
                 </div>
               </div>
             </div>

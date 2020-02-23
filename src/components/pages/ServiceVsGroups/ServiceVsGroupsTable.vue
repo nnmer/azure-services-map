@@ -22,7 +22,7 @@
                  class="glob-link"
                  @click.stop="$root.$emit('app::services::region-availability-modal::show', $event, service.id)"
               >
-                <img src="img/globe.png" width="14px"/>
+                <img src="/img/globe.png" width="14px"/>
               </a>
             </div>
             <div class="clearfix"/>

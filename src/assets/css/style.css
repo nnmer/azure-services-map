@@ -1,5 +1,5 @@
 html, body {
-  height: 100%
+  height: 100%;
 }
 
 body {
@@ -441,12 +441,12 @@ body {
   background-color: rgba(0, 0, 0, .1);
 }
 
-div::-webkit-scrollbar {
+div.service-list::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 7px;
-  height:7px
+  height:7px;
 }
-div::-webkit-scrollbar-thumb {
+div.service-list::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: #6c7897;
   /* background-color: rgba(17, 0, 255, 0.603); */

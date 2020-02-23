@@ -6,7 +6,7 @@ body {
   background: url(~src/assets/img/texture-noise.png);
 }
 
-a{
+a, a#update-status-popover-btn{
   color: #005dc1;
 }
 
@@ -70,7 +70,11 @@ a{
 }
 
 .glob-link {
-    padding: 0 7px 7px 7px;
+  padding: 0 7px 7px 7px;
+  opacity: 0.6;
+}
+.glob-link:hover {
+  opacity: 1;
 }
 
 
@@ -433,17 +437,20 @@ body {
 }
 
 
-.data-container {
-  margin: 5px 15px 5px 15px;
-}
-
 .data-container-table {
   background-color: rgba(0, 0, 0, .1);
 }
 
-.service-list-container {
-  margin-left: -15px;
-  margin-right: -15px;
+div::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+  height:7px
+}
+div::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #6c7897;
+  /* background-color: rgba(17, 0, 255, 0.603); */
+  /* -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5); */
 }
 
 .service-list-col-title {
@@ -464,8 +471,7 @@ body {
   white-space: nowrap;
   flex-wrap: nowrap;
   position: relative;
-  top: 0;
-  height: calc(100vh - 210px)
+  height: calc(100vh - 177px - 0.5rem)
 }
 
 .service-list-container > .row > .service-list-col {
@@ -492,9 +498,9 @@ body {
   padding-left: 1px;
   padding-right: 1px;
   border: none;
-  -moz-box-shadow: inset 0 0 10px #888;
-  -webkit-box-shadow: inset 0 0 10px#888;
-  box-shadow: inner 0 0 10px #888;
+  -moz-box-shadow: inset 0 0 45px rgb(192, 192, 192);
+  -webkit-box-shadow: inset 0 0 45px rgb(192, 192, 192);
+  box-shadow: inner 0 0 45px rgb(192, 192, 192);
 }
 
 .service-list-col-service-item.no-region-availability:hover {
@@ -508,6 +514,7 @@ body {
 
 .modal-content {
   border-radius: 0px;
+  border: none;
 }
 
 .services-direct-io-list .list-group-item {
@@ -575,4 +582,8 @@ body {
 
 #last-update-block {
   margin-top: -10px;
+}
+
+.update-status-popover {
+  min-width: 340px;
 }

@@ -1,16 +1,36 @@
 <template>
+  <div>
   <div class="container-fluid">
     <div class="row">
 
       <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2">
           <div>
             <h1 class="h2">Azure services</h1>
-            <div id="last-update-block" class="text-muted pull-left">
-              <small>Services connections last updated on {{lastConnectionsUpdate}} | Availability updates each day (last update on {{lastAvailabilityUpdate}})</small>
-            </div>
           </div>
           <div class="btn-toolbar mb-2 mb-md-0">
+
+            <a
+              id="update-status-popover-btn"
+              class="mr-2 mt-1"
+            >
+              <small>Update status</small>
+            </a>
+            <b-popover
+              target="update-status-popover-btn"        
+              custom-class="update-status-popover"        
+              triggers="hover click" 
+              placement="bottom"
+            >
+              <!-- <div style="min-width: 500px"> -->
+              <small>Services connections last update was on {{lastConnectionsUpdate}}</small>
+              <br/>
+              <br/>
+              <small>Availability updates daily (last update was on {{lastAvailabilityUpdate}})</small>
+              <!-- </div> -->
+            </b-popover>
+            
+            
             <div class="btn-group mr-2">
               <button type="button" class="btn btn-sm btn-outline-secondary"
                 v-bind:class="{active: currentView=='table'}"
@@ -111,20 +131,22 @@
           </div>
         </div>
 
-        <div class="data-container">
-          <ServiceVsGroupsTable
-            v-bind:class="{'d-none': currentView!='table'}"
-            :filteredServicesList="filteredServicesList"
-          />
-          <ServiceVsGroupsForcedTree
-            v-bind:class="{'d-none': currentView!='map'}"
-            :selectorId="mapSelectorId"
-          />
-        </div>
-
       </main>
 
-    </div>
+    </div>    
+  </div>
+  <div class="mt-2">
+    <div class="data-container">
+      <ServiceVsGroupsTable
+        v-bind:class="{'d-none': currentView!='table'}"
+        :filteredServicesList="filteredServicesList"
+      />
+      <ServiceVsGroupsForcedTree
+        v-bind:class="{'d-none': currentView!='map'}"
+        :selectorId="mapSelectorId"
+      />
+    </div>      
+  </div>
   </div>
 </template>
 

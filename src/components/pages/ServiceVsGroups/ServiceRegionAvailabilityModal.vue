@@ -1,16 +1,18 @@
 <template>
   <b-modal
     id="service-region-availability-modal"
-    :title="service ? `'${service.name}' is available at:` : ''"
+    :title="service ? `${service.name} available at:` : ''"
     :no-fade="true"
     :hide-footer="true"
     scrollable
     :body-class="'p-none'"
+    size="md"
   >
     <table class="table" v-if="service">
       <tr v-for="(idx,key) in serviceAvailability">
         <th>
           {{regionTitle(key)}}
+          <br/>
           <span class="text-black-50">
             ({{key}})
           </span>

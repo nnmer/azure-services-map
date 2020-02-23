@@ -13,16 +13,16 @@
             v-bind:id="catIdx+'-'+service.id"
             @click.capture="$root.$emit('app::services::popover::show', $event, service.id, catIdx+'-'+service.id)"
         >
-          <div class="service-list-col-service-item" :class="!service.hasOwnProperty('availability') ? 'no-region-availability' :''">
+          <div class="service-list-col-service-item" :class="!serviceHasAvailability(service) ? 'no-region-availability' :''">
             <div
               class="pull-right"
             >
-              <a v-if="service.hasOwnProperty('availability')"
+              <a v-if="serviceHasAvailability(service)"
                  href="#"
                  class="glob-link"
                  @click.stop="$root.$emit('app::services::region-availability-modal::show', $event, service.id)"
               >
-                <img src="img/globe.png" class="opacity07" width="14px"/>
+                <img src="img/globe.png" width="14px"/>
               </a>
             </div>
             <div class="clearfix"/>
@@ -47,6 +47,11 @@ export default {
   name: 'ServicesVsGroupsTable',
   props: [
     'filteredServicesList'
-  ]
+  ],
+  methods: {
+    serviceHasAvailability: (service) => {
+      return service.hasOwnProperty('availability') && Object.keys(service.availability).length > 0
+    }
+  }
 }
 </script>

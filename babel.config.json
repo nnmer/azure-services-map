@@ -1,0 +1,24 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-flow"],
+  "plugins": [
+    "react-hot-loader/babel",
+    "@babel/plugin-syntax-dynamic-import",
+    ["@babel/plugin-transform-runtime"]
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@babel/plugin-proposal-object-rest-spread",
+        [
+          "@babel/plugin-transform-react-jsx"
+        ]
+      ],
+      "retainLines": true
+    },
+    "production": {
+      "plugins": [
+        ["@babel/plugin-proposal-object-rest-spread"]
+      ]
+    }
+  }
+}

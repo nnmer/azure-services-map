@@ -1,3 +1,4 @@
+import { hot } from 'react-hot-loader/root';
 import React from 'react'
 import { Switch, Route } from "react-router-dom";
 import NoMatch from 'src/helpers/NoMatch';
@@ -14,4 +15,4 @@ const App = (props) => {
   )
 }
 
-export default App
+export default hot(App)

@@ -1,0 +1,45 @@
+.modal {
+  &-header,
+  &-footer {
+    background-color: $table-hover-bg;
+  }
+}
+
+.modal-content {
+  border-radius: 0px;
+  border: none;
+}
+
+.modal-header button, .modal-header button:hover {
+  color: $white;
+  opacity: 1
+}
+
+.modal-service-availability-list .modal-body {
+  padding: 0;
+}
+
+.modal-fullscreen  {
+  margin: 0;
+  padding: 0 !important;
+}
+
+.modal-fullscreen .modal-dialog,
+.modal-fullscreen .modal-dialog .modal-dialog-scrollable  {
+  width: 100%;
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+  max-width: initial;
+  max-height: initial;
+}
+
+.modal-fullscreen .modal-content,
+.modal-fullscreen .modal-content .modal-dialog-scrollable   {
+  height: auto;
+  height: 100%;
+  border-radius: 0;
+  max-width: initial;
+  max-height: initial;
+  background: url(~src/public/img/texture-noise.png);
+}

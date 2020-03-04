@@ -1,0 +1,63 @@
+
+#service-vs-group-map {
+  text-align: center;
+}
+
+.link {
+  stroke: #000;
+  stroke-opacity: .8;
+}
+.node {
+  stroke: #fff;
+  fill: rgb(113, 136, 146);
+  stroke-width: 1.5px;
+  cursor: pointer
+}
+circle {
+  r: 10;
+}
+
+.text-darkred {
+  color: #7b0003;/*#b90000;*/
+}
+a.text-darkred:hover {
+  color: #7b0003;
+}
+
+.node.node-hovered {
+  /* stroke: rgb(1, 97, 1);
+  fill: rgb(1, 97, 1); */
+  stroke: #FC0;
+  fill: #FC0;
+  stroke-width: 4px;
+}
+
+#service-node-hovered-label-background {
+  fill: transparent;
+}
+
+text.label.node-hovered {
+  font-weight: 700;
+}
+
+.label {
+  font-size: 0.7em
+}
+.label-category {
+  fill: #F25022;
+  font-weight: 800
+}
+
+.node-category {
+  fill: #F25022;
+  r: 13;
+}
+
+.has-linking-services {
+  fill: rgb(2, 2, 121);
+  color: rgb(2, 2, 121);
+  font-weight: 700;
+}
+.has-linking-services.help-note {
+  background-color: rgb(2, 2, 121);
+}

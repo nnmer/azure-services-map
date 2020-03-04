@@ -7,12 +7,10 @@ const LandingLayout = props => {
   const {component: Component, ...rest} = props
 
   return (
-    <div>
-      <div>
-        <MainMenu />
-      </div>
+    <>
+      <MainMenu />
       <Component {...rest} />
-    </div>
+    </>
   )
 }
 

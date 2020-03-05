@@ -1,7 +1,18 @@
 .modal {
   &-header,
+  // &-content,
   &-footer {
-    background-color: $table-hover-bg;
+    background-color: $base-color;
+    // background-color: $table-hover-bg;
+  }
+}
+.modal {
+  // &-header,
+  &-content
+  // &-footer 
+  {
+    background-color: lighten($base-color, 10%); //$base-color;
+    // background-color: $table-hover-bg;
   }
 }
 

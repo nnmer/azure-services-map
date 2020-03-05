@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
-import imgGlobe from 'src/public/img/icon_globe.png'
+import imgGlobe from 'src/public/img/icon_globe.svg'
 import Modal from 'react-bootstrap/Modal'
 import ServiceLinking from 'src/services/ServiceLinking';
 
@@ -29,13 +29,13 @@ const ModalComponent = props => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body className="show-scroll-always">
-        <table className="table table-hover ">
+        <table className="table table-hover">
           <thead></thead>
           <tbody>
             {
               Object.keys(filteredServiceAvailability).map( (key, idx) => {
                 return (
-                  <tr key={idx} className="table-secondary">
+                  <tr key={idx} className="table">
                     <th>
                       {ServiceLinking.regionsDic[key]}
                       <br/>
@@ -85,6 +85,7 @@ const ServiceRegionAvailabilityModal = props => {
         onHide={() => setModalOpen(false)}
         service={props.service}
         dialogClassName="modal-service-availability-list"
+        size="lg"
       />
     </>
   )

@@ -1,3 +1,5 @@
+$base-color: #2B3E50;
+
 $white:    #fff !default;
 $gray-100: #EBEBEB !default;
 $gray-200: #4E5D6C !default;
@@ -34,7 +36,7 @@ $yiq-contrasted-threshold:  185 !default;
 
 // Body
 
-$body-bg:                   #2B3E50 !default;
+$body-bg:                   $base-color !default;
 $body-color:                $gray-100 !default;
 
 // Components
@@ -74,7 +76,7 @@ $custom-file-border-color:          $gray-200 !default;
 
 // Dropdowns
 
-$dropdown-bg:                       $gray-200 !default;
+$dropdown-bg:                       $base-color !default;
 $dropdown-divider-bg:               rgba($black,.15) !default;
 
 $dropdown-link-color:               $body-color !default;

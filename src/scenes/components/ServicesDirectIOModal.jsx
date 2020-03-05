@@ -3,13 +3,34 @@ import PropTypes from 'prop-types'
 import Modal from 'react-bootstrap/Modal'
 import imgArrowDown from 'src/public/img/arrow-down.png'
 import ListServiceDirectIOEntries from './ListServiceDirectIOEntries';
+import ServiceLinking from 'src/services/ServiceLinking';
 
 const ServicesDirectIOModal = props => {
  
-  let {service, ...rest} = props
+  let [service, setService] = useState(null)
+
+  useEffect( () => {
+    onSelectService(props.serviceId)
+  }, [])
+
+  let {serviceId, ...rest} = props
+
+  const onSelectService = serviceId => {
+    let exist = ServiceLinking.findServiceById(serviceId)
+    if (exist) {
+      setService(exist)
+    } else {
+      console.error(`The service was not found`)
+    }
+  }
+
+  if (null === service) {
+    return 'Loading...'
+  }
+
   return (
     <>
-    
+
        <Modal scrollable
         show={props.show}
         size="xl"
@@ -31,6 +52,7 @@ const ServicesDirectIOModal = props => {
                   </div>
 
                   <ListServiceDirectIOEntries
+                    onSelectService={onSelectService}
                     dataSource={service.servicesIO.input || []}
                   />
 
@@ -47,6 +69,7 @@ const ServicesDirectIOModal = props => {
                   </div>
 
                   <ListServiceDirectIOEntries
+                    onSelectService={onSelectService}
                     dataSource={service.servicesIO.output || []}
                   />
 
@@ -62,7 +85,7 @@ const ServicesDirectIOModal = props => {
 }
 
 ServicesDirectIOModal.propTypes = {
-  service: PropTypes.object.isRequired
+  serviceId: PropTypes.string.isRequired
 }
 
 export default ServicesDirectIOModal;

@@ -191,6 +191,10 @@ class ServiceLinking {
     return JSON.parse(JSON.stringify(azureOnly))
   }
 
+  findServiceById(serviceId) {
+    return this._services[serviceId] || null
+  }
+  
   groupServicesByCategory (servicesList, forceBuild = false) {
     if (this._servicesByCategoryArray === null || forceBuild) {
       this._servicesByCategoryArray = {}

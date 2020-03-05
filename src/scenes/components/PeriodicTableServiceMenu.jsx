@@ -62,7 +62,7 @@ const PeriodicTableServiceMenu = props => {
       </Dropdown.Menu>
 
       <ServicesDirectIOModal 
-        service={service} 
+        serviceId={service.id} 
         show={eventKey && eventKey=='io-modal'}
         onHide={()=>setSelectedKey(null)}
       />

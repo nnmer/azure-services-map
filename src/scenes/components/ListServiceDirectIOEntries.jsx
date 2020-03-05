@@ -25,12 +25,12 @@ const ListServiceDirectIOEntries = props => {
           {
             dataSource.map( (ioItem, idx) => {
               return (
-                <tr>
+                <tr key={idx}>
                   <td>
-                    <div key={idx}>
+                    <div>
                       {
                         (ioItem.serviceId && hasService(ioItem.serviceId))
-                        ? <div class="direct-io-list-service-item-wrapper-icon">
+                        ? <div className="direct-io-list-service-item-wrapper-icon">
                             <div className="float-left">
                               <ServiceIcon 
                                 containerClass="float-left "
@@ -41,7 +41,7 @@ const ListServiceDirectIOEntries = props => {
                             <div className="float-left direct-io-list-service-title">
                               {
                                 hasService(ioItem.serviceId)
-                                ? <a href="#">{serviceRenderName(ioItem)}</a>
+                                ? <a href="#" onClick={()=>props.onSelectService(ioItem.serviceId)}>{serviceRenderName(ioItem)}</a>
                                 : serviceRenderName(ioItem)
                               }
                               </div>
@@ -82,7 +82,8 @@ const ListServiceDirectIOEntries = props => {
 }
 
 ListServiceDirectIOEntries.propTypes = {
-  dataSource: PropTypes.array.isRequired
+  dataSource: PropTypes.array.isRequired,
+  onSelectService: PropTypes.func.isRequired
 }
 
 export default ListServiceDirectIOEntries

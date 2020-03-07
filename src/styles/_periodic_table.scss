@@ -1,68 +1,74 @@
 
-.service-list-col-title {
-  width: 100%;
-  font-weight: bold;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  height: 50px;
-  background-color: $dark;
-  color: $white;
-  line-height: 15px;
-  border-right: 1px solid rgba(229, 229, 229, .2);
-  border-left: 1px solid rgba(229, 229, 229, .2);
-}
+
 
 .service-list-container {
-  > .row {
+  .service-list{
     overflow-x: auto;
     white-space: nowrap;
-    flex-wrap: nowrap;
     position: relative;
-    height: calc(100vh - 177px - 0.5rem);
+    height: calc(100vh);
+    display: flex;
+    flex-wrap: nowrap;
 
-    > .service-list-col {
+    .service-list-col {
       min-width: 140px;
       max-width: 140px;
       white-space: initial;
       font-size: $font-size-sm;
-      /* display: inline-block; */
-      /* float: left; */
+      flex-direction: column;
+
+      .service-list-col-service-item {        
+        height: 107px;
+        border: 1px solid rgba(0, 0, 0, .1);
+        // background-color: lighten($body-color, 35%);
+        // background-color: $gray-600;
+        background-color: lighten($base-color, 10%);
+        // background-color: $gray-600;
+        color: $black;
+        cursor: default;  
+      
+        margin: 1px;
+      
+        .service-title {
+          padding: 0px 5px;
+          color: $white;    
+        }
+      
+        > div {
+          cursor: pointer;
+        }
+      }      
+
+      .service-list-col-service-item:hover {
+        padding-top: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
+        border: none;
+        // -moz-box-shadow: inset 0 0 30px rgb(226, 226, 226);
+        // -webkit-box-shadow: inset 0 0 30px rgb(226, 226, 226);
+        // box-shadow: inner 0 0 30px rgb(226, 226, 226);
+      }
+      
+
+      .service-list-col-title {
+        width: 100%;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 50px;
+        background-color: $dark;
+        color: $white;
+        line-height: 15px;
+        border-right: 1px solid rgba(229, 229, 229, .2);
+        border-left: 1px solid rgba(229, 229, 229, .2);
+      }
     }
   }
 }
 
-.service-list-col-service-item {
-  height: 107px;
-  border: 1px solid rgba(0, 0, 0, .1);
-  // background-color: lighten($body-color, 35%);
-  // background-color: $gray-600;
-  background-color: lighten($base-color, 10%);
-  // background-color: $gray-600;
-  color: $black;
-  cursor: default;  
-
-  margin: 1px;
-
-  .service-title {
-    padding: 0px 5px;
-    color: $white;    
-  }
-
-  > div {
-    cursor: pointer;
-  }
-}
 
 
-.service-list-col-service-item:hover {
-  padding-top: 1px;
-  padding-left: 1px;
-  padding-right: 1px;
-  border: none;
-  // -moz-box-shadow: inset 0 0 30px rgb(226, 226, 226);
-  // -webkit-box-shadow: inset 0 0 30px rgb(226, 226, 226);
-  // box-shadow: inner 0 0 30px rgb(226, 226, 226);
-}
+
 
 
 .services-direct-io-list {

@@ -98,15 +98,12 @@ label,
 
 
 .show-scroll-always::-webkit-scrollbar {
-  -webkit-appearance: none;
   width: 7px;
   height:7px;
 }
 .show-scroll-always::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: $light;
-  /* background-color: rgba(17, 0, 255, 0.603); */
-  /* -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5); */
 }
 
 

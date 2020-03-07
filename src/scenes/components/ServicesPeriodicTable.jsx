@@ -31,7 +31,7 @@ class ServicesPeriodicTable extends React.Component {
   render () {
     return (
       <div className="service-list-container data-container-table">
-        <div className="service-list show-scroll-always row text-center m-none">
+        <div className="service-list show-scroll-always text-center m-none">
           {
             Object.keys(this.props.filteredServicesList).map( (category, categoryIdx) => {
               return (

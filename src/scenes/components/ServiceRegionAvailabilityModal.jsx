@@ -1,12 +1,30 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
-import imgGlobe from 'src/public/img/icon_globe.svg'
 import Modal from 'react-bootstrap/Modal'
 import ServiceLinking from 'src/services/ServiceLinking';
 
-const ModalComponent = props => {
+const ServiceRegionAvailabilityModal = props => {
 
-  const {service, ...rest} = props
+  let [service, setService] = useState(null)
+
+  useEffect( () => {
+    onSelectService(props.serviceId)
+  }, [props.serviceId])
+
+  const onSelectService = serviceId => {
+    let exist = ServiceLinking.findServiceById(serviceId)
+    if (exist) {
+      setService(exist)
+    } else {
+      console.error(`The service was not found`)
+    }
+  }
+
+  if (null === service) {
+    return ''
+  }
+
+  const {serviceId, ...rest} = props
 
   const computeAvailabilityClass = av => {
     if (av.inGA) {
@@ -65,35 +83,9 @@ const ModalComponent = props => {
     </Modal>
   );
 }
- 
-const ServiceRegionAvailabilityModal = props => {
-
-  const [modalOpen, setModalOpen] = useState(false)
-
-  return (
-    <>
-      <a 
-        href="#"
-        className="action-icon"
-        hidden={props.hidden}
-        onClick={()=>setModalOpen(true)}
-      >
-        <img src={imgGlobe} width="16px"/>
-      </a>
-      <ModalComponent 
-        show={modalOpen} 
-        onHide={() => setModalOpen(false)}
-        service={props.service}
-        dialogClassName="modal-service-availability-list"
-        size="lg"
-      />
-    </>
-  )
-}
 
 ServiceRegionAvailabilityModal.propTypes = {
-  hidden: PropTypes.bool.isRequired,
-  service: PropTypes.object.isRequired
+  serviceId: PropTypes.string.isRequired
 }
 
 export default ServiceRegionAvailabilityModal

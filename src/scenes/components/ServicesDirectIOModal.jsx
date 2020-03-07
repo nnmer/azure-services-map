@@ -11,7 +11,7 @@ const ServicesDirectIOModal = props => {
 
   useEffect( () => {
     onSelectService(props.serviceId)
-  }, [])
+  }, [props.serviceId])
 
   let {serviceId, ...rest} = props
 
@@ -25,7 +25,7 @@ const ServicesDirectIOModal = props => {
   }
 
   if (null === service) {
-    return 'Loading...'
+    return ''
   }
 
   return (

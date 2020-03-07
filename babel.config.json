@@ -9,6 +9,7 @@
     "development": {
       "plugins": [
         "@babel/plugin-proposal-object-rest-spread",
+        "transform-class-properties",
         [
           "@babel/plugin-transform-react-jsx"
         ]
@@ -17,7 +18,8 @@
     },
     "production": {
       "plugins": [
-        ["@babel/plugin-proposal-object-rest-spread"]
+        ["@babel/plugin-proposal-object-rest-spread"],
+        ["transform-class-properties"]
       ]
     }
   }

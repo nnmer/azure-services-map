@@ -22,4 +22,4 @@ ServiceIcon.propTypes = {
   src: PropTypes.any.isRequired
 }
 
-export default ServiceIcon
+export default React.memo(ServiceIcon)

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import MainMenu from 'src/components/pageBlock/MainMenu';
+import ErrorBoundary from 'src/components/ErrorBoundary';
 
 const LandingLayout = props => {
   
@@ -9,7 +10,9 @@ const LandingLayout = props => {
   return (
     <>
       <MainMenu />
-      <Component {...rest} />
+      <ErrorBoundary>
+        <Component {...rest} />
+      </ErrorBoundary>
     </>
   )
 }

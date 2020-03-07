@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ServiceLinking from 'src/services/ServiceLinking'
 import ServiceConnectionDescriptionLinks from './ServiceConnectionDescriptionLinks'
-import ServiceIcon from './ServiceIcon';
+import ServiceIcon from 'src/components/ServiceIcon';
 
 const ListServiceDirectIOEntries = props => {
   const getServiceData = serviceId => {

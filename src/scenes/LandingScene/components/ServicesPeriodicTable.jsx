@@ -3,7 +3,7 @@ import imgAzureServiceDefaultIcon from 'src/public/img/icon-azure-black-default.
 import ServiceRegionAvailabilityModal from './ServiceRegionAvailabilityModal';
 import PeriodicTableServiceMenu from './PeriodicTableServiceMenu'
 import imgGlobe from 'src/public/img/icon_globe.svg'
-import ServiceIcon from './ServiceIcon'
+import ServiceIcon from 'src/components/ServiceIcon';
 import ServicesDirectIOModal from './ServicesDirectIOModal'
 
 class ServicesPeriodicTable extends React.Component {

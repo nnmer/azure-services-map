@@ -5,6 +5,7 @@ import PeriodicTableServiceMenu from './PeriodicTableServiceMenu'
 import imgGlobe from 'src/public/img/icon_globe.svg'
 import ServiceIcon from 'src/components/ServiceIcon';
 import ServicesDirectIOModal from './ServicesDirectIOModal'
+import ServicesDirectIOInteractiveGraphModal from './ServicesDirectIOInteractiveGraphModal';
 
 class ServicesPeriodicTable extends React.Component {
   constructor(props) {
@@ -99,6 +100,16 @@ class ServicesPeriodicTable extends React.Component {
         {
           (null !== this.state.menuItemSelected && this.state.menuItemSelected.menuKey=='io-modal')
           ? <ServicesDirectIOModal 
+              serviceId={this.state.menuItemSelected.serviceId} 
+              show={null !== this.state.menuItemSelected}
+              onHide={()=>this.setMenuItemSelected(null)}
+            />
+          : ''
+        }
+
+        {
+          (null !== this.state.menuItemSelected && this.state.menuItemSelected.menuKey=='io-modal-graph')
+          ? <ServicesDirectIOInteractiveGraphModal 
               serviceId={this.state.menuItemSelected.serviceId} 
               show={null !== this.state.menuItemSelected}
               onHide={()=>this.setMenuItemSelected(null)}

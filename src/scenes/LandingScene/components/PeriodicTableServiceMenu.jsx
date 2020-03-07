@@ -50,7 +50,7 @@ const PeriodicTableServiceMenu = props => {
         
         {
           (service.servicesIO.output && service.servicesIO.output.length > 0)
-          ? <Dropdown.Item as="button" eventKey="io-directed-graph">
+          ? <Dropdown.Item as="button" eventKey="io-modal-graph">
               IO graph
             </Dropdown.Item>
           : ''

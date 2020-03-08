@@ -96,7 +96,7 @@ const ServicesDirectIOInteractiveGraph = props => {
       tree(root)
 
       // Normalize for fixed-depth.
-      nodes.forEach(function (d) { d.y = d.depth * 200 })
+      nodes.forEach(function (d) { d.y = d.depth * 250 })
 
       // Update the nodes…
       var node = vis.selectAll('g.node')
@@ -110,12 +110,12 @@ const ServicesDirectIOInteractiveGraph = props => {
 
       nodeEnter.append('svg:circle')
         .attr('r', 10)
-        .style('fill', function (d) { return d._children ? 'lightsteelblue' : '#fff' })
+        .attr('class', d => d._children ? 'nodeHasChildren' : '')
 
       nodeEnter.append('svg:text')
         .attr('class', function (d) { return d.children || d._children ? 'nodeHasChildren' : '' })
         .attr('x', function (d) { return  d.parent === null ? -15 : 15 })
-        .attr('dy', '.45em')
+        .attr('dy', '.35em')
         .attr('text-anchor', function (d) { return  d.parent === null ? 'end' : 'start' })
         .text(function (d) { return d.data.name })
         .style('fill-opacity', 1e-6)
@@ -127,7 +127,7 @@ const ServicesDirectIOInteractiveGraph = props => {
 
       nodeUpdate.select('circle')
         .attr('r', 10)
-        .style('fill', function (d) { return d._children ? 'lightsteelblue' : '#fff' })
+        .attr('class', d => d._children ? 'nodeHasChildren' : '')
 
       nodeUpdate.select('text')
         .style('fill-opacity', 1)

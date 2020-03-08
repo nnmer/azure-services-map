@@ -4,25 +4,36 @@
 }
 
 .link {
-  stroke: #000;
-  stroke-opacity: .8;
+  stroke: $base-color;
+  stroke-width: 3px;
+  // stroke-opacity: 1;
+  fill: none;
 }
 .node {
-  stroke: #fff;
-  fill: rgb(113, 136, 146);
-  stroke-width: 1.5px;
+  stroke: $white;
+  fill: $white;
+  stroke-width: 0px;
   cursor: pointer
 }
 circle {
   r: 10;
+  stroke: $base-color;
+  fill: $white;
+  stroke-width: 1.5px;
+  
+  &.nodeHasChildren {
+    fill: $base-color;//rgb(113, 136, 146);
+    stroke: $white;
+  }
 }
 
-.text-darkred {
-  color: #7b0003;/*#b90000;*/
-}
-a.text-darkred:hover {
-  color: #7b0003;
-}
+
+// .text-darkred {
+//   color: #7b0003;/*#b90000;*/
+// }
+// a.text-darkred:hover {
+//   color: #7b0003;
+// }
 
 .node.node-hovered {
   /* stroke: rgb(1, 97, 1);

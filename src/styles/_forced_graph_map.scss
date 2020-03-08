@@ -35,6 +35,16 @@ circle {
 //   color: #7b0003;
 // }
 
+.service-flow-action-icons {
+  img {
+    max-height: 45px;
+  }
+
+  .drag-icon {
+    width: 30px;
+  }
+}
+
 .node.node-hovered {
   /* stroke: rgb(1, 97, 1);
   fill: rgb(1, 97, 1); */

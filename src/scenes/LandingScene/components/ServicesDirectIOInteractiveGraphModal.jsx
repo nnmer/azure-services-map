@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import ServiceLinking from 'src/services/ServiceLinking';
 import Modal from 'react-bootstrap/Modal';
 import ServicesDirectIOInteractiveGraph from './ServicesDirectIOInteractiveGraph'
+import D3CanvasControlNotice from 'src/components/D3CanvasControlNotice';
 
 const ServicesDirectIOInteractiveGraphModal = props => {
  
@@ -73,6 +74,7 @@ const ServicesDirectIOInteractiveGraphModal = props => {
           <ServicesDirectIOInteractiveGraph
             ioTree={ioTree}
           />
+          <D3CanvasControlNotice />
         </Modal.Body>
 
       </Modal>

@@ -1,62 +1,60 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import imgHamburger from 'src/public/img/icon_hamburger.svg'
-import Dropdown from 'react-bootstrap/Dropdown'
 import PropTypes from 'prop-types'
 import ServiceLinking from 'src/services/ServiceLinking';
+import Overlay from 'react-bootstrap/Overlay';
 
 const PeriodicTableServiceMenu = props => {
 
-  const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
-    <a
-      className="action-icon"
-      href="#"
-      ref={ref}
-      onClick={e => {
-        e.preventDefault();
-        onClick(e);
-      }}
-    >
-      {children}
-      <img src={imgHamburger} width="16px"/>
-    </a>
-  ));
+  const target = useRef(null);
+  const [show, setShow] = useState(false);
 
   let {serviceId, ...rest} = props
   let service = ServiceLinking.servicesUnfiltered[serviceId]
 
   return (
-    <Dropdown 
-      id={`menu-dropdown-service-${service.id}`}
-      onSelect={(eventKey)=>{
-        props.onSelect(service.id, eventKey)
-      }}      
-    >
-      <Dropdown.Toggle as={CustomToggle} id={`menu-toggle-service-${service.id}`}> </Dropdown.Toggle>
-
-      <Dropdown.Menu className="primary">
-        <Dropdown.Item href={service.url} target="_blank" eventKey="doc-url">
-          Service doc
-        </Dropdown.Item>
-
-        {
-          ((service.servicesIO.input && service.servicesIO.input.length > 0)
-            || (service.servicesIO.output && service.servicesIO.output.length > 0) 
-          )
-          ? <Dropdown.Item as="button" eventKey="io-modal">
-              Direct I/O services
-            </Dropdown.Item>
-          : ''
-        }
-        
-        {
-          (service.servicesIO.output && service.servicesIO.output.length > 0)
-          ? <Dropdown.Item as="button" eventKey="io-modal-graph">
-              IO graph
-            </Dropdown.Item>
-          : ''
-        }        
-      </Dropdown.Menu>
-    </Dropdown>
+    <>
+      <a href="#"  className="action-icon">
+        <img src={imgHamburger} width="16px" ref={target} onClick={() => setShow(!show)} />
+      </a>
+      {
+        show
+        ? <Overlay target={target.current} show={show} placement="right" 
+          rootClose={true}
+          onHide={()=>setShow(!show)}
+          >
+          {({
+            placement,
+            scheduleUpdate,
+            arrowProps,
+            outOfBoundaries,
+            show: _show,
+            ...props
+          }) => (
+            <div  {...props}  className="dropdown-menu" >
+              <a className="dropdown-item" href={service.url} target="_blank">Service doc</a>
+              {
+                ((service.servicesIO.input && service.servicesIO.input.length > 0)
+                  || (service.servicesIO.output && service.servicesIO.output.length > 0) 
+                )
+                ? <a className="dropdown-item" href="#" onClick={()=>rest.onSelect(service.id, 'io-modal')}>
+                    Direct I/O services
+                    </a>
+                : ''
+              }
+              {
+                (service.servicesIO.output && service.servicesIO.output.length > 0)
+                ? <a className="dropdown-item" href="#" onClick={()=>rest.onSelect(service.id, 'io-modal-graph')}>
+                    IO graph
+                    </a>
+                : ''
+              } 
+            </div>
+          )}
+        </Overlay>
+        : ''
+      }
+    </>
   )
 }
 

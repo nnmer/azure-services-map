@@ -2,7 +2,7 @@ import React from 'react'
 import imgAzureServiceDefaultIcon from 'src/public/img/icon-azure-black-default.png'
 import ServiceRegionAvailabilityModal from './ServiceRegionAvailabilityModal';
 import PeriodicTableServiceMenu from './PeriodicTableServiceMenu'
-import imgGlobe from 'src/public/img/icon_globe.svg'
+import IconGlobe from 'src/icons/globe.svg'
 import ServiceIcon from 'src/components/ServiceIcon';
 import ServicesDirectIOModal from './ServicesDirectIOModal'
 import ServicesDirectIOInteractiveGraphModal from './ServicesDirectIOInteractiveGraphModal';
@@ -58,7 +58,7 @@ class ServicesPeriodicTable extends React.Component {
                                   hidden={!this.serviceHasAvailability(service)}
                                   onClick={()=> this.onSelectServiceMenuItem(service.id, 'availability-modal')}
                                 >
-                                  <img src={imgGlobe} width="16px"/>
+                                  <IconGlobe width="16px"/>
                                 </a>
                               </div>
 

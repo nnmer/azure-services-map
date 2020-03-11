@@ -1,10 +1,11 @@
 body {
-  padding-top: 40px;
+  padding-top: 58px;
 }
 
 
 .navbar {
   font-size: $font-size-sm;
+  background-color: $base-color;
 }
 
 .navbar-nav-svg.svg-github {

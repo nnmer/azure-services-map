@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import imgHamburger from 'src/public/img/icon_hamburger.svg'
+import IconHamburger from 'src/icons/hamburger.svg'
 import PropTypes from 'prop-types'
 import ServiceLinking from 'src/services/ServiceLinking';
 import Overlay from 'react-bootstrap/Overlay';
@@ -14,8 +14,8 @@ const PeriodicTableServiceMenu = props => {
 
   return (
     <>
-      <a href="#"  className="action-icon">
-        <img src={imgHamburger} width="16px" ref={target} onClick={() => setShow(!show)} />
+      <a href="#"  className="action-icon" ref={target} onClick={() => setShow(!show)} >
+        <IconHamburger width="16px" />
       </a>
       {
         show

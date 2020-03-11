@@ -29,6 +29,7 @@
     "@babel/preset-env": "^7.8.6",
     "@babel/preset-flow": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
+    "@svgr/webpack": "^5.2.0",
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-class-properties": "^6.24.1",

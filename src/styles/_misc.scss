@@ -1,6 +1,16 @@
 $web-font-path: "https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" !default;
 @import url($web-font-path);
 
+@mixin scroller () {
+  &::-webkit-scrollbar {
+    width: 7px;
+    height:7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: $light;
+  }
+}
 
 .btn {
   @each $color, $value in $theme-colors {
@@ -97,14 +107,10 @@ label,
 
 
 
-.show-scroll-always::-webkit-scrollbar {
-  width: 7px;
-  height:7px;
+.show-scroll-always {
+  @include scroller;
 }
-.show-scroll-always::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: $light;
-}
+
 
 
 .service-icon-wrapper {

@@ -99,13 +99,19 @@ class Filter extends React.Component {
               }
             </div>
 
-            <div className="input-group">
-              <input 
-                type="checkbox"
-                name="servicesOnlyWithIO"
-                onChange={this.handleInputChange}
-              />
-              <span className="text-muted">Show services with In/Out connections only</span>
+            <div className="input-group" style={{marginTop: '5px'}}>
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <input 
+                    type="checkbox"
+                    name="servicesOnlyWithIO"
+                    onChange={this.handleInputChange}
+                  />
+                </span>
+              </div>
+              <div  style={{marginTop: '3px'}}>
+                <span className="text-muted">Show services with In/Out connections only</span>
+              </div>
             </div>
 
           </div>

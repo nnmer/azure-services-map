@@ -12,7 +12,9 @@ const MainMenu = props => {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav mr-auto">
             </ul>
-            <GitHubReference />
+            <div>
+              <GitHubReference />
+            </div>
           </div>
         </div>
       </div>

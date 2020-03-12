@@ -156,6 +156,8 @@ constructor(props) {
               }
             })
           }}
+          lastConnectionsUpdate={this.state.lastConnectionsUpdate}
+          lastAvailabilityUpdate={this.state.lastAvailabilityUpdate}
         />
         </div>
         <ServicesPeriodicTable 

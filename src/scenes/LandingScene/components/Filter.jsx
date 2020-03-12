@@ -145,7 +145,12 @@ class Filter extends React.Component {
             </div>
           </div>  
           <div className="col-4">
-            
+            <div className="float-right">
+              <DataUpdateInfo 
+                lastConnectionsUpdate={this.props.lastConnectionsUpdate}
+                lastAvailabilityUpdate={this.props.lastAvailabilityUpdate}
+              />
+            </div>
           </div>        
         </div>
       </div>

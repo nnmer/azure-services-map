@@ -23,6 +23,10 @@ $green:   #5cb85c !default;
 $teal:    #20c997 !default;
 $cyan:    #5bc0de !default;
 
+$availability-ga: #00c400;
+$availability-preview: #ffa500;
+$availability-expected: rgb(0, 162, 255);
+
 $primary:       $blue !default;
 $secondary:     $gray-200 !default;
 $success:       $green !default;
@@ -37,7 +41,7 @@ $yiq-contrasted-threshold:  185 !default;
 // Body
 
 $body-bg:                   $base-color !default;
-$body-color:                $gray-100 !default;
+$body-color:                $white !default;//$gray-100 !default;
 
 // Components
 

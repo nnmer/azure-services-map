@@ -62,7 +62,7 @@ const ServiceRegionAvailabilityModal = props => {
                       </span>
                     </th>
                     <td>
-                      <span className={`region-availability ${computeAvailabilityClass(service.availability[key])}`}>
+                      <span className={`region-availability-round-flag ${computeAvailabilityClass(service.availability[key])}`}>
                       
                       </span>
                       <span className="ml-2">

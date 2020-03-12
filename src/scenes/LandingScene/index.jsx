@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import ServicesPeriodicTable from './components/ServicesPeriodicTable';
 import api from 'src/helpers/api';
 import Routing, { routesAPI } from 'src/helpers/routing';
 import ServiceLinking from 'src/services/ServiceLinking';
+import Filter from './components/Filter';
 
 
 function queryParameters () {
@@ -32,15 +33,13 @@ class LandingScene extends React.Component {
   filteredServicesList = () => {
     let filteredServices = ServiceLinking.applyFilter(
       this.state.searchVal,
-      this.searchShowWithIOOnly,
-      this.searchRegionValue,
-      this.searchRegionAvailabilityValue
+      this.state.searchWithIOOnly,
+      this.state.searchGeoVal,
+      this.state.searchGeoAvailabilityVal
     )
     return ServiceLinking.groupServicesByCategory(filteredServices, true)
   }
-  toggleTreeSelectGreyed = function (event) {
-    this.treeSelectFocused = (event && event.length !== 0)
-  }
+  
   renderMap = function () {
     SvsG.render()
     SvsG.applyFilter()
@@ -68,27 +67,21 @@ constructor(props) {
   super(props)
   this.state = {
     searchVal: null,
+    searchGeoVal: [],
+    searchGeoAvailabilityVal:  ['ga', 'preview', 'expected'],
+    searchWithIOOnly: false,
     servicesData: null,
     azureRegions: {},
     lastConnectionsUpdate: null,
     lastAvailabilityUpdate: null,
   }
-  // let [searchVal, setSearchVal] = useState(null)
-  // let [servicesData, setServicesData] = useState(null)
-  // let [azureRegions, setAzureRegions] = useState({})
-  // let [lastConnectionsUpdate, setLastConnectionsUpdate] = useState(null)
-  // let [lastAvailabilityUpdate, setLastAvailabilityUpdate] = useState(null)
-  this.searchRegionAvailabilityValue =  ['ga', 'preview', 'expected']
-  this.azureRegionsAvailabilitySelectOptions = [
-    {id: 'ga', label: 'GA'},
-    {id: 'preview', label: 'Preview'},
-    {id: 'expected', label: 'Expected'},
+  
+  this.azureRegionsAvailabilitySelectOptions= [
+    {value: 'ga', label: 'GA', checked: true, disabled: true, tagClassName: 'disabled'},
+    {value: 'preview', label: 'Preview', checked: true, disabled: true, tagClassName: 'disabled'},
+    {value: 'expected', label: 'Expected', checked: true, disabled: true, tagClassName: 'disabled'},
   ]
   this.azureRegionsSelectOptions = []
-  this.treeSelectFocused = false
-  this.searchShowWithIOOnly = false
-  this.searchRegionValue = null
-  
   this.mapRendered = false
   this.mapSelector = '#service-vs-group-map'
   this.mapSelectorId = 'service-vs-group-map'
@@ -100,22 +93,36 @@ constructor(props) {
     .then(res=>{
       let {services, serviceLinking, refServices, azureRegions} = res.data
 
-      // setLastConnectionsUpdate(res.data.lastConnectionsUpdate)
-      // setLastAvailabilityUpdate(res.data.lastAvailabilityUpdate)
-      // setAzureRegions(azureRegions)
-
       ServiceLinking.init(services, serviceLinking, refServices, azureRegions)
       // SvsG = new ServicesVsGroupsForceDirectedTree(that.mapSelector,SL.azureServicesOnly, that)
 
       Object.keys(azureRegions).map( key => {
-        this.azureRegionsSelectOptions.push({
-          id: key,
+        let item = {
+          value: key,
           label: key,
-          children: azureRegions[key].map(item => { return { id: item.slug, label: item.title, slug: item.slug } })
-        })
-      })
+        }
+        if (!(azureRegions[key].length === 1 && azureRegions[key][0].title === key)) {
+          let valueTree = []
+          item.children =  azureRegions[key].map(item => { 
+            valueTree.push(item.slug)
+            return { 
+              value: [item.slug], 
+              label: item.title, 
+              slug: item.slug,
+              actions: [{
+                text: `(${item.slug})`,
+                className: 'geo-slug',
+              }]
+            } 
+          })
+          item.value = valueTree
+        } else {
+          item.value = [azureRegions[key][0].slug]
+        }
 
-      // setServicesData(res.data.services)
+        this.azureRegionsSelectOptions.push(item)
+      })      
+
       this.setState({
         searchVal: queryParameter('search'),
         lastConnectionsUpdate:  res.data.lastConnectionsUpdate,
@@ -132,9 +139,29 @@ constructor(props) {
     }
 
     return (
+      <>
+        <div className="mb-3">
+        <Filter 
+          searchVal={this.state.searchVal}
+          regionsSource={this.azureRegionsSelectOptions}
+          availabilityOptions={[...this.azureRegionsAvailabilitySelectOptions]}
+          onFilterChange={(e)=>{
+
+            this.setState(curValues => {
+              return {
+                searchVal: e.searchVal ? e.searchVal.trim() : '',
+                searchGeoVal: e.geoVal,
+                searchGeoAvailabilityVal: e.availabilityVal,
+                searchWithIOOnly: e.servicesOnlyWithIO,
+              }
+            })
+          }}
+        />
+        </div>
         <ServicesPeriodicTable 
           filteredServicesList={this.filteredServicesList()}
         />
+      </>
     )
   }
 }

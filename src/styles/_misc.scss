@@ -142,23 +142,23 @@ label,
 
 
 
-.region-availability{
+.region-availability-round-flag{
   height: 10px;
   width: 10px;
   line-height: 8px;
   border-radius: 50%;
   display: inline-block;
   box-shadow: 0 0 0 2px rgba(7, 6, 6, 0.25);
-}
 
-.region-availability-ga {
-  background-color: #00c400;
-}
+  &.region-availability-ga {
+    background-color: $availability-ga;
+  }
 
-.region-availability-preview {
-  background-color: #ffa500;
-}
+  &.region-availability-preview {
+    background-color: $availability-preview;
+  }
 
-.region-availability-expected {
-  background-color: rgb(0, 162, 255);
+  &.region-availability-expected {
+    background-color: $availability-expected;
+  }
 }

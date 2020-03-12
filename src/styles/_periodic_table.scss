@@ -1,4 +1,55 @@
+.periodic-table-filter {  
+  input {
+    background: none;
+    border-bottom: 1px solid $gray-600;
+    color: $white;    
 
+    &.form-control:focus {
+      background: none;
+      border: none;
+      border-bottom: 1px solid $white;
+      box-shadow:none;
+      color: $white;
+
+      ~.input-group-append,
+      ~.input-group-prepend {
+        border-bottom: 1px solid $white;
+        .input-group-text{
+          background: none;
+        }
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    margin-top: 4px;
+    margin-right: 5px;
+  }
+  
+
+  .input-group {
+    .input-group-append{
+      border-bottom: 1px solid $gray-600;
+      .input-group-text{
+        background: none;
+      }
+    }
+    .input-group-prepend {
+      border-bottom: none;
+      .input-group-text{
+        background: none;        
+      }
+      svg {
+        fill: $gray-300;
+      }
+    }
+    .clear-search-x {
+      .input-group-text:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 
 .service-list-container {

@@ -5,6 +5,9 @@ import IconGlobe from 'src/icons/globe.svg'
 import IconSearch from 'src/icons/search.svg'
 import arrayUnion from 'lodash/union'
 import DropdownTreeSelect from 'react-dropdown-tree-select';
+import Popover from 'react-bootstrap/Popover';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import DataUpdateInfo from './DataUpdateInfo';
 
 class Filter extends React.Component {
 
@@ -69,8 +72,8 @@ class Filter extends React.Component {
         <div className="row">
           <div className="col-4">
             <div className="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><IconSearch width={20}/></span>
+              <div className="input-group-prepend">
+                <span className="input-group-text"><IconSearch width={20}/></span>
               </div>
               
               <input
@@ -100,8 +103,8 @@ class Filter extends React.Component {
             </div>
 
             <div className="input-group" style={{marginTop: '5px'}}>
-              <div class="input-group-prepend">
-                <span class="input-group-text">
+              <div className="input-group-prepend">
+                <span className="input-group-text">
                   <input 
                     type="checkbox"
                     name="servicesOnlyWithIO"
@@ -117,23 +120,19 @@ class Filter extends React.Component {
           </div>
           <div className="col-4 clearfix">
             <div className="periodic-table-geo-filter">
-            <div className="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><IconGlobe width={20}/></span>
+              <div className="input-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><IconGlobe width={20}/></span>
+                </div>
+                <div className="periodic-table-geo-regions-wrapper">
+                  <FilterDropdownTree 
+                    data={this.props.regionsSource}  
+                    onChange={this.handleRegionSelectChange}
+                    showPartiallySelected={true}
+                    texts={{ placeholder: 'Filter by region...' }}
+                  />  
+                </div>
               </div>
-              <div className="periodic-table-geo-regions-wrapper">
-                <FilterDropdownTree 
-                  data={this.props.regionsSource}  
-                  onChange={this.handleRegionSelectChange}
-                  showPartiallySelected={true}
-                  texts={{ placeholder: 'Filter by region...' }}
-                />
-              </div>
-            </div>
-              {/* <div className="float-left field-prefix" style={{marginTop: "5px"}}>
-                <IconGlobe width={24} fill="#fff"/>
-              </div> */}
-
               <div className="periodic-table-geo-regions-availability-wrapper">
                 <DropdownTreeSelect
                   className="availability-dropdown"

@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --config webpack-dev.config.js --progress"
+    "start": "NODE_ENV=development ./node_modules/.bin/webpack-dev-server --config webpack-dev.config.js --progress"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -39,6 +39,7 @@
     "compression-webpack-plugin": "^3.1.0",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
+    "dotenv-webpack": "^1.7.0",
     "file-loader": "^5.1.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.9.0",

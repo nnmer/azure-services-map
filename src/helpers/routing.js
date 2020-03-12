@@ -2,8 +2,8 @@ const routes = {
   ui: {
     home: '/'
   },
-  api: {
-    bootstrap: '/api/bootstrap'
+  api: { // all prefixed with /api
+    bootstrap: '/bootstrap'
   }
 }
 

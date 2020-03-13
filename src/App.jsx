@@ -5,6 +5,7 @@ import NoMatch from 'src/helpers/NoMatch';
 import { routesUI } from 'src/helpers/routing';
 import LandingScene from 'src/scenes/LandingScene';
 import LandingLayout from 'src/layout/LandingLayout';
+import SimpleBar from 'simplebar'
 
 const App = (props) => {
   return (

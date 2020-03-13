@@ -31,8 +31,9 @@ class ServicesPeriodicTable extends React.Component {
 
   render () {
     return (
-      <div className="service-list-container data-container-table">
-        <div className="service-list show-scroll-always text-center m-none">
+    <>
+      <div className="service-list-container" data-simplebar data-simplebar-force-visible="true" data-simplebar-auto-hide="false">
+        <div className="service-list text-center m-none" >
           {
             Object.keys(this.props.filteredServicesList).map( (category, categoryIdx) => {
               return (
@@ -97,8 +98,8 @@ class ServicesPeriodicTable extends React.Component {
             })
           }        
         </div>
-
-        {
+      </div>
+      {
           (null !== this.state.menuItemSelected && this.state.menuItemSelected.menuKey=='io-modal')
           ? <ServicesDirectIOModal 
               serviceId={this.state.menuItemSelected.serviceId} 
@@ -129,7 +130,7 @@ class ServicesPeriodicTable extends React.Component {
             />
           : ''
         }
-      </div>
+    </>
     )
   }
 }

@@ -4,7 +4,7 @@ import api from 'src/helpers/api';
 import Routing, { routesAPI } from 'src/helpers/routing';
 import ServiceLinking from 'src/services/ServiceLinking';
 import Filter from './components/Filter';
-
+import 'simplebar/dist/simplebar.css';
 
 function queryParameters () {
   let varPairs = []

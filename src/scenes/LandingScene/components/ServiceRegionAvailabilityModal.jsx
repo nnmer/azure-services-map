@@ -46,7 +46,7 @@ const ServiceRegionAvailabilityModal = props => {
           {service ? `${service.name} available at:` : ''}
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body className="show-scroll-always">
+      <Modal.Body data-simplebar data-simplebar-force-visible="true" data-simplebar-auto-hide="false">
         <table className="table table-hover">
           <thead></thead>
           <tbody>

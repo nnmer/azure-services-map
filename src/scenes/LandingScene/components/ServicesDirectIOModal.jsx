@@ -41,7 +41,7 @@ const ServicesDirectIOModal = props => {
             Direct IOs
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body className="p-0" data-simplebar data-simplebar-force-visible="true" data-simplebar-auto-hide="false">
+        <Modal.Body className="show-scroll-always p-0">
           <div className="container services-direct-io-list p-0">
             <div className="row no-gutters">
               <div className="col" hidden={!(service.servicesIO.input && service.servicesIO.input.length > 0)}>

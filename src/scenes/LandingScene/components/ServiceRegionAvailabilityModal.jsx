@@ -37,7 +37,7 @@ const ServiceRegionAvailabilityModal = props => {
     return ''
   }
 
-  const filteredServiceAvailability = ServiceLinking.filterServiceAvailabilityByRegionFilter(service.availability)
+  const filteredServiceAvailability = ServiceLinking.filterServiceAvailabilityByRegionFilter(service.availability, true)
 
   return (
     <Modal {...rest} scrollable>
@@ -50,31 +50,44 @@ const ServiceRegionAvailabilityModal = props => {
         <table className="table table-hover">
           <thead></thead>
           <tbody>
-            {
-              Object.keys(filteredServiceAvailability).map( (key, idx) => {
-                return (
-                  <tr key={idx} className="table">
-                    <th>
-                      {ServiceLinking.regionsDic[key]}
-                      <br/>
-                      <span className="text-muted">
-                        {key}
-                      </span>
+          {
+            Object.keys(filteredServiceAvailability).map( (geo, geoIdx) => {
+              return (
+                <React.Fragment key={`${geo}`}>
+                  <tr key={`${geo}-${geoIdx}`}>
+                    <th colSpan="2">
+                      <h5>{geo}</h5>
                     </th>
-                    <td>
-                      <span className={`region-availability-round-flag ${computeAvailabilityClass(service.availability[key])}`}>
-                      
-                      </span>
-                      <span className="ml-2">
-                        {service.availability[key].inGA ? 'GA' : ''}
-                        {service.availability[key].inPreview ? 'Preview' : ''}
-                        {service.availability[key].expectation ? service.availability[key].expectation : ''}
-                      </span>
-                    </td>
                   </tr>
-                )
-              })
-            }
+                  {
+                    Object.keys(filteredServiceAvailability[geo]).map( (key, idx) => {
+                      return (
+                        <tr key={idx} className="table">
+                          <th style={{paddingLeft: "100px"}}>
+                            {ServiceLinking.regionsDic[key]}
+                            <br/>
+                            <span className="text-muted">
+                              {key}
+                            </span>
+                          </th>
+                          <td>
+                            <span className={`region-availability-round-flag ${computeAvailabilityClass(service.availability[key])}`}>
+                            
+                            </span>
+                            <span className="ml-2">
+                              {service.availability[key].inGA ? 'GA' : ''}
+                              {service.availability[key].inPreview ? 'Preview' : ''}
+                              {service.availability[key].expectation ? service.availability[key].expectation : ''}
+                            </span>
+                          </td>
+                        </tr>
+                      )
+                    })
+                  }
+                </React.Fragment>
+              )
+            })
+          }
           </tbody>
           <tfoot></tfoot>
         </table>

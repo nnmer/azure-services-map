@@ -170,6 +170,10 @@ class ServiceLinking {
     return this._regionsDic
   }
 
+  get regionsGeoDic () {
+    return this._regionsByGeo
+  }
+
   get servicesUnfiltered () {
     return this._services
   }
@@ -297,7 +301,7 @@ class ServiceLinking {
     return operationalData
   }
 
-  filterServiceAvailabilityByRegionFilter (serviceAvailability) {
+  filterServiceAvailabilityByRegionFilter (serviceAvailability, groupByGeo = false) {
     let newAvailability = {}
     if (this._filter.regions && this._filter.regions.length > 0) {
       Object.keys(serviceAvailability).map(key => {
@@ -314,7 +318,34 @@ class ServiceLinking {
       newAvailability = Object.assign({}, serviceAvailability)
     }
 
-    return newAvailability
+    if (!groupByGeo) {
+      return newAvailability
+    }
+
+    let regionIdToGeoMap = {}
+    Object.keys(this._regionsByGeo).map( geo => {
+      this._regionsByGeo[geo].map( reg => {
+        regionIdToGeoMap[reg.slug] = geo
+      })      
+    })
+
+    let geoGroupAvailability = {}
+
+    Object.keys(newAvailability).map( slug => {
+
+      let geo = regionIdToGeoMap[slug] || null
+      if (!geo) {
+        return
+      }
+
+      if (!geoGroupAvailability[geo]) {
+        geoGroupAvailability[geo] = {}
+      }
+      geoGroupAvailability[geo][slug] = newAvailability[slug]
+    })
+
+    return geoGroupAvailability
+
   }
 
   applyFilter (searchVal, searchShowWithIOOnly, searchRegionValue, searchRegionAvailabilityValue) {

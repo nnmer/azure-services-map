@@ -73,6 +73,7 @@ class ServicesPeriodicTable extends React.Component {
 
                               <div className="m-t-7">
                                 <ServiceIcon
+                                  title={service.name}
                                   src={service.icon || imgAzureServiceDefaultIcon}
                                 />
                                 <div
@@ -82,7 +83,7 @@ class ServicesPeriodicTable extends React.Component {
                                     : ''
                                   }`}
                                 >
-                                {service.name}
+                                <span title={service.name}>{service.name}</span>
                                 </div>
                               </div>
                             </div>

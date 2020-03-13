@@ -32,7 +32,7 @@ const PeriodicTableServiceMenu = props => {
             ...props
           }) => (
             <div  {...props}  className="dropdown-menu" >
-              <a className="dropdown-item" href={service.url} target="_blank">Service doc</a>
+              <a className="dropdown-item" href={service.url} target="_blank">Service doc  <small>&#x2924;</small></a>
               {
                 ((service.servicesIO.input && service.servicesIO.input.length > 0)
                   || (service.servicesIO.output && service.servicesIO.output.length > 0) 

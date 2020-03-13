@@ -56,7 +56,7 @@
     overflow-x: auto;
     white-space: nowrap;
     position: relative;
-    height: calc(100vh);
+    height: calc(100vh - 141px);
     display: flex;
     flex-wrap: nowrap;
 
@@ -64,7 +64,7 @@
       min-width: 140px;
       max-width: 140px;
       white-space: initial;
-      font-size: $font-size-sm;
+      font-size: $font-size-base * .8;
       flex-direction: column;
 
       .service-list-col-service-item {        
@@ -76,11 +76,11 @@
         // background-color: $gray-600;
         color: $black;
         cursor: default;  
-      
+        overflow: hidden;
         margin: 1px;
       
         .service-title {
-          padding: 0px 5px;
+          padding: 2px 5px;
           color: $white;    
         }
       
@@ -122,26 +122,36 @@
 
 
 .services-direct-io-list {
-  .col:first-child{
-    // padding-right: 15px
+  .table a:not(.btn) {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
-  // .list-group-item {
-  //   text-align: left;
-  //   background-color: initial;
-  // }
+  .col:first-child{
+  }
 }
 
-.direct-io-list-service-doc-links{
-  font-size: 0.8em;
-}
 
-.direct-io-list-service-item-wrapper-icon {
-  .direct-io-list-service-title {
-    line-height: 42px;
-    margin-left: ($spacer * .5);
+.direct-io-list-service-item-wrapper {
+  .service-icon {
   }
   
-  .direct-io-list-service-doc-links{
-    line-height: 42px;
+  .service-title {
+    height: 46px;
+    margin-left: ($spacer * .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .service-doc-links{
+    text-align: right;
+    vertical-align: middle;
+    height: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8em;
   }
 }

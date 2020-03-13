@@ -17,6 +17,16 @@ const ListServiceDirectIOEntries = props => {
 
   let {dataSource, ...rest} = props
 
+  const icon = serviceId => {
+    return (
+      <ServiceIcon 
+        containerClass="float-left "
+        hidden={!getServiceData(serviceId).icon}
+        src={getServiceData(serviceId).icon}
+      />
+    )
+  }
+
   return (
     <div>
       <table className="table table-hover ">
@@ -27,40 +37,41 @@ const ListServiceDirectIOEntries = props => {
               return (
                 <tr key={idx}>
                   <td>
-                    <div>
+                    <div  className="direct-io-list-service-item-wrapper">
                       {
                         (ioItem.serviceId && hasService(ioItem.serviceId))
-                        ? <div className="direct-io-list-service-item-wrapper-icon">
-                            <div className="float-left">
-                              <ServiceIcon 
-                                containerClass="float-left "
-                                hidden={!getServiceData(ioItem.serviceId).icon}
-                                src={getServiceData(ioItem.serviceId).icon}
-                              />
+                        ? <>
+                            <div className="service-icon float-left">
+                              {
+                                hasService(ioItem.serviceId)
+                                ? <a href="#" onClick={()=>props.onSelectService(ioItem.serviceId)}>{icon(ioItem.serviceId)}</a>
+                                : icon(ioItem.serviceId)
+                              }
+                              
                             </div>
-                            <div className="float-left direct-io-list-service-title">
+                            <div className="float-left service-title">
                               {
                                 hasService(ioItem.serviceId)
                                 ? <a href="#" onClick={()=>props.onSelectService(ioItem.serviceId)}>{serviceRenderName(ioItem)}</a>
                                 : serviceRenderName(ioItem)
                               }
                               </div>
-                            <div className="float-right direct-io-list-service-doc-links">
-                              <a href={getServiceData(ioItem.serviceId).url} target="_blank">Service doc</a>
-                              <span hidden={!(ioItem.connectionDescriptionUrl && ioItem.connectionDescriptionUrl.length >= 1)}>
-                                &nbsp;|&nbsp;
+                            <div className="float-right service-doc-links">
+                              <a href={getServiceData(ioItem.serviceId).url} target="_blank">Service doc <small>&#x2924;</small></a>
+                              <div hidden={!(ioItem.connectionDescriptionUrl && ioItem.connectionDescriptionUrl.length >= 1)}>
+                                
                                 <ServiceConnectionDescriptionLinks
                                   dataSource={ioItem.connectionDescriptionUrl || []}
                                 />
-                              </span>
+                              </div>
                             </div>
                             <div className="clearfix"/>
-                          </div>
+                          </>
                         : <>
-                            <div className="float-left direct-io-list-service-title">
+                            <div className="float-left service-title">
                               {ioItem.aliasTitle}
                             </div>
-                            <div hidden={!(ioItem.connectionDescriptionUrl)} className="float-right direct-io-list-service-doc-links">
+                            <div hidden={!(ioItem.connectionDescriptionUrl)} className="float-right service-doc-links">
                               <ServiceConnectionDescriptionLinks
                                 dataSource={ioItem.connectionDescriptionUrl || []} 
                               />

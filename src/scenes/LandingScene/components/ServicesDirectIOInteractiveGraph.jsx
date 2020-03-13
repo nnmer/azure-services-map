@@ -18,7 +18,7 @@ const ServicesDirectIOInteractiveGraph = props => {
     var viewerHeight = window.innerHeight
           - (+d3.select('#ServicesDirectIOInteractiveGraph').style('margin-top').replace('px','') * 2)
           - +d3.select('#ServicesDirectIOInteractiveGraph  .modal-header').style('height').replace('px','')
-          - +d3.select('.service-flow-action-icons img').style('max-height').replace('px','')
+          // - +d3.select('.service-flow-action-icons img').style('max-height').replace('px','')
     
     var root = d3Hierarchy.hierarchy(json)
     root.x0 = viewerHeight/2

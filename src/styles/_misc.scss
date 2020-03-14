@@ -132,6 +132,46 @@ label,
     margin-top: 8px;
     // margin-left: 1px;
   }
+  // &[data-badge]:after {
+  //   content:attr(data-badge);
+  //   position:absolute;
+  //   // top:-10px;
+  //   // right:-10px;
+  //   font-size:.7em;
+  //   background:green;
+  //   color:white;
+  //   width:20px;height:20px;
+  //   text-align:center;
+  //   line-height:20px;
+  //   border-radius:50%;
+  //   box-shadow:0 0 1px #333;
+  // }
+position: relative;
+  div[data-badge]{
+    // content:attr(data-badge);
+
+    position:absolute;
+    top:-5px;
+    right:-8px;
+    font-size:.7em;
+    background: $base-color;
+    // color:white;
+    width:20px;
+    height:20px;
+    text-align:center;
+    line-height:20px;
+    border-radius:50%;
+    border: 1px solid $white;
+    // border: 1px solid #3d5871;
+    // box-shadow:0 0 1px #333;
+
+    z-index: 1;
+    svg.io-badge{
+      width: 10px;
+      fill: $white;
+      margin-top: -2px;
+    }
+  }
 }
 
 .action-icon {

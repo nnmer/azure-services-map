@@ -76,14 +76,10 @@ class ServicesPeriodicTable extends React.Component {
                                 <ServiceIcon
                                   title={service.name}
                                   src={service.icon || imgAzureServiceDefaultIcon}
+                                  hasIO={service.servicesIO.input && service.servicesIO.input.length >0 || service.servicesIO.output && service.servicesIO.output.length >0}
                                 />
                                 <div
-                                  className={`service-title 
-                                  ${service.servicesIO.input && service.servicesIO.input.length >0 || service.servicesIO.output && service.servicesIO.output.length >0 
-                                    ? 'has-linking-services' 
-                                    : ''
-                                  }`}
-                                >
+                                  className="service-title">
                                 <span title={service.name}>{service.name}</span>
                                 </div>
                               </div>

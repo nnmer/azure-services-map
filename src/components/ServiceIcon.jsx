@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import IconIO from 'src/icons/bidirect-arrow.svg'
+import { IconIO } from './Icon';
 
 const ServiceIcon = props => {
 

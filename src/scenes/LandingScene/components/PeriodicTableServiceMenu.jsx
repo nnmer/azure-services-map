@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react'
-import IconHamburger from 'src/icons/hamburger.svg'
 import PropTypes from 'prop-types'
 import ServiceLinking from 'src/services/ServiceLinking';
 import Overlay from 'react-bootstrap/Overlay';
+import { IconHamburger, IconIO, IconGraphRight, IconBook } from 'src/components/Icon';
 
 const PeriodicTableServiceMenu = props => {
 
@@ -15,7 +15,7 @@ const PeriodicTableServiceMenu = props => {
   return (
     <>
       <a href="#"  className="action-icon" ref={target} onClick={() => setShow(!show)} >
-        <IconHamburger width="16px" />
+        <IconHamburger/>
       </a>
       {
         show
@@ -32,21 +32,23 @@ const PeriodicTableServiceMenu = props => {
             ...props
           }) => (
             <div  {...props}  className="dropdown-menu" >
-              <a className="dropdown-item" href={service.url} target="_blank">Service doc  <small>&#x2924;</small></a>
+              <a className="dropdown-item" href={service.url} target="_blank">
+                <IconBook /> Service doc  <small>&#x2924;</small>
+              </a>
               {
                 ((service.servicesIO.input && service.servicesIO.input.length > 0)
                   || (service.servicesIO.output && service.servicesIO.output.length > 0) 
                 )
                 ? <a className="dropdown-item" href="#" onClick={()=>rest.onSelect(service.id, 'io-modal')}>
-                    Direct I/O services
-                    </a>
+                    <IconIO/> Direct I/O services
+                  </a>
                 : ''
               }
               {
                 (service.servicesIO.output && service.servicesIO.output.length > 0)
                 ? <a className="dropdown-item" href="#" onClick={()=>rest.onSelect(service.id, 'io-modal-graph')}>
-                    IO graph
-                    </a>
+                    <IconGraphRight/> IO graph
+                  </a>
                 : ''
               } 
             </div>

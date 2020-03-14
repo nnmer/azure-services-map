@@ -1,13 +1,10 @@
 import React from 'react'
 import imgX from 'src/public/img/x-white.png'
 import FilterDropdownTree from './FilterDropdownTree'
-import IconGlobe from 'src/icons/globe.svg'
-import IconSearch from 'src/icons/search.svg'
 import arrayUnion from 'lodash/union'
 import DropdownTreeSelect from 'react-dropdown-tree-select';
-import Popover from 'react-bootstrap/Popover';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import DataUpdateInfo from './DataUpdateInfo';
+import { IconSearch, IconGlobe } from 'src/components/Icon';
 
 class Filter extends React.Component {
 
@@ -73,7 +70,7 @@ class Filter extends React.Component {
           <div className="col-4">
             <div className="input-group">
               <div className="input-group-prepend">
-                <span className="input-group-text"><IconSearch width={20}/></span>
+                <span className="input-group-text"><IconSearch/></span>
               </div>
               
               <input
@@ -122,7 +119,7 @@ class Filter extends React.Component {
             <div className="periodic-table-geo-filter">
               <div className="input-group">
                 <div className="input-group-prepend">
-                  <span className="input-group-text"><IconGlobe width={20}/></span>
+                  <span className="input-group-text"><IconGlobe/></span>
                 </div>
                 <div className="periodic-table-geo-regions-wrapper">
                   <FilterDropdownTree 

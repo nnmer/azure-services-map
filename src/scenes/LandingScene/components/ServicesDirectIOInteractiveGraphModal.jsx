@@ -4,6 +4,7 @@ import ServiceLinking from 'src/services/ServiceLinking';
 import Modal from 'react-bootstrap/Modal';
 import ServicesDirectIOInteractiveGraph from './ServicesDirectIOInteractiveGraph'
 import D3CanvasControlNotice from 'src/components/D3CanvasControlNotice';
+import { IconGraphRight } from 'src/components/Icon';
 
 const ServicesDirectIOInteractiveGraphModal = props => {
  
@@ -67,7 +68,7 @@ const ServicesDirectIOInteractiveGraphModal = props => {
       >
         <Modal.Header closeButton>
           <Modal.Title >
-            IO graph
+            <IconGraphRight /> IO graph
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="p-0">

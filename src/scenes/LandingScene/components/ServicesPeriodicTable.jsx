@@ -2,10 +2,10 @@ import React from 'react'
 import imgAzureServiceDefaultIcon from 'src/public/img/icon-azure-black-default.png'
 import ServiceRegionAvailabilityModal from './ServiceRegionAvailabilityModal';
 import PeriodicTableServiceMenu from './PeriodicTableServiceMenu'
-import IconGlobe from 'src/icons/globe.svg'
 import ServiceIcon from 'src/components/ServiceIcon';
 import ServicesDirectIOModal from './ServicesDirectIOModal'
 import ServicesDirectIOInteractiveGraphModal from './ServicesDirectIOInteractiveGraphModal';
+import { IconGlobe } from 'src/components/Icon';
 
 class ServicesPeriodicTable extends React.Component {
   constructor(props) {
@@ -53,13 +53,12 @@ class ServicesPeriodicTable extends React.Component {
                           >
                             <div className="service-list-col-service-item">
                               <div className="float-left" >
-                                <a 
-                                  href="#"
+                                <a href="#"
                                   className="action-icon"
                                   hidden={!this.serviceHasAvailability(service)}
                                   onClick={()=> this.onSelectServiceMenuItem(service.id, 'availability-modal')}
                                 >
-                                  <IconGlobe width="16px"/>
+                                  <IconGlobe/>
                                 </a>
                               </div>
 
@@ -78,8 +77,7 @@ class ServicesPeriodicTable extends React.Component {
                                   src={service.icon || imgAzureServiceDefaultIcon}
                                   hasIO={service.servicesIO.input && service.servicesIO.input.length >0 || service.servicesIO.output && service.servicesIO.output.length >0}
                                 />
-                                <div
-                                  className="service-title">
+                                <div className="service-title">
                                 <span title={service.name}>{service.name}</span>
                                 </div>
                               </div>

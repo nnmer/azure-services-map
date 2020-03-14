@@ -4,6 +4,7 @@ import Modal from 'react-bootstrap/Modal'
 import imgArrowDown from 'src/public/img/arrow-down.png'
 import ListServiceDirectIOEntries from './ListServiceDirectIOEntries';
 import ServiceLinking from 'src/services/ServiceLinking';
+import { IconIO } from 'src/components/Icon';
 
 const ServicesDirectIOModal = props => {
  
@@ -38,6 +39,7 @@ const ServicesDirectIOModal = props => {
       >
         <Modal.Header closeButton>
           <Modal.Title >
+            <IconIO/> 
             Direct IOs
           </Modal.Title>
         </Modal.Header>

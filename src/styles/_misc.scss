@@ -167,9 +167,9 @@ position: relative;
 
     z-index: 1;
     svg.io-badge{
-      width: 10px;
+      width: 80%;
       fill: $white;
-      margin-top: -2px;
+      margin-top: -4px;
     }
   }
 }
@@ -177,6 +177,9 @@ position: relative;
 .action-icon {
   padding: 5px 5px 5px 5px;
   opacity: 0.3;
+  svg {
+    width: 16px;
+  }
 }
 .action-icon:hover {
   opacity: 1;

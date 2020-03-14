@@ -21,9 +21,16 @@
   border: none;
 }
 
-.modal-header button, .modal-header button:hover {
-  color: $white;
-  opacity: 1
+.modal-header {
+  svg {
+    width: 32px;
+    fill: $white;
+    margin-right: 5px;
+  }
+  button, button:hover {
+    color: $white;
+    opacity: 1
+  }
 }
 
 .modal-service-availability-list .modal-body {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import ServiceLinking from 'src/services/ServiceLinking';
 import Modal from 'react-bootstrap/Modal';
@@ -9,11 +9,11 @@ import { IconGraphRight } from 'src/components/Icon';
 const ServicesDirectIOInteractiveGraphModal = props => {
  
   let {serviceId, ...rest} = props
-  let [ioTree, setIoTree] = useState(null)
+  let ioTree = null
 
-  useEffect( () => {
-    showServiceIntegrationTree(serviceId)
-  }, [])
+  const setIoTree = value => {
+    ioTree = value
+  }
 
   const showServiceIntegrationTree = function(serviceId) {
     function buildChildren(id) {
@@ -54,6 +54,8 @@ const ServicesDirectIOInteractiveGraphModal = props => {
 
   }
 
+  showServiceIntegrationTree(serviceId)
+
   if (null === ioTree) {
     return ''
   }
@@ -87,4 +89,4 @@ ServicesDirectIOInteractiveGraphModal.propTypes = {
   serviceId: PropTypes.string.isRequired
 }
 
-export default ServicesDirectIOInteractiveGraphModal;
+export default React.memo(ServicesDirectIOInteractiveGraphModal);

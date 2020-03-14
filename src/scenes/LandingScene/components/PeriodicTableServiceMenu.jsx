@@ -2,7 +2,9 @@ import React, { useState, useRef } from 'react'
 import PropTypes from 'prop-types'
 import ServiceLinking from 'src/services/ServiceLinking';
 import Overlay from 'react-bootstrap/Overlay';
-import { IconHamburger, IconIO, IconGraphRight, IconBook } from 'src/components/Icon';
+import { IconHamburger, IconBook } from 'src/components/Icon';
+import IOActionLink from './service-menu/IOActionLink';
+import GraphActionLink from './service-menu/GraphActionLink';
 
 const PeriodicTableServiceMenu = props => {
 
@@ -39,16 +41,12 @@ const PeriodicTableServiceMenu = props => {
                 ((service.servicesIO.input && service.servicesIO.input.length > 0)
                   || (service.servicesIO.output && service.servicesIO.output.length > 0) 
                 )
-                ? <a className="dropdown-item" href="#" onClick={()=>rest.onSelect(service.id, 'io-modal')}>
-                    <IconIO/> Direct I/O services
-                  </a>
+                ? <IOActionLink serviceId={serviceId}/>
                 : ''
               }
               {
                 (service.servicesIO.output && service.servicesIO.output.length > 0)
-                ? <a className="dropdown-item" href="#" onClick={()=>rest.onSelect(service.id, 'io-modal-graph')}>
-                    <IconGraphRight/> IO graph
-                  </a>
+                ? <GraphActionLink serviceId={serviceId}/>
                 : ''
               } 
             </div>
@@ -61,8 +59,7 @@ const PeriodicTableServiceMenu = props => {
 }
 
 PeriodicTableServiceMenu.propTypes = {
-  serviceId: PropTypes.string.isRequired,
-  onSelect: PropTypes.func.isRequired
+  serviceId: PropTypes.string.isRequired
 }
 
 export default React.memo(PeriodicTableServiceMenu)

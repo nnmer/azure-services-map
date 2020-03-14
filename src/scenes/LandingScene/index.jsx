@@ -5,6 +5,7 @@ import Routing, { routesAPI } from 'src/helpers/routing';
 import ServiceLinking from 'src/services/ServiceLinking';
 import Filter from './components/Filter';
 import 'simplebar/dist/simplebar.css';
+import isEqual from 'lodash/isEqual'
 
 function queryParameters () {
   let varPairs = []
@@ -132,12 +133,29 @@ constructor(props) {
       })
     })
   }
+
+  onFilterChange = (e)=>{
+
+    this.setState(curValues => {
+      return {
+        ...curValues,
+        searchVal: e.searchVal ? e.searchVal.trim() : '',
+        searchGeoVal: e.geoVal,
+        searchGeoAvailabilityVal: e.availabilityVal,
+        searchWithIOOnly: e.servicesOnlyWithIO,
+      }
+    })
+  }
+
+  shouldComponentUpdate( nextProps, nextState) {
+    return !isEqual(nextState,this.state)
+  }  
   
   render() {
     if (null === this.state.servicesData) {
       return 'Loading ...'
     }
-
+    let data = this.filteredServicesList()
     return (
       <>
         <div className="mb-3">
@@ -145,23 +163,13 @@ constructor(props) {
           searchVal={this.state.searchVal}
           regionsSource={this.azureRegionsSelectOptions}
           availabilityOptions={[...this.azureRegionsAvailabilitySelectOptions]}
-          onFilterChange={(e)=>{
-
-            this.setState(curValues => {
-              return {
-                searchVal: e.searchVal ? e.searchVal.trim() : '',
-                searchGeoVal: e.geoVal,
-                searchGeoAvailabilityVal: e.availabilityVal,
-                searchWithIOOnly: e.servicesOnlyWithIO,
-              }
-            })
-          }}
+          onFilterChange={this.onFilterChange}
           lastConnectionsUpdate={this.state.lastConnectionsUpdate}
           lastAvailabilityUpdate={this.state.lastAvailabilityUpdate}
         />
         </div>
         <ServicesPeriodicTable 
-          filteredServicesList={this.filteredServicesList()}
+          filteredServicesList={data}
         />
       </>
     )

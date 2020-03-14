@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 const ServicesDirectIOInteractiveGraph = props => {
  
-  let [isDepsLoaded, setIsDepsLoaded] = useState(null)
   let d3 = null
   let selector = '#service-io-graph'
 
@@ -11,9 +10,6 @@ const ServicesDirectIOInteractiveGraph = props => {
     d3 = await import(/* webpackPreload: true, webpackChunkName: "d3" */ 'd3')
     let d3Hierarchy = await import(/* webpackPreload: true, webpackChunkName: "d3" */ 'd3-hierarchy')
     
-    setIsDepsLoaded(true)
-
-
     var viewerWidth = document.getElementById('service-io-graph').clientWidth
     var viewerHeight = window.innerHeight
           - (+d3.select('#ServicesDirectIOInteractiveGraph').style('margin-top').replace('px','') * 2)
@@ -196,12 +192,6 @@ const ServicesDirectIOInteractiveGraph = props => {
 
   serviceFlowTree(props.ioTree)
 
-  if (null === isDepsLoaded) {
-    return 'Loading...'
-  }
-
-
-
   return (
     <>      
       <div className="svg-container">
@@ -216,4 +206,4 @@ ServicesDirectIOInteractiveGraph.propTypes = {
   ioTree: PropTypes.object.isRequired,
 }
 
-export default ServicesDirectIOInteractiveGraph;
+export default React.memo(ServicesDirectIOInteractiveGraph);

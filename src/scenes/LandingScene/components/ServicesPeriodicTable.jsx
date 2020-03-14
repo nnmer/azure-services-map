@@ -1,29 +1,10 @@
 import React from 'react'
 import imgAzureServiceDefaultIcon from 'src/public/img/icon-azure-black-default.png'
-import ServiceRegionAvailabilityModal from './ServiceRegionAvailabilityModal';
 import PeriodicTableServiceMenu from './PeriodicTableServiceMenu'
 import ServiceIcon from 'src/components/ServiceIcon';
-import ServicesDirectIOModal from './ServicesDirectIOModal'
-import ServicesDirectIOInteractiveGraphModal from './ServicesDirectIOInteractiveGraphModal';
-import { IconGlobe } from 'src/components/Icon';
+import AvailabilityActionLink from './service-menu/AvailabilityActionLink';
 
-class ServicesPeriodicTable extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      menuItemSelected: null
-    }
-  }
-
-  setMenuItemSelected = (value) => {
-    this.setState(prevState => ({menuItemSelected: value }))
-  }
-
-  onSelectServiceMenuItem = (serviceId, menuKey) => {
-    this.setMenuItemSelected({
-      serviceId, menuKey
-    })
-  }
+class ServicesPeriodicTable extends React.PureComponent {
 
   serviceHasAvailability = (service) => {
     return service.hasOwnProperty('availability') && Object.keys(service.availability).length > 0
@@ -53,19 +34,16 @@ class ServicesPeriodicTable extends React.Component {
                           >
                             <div className="service-list-col-service-item">
                               <div className="float-left" >
-                                <a href="#"
-                                  className="action-icon"
-                                  hidden={!this.serviceHasAvailability(service)}
-                                  onClick={()=> this.onSelectServiceMenuItem(service.id, 'availability-modal')}
-                                >
-                                  <IconGlobe/>
-                                </a>
+                                {
+                                  this.serviceHasAvailability(service)
+                                  ? <AvailabilityActionLink serviceId={service.id} />
+                                  : ''
+                                }
                               </div>
 
                               <div className="float-right" >
                                 <PeriodicTableServiceMenu 
                                   serviceId={service.id}
-                                  onSelect={this.onSelectServiceMenuItem}
                                 />
                               </div>
                               <div className="clearfix"/>
@@ -93,37 +71,6 @@ class ServicesPeriodicTable extends React.Component {
           }        
         </div>
       </div>
-      {
-          (null !== this.state.menuItemSelected && this.state.menuItemSelected.menuKey=='io-modal')
-          ? <ServicesDirectIOModal 
-              serviceId={this.state.menuItemSelected.serviceId} 
-              show={null !== this.state.menuItemSelected}
-              onHide={()=>this.setMenuItemSelected(null)}
-            />
-          : ''
-        }
-
-        {
-          (null !== this.state.menuItemSelected && this.state.menuItemSelected.menuKey=='io-modal-graph')
-          ? <ServicesDirectIOInteractiveGraphModal 
-              serviceId={this.state.menuItemSelected.serviceId} 
-              show={null !== this.state.menuItemSelected}
-              onHide={()=>this.setMenuItemSelected(null)}
-            />
-          : ''
-        }
-
-        {
-          (null !== this.state.menuItemSelected && this.state.menuItemSelected.menuKey=='availability-modal')
-          ? <ServiceRegionAvailabilityModal 
-              show={null !== this.state.menuItemSelected} 
-              onHide={()=>this.setMenuItemSelected(null)}
-              dialogClassName="modal-service-availability-list"
-              size="lg"           
-              serviceId={this.state.menuItemSelected.serviceId}
-            />
-          : ''
-        }
     </>
     )
   }

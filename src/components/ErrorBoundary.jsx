@@ -12,7 +12,12 @@ export default class ErrorBoundary extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      return <h1>ooops,</h1>;
+      return <div className="text-center">
+        <h2>Ooops, something happen,</h2>
+        <h2>we will fix that as soon as possible,</h2>
+        <h2>please try again later</h2>
+
+      </div>
     }
     return this.props.children;
   }

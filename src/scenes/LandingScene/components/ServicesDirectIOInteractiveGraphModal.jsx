@@ -11,10 +11,6 @@ const ServicesDirectIOInteractiveGraphModal = props => {
   let {serviceId, ...rest} = props
   let ioTree = null
 
-  const setIoTree = value => {
-    ioTree = value
-  }
-
   const showServiceIntegrationTree = function(serviceId) {
     function buildChildren(id) {
       let services = ServiceLinking.services
@@ -50,7 +46,7 @@ const ServicesDirectIOInteractiveGraphModal = props => {
 
     var circularRefTrack = [];
     
-    setIoTree(buildChildren(serviceId))
+    ioTree = buildChildren(serviceId)
 
   }
 

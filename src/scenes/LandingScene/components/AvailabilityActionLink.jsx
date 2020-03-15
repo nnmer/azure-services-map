@@ -1,5 +1,5 @@
 import React from 'react'
-import ServiceRegionAvailabilityModal from '../ServiceRegionAvailabilityModal';
+import ServiceRegionAvailabilityModal from './ServiceRegionAvailabilityModal';
 import { IconGlobe } from 'src/components/Icon';
 
 class AvailabilityActionLink extends React.PureComponent {
@@ -13,11 +13,13 @@ class AvailabilityActionLink extends React.PureComponent {
 
   render(){
     return (
-      <a href="#"
-        className="action-icon"
-        onClick={()=> this.setState({show: true})}
-      >
-        <IconGlobe/>
+      <>
+        <a href="#"
+          className="action-icon"
+          onClick={()=> this.setState({show: true})}
+        >
+          <IconGlobe/>        
+        </a>
         {
           this.state.show
           ? <ServiceRegionAvailabilityModal 
@@ -29,7 +31,7 @@ class AvailabilityActionLink extends React.PureComponent {
             />
           : ''
         }
-      </a>
+      </>
     )
   }
 }

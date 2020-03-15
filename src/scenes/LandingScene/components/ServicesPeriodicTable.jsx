@@ -2,7 +2,7 @@ import React from 'react'
 import imgAzureServiceDefaultIcon from 'src/public/img/icon-azure-black-default.png'
 import PeriodicTableServiceMenu from './PeriodicTableServiceMenu'
 import ServiceIcon from 'src/components/ServiceIcon';
-import AvailabilityActionLink from './service-menu/AvailabilityActionLink';
+import AvailabilityActionLink from './AvailabilityActionLink';
 
 class ServicesPeriodicTable extends React.PureComponent {
 

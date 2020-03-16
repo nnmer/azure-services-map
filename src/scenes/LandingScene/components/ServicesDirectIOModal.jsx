@@ -5,6 +5,7 @@ import imgArrowDown from 'src/public/img/arrow-down.png'
 import ListServiceDirectIOEntries from './ListServiceDirectIOEntries';
 import ServiceLinking from 'src/services/ServiceLinking';
 import { IconIO } from 'src/components/Icon';
+import TelemetryService from 'src/services/TelemetryService';
 
 const ServicesDirectIOModal = props => {
  
@@ -28,6 +29,8 @@ const ServicesDirectIOModal = props => {
   if (null === service) {
     return ''
   }
+
+  TelemetryService.trackPageView('ServicesDirectIOModal', {serviceId: service.id})
 
   return (
     <>

@@ -5,6 +5,7 @@ import Overlay from 'react-bootstrap/Overlay';
 import { IconHamburger, IconBook, IconIO, IconGraphRight } from 'src/components/Icon';
 import ServicesDirectIOModal from './ServicesDirectIOModal';
 import ServicesDirectIOInteractiveGraphModal from './ServicesDirectIOInteractiveGraphModal';
+import TelemetryService from 'src/services/TelemetryService';
 
 const PeriodicTableServiceMenu = props => {
 
@@ -15,6 +16,10 @@ const PeriodicTableServiceMenu = props => {
 
   let {serviceId, ...rest} = props
   let service = ServiceLinking.servicesUnfiltered[serviceId]
+
+  if (show) {
+    TelemetryService.trackEvent('PeriodicTableServiceMenu Open', {serviceId})
+  }
 
   return (
     <>

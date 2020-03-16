@@ -5,6 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import ServicesDirectIOInteractiveGraph from './ServicesDirectIOInteractiveGraph'
 import D3CanvasControlNotice from 'src/components/D3CanvasControlNotice';
 import { IconGraphRight } from 'src/components/Icon';
+import TelemetryService from 'src/services/TelemetryService';
 
 const ServicesDirectIOInteractiveGraphModal = props => {
  
@@ -55,6 +56,8 @@ const ServicesDirectIOInteractiveGraphModal = props => {
   if (null === ioTree) {
     return ''
   }
+
+  TelemetryService.trackPageView('ServicesDirectIOInteractiveGraphModal', {serviceId})
 
   return (
     <>

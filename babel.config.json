@@ -3,13 +3,13 @@
   "plugins": [
     "react-hot-loader/babel",
     "@babel/plugin-syntax-dynamic-import",
-    ["@babel/plugin-transform-runtime"]
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-proposal-class-properties"
   ],
   "env": {
     "development": {
       "plugins": [
         "@babel/plugin-proposal-object-rest-spread",
-        "transform-class-properties",
         [
           "@babel/plugin-transform-react-jsx"
         ]
@@ -19,7 +19,6 @@
     "production": {
       "plugins": [
         ["@babel/plugin-proposal-object-rest-spread"],
-        ["transform-class-properties"]
       ]
     }
   }

@@ -6,6 +6,10 @@ import { routesUI } from 'src/helpers/routing';
 import LandingScene from 'src/scenes/LandingScene';
 import LandingLayout from 'src/layout/LandingLayout';
 import SimpleBar from 'simplebar'
+import { withAITracking } from '@microsoft/applicationinsights-react-js';
+import TelemetryService from 'src/services/TelemetryService'
+
+TelemetryService.initialize()
 
 const App = (props) => {
   return (
@@ -16,4 +20,4 @@ const App = (props) => {
   )
 }
 
-export default hot(App)
+export default withAITracking(TelemetryService.reactPlugin, hot(App))

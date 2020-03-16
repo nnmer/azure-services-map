@@ -8,7 +8,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const devMode = process.env.NODE_ENV !== 'production'
-const publicPathRoot = ''//devMode ? '' : '/app'
+const publicPathRoot = devMode ? '' : '/'
 
 module.exports = {
   entry: [
@@ -87,7 +87,7 @@ module.exports = {
           options: {
             name: '[name].[ext]?[contenthash]',
             outputPath: 'fonts/',
-            publicPath: publicPathRoot+'/fonts/'
+            publicPath: /* publicPathRoot+ */'/fonts/'
           }
         }
       },
@@ -102,7 +102,7 @@ module.exports = {
           options: {
             name: '[name].[ext]?[contenthash]',
             outputPath: 'img/',
-            publicPath: publicPathRoot+'/img/'
+            publicPath: /* publicPathRoot+ */'/img/'
           }
         }
       }      
@@ -126,12 +126,17 @@ module.exports = {
     ),
     new HtmlWebpackPlugin({
       title: 'Azure Services',
-      appMountIds: ['app','modal-root'],
+      appMountIds: ['app'],
       favicon: path.resolve(__dirname, 'src/public/favicon.png'),
       // hash: true,
+      mobile: true,
+      minify: true,
       inject: false,
       filename: 'index.html',
-      template: 'src/index.html'
+      template: 'src/index.html',
+      googleAnalytics: (!devMode ? {
+        trackingId: 'UA-134745718-1'
+      } : undefined)
     }),    
     new Dotenv({
       path: './.env.'+process.env.NODE_ENV+'.local',
@@ -140,8 +145,13 @@ module.exports = {
 
   optimization: {
     splitChunks: {
-      chunks: 'all',
-      name: false,
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      }
     },
   }
 };

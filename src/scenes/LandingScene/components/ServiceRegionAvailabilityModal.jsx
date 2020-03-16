@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 import Modal from 'react-bootstrap/Modal'
 import ServiceLinking from 'src/services/ServiceLinking';
+import TelemetryService from 'src/services/TelemetryService';
 
 const ServiceRegionAvailabilityModal = props => {
 
@@ -38,6 +39,8 @@ const ServiceRegionAvailabilityModal = props => {
   }
 
   const filteredServiceAvailability = ServiceLinking.filterServiceAvailabilityByRegionFilter(service.availability, true)
+
+  TelemetryService.trackPageView('ServiceRegionAvailabilityModal', {serviceId})
 
   return (
     <Modal {...rest} scrollable>

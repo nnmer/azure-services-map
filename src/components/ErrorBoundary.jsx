@@ -1,4 +1,5 @@
 import React from 'react'
+import TelemetryService from 'src/services/TelemetryService'
 
 export default class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -8,6 +9,8 @@ export default class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, info) {
     this.setState({ hasError: true });
+
+    TelemetryService.trackException(error)
   }
 
   render() {

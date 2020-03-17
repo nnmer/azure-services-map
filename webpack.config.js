@@ -70,15 +70,27 @@ module.exports = {
         test: /\.(sass|scss)/,
         use: [
           {
-          loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader // creates style nodes from JS strings
-        }, {
-          loader: "css-loader" 
-        }, {
-          loader: "sass-loader", 
-          options: {
-            implementation: require('node-sass'),
-          },
-        }]
+            loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader // creates style nodes from JS strings
+          }, {
+            loader: "css-loader" 
+          }, {
+            loader: "postcss-loader",
+            options: {
+              // Necessary for external CSS imports to work
+              // https://github.com/facebook/create-react-app/issues/2677
+              ident: 'postcss',
+              plugins: () => [
+                require('postcss-flexbugs-fixes'),
+                autoprefixer({
+                  flexbox: 'no-2009',
+                } ),
+              ],
+              sourceMap: devMode,
+            }
+          }, {
+            loader: "sass-loader", 
+          }
+      ]
       },
       {
         test: /\.(eot|woff|ttf|woff2)$/,
@@ -139,7 +151,7 @@ module.exports = {
       } : undefined)
     }),    
     new Dotenv({
-      path: './.env.'+process.env.NODE_ENV+'.local',
+      path: './.env.'+(process.env.APP_ENV || 'dev')+'.local',
     })
   ],
 

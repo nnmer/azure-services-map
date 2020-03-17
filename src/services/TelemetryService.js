@@ -21,7 +21,7 @@ const TelemetryService = () => {
       }
     })
 
-    console.warn('Is initialized', initialized)
+    console.warn('Telemetry initialized', initialized)
     if (process.env.APP_ENV !== 'development' && !Boolean(initialized)) {
       initialized = true
       appInsights.loadAppInsights()

@@ -8,8 +8,8 @@ htmlWebpackPlugin.options.scripts = htmlWebpackPlugin.options.scripts || []
 <html lang="<%= htmlWebpackPlugin.options.lang %>"<% if (htmlWebpackPlugin.files.manifest) { %> manifest="<%= htmlWebpackPlugin.files.manifest %>"<% } %>>
   <head>
     <meta charset="utf-8">
-    <meta content="ie=edge" http-equiv="x-ua-compatible"><%
-    if (htmlWebpackPlugin.options.baseHref) { %>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <% if (htmlWebpackPlugin.options.baseHref) { %>
     <base href="<%= htmlWebpackPlugin.options.baseHref %>"><%
     } %>
     <% if (Array.isArray(htmlWebpackPlugin.options.meta)) { %><%

@@ -209,3 +209,15 @@ position: relative;
     background-color: $availability-expected;
   }
 }
+
+.loader{
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+
+  & svg{
+    fill: $white;
+    width: 24px;
+  }
+}

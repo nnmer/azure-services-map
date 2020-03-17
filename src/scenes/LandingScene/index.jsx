@@ -6,6 +6,9 @@ import ServiceLinking from 'src/services/ServiceLinking';
 import Filter from './components/Filter';
 import 'simplebar/dist/simplebar.css';
 import isEqual from 'lodash/isEqual'
+import {detect as browserDetect} from 'detect-browser'
+import LoadingPlaceholder from 'src/components/LoadingPlaceholder';
+import BrowserNotSupported from 'src/components/error/browserNotSupported';
 
 function queryParameters () {
   let varPairs = []
@@ -86,6 +89,7 @@ constructor(props) {
   this.mapRendered = false
   this.mapSelector = '#service-vs-group-map'
   this.mapSelectorId = 'service-vs-group-map'
+  this.browser = browserDetect()
 }
 
 
@@ -152,8 +156,13 @@ constructor(props) {
   }  
   
   render() {
+
+    if (this.browser && this.browser.name=='ie') {
+      return <BrowserNotSupported browser={this.browser}/>
+    }
+
     if (null === this.state.servicesData) {
-      return 'Loading ...'
+      return <LoadingPlaceholder alignCenter={true}/>
     }
     let data = this.filteredServicesList()
     return (

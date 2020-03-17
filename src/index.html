@@ -12,21 +12,14 @@ htmlWebpackPlugin.options.scripts = htmlWebpackPlugin.options.scripts || []
     <% if (htmlWebpackPlugin.options.baseHref) { %>
     <base href="<%= htmlWebpackPlugin.options.baseHref %>"><%
     } %>
-    <% if (Array.isArray(htmlWebpackPlugin.options.meta)) { %><%
-      for (item of htmlWebpackPlugin.options.meta) { %>
-    <meta<% for (key in item) { %> <%= key %>="<%= item[key] %>"<% } %>><%
-      } %>
+    <% if (Array.isArray(htmlWebpackPlugin.options.meta)) { %>
+      <% for (item of htmlWebpackPlugin.options.meta) { %>
+        <meta<% for (key in item) { %> <%= key %>="<%= item[key] %>"<% } %>>
+      <% } %>
     <% } %>
     <% if (htmlWebpackPlugin.options.mobile) { %>
       <meta content="width=device-width, initial-scale=1" name="viewport">
     <% } %>
-    
-    <meta name="twitter:card" content="summary"/>
-
-    <meta property="og:url" content="https://azureservices.io"/>
-    <meta property="og:title" content="Azure Services Reference Map"/>
-    <meta property="og:description" content="Find how Azure services are interconnected"/>
-    <meta property="og:image" content="https://azureservices.io/img/og-image.png"/>
 
     <title><%= htmlWebpackPlugin.options.title %></title>
     <% if (htmlWebpackPlugin.files.favicon) { %>

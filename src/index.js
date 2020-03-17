@@ -1,3 +1,6 @@
+import 'core-js/stable/object/assign'
+import 'core-js/stable/promise'
+import 'core-js/features'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route } from "react-router-dom";

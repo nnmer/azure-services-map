@@ -7,6 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
+const appEnv = process.env.APP_ENV || 'dev'
 const devMode = process.env.NODE_ENV !== 'production'
 const publicPathRoot = devMode ? '' : '/'
 
@@ -137,7 +138,7 @@ module.exports = {
       { debug: 'info' }
     ),
     new HtmlWebpackPlugin({
-      title: 'Azure Services',
+      title: 'Azure Services IO',
       appMountIds: ['app'],
       favicon: path.resolve(__dirname, 'src/public/favicon.png'),
       // hash: true,
@@ -148,10 +149,17 @@ module.exports = {
       template: 'src/index.html',
       googleAnalytics: (!devMode ? {
         trackingId: 'UA-134745718-1'
-      } : undefined)
+      } : undefined),
+      meta: [
+        {name: "twitter:card", content: "summary"},
+        {property: "og:url", content: "https://"+(appEnv=='prod' ? '' : (appEnv+'.'))+"azureservices.io"},
+        {property: "og:title", content: "Azure Services Reference Map"},
+        {property: "og:description", content: "Find how Azure services are interconnected"},
+        {property: "og:image", content: "https://"+(appEnv=='prod' ? '' : (appEnv+'.'))+"azureservices.io/img/og-image.png"},
+      ]
     }),    
     new Dotenv({
-      path: './.env.'+(process.env.APP_ENV || 'dev')+'.local',
+      path: './.env.'+appEnv+'.local',
     })
   ],
 

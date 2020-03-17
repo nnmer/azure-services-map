@@ -11,9 +11,9 @@ const BrowserNotSupported = props => {
 
 
   return (
-    <div className="text-center">
+    <div className="text-center" style={{marginTop: '150px'}}>
       <h2>{text}</h2>
-      <h2>Please try some other browser.</h2>
+      <h2>Please use another browser.</h2>
     </div>
   )
 }

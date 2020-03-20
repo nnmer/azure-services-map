@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { IconIO } from './Icon';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip'
 
 const ServiceIcon = props => {
 
@@ -10,9 +12,18 @@ const ServiceIcon = props => {
     <div hidden={hidden} className={`service-icon-wrapper  text-center ${containerClass || ''}`} >
       {
         hasIO
-        ? <div data-badge >
-            <IconIO title="Has IO" className="io-badge"/>
-          </div>
+        ?  <OverlayTrigger
+              placement='top'
+              overlay={
+                <Tooltip>
+                  Service has In/Out direct connectors.
+                </Tooltip>
+              }
+            >
+            <div data-badge >
+              <IconIO title="Has IO" className="io-badge"/>
+            </div>
+          </OverlayTrigger>          
         : ''
       }
       

@@ -52,7 +52,7 @@ const PeriodicTableServiceMenu = props => {
                     className="dropdown-item" 
                     onClick={()=> setShowIOModal(true)}
                   >
-                    <IconIO /> Direct I/O services        
+                    <IconIO /> Direct I/O connections        
                   </a>
                 : ''
               }

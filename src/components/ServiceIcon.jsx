@@ -16,7 +16,7 @@ const ServiceIcon = props => {
               placement='top'
               overlay={
                 <Tooltip>
-                  Service has In/Out direct connectors.
+                  Service has In/Out direct connections.
                 </Tooltip>
               }
             >

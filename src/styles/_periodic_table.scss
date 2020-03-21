@@ -82,10 +82,20 @@
         cursor: default;  
         overflow: hidden;
         margin: 1px;
-      
-        .service-title {
-          padding: 2px 5px;
-          color: $white;    
+        a {
+          color: $white;
+        }
+        a:hover {
+          color: $white;
+        }      
+        .icon-with-title {
+          .service-icon-wrapper {
+            margin: 0 auto;            
+          }
+          .service-title {
+            padding: 2px 5px;
+            color: $white;    
+          }
         }
       
         > div {
@@ -140,8 +150,6 @@
 
 
 .direct-io-list-service-item-wrapper {
-  .service-icon {
-  }
   
   .service-title {
     height: 46px;

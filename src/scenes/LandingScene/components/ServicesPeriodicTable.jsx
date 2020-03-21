@@ -14,14 +14,14 @@ class ServicesPeriodicTable extends React.PureComponent {
     return (
     <>
       <div className="service-list-container" data-simplebar data-simplebar-force-visible="true" data-simplebar-auto-hide="false">
-        <div className="service-list text-center m-none" >
+        <div className="service-list m-none" >
           {
             Object.keys(this.props.filteredServicesList).map( (category, categoryIdx) => {
               return (
                 <div className="service-list-col" 
                   key={`category-${categoryIdx}`}
                 >
-                  <div className="service-list-col-title">
+                  <div className="service-list-col-title text-center">
                     {category}
                   </div>
                   

@@ -20,7 +20,6 @@ const ListServiceDirectIOEntries = props => {
   const icon = serviceId => {
     return (
       <ServiceIcon 
-        containerClass="float-left "
         hidden={!getServiceData(serviceId).icon}
         src={getServiceData(serviceId).icon}
       />

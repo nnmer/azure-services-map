@@ -122,15 +122,14 @@ label,
   width: 46px;
   height: 46px;
   background-color: $white;
-  margin: 0 auto;
+  text-align: center;
 
   .service-icon {
     position: relative;
-    text-align: center;
     // max-width: 40px;
-    height: 30px;
-    margin-top: 8px;
-    // margin-left: 1px;
+    margin: 0 auto;
+    max-height: 70%;
+    margin-top: 15%;
   }
   // &[data-badge]:after {
   //   content:attr(data-badge);

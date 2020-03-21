@@ -6,10 +6,10 @@ import Tooltip from 'react-bootstrap/Tooltip'
 
 const ServiceIcon = props => {
 
-  let {hidden, containerClass, hasIO, ...rest} = props
+  let {hidden, className, hasIO, ...rest} = props
 
   return (
-    <div hidden={hidden} className={`service-icon-wrapper  text-center ${containerClass || ''}`} >
+    <div hidden={hidden} className={`service-icon-wrapper ${className || ''}`} >
       {
         hasIO
         ?  <OverlayTrigger
@@ -28,7 +28,7 @@ const ServiceIcon = props => {
       }
       
       <img 
-        className={`service-icon ${rest.className || ''}`}
+        className={`service-icon ${rest.imgClass || ''}`}
         {...rest}
       />
     </div>
@@ -38,7 +38,6 @@ const ServiceIcon = props => {
 
 ServiceIcon.propTypes = {
   hidden: PropTypes.bool,
-  containerClass: PropTypes.any,
   src: PropTypes.any.isRequired
 }
 

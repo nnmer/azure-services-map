@@ -1,9 +1,17 @@
 const routes = {
   ui: {
-    home: '/'
+    home: '/',
+    services: {
+      serviceHome: '/services/:serviceId',
+      updatesList: '/services/:serviceId/updates',
+    }
   },
   api: { // all prefixed with /api
-    bootstrap: '/bootstrap'
+    bootstrap: '/bootstrap',
+    services: {
+      getDetails: '/services/:serviceId',
+      getUpdates: '/services/:serviceId/updates'
+    }
   }
 }
 

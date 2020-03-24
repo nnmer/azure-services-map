@@ -3,6 +3,8 @@ import imgAzureServiceDefaultIcon from 'src/public/img/icon-azure-black-default.
 import PeriodicTableServiceMenu from './PeriodicTableServiceMenu'
 import ServiceIcon from 'src/components/ServiceIcon';
 import AvailabilityActionLink from './AvailabilityActionLink';
+import Routing, { routesUI } from 'src/helpers/routing';
+import {Link} from 'react-router-dom'
 
 class ServicesPeriodicTable extends React.PureComponent {
 
@@ -49,15 +51,19 @@ class ServicesPeriodicTable extends React.PureComponent {
                               <div className="clearfix"/>
 
 
-                              <div className="m-t-7">
-                                <ServiceIcon
-                                  title={service.name}
-                                  src={service.icon || imgAzureServiceDefaultIcon}
-                                  hasIO={service.servicesIO.input && service.servicesIO.input.length >0 || service.servicesIO.output && service.servicesIO.output.length >0}
-                                />
-                                <div className="service-title">
-                                <span title={service.name}>{service.name}</span>
+                              <div className="icon-with-title m-t-7">
+                                
+                                <Link to={Routing.generate(routesUI.services.serviceHome, {serviceId: service.id})}>
+                                  <ServiceIcon
+                                    title={service.name}
+                                    src={service.icon || imgAzureServiceDefaultIcon}
+                                    hasIO={service.servicesIO.input && service.servicesIO.input.length >0 || service.servicesIO.output && service.servicesIO.output.length >0}
+                                  />
+                                <div className="service-title text-center">
+                                  <span title={service.name}>{service.name}</span>
                                 </div>
+                                </Link>
+                                
                               </div>
                             </div>
                           </div>

@@ -6,6 +6,8 @@ import { IconHamburger, IconBook, IconIO, IconGraphRight } from 'src/components/
 import ServicesDirectIOModal from './ServicesDirectIOModal';
 import ServicesDirectIOInteractiveGraphModal from './ServicesDirectIOInteractiveGraphModal';
 import TelemetryService from 'src/services/TelemetryService';
+import Routing, { routesUI } from 'src/helpers/routing';
+import {Link} from 'react-router-dom'
 
 const PeriodicTableServiceMenu = props => {
 
@@ -41,6 +43,7 @@ const PeriodicTableServiceMenu = props => {
             ...props
           }) => (
             <div  {...props}  className="dropdown-menu" >
+              <div className="dropdown-header" role="heading">Quick menu</div>
               <a className="dropdown-item" href={service.url} target="_blank">
                 <IconBook /> Service doc  <small>&#x2924;</small>
               </a>
@@ -66,6 +69,8 @@ const PeriodicTableServiceMenu = props => {
                   </a>
                 : ''
               } 
+              <div className="dropdown-divider" role="separator"></div>
+              <Link to={Routing.generate(routesUI.services.serviceHome, {serviceId: service.id})} className="dropdown-item">Service details</Link>
             </div>
           )}
         </Overlay>

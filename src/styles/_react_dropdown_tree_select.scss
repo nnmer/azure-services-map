@@ -200,7 +200,7 @@
       .tag-list {
         .tag-item {
           line-height: 1.2;
-          font-size: 0.75rem;
+          font-size: $font-size-sm;
 
           .tag {
             padding-bottom: 0px;
@@ -219,7 +219,7 @@
     i.geo-slug {
       font-style: normal;
       margin-left: 15px;
-      font-size: $font-size-sm;
+      font-size: $font-size-base;
       color: $gray-600;
     }
 

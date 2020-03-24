@@ -40,6 +40,9 @@ $yiq-contrasted-threshold:  185 !default;
 
 $base-5p-lighter: lighten($base-color, 5%);
 
+// $font-size-base:              0.9rem !default; // Assumes the browser default, typically `16px`
+// $font-size-lg:                $font-size-base * 1.1 !default;
+// $font-size-sm:                $font-size-base * .775 !default;
 // Body
 
 $body-bg:                   $base-color !default;
@@ -172,3 +175,5 @@ $container-max-widths: (
   lg: 2000px,
   xl: 2000px
 ) !default;
+
+@import "~bootstrap/scss/bootstrap";

@@ -58,24 +58,24 @@ $line: 4px;
     letter-spacing: 0.5px;   
     position: relative;
     line-height: 1.4em;
-    font-size: 1.03em;   
+    font-size: $font-size-base;   
     padding: $spacing;   
     list-style: none;
     text-align: left;  
     font-weight: 100;  
-    margin-left: 20%;
+    margin-left: 30%;
     margin-right: 15%;
     
     h1 {
      letter-spacing: 1.5px;
      font-weight: 100;
-     font-size: 1.4em;    
+     font-size: $font-size-lg;    
     }
     
     h2, h3 {
      letter-spacing: 1.5px;
      font-weight: 400;
-     font-size: 1.4em;
+     font-size: $font-size-lg;
     }
     
     .event {
@@ -103,7 +103,7 @@ $line: 4px;
         content: attr(data-date);
         text-align: right;
         font-weight: 100;    
-        font-size: 0.9em;
+        font-size: $font-size-sm;
         min-width: $date;
       }
   

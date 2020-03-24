@@ -1,0 +1,8 @@
+.pagination {
+  justify-content: center;
+  .page-link {
+    &:hover {
+      cursor: pointer;
+    }
+  }  
+}

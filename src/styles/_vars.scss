@@ -12,7 +12,7 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$blue:    #DF691A !default;
+$blue:    #3e7aff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -37,6 +37,8 @@ $light:         lighten($gray-200, 35%) !default;
 $dark:          $gray-200 !default;
 
 $yiq-contrasted-threshold:  185 !default;
+
+$base-5p-lighter: lighten($base-color, 5%);
 
 // Body
 
@@ -105,7 +107,7 @@ $navbar-dark-hover-color:           $white !default;
 // Pagination
 
 $pagination-color:                  $white !default;
-$pagination-bg:                     $gray-200 !default;
+$pagination-bg:                     $base-5p-lighter !default;
 $pagination-border-color:           transparent !default;
 
 $pagination-hover-color:            $white !default;

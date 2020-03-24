@@ -7,6 +7,7 @@ import 'src/scenes/ServiceDetailsContainer/styles.scss'
 import { IconBook } from 'src/components/Icon';
 import UpdateList from './components/UpdatesList';
 import Routing, { routesUI } from 'src/helpers/routing';
+import classnames from 'classnames'
 
 class ServiceDetailsContainer extends React.Component {
 
@@ -25,6 +26,10 @@ class ServiceDetailsContainer extends React.Component {
           serviceInfo: res.data
         })
       })
+  }
+
+  matchUrl(str) {
+    return window.location.pathname.match(new RegExp('^'+str.replace(['/'],['\/'])))
   }
 
   render () {
@@ -59,7 +64,9 @@ class ServiceDetailsContainer extends React.Component {
                 <IconBook /> Service doc  <small>&#x2924;</small>
               </a>
               
-              <Link to={Routing.generate(routesUI.services.updatesList, {serviceId})}>
+              <Link 
+                className={classnames({active: this.matchUrl(Routing.generate(routesUI.services.updatesList, {serviceId}))})}
+                to={Routing.generate(routesUI.services.updatesList, {serviceId})}>
                 Service Updates
               </Link>
             </div>

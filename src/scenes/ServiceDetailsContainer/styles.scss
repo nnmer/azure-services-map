@@ -1,0 +1,122 @@
+@import 'src/styles/_vars.scss';
+
+.service-page {
+  a, a:hover {
+    color: $white;
+  }
+  .service-horizontal-menu {
+    a, a:hover {
+      text-decoration: none;
+      margin-right: 25px;
+      &.active, &:hover {
+        border-bottom: 1px solid $white;
+      }
+    }
+
+    svg {
+      width: 24px;
+      margin-right: 5px;
+      fill: $white;
+    }
+  }
+  .service-caption {
+    display: flex;
+    div {
+      flex-direction: column;
+      justify-content: center;
+      margin: auto 0;
+      h3 {
+        margin: 0
+      }
+    }
+    .badge {
+      margin-right: 5px;
+    }
+  }
+  .service-horizontal-menu {
+  }
+
+  .left-side-menu {
+    
+  }
+
+
+$spacing: 50px;
+$radius: 4px;
+
+$date: 120px;
+$dotborder: 4px;
+$dot: 11px;
+$line: 4px;
+
+  .timeline {
+    border-left: $line solid $primary;
+    border-bottom-right-radius: $radius;
+    border-top-right-radius: $radius;    
+    background-color: $base-5p-lighter;
+    color: fade(white, 80%);
+    letter-spacing: 0.5px;   
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;   
+    padding: $spacing;   
+    list-style: none;
+    text-align: left;  
+    font-weight: 100;  
+    margin-left: 20%;
+    margin-right: 15%;
+    
+    h1 {
+     letter-spacing: 1.5px;
+     font-weight: 100;
+     font-size: 1.4em;    
+    }
+    
+    h2, h3 {
+     letter-spacing: 1.5px;
+     font-weight: 400;
+     font-size: 1.4em;
+    }
+    
+    .event {
+      border-bottom: 1px dashed $gray-500;
+      padding-bottom: ($spacing * 0.5);
+      margin-bottom: $spacing;  
+      position: relative;
+ 
+  
+      &:last-of-type { 
+        padding-bottom: 0;
+        margin-bottom: 0; 
+        border: none;      
+      }
+  
+      &:before, &:after {
+        position: absolute;
+        display: block;
+        top: 0;
+      }
+  
+      &:before {
+        left: ((($date * 0.6) + $spacing + $line + $dot + ($dotborder * 2)) * 1.5) * -1;    
+        color: fade($white, 40%);    
+        content: attr(data-date);
+        text-align: right;
+        font-weight: 100;    
+        font-size: 0.9em;
+        min-width: $date;
+      }
+  
+      &:after {
+        box-shadow: 0 0 0 $dotborder $primary;
+        left: ($spacing + $line + ($dot * 0.35)) * -1;        
+        background: lighten($black, 15%);
+        border-radius: 50%;  
+        height: $dot;
+        width: $dot;
+        content: "";
+        top: 5px;
+      }
+    }
+  }
+}

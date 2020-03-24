@@ -1,11 +1,13 @@
 import React from 'react'
 import GitHubReference from 'src/components/GitHubReference';
+import { routesUI } from 'src/helpers/routing';
+import {Link} from 'react-router-dom'
 
-const MainMenu = props => {
+const MainMenu = (props) => {
   return (
       <div className="navbar navbar-expand-lg fixed-top navbar-dark">
         <div className="container">
-          <a href="/" className="navbar-brand">Azure Services IO</a>
+          <Link to={routesUI.home} className="navbar-brand">Azure Services IO</Link>
           {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button> */}
@@ -21,4 +23,4 @@ const MainMenu = props => {
   )
 }
 
-export default MainMenu
+export default React.memo(MainMenu)

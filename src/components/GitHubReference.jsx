@@ -24,4 +24,4 @@ const GitHubReference = props => {
   )
 }
 
-export default GitHubReference
+export default React.memo(GitHubReference)

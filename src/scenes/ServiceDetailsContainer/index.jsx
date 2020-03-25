@@ -74,7 +74,7 @@ class ServiceDetailsContainer extends React.Component {
           <div className="row mt-4">
             <div className="col">
               <Switch>
-                <Route path={routesUI.services.updatesList} component={UpdateList} />
+                <Route path={routesUI.services.updatesList} render={ routeProps=> <UpdateList {...routeProps} pageTitle={`${serviceInfo.name} service updates`} /> } />
                 <Route  render={() => (<Redirect to={Routing.generate(routesUI.services.updatesList, {serviceId})} />)} /> 
               </Switch>
             </div>

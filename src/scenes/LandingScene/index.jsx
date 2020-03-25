@@ -9,6 +9,7 @@ import isEqual from 'lodash/isEqual'
 import {detect as browserDetect} from 'detect-browser'
 import LoadingPlaceholder from 'src/components/LoadingPlaceholder';
 import BrowserNotSupported from 'src/components/error/browserNotSupported';
+import PageTitle from 'src/components/PageTitle';
 
 function queryParameters () {
   let varPairs = []
@@ -166,6 +167,7 @@ constructor(props) {
     }
     let data = this.filteredServicesList()
     return (
+      <PageTitle title='Periodic table'>
       <>
         <div className="mb-3">
         <Filter 
@@ -181,6 +183,7 @@ constructor(props) {
           filteredServicesList={data}
         />
       </>
+      </PageTitle>
     )
   }
 }

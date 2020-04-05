@@ -58,11 +58,11 @@ class ServicesPeriodicTable extends React.PureComponent {
                                   src={service.icon || imgAzureServiceDefaultIcon}
                                   hasIO={service.servicesIO.input && service.servicesIO.input.length >0 || service.servicesIO.output && service.servicesIO.output.length >0}
                                 />
-                                <Link to={Routing.generate(routesUI.services.serviceHome, {serviceId: service.id})}>
+                                {/* <Link to={Routing.generate(routesUI.services.serviceHome, {serviceId: service.id})}> */}
                                   <div className="service-title text-center">
                                     <span title={service.name}>{service.name}</span>
                                   </div>
-                                </Link>
+                                {/* </Link> */}
                                 
                               </div>
                             </div>

@@ -31,13 +31,13 @@ const ServiceIconWithIoBadgeAndLink = props => {
         : ''
       }
 
-      <Link to={Routing.generate(routesUI.services.serviceHome, {serviceId})}>
+      {/* <Link to={Routing.generate(routesUI.services.serviceHome, {serviceId})}> */}
         <img 
           className={`service-icon ${rest.imgClass || ''}`}
           src={src}
           {...rest}
         />
-      </Link>
+      {/* </Link> */}
     </div>
   )
 }

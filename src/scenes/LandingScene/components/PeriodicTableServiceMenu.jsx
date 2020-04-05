@@ -69,8 +69,8 @@ const PeriodicTableServiceMenu = props => {
                   </a>
                 : ''
               } 
-              <div className="dropdown-divider" role="separator"></div>
-              <Link to={Routing.generate(routesUI.services.serviceHome, {serviceId: service.id})} className="dropdown-item">Service details</Link>
+              {/* <div className="dropdown-divider" role="separator"></div>
+              <Link to={Routing.generate(routesUI.services.serviceHome, {serviceId: service.id})} className="dropdown-item">Service details</Link> */}
             </div>
           )}
         </Overlay>

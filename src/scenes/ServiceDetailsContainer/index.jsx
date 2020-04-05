@@ -56,6 +56,11 @@ class ServiceDetailsContainer extends React.Component {
               </div>
             </div>          
           </div>
+          <div className="col mt-4 text-right">
+            <div className="mt-3 text-muted">
+              <i>{serviceInfo.description}</i>
+            </div>
+          </div>
         </div>
         
           <div className="row mt-5 service-horizontal-menu">

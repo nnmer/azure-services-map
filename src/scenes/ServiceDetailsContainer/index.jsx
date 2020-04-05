@@ -8,6 +8,8 @@ import { IconBook } from 'src/components/Icon';
 import UpdateList from './components/UpdatesList';
 import Routing, { routesUI } from 'src/helpers/routing';
 import classnames from 'classnames'
+import NoMatch from 'src/helpers/NoMatch';
+import NotFound_404 from 'src/components/error/NotFound_404';
 
 class ServiceDetailsContainer extends React.Component {
 
@@ -15,7 +17,8 @@ class ServiceDetailsContainer extends React.Component {
     super(props)
 
     this.state = {
-      serviceInfo: null
+      serviceInfo: null,
+      show404: false
     }
   }
 
@@ -26,6 +29,14 @@ class ServiceDetailsContainer extends React.Component {
           serviceInfo: res.data
         })
       })
+      .catch (err => {
+        if (err.response.status === 404) {
+          this.setState({
+            show404: true
+          })
+        }
+        throw err
+      })
   }
 
   matchUrl(str) {
@@ -33,6 +44,9 @@ class ServiceDetailsContainer extends React.Component {
   }
 
   render () {
+    if (this.state.show404) {
+      return <NotFound_404 />
+    }
 
     if (!this.state.serviceInfo) {
       return <LoadingPlaceholder />
@@ -80,7 +94,8 @@ class ServiceDetailsContainer extends React.Component {
             <div className="col">
               <Switch>
                 <Route path={routesUI.services.updatesList} render={ routeProps=> <UpdateList {...routeProps} pageTitle={`${serviceInfo.name} service updates`} /> } />
-                <Route  render={() => (<Redirect to={Routing.generate(routesUI.services.updatesList, {serviceId})} />)} /> 
+                <Route render={() => (<Redirect to={Routing.generate(routesUI.services.updatesList, {serviceId})} />)} /> 
+                <Route component={NoMatch}/>
               </Switch>
             </div>
           </div>          

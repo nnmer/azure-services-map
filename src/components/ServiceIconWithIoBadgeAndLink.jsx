@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { IconIO } from './Icon';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
@@ -6,9 +6,11 @@ import Tooltip from 'react-bootstrap/Tooltip'
 import Routing, { routesUI } from 'src/helpers/routing';
 import {Link} from 'react-router-dom'
 import imgAzureServiceDefaultIcon from 'src/public/img/icon-azure-black-default.png'
+import ServicesDirectIOModal from 'src/scenes/LandingScene/components/ServicesDirectIOModal';
 
 const ServiceIconWithIoBadgeAndLink = props => {
 
+  const [showIOModal, setShowIOModal] = useState(false)
   let {hidden, serviceId, className, hasIO, src, ...rest} = props
   src = src || imgAzureServiceDefaultIcon
 
@@ -24,10 +26,22 @@ const ServiceIconWithIoBadgeAndLink = props => {
                 </Tooltip>
               }
             >
-            <div data-badge >
-              <IconIO title="Has IO" className="io-badge"/>
+            <div data-badge className="cursor-hand" >
+              <a onClick={()=> setShowIOModal(true)} >
+                <IconIO title="Has IO" className="io-badge"/>
+              </a>
             </div>
           </OverlayTrigger>          
+        : ''
+      }
+
+      {
+        showIOModal
+        ? <ServicesDirectIOModal
+            serviceId={serviceId} 
+            show={showIOModal} 
+            onHide={()=>setShowIOModal(false)}
+          />
         : ''
       }
 

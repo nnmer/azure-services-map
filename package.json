@@ -13,7 +13,7 @@
   "dependencies": {
     "@microsoft/applicationinsights-react-js": "^2.5.2",
     "@microsoft/applicationinsights-web": "^2.5.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
     "core-js": "^3.6.4",

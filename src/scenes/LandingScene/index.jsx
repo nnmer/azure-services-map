@@ -44,7 +44,7 @@ class LandingScene extends React.Component {
     )
     return ServiceLinking.groupServicesByCategory(filteredServices, true)
   }
-  
+
   renderMap = function () {
     SvsG.render()
     SvsG.applyFilter()
@@ -80,7 +80,7 @@ constructor(props) {
     lastConnectionsUpdate: null,
     lastAvailabilityUpdate: null,
   }
-  
+
   this.azureRegionsAvailabilitySelectOptions= [
     {value: 'ga', label: 'GA', checked: true, disabled: true, tagClassName: 'disabled'},
     {value: 'preview', label: 'Preview', checked: true, disabled: true, tagClassName: 'disabled'},
@@ -109,17 +109,17 @@ constructor(props) {
         }
         if (!(azureRegions[key].length === 1 && azureRegions[key][0].title === key)) {
           let valueTree = []
-          item.children =  azureRegions[key].map(item => { 
+          item.children =  azureRegions[key].map(item => {
             valueTree.push(item.slug)
-            return { 
-              value: [item.slug], 
-              label: item.title, 
+            return {
+              value: [item.slug],
+              label: item.title,
               slug: item.slug,
               actions: [{
                 text: `(${item.slug})`,
                 className: 'geo-slug',
               }]
-            } 
+            }
           })
           item.value = valueTree
         } else {
@@ -127,7 +127,7 @@ constructor(props) {
         }
 
         this.azureRegionsSelectOptions.push(item)
-      })      
+      })
 
       this.setState({
         searchVal: queryParameter('search'),
@@ -154,8 +154,8 @@ constructor(props) {
 
   shouldComponentUpdate( nextProps, nextState) {
     return !isEqual(nextState,this.state)
-  }  
-  
+  }
+
   render() {
 
     if (this.browser && this.browser.name=='ie') {
@@ -170,7 +170,7 @@ constructor(props) {
       <PageTitle title='Periodic table'>
       <>
         <div className="mb-3">
-        <Filter 
+        <Filter
           searchVal={this.state.searchVal}
           regionsSource={this.azureRegionsSelectOptions}
           availabilityOptions={[...this.azureRegionsAvailabilitySelectOptions]}
@@ -179,7 +179,7 @@ constructor(props) {
           lastAvailabilityUpdate={this.state.lastAvailabilityUpdate}
         />
         </div>
-        <ServicesPeriodicTable 
+        <ServicesPeriodicTable
           filteredServicesList={data}
         />
       </>

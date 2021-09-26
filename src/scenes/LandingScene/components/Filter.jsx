@@ -1,5 +1,5 @@
 import React from 'react'
-import imgX from 'src/public/img/x-white.png'
+import imgX from 'src/styles/img/x-white.png'
 import FilterDropdownTree from './FilterDropdownTree'
 import arrayUnion from 'lodash/union'
 import DropdownTreeSelect from 'react-dropdown-tree-select';
@@ -10,7 +10,7 @@ class Filter extends React.Component {
 
   constructor(props) {
     super(props)
-    
+
     this.state = {
       availabilityOptions: props.availabilityOptions,
       geoVal: [],
@@ -72,7 +72,7 @@ class Filter extends React.Component {
               <div className="input-group-prepend">
                 <span className="input-group-text"><IconSearch/></span>
               </div>
-              
+
               <input
                 className={`form-control search-input`}
                 type="text" placeholder="Search" aria-label="Search"
@@ -83,7 +83,7 @@ class Filter extends React.Component {
                   if (e.keyCode === 27) {
                     this.clearSearchField()
                   }
-                }} 
+                }}
                 />
 
               {
@@ -102,7 +102,7 @@ class Filter extends React.Component {
             <div className="input-group" style={{marginTop: '5px'}}>
               <div className="input-group-prepend">
                 <span className="input-group-text">
-                  <input 
+                  <input
                     type="checkbox"
                     name="servicesOnlyWithIO"
                     onChange={this.handleInputChange}
@@ -122,32 +122,32 @@ class Filter extends React.Component {
                   <span className="input-group-text"><IconGlobe/></span>
                 </div>
                 <div className="periodic-table-geo-regions-wrapper">
-                  <FilterDropdownTree 
-                    data={this.props.regionsSource}  
+                  <FilterDropdownTree
+                    data={this.props.regionsSource}
                     onChange={this.handleRegionSelectChange}
                     showPartiallySelected={true}
                     texts={{ placeholder: 'Filter by region...' }}
-                  />  
+                  />
                 </div>
               </div>
               <div className="periodic-table-geo-regions-availability-wrapper">
                 <DropdownTreeSelect
                   className="availability-dropdown"
-                  data={this.state.availabilityOptions}  
+                  data={this.state.availabilityOptions}
                   onChange={this.handleRegionAvailabilitySelectChange}
                   texts={{ placeholder: 'Region availability...' }}
                 />
               </div>
             </div>
-          </div>  
+          </div>
           <div className="col-4">
             <div className="float-right">
-              <DataUpdateInfo 
+              <DataUpdateInfo
                 lastConnectionsUpdate={this.props.lastConnectionsUpdate}
                 lastAvailabilityUpdate={this.props.lastAvailabilityUpdate}
               />
             </div>
-          </div>        
+          </div>
         </div>
       </div>
     )

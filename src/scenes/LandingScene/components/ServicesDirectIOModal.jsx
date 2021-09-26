@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 import Modal from 'react-bootstrap/Modal'
-import imgArrowDown from 'src/public/img/arrow-down.png'
+import imgArrowDown from 'src/styles/img/arrow-down.png'
 import ListServiceDirectIOEntries from './ListServiceDirectIOEntries';
 import ServiceLinking from 'src/services/ServiceLinking';
 import { IconIO } from 'src/components/Icon';
 import TelemetryService from 'src/services/TelemetryService';
 
 const ServicesDirectIOModal = props => {
- 
+
   let [service, setService] = useState(null)
 
   useEffect( () => {
@@ -42,7 +42,7 @@ const ServicesDirectIOModal = props => {
       >
         <Modal.Header closeButton>
           <Modal.Title >
-            <IconIO/> 
+            <IconIO/>
             Direct IOs
           </Modal.Title>
         </Modal.Header>

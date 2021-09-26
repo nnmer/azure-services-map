@@ -31,7 +31,7 @@ const DataUpdateInfo = props => {
 
 DataUpdateInfo.propTypes = {
   lastConnectionsUpdate: PropTypes.string.isRequired,
-  lastAvailabilityUpdate: PropTypes.string.isRequired 
+  lastAvailabilityUpdate: PropTypes.string.isRequired
 }
 
 export default DataUpdateInfo

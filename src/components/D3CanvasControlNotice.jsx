@@ -1,6 +1,6 @@
 import React from 'react'
-import imgDrag from 'src/public/img/drag.png'
-import imfScroll from 'src/public/img/scroll.png'
+import imgDrag from 'src/styles/img/drag.png'
+import imfScroll from 'src/styles/img/scroll.png'
 
 const D3CanvasControlNotice = props => {
   return (

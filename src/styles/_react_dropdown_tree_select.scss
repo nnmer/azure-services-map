@@ -24,7 +24,7 @@
     }
   }
 
-  .periodic-table-geo-regions-wrapper {    
+  .periodic-table-geo-regions-wrapper {
     flex: 1 1 0%;
     margin-top: 4px;
   }
@@ -55,22 +55,22 @@
       border-color: #fff;
 
       @include scroller;
-    
+
       .search {
         width: 100%;
         // display: none;
         border: none;
-        
+
         // border-bottom: 1px solid #ccc;
         outline: none;
       }
-    
+
       ul {
         margin: 0;
         padding: 0
       }
     }
-    
+
     .dropdown-trigger {
       // padding: 4px;
       line-height: 2;
@@ -81,7 +81,7 @@
 
       &.arrow {
         cursor: pointer;
-        
+
         &.disabled {
           cursor: not-allowed;
 
@@ -94,7 +94,7 @@
           content: "\25B2";
           vertical-align: middle;
           color: #3c3c3c;
-          margin-right: 2px;          
+          margin-right: 2px;
         }
 
         &.bottom:after {
@@ -110,7 +110,7 @@
       display: inline;
       padding: 0;
       margin: 0;
-      
+
       .tag-item {
         display: inline-block;
         line-height: 1.2;
@@ -121,7 +121,7 @@
           width: 100%;
           outline: none;
         }
-    
+
         .tag {
           color: $white;
           background-color: $gray-200;
@@ -135,12 +135,12 @@
             background-color: $gray-800;
             border-color: $gray-800;
           }
-          
+
           &:focus-within {
             background-color: $primary;
             border-color: #a0a0a0;
           }
-        
+
           .tag-remove {
             position: relative;
             top: -2px;
@@ -151,15 +151,15 @@
             background-color: transparent;
             border: none;
             outline: none;
-    
+
             &.disabled {
               cursor: not-allowed
             }
-    
+
             &.readOnly {
               cursor: not-allowed
             }
-    
+
             &:focus {
               color: #3c3c3c
             }
@@ -175,7 +175,7 @@
               background-color: $gray-200;
               border-color: $gray-200;
             }
-            
+
             &:focus-within {
               color: $white;
               background-color: $gray-200;
@@ -188,9 +188,9 @@
               }
             }
           }
-        }        
-      }      
-    }    
+        }
+      }
+    }
   }
   &.availability-dropdown {
     .dropdown {
@@ -208,7 +208,7 @@
         }
       }
     }
-  }        
+  }
 
   .node {
     list-style: none;
@@ -226,12 +226,12 @@
     input[type="checkbox"] {
       margin-bottom: 5px;
     }
-  
+
     &>label {
       cursor: pointer;
       margin-left: 2px
     }
-  
+
     &.leaf {
       &[aria-level] {
         padding-left: 38px !important;
@@ -243,31 +243,31 @@
         display: none
       }
     }
-  
+
     &.disabled>* {
       color: gray;
       cursor: not-allowed
     }
-  
+
     &.match-in-children.hide .node-label {
       opacity: .5
     }
-  
+
     &.focused {
       background-color: #f4f4f4
     }
   }
-  
+
   @mixin treeExpandIcon() {
     transition: transform 0.3s;
-    content: url('/img/arr-gray.svg');
+    content: url('./img/arr-gray.svg');
     width: 10px;
     stroke: $white;
     fill: $white;
     display: inline-block;
     vertical-align: middle;
   }
-  
+
   .toggle {
     white-space: pre;
     margin: 0 5px;
@@ -275,38 +275,37 @@
     &:after {
       content: " ";
 
-    }  
-  
+    }
+
     &.collapsed:after {
       transform: rotateZ(-90deg);
       @include treeExpandIcon;
     }
-    
+
     &.expanded:after {
       @include treeExpandIcon;
     }
   }
-  
-  
-  
-  
+
+
+
+
   .searchModeOn .toggle {
     display: none
   }
-  
+
   .checkbox-item,
   .radio-item {
     vertical-align: middle;
     margin: 0 4px 0 0
   }
-  
+
   .checkbox-item.simple-select,
   .radio-item.simple-select {
     display: none
   }
-  
+
   .hide:not(.match-in-children) {
     display: none
   }
 }
-

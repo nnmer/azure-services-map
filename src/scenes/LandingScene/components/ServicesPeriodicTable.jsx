@@ -1,5 +1,5 @@
 import React from 'react'
-import imgAzureServiceDefaultIcon from 'src/public/img/icon-azure-black-default.png'
+import imgAzureServiceDefaultIcon from 'src/styles/img/icon-azure-black-default.png'
 import PeriodicTableServiceMenu from './PeriodicTableServiceMenu'
 import AvailabilityActionLink from './AvailabilityActionLink';
 import Routing, { routesUI } from 'src/helpers/routing';
@@ -20,17 +20,17 @@ class ServicesPeriodicTable extends React.PureComponent {
           {
             Object.keys(this.props.filteredServicesList).map( (category, categoryIdx) => {
               return (
-                <div className="service-list-col" 
+                <div className="service-list-col"
                   key={`category-${categoryIdx}`}
                 >
                   <div className="service-list-col-title text-center">
                     {category}
                   </div>
-                  
+
                   {
                     this.props.filteredServicesList[category].map( service => {
                       return (
-                          <div 
+                          <div
                               key={service.id}
                               id={`${categoryIdx}-${service.id}`}
                           >
@@ -44,7 +44,7 @@ class ServicesPeriodicTable extends React.PureComponent {
                               </div>
 
                               <div className="float-right" >
-                                <PeriodicTableServiceMenu 
+                                <PeriodicTableServiceMenu
                                   serviceId={service.id}
                                 />
                               </div>
@@ -63,18 +63,18 @@ class ServicesPeriodicTable extends React.PureComponent {
                                     <span title={service.name}>{service.name}</span>
                                   </div>
                                 {/* </Link> */}
-                                
+
                               </div>
                             </div>
                           </div>
                       )
                     })
                   }
-                  
+
                 </div>
               )
             })
-          }        
+          }
         </div>
       </div>
     </>

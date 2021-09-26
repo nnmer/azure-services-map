@@ -5,7 +5,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip'
 import Routing, { routesUI } from 'src/helpers/routing';
 import {Link} from 'react-router-dom'
-import imgAzureServiceDefaultIcon from 'src/public/img/icon-azure-black-default.png'
+import imgAzureServiceDefaultIcon from 'src/styles/img/icon-azure-black-default.png'
 import ServicesDirectIOModal from 'src/scenes/LandingScene/components/ServicesDirectIOModal';
 
 const ServiceIconWithIoBadgeAndLink = props => {
@@ -31,22 +31,22 @@ const ServiceIconWithIoBadgeAndLink = props => {
                 <IconIO title="Has IO" className="io-badge"/>
               </a>
             </div>
-          </OverlayTrigger>          
+          </OverlayTrigger>
         : ''
       }
 
       {
         showIOModal
         ? <ServicesDirectIOModal
-            serviceId={serviceId} 
-            show={showIOModal} 
+            serviceId={serviceId}
+            show={showIOModal}
             onHide={()=>setShowIOModal(false)}
           />
         : ''
       }
 
       {/* <Link to={Routing.generate(routesUI.services.serviceHome, {serviceId})}> */}
-        <img 
+        <img
           className={`service-icon ${rest.imgClass || ''}`}
           src={src}
           {...rest}

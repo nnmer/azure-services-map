@@ -7,8 +7,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "./node_modules/.bin/webpack serve --config webpack-dev.config.js --progress",
-    "build": "./node_modules/.bin/webpack --config webpack-prod.config.js"
+    "dev": "APP_ENV=dev ./node_modules/.bin/webpack serve --config webpack-dev.config.js --progress",
+    "build": "APP_ENV=prod  ./node_modules/.bin/webpack --config webpack-prod.config.js"
   },
   "dependencies": {
     "@hot-loader/react-dom": "^17.0.1",

@@ -13,7 +13,9 @@ devConfig.optimization = {
 let stripLoader = {
     test: [/\.js$/, /\.es6$/],
     exclude: /node_modules/,
-    loader: WebpackStripLoader.loader('console.log', 'console.warn')
+    use: {
+      loader: WebpackStripLoader.loader('console.log', 'console.warn')
+    }
 };
 
 devConfig.module.rules.push(stripLoader);
@@ -21,7 +23,7 @@ devConfig.module.rules.push(stripLoader);
 prodPlugins = [
   ...devConfig.plugins,
   new CompressionPlugin({
-    filename: '[path].gz[query]',
+    filename: '[path][base].gz[query]',
     algorithm: 'gzip',
     test: /\.js$|\.css$|\.html$|\.eot?.+$|\.ttf?.+$|\.woff?.+$|\.svg?.+$/,
     threshold: 10240,

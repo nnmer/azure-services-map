@@ -8,7 +8,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const appEnv = process.env.APP_ENV || 'dev'
-const devMode = process.env.NODE_ENV !== 'production'
+const devMode = process.env.APP_ENV === 'dev'
 const publicPathRoot = devMode ? '' : '/'
 
 module.exports = {
@@ -76,9 +76,7 @@ module.exports = {
           }, {
             loader: "css-loader"
           },{
-            loader: 'resolve-url-loader',
-            // options: {}
-          }, {
+
             loader: "postcss-loader",
             options: {
               // Necessary for external CSS imports to work
@@ -95,7 +93,12 @@ module.exports = {
             }
           }, {
             loader: "sass-loader",
-          }
+            options: {
+              sourceMap: devMode,
+            }
+          }, { loader: 'resolve-url-loader',
+          // options: {}
+        }
       ]
       },
       {

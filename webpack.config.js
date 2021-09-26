@@ -16,13 +16,14 @@ module.exports = {
     __dirname + "/src/index.js"
   ],
   resolve: {
-    extensions: [".js", ".json", ".jsx"],
+    extensions: [".js", ".jsx"],
     modules: [
       __dirname,
       resolve(__dirname,'node_modules')
     ],
     alias: {
-      src: path.resolve(__dirname, 'src/')
+      src: path.resolve(__dirname, 'src/'),
+      'react-dom': '@hot-loader/react-dom'
     }
   },
 
@@ -36,7 +37,6 @@ module.exports = {
 
   module: {
     rules: [
-      { test: /\.json$/,  loader: "json-loader" },
       { test: /[\.js|\.jsx]$/,
         include: [
           resolve('src'),
@@ -44,7 +44,7 @@ module.exports = {
         use: {
           loader: "babel-loader"
         },
-      },      
+      },
       {
         test: /\.css$/,
         use: [
@@ -55,13 +55,14 @@ module.exports = {
             options: {
               // Necessary for external CSS imports to work
               // https://github.com/facebook/create-react-app/issues/2677
-              ident: 'postcss',
-              plugins: () => [
-                require('postcss-flexbugs-fixes'),
-                autoprefixer({
-                  flexbox: 'no-2009',
-                }),
-              ],
+              postcssOptions: {
+                plugins: () => [
+                  require('postcss-flexbugs-fixes'),
+                  autoprefixer({
+                    flexbox: 'no-2009',
+                  }),
+                ],
+              },
               sourceMap: devMode,
             }
           }
@@ -73,23 +74,27 @@ module.exports = {
           {
             loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader // creates style nodes from JS strings
           }, {
-            loader: "css-loader" 
+            loader: "css-loader"
+          },{
+            loader: 'resolve-url-loader',
+            // options: {}
           }, {
             loader: "postcss-loader",
             options: {
               // Necessary for external CSS imports to work
               // https://github.com/facebook/create-react-app/issues/2677
-              ident: 'postcss',
-              plugins: () => [
-                require('postcss-flexbugs-fixes'),
-                autoprefixer({
-                  flexbox: 'no-2009',
-                } ),
-              ],
+              postcssOptions: {
+                plugins: () => [
+                  require('postcss-flexbugs-fixes'),
+                  autoprefixer({
+                    flexbox: 'no-2009',
+                  } ),
+                ],
+              },
               sourceMap: devMode,
             }
           }, {
-            loader: "sass-loader", 
+            loader: "sass-loader",
           }
       ]
       },
@@ -118,7 +123,7 @@ module.exports = {
             publicPath: /* publicPathRoot+ */'/img/'
           }
         }
-      }      
+      }
     ]
   },
 
@@ -131,12 +136,11 @@ module.exports = {
       filename: 'css/[name]' + (devMode ? '' : ".[hash]") + ".css",
       chunkFilename: 'css/[name]' + (devMode ? '' : '.[hash]') + ".chunk.css"
     }),
-    new CopyWebpackPlugin(
-      [
+    new CopyWebpackPlugin({
+      patterns: [
         {from: path.resolve(__dirname,'src/public'), to: path.resolve(__dirname,'public')}
       ],
-      { debug: 'info' }
-    ),
+    }),
     new HtmlWebpackPlugin({
       title: 'Azure Services IO',
       appMountIds: ['app'],
@@ -157,7 +161,7 @@ module.exports = {
         {property: "og:description", content: "Find how Azure services are interconnected"},
         {property: "og:image", content: "https://"+(appEnv=='prod' ? '' : (appEnv+'.'))+"azureservices.io/img/og-image.png"},
       ]
-    }),    
+    }),
     new Dotenv({
       path: './.env.'+appEnv+'.local',
     })

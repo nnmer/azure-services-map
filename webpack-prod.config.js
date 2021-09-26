@@ -7,6 +7,7 @@ devConfig.mode = "production";
 devConfig.optimization = {
   ...devConfig.optimization,
   nodeEnv:'production',
+  minimize: true,
 }
 
 let stripLoader = {
@@ -19,7 +20,6 @@ devConfig.module.rules.push(stripLoader);
 
 prodPlugins = [
   ...devConfig.plugins,
-  new webpack.optimize.ModuleConcatenationPlugin(),
   new CompressionPlugin({
     filename: '[path].gz[query]',
     algorithm: 'gzip',

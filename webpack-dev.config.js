@@ -2,7 +2,8 @@ let path = require('path')
 let devConfig = require('./webpack.config.js');
 const webpack = require('webpack');
 
-devConfig.output.publicPath = 'http://localhost:8080/';
+devConfig.devtool = 'eval-source-map';
+devConfig.output.publicPath = 'http://'+(require("ip").address() || 'localhost')+':8080/';
 
 devConfig.mode = "development";
 devConfig.optimization = {
@@ -10,14 +11,13 @@ devConfig.optimization = {
 }
 
 devConfig.plugins.push(
-  new webpack.NamedModulesPlugin(),
   new webpack.HotModuleReplacementPlugin()
 );
 
 devConfig.devServer = {
   index: "index.html",
   contentBase: path.join(__dirname, 'public'),
-  host: 'localhost',
+  host: '0.0.0.0',
   port: 8080,
   hot: true,
   disableHostCheck: true,

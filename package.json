@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --config webpack-dev.config.js --progress",
+    "dev": "./node_modules/.bin/webpack-dev-server --config webpack-dev.config.js --progress",
     "build": "./node_modules/.bin/webpack --config webpack-prod.config.js"
   },
   "dependencies": {
